@@ -73,12 +73,12 @@ function compare(){if(state.compare.length<2){toast('비교할 장소를 2곳 �
  const rows=[['카페 유형',p=>`${categoryLabel(p)}<small>${playgroundLabel(p)}</small>`],['동반 구역',p=>esc(p.petArea)],['주소',p=>esc(p.address)],['예상 이동',p=>`약 ${rangeLabel(p)}<small>${data.origins[state.origin].name} 출발 · 수동 추정</small>${edgeBadge(p)}`],['운동장',p=>esc(p.yard)],['영업시간',p=>`${esc(p.hours)}<small>${esc(p.hoursNote)}</small>`],['주차',p=>`${esc(p.parkingText)}<small>빈자리·요금은 현장 확인</small>`],['반려견 입장',p=>esc(p.dogRule)],['어린이 입장',p=>esc(p.kids)],['이용요금',p=>`${esc(p.fee)}<small>${esc(p.feeNote)}</small>`],['위치 정확도',p=>`${esc(p.position)}<small>${esc(p.positionNote)}</small>`],['운영 근거',p=>esc(p.evidence)],['재확인 항목',p=>`<ul>${p.checks.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`],['지도·문의',p=>`<a href="${mapURL(p)}" target="_blank" rel="noopener noreferrer">네이버 지도 ↗</a><br><a href="tel:${p.phone.replace(/-/g,'')}">${p.phone}</a>`]];
  $('compareContent').innerHTML=`<div class="table-scroll" tabindex="0" aria-label="장소 비교표. 모바일에서 좌우로 스크롤하세요."><table><thead><tr><th scope="col">비교 항목</th>${ps.map(p=>`<th scope="col">${esc(p.name)}</th>`).join('')}</tr></thead><tbody>${rows.map(([name,fn])=>`<tr><th scope="row">${name}</th>${ps.map(p=>`<td>${fn(p)}</td>`).join('')}</tr>`).join('')}</tbody></table></div><p class="compare-note">모바일에서는 표를 좌우로 밀어 비교할 수 있어요. 요금·운영시간·입장 조건은 방문 전 재확인하세요.</p>`;showDialog('compareDialog');
 }
-function reset(){const favorites=state.favorites,comparison=state.compare,origin=state.origin;Object.assign(state,defaultState(),{favorites,compare:comparison,origin});$('time').value='30';$('region').value='all';$('search').value='';$('sort').value='near';$('weight').value='';$('day').value='';$('strict').checked=false;$('knownWeight').checked=false;render();tileMap.fit();}
+function reset(){const favorites=state.favorites,comparison=state.compare,origin=state.origin;Object.assign(state,defaultState(),{favorites,compare:comparison,origin});$('time').value='30';$('region').value='all';$('search').value='';$('sort').value='near';$('weight').value='';$('day').value='';$('strict').checked=false;$('knownWeight').checked=false;render();tileMap.showNationwide();}
 class TileMap{
- constructor(){this.center={lat:37.689,lng:127.10};this.zoom=12;this.tiles=new Map();this.tileErrors=0;this.tileLoaded=false;this.pointers=new Map();this.dragged=false;this.last=null;this.setup();}
+ constructor(){this.center={lat:35.75,lng:128.25};this.zoom=6;this.isNationwide=true;this.tiles=new Map();this.tileErrors=0;this.tileLoaded=false;this.pointers=new Map();this.dragged=false;this.last=null;this.setup();}
  size(){const r=$('map').getBoundingClientRect();return {w:r.width||600,h:r.height||500};}
  setup(){const el=$('map');
-  el.addEventListener('pointerdown',e=>{if(e.target.closest('button,a'))return;this.dragged=false;this.pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});el.setPointerCapture(e.pointerId);this.last={x:e.clientX,y:e.clientY};this.pinching=this.pointers.size===2?this.pinchDistance():null;});
+  el.addEventListener('pointerdown',e=>{if(e.target.closest('button,a'))return;this.isNationwide=false;this.dragged=false;this.pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});el.setPointerCapture(e.pointerId);this.last={x:e.clientX,y:e.clientY};this.pinching=this.pointers.size===2?this.pinchDistance():null;});
   el.addEventListener('pointermove',e=>{if(!this.pointers.has(e.pointerId))return;const old=this.pointers.get(e.pointerId);this.pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});if(Math.abs(e.clientX-old.x)+Math.abs(e.clientY-old.y)>2)this.dragged=true;
    if(this.pointers.size===2){const d=this.pinchDistance();if(this.pinching&&d/this.pinching>1.4){this.setZoom(this.zoom+1);this.pinching=d;}else if(this.pinching&&d/this.pinching<.7){this.setZoom(this.zoom-1);this.pinching=d;}}
    else{const c=project(this.center.lat,this.center.lng,this.zoom);this.center=unproject(c.x-(e.clientX-old.x),c.y-(e.clientY-old.y),this.zoom);this.clampCenter();this.render();}
@@ -86,21 +86,23 @@ class TileMap{
   const end=e=>{this.pointers.delete(e.pointerId);this.pinching=null;};el.addEventListener('pointerup',end);el.addEventListener('pointercancel',end);
   el.addEventListener('wheel',e=>{if(!e.ctrlKey)return;e.preventDefault();this.setZoom(this.zoom+(e.deltaY<0?1:-1));},{passive:false});
   el.addEventListener('keydown',e=>{if(e.target!==el)return;const moves={ArrowLeft:[-70,0],ArrowRight:[70,0],ArrowUp:[0,-70],ArrowDown:[0,70]};if(moves[e.key]){e.preventDefault();const c=project(this.center.lat,this.center.lng,this.zoom),[x,y]=moves[e.key];this.center=unproject(c.x+x,c.y+y,this.zoom);this.clampCenter();this.render();}else if(e.key==='+'||e.key==='='){e.preventDefault();this.setZoom(this.zoom+1);}else if(e.key==='-'){e.preventDefault();this.setZoom(this.zoom-1);}});
-  $('zoomIn').addEventListener('click',()=>this.setZoom(this.zoom+1));$('zoomOut').addEventListener('click',()=>this.setZoom(this.zoom-1));$('fit').addEventListener('click',()=>this.fit());$('retryTiles').addEventListener('click',()=>{this.tileErrors=0;this.tileLoaded=false;this.tiles.forEach(t=>t.remove());this.tiles.clear();$('tileWarning').hidden=true;this.render();});
-  root.addEventListener('resize',()=>this.fit());
+  $('zoomIn').addEventListener('click',()=>this.setZoom(this.zoom+1));$('zoomOut').addEventListener('click',()=>this.setZoom(this.zoom-1));$('fit').addEventListener('click',()=>this.fit());$('nationwide').addEventListener('click',()=>this.showNationwide());$('retryTiles').addEventListener('click',()=>{this.tileErrors=0;this.tileLoaded=false;this.tiles.forEach(t=>t.remove());this.tiles.clear();$('tileWarning').hidden=true;this.render();});
+  root.addEventListener('resize',()=>this.isNationwide?this.showNationwide():this.render());
  }
  pinchDistance(){const [a,b]=[...this.pointers.values()];return Math.hypot(a.x-b.x,a.y-b.y);}
- clampCenter(){this.center.lat=Math.min(38,Math.max(37.4,this.center.lat));this.center.lng=Math.min(127.5,Math.max(126.8,this.center.lng));}
- setZoom(z){this.zoom=Math.min(16,Math.max(10,z));this.render();}
- focus(p){this.center={lat:p.lat,lng:p.lng};this.zoom=Math.min(this.zoom,14);this.render();}
- fit(){const points=[...visible,data.origins[state.origin]],minLat=Math.min(...points.map(p=>p.lat)),maxLat=Math.max(...points.map(p=>p.lat)),minLng=Math.min(...points.map(p=>p.lng)),maxLng=Math.max(...points.map(p=>p.lng));this.center={lat:(minLat+maxLat)/2,lng:(minLng+maxLng)/2};const {w,h}=this.size();this.zoom=10;for(let z=10;z<=14;z++){const a=project(minLat,minLng,z),b=project(maxLat,maxLng,z);if(Math.abs(a.x-b.x)<=Math.max(100,w-150)&&Math.abs(a.y-b.y)<=Math.max(150,h-140))this.zoom=z;}this.render();}
- render(){const {w,h}=this.size(),c=project(this.center.lat,this.center.lng,this.zoom),left=c.x-w/2,top=c.y-h/2;const layer=$('tileLayer'),needed=new Set(),count=2**this.zoom;
+ clampCenter(){this.center.lat=Math.min(39.5,Math.max(32,this.center.lat));this.center.lng=Math.min(133,Math.max(123,this.center.lng));}
+ setZoom(z){this.isNationwide=false;this.zoom=Math.min(16,Math.max(5,z));this.render();}
+ focus(p){this.isNationwide=false;this.center={lat:p.lat,lng:p.lng};this.zoom=Math.max(12,Math.min(this.zoom,14));this.render();}
+ fit(){const points=[...visible,data.origins[state.origin]],minLat=Math.min(...points.map(p=>p.lat)),maxLat=Math.max(...points.map(p=>p.lat)),minLng=Math.min(...points.map(p=>p.lng)),maxLng=Math.max(...points.map(p=>p.lng));this.fitBounds(minLat,maxLat,minLng,maxLng);}
+ showNationwide(){this.fitBounds(32.7,38.8,124.5,132);this.isNationwide=true;}
+ fitBounds(minLat,maxLat,minLng,maxLng){this.isNationwide=false;this.center={lat:(minLat+maxLat)/2,lng:(minLng+maxLng)/2};const {w,h}=this.size();this.zoom=5;for(let z=5;z<=14;z++){const a=project(minLat,minLng,z),b=project(maxLat,maxLng,z);if(Math.abs(a.x-b.x)<=Math.max(100,w-150)&&Math.abs(a.y-b.y)<=Math.max(150,h-140))this.zoom=z;}this.render();}
+ render(){const {w,h}=this.size(),c=project(this.center.lat,this.center.lng,this.zoom),left=c.x-w/2,top=c.y-h/2;const layer=$('tileLayer'),needed=new Set(),count=2**this.zoom;$('map').classList.toggle('national-overview',this.zoom<10);
   // Only the current viewport is requested. Browser HTTP caching is left intact.
   if($('map').getBoundingClientRect().width>0){for(let x=Math.floor(left/256);x<=Math.floor((left+w)/256);x++)for(let y=Math.floor(top/256);y<=Math.floor((top+h)/256);y++){if(y<0||y>=count)continue;const key=`${this.zoom}/${x}/${y}`;needed.add(key);let tile=this.tiles.get(key);if(!tile){tile=doc.createElement('img');tile.alt='';tile.draggable=false;tile.decoding='async';tile.onload=()=>{this.tileLoaded=true;$('tileWarning').hidden=true;};tile.onerror=()=>{this.tileErrors++;if(!this.tileLoaded&&this.tileErrors>=3)$('tileWarning').hidden=false;};tile.src=`https://tile.openstreetmap.org/${this.zoom}/${((x%count)+count)%count}/${y}.png`;layer.appendChild(tile);this.tiles.set(key,tile);}tile.style.left=`${x*256-left}px`;tile.style.top=`${y*256-top}px`;}for(const [key,t]of this.tiles)if(!needed.has(key)){t.remove();this.tiles.delete(key);}}
   const pos=p=>{const a=project(p.lat,p.lng,this.zoom);return {x:a.x-left,y:a.y-top};};
   const html=visible.map(p=>{const xy=pos(p),approx=p.position.includes('추정');if(xy.x< -150||xy.x>w+150||xy.y< -150||xy.y>h+150)return '';const radius=600/(156543.03392*Math.cos(p.lat*Math.PI/180)/2**this.zoom);return `${approx?`<span class="uncertainty-circle" style="left:${xy.x}px;top:${xy.y}px;width:${radius*2}px;height:${radius*2}px"></span>`:''}<button class="marker ${p.id===state.selected?'selected':''} ${approx?'approx':''}" style="left:${xy.x}px;top:${xy.y}px" data-marker="${p.id}" aria-pressed="${p.id===state.selected}" aria-label="${esc(p.name)}, 약 ${rangeLabel(p)}, ${esc(p.position)}"><span class="pin"><b>${p.number}</b></span><span class="marker-label">${esc(p.name)}${approx?' · 추정':''}</span></button>`;}).join('');
   const o=data.origins[state.origin],op=pos(o);$('markerLayer').innerHTML=html+`<div class="origin-marker" style="left:${op.x}px;top:${op.y}px"><b></b><span>${o.name} 출발</span></div>`;
-  $('zoomIn').disabled=this.zoom>=16;$('zoomOut').disabled=this.zoom<=10;
+  $('zoomIn').disabled=this.zoom>=16;$('zoomOut').disabled=this.zoom<=5;
  }
 }
 const tileMap=new TileMap();
@@ -113,7 +115,7 @@ $('filterButton').addEventListener('click',()=>{const show=$('extraFilters').hid
 $('reset').addEventListener('click',reset);
 ['guideButton','noticeGuide','bottomGuide'].forEach(id=>$(id).addEventListener('click',()=>showDialog('guideDialog')));
 $('clearCompare').addEventListener('click',()=>{state.compare=[];render();});$('openCompare').addEventListener('click',compare);
-function switchView(mapView){doc.querySelector('.explorer').classList.toggle('mobile-map',mapView);$('listView').setAttribute('aria-pressed',String(!mapView));$('mapView').setAttribute('aria-pressed',String(mapView));if(mapView)tileMap.fit();}
+function switchView(mapView){doc.querySelector('.explorer').classList.toggle('mobile-map',mapView);$('listView').setAttribute('aria-pressed',String(!mapView));$('mapView').setAttribute('aria-pressed',String(mapView));if(mapView){if(tileMap.isNationwide)tileMap.showNationwide();else tileMap.render();}}
 $('listView').addEventListener('click',()=>switchView(false));$('mapView').addEventListener('click',()=>switchView(true));
 doc.addEventListener('click',e=>{let t;if((t=e.target.closest('[data-category]'))){state.category=t.dataset.category;render();tileMap.fit();}
  else if((t=e.target.closest('[data-toggle]'))){const k=t.dataset.toggle;state[k]=!state[k];if(k==='natural'&&state[k])state.artificial=false;if(k==='artificial'&&state[k])state.natural=false;render();tileMap.fit();}
@@ -126,6 +128,6 @@ doc.addEventListener('click',e=>{let t;if((t=e.target.closest('[data-category]')
  else if(e.target.closest('[data-reset]'))reset();
 });
 ['detailDialog','compareDialog','guideDialog'].forEach(id=>{const d=$(id);d.addEventListener('close',()=>{const el=opener.get(d);if(el&&doc.contains(el))el.focus();});d.addEventListener('click',e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close();}});});
-render();tileMap.fit();
+render();tileMap.showNationwide();
 root.PAW_APP={state,getFiltered:()=>visible,selectPlace,toggleCompare:id=>{const r=toggleCompare(state,id);render();return r;},render,compare,detail,reset,map:tileMap,switchView};
 })(typeof window!=='undefined'?window:globalThis);
