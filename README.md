@@ -64,6 +64,10 @@ npm run preview          # dist/ 로컬 확인
 
 ## 배포
 
+GitHub Pages: https://ahyoung-lee.github.io/CHOCHO/
+
+GitHub Actions 워크플로(`.github/workflows/pages.yml`)가 `main`에 푸시될 때 테스트와 빌드를 실행하고 `dist/`를 GitHub Pages에 배포합니다. 저장소 Settings → Pages의 Source는 GitHub Actions로 설정합니다.
+
 `npm run build` 후 `dist/`를 정적 웹 호스팅에 배포할 수 있습니다. API 키 없이 OpenStreetMap 배경 지도를 이용합니다. 기존 Sites 비공개 지도는 이 프로젝트와 별도로 유지됩니다.
 
 **GitHub 저장소를 비공개로 만드는 것과 웹사이트 방문을 제한하는 것은 별개입니다.** 이 코드 자체에는 로그인 기능이 없습니다. 실제 사이트를 비공개로 운영하려면 배포 서비스의 접근 제한을 설정해야 합니다. `noindex,nofollow`는 검색 색인 설정이며 인증 기능이 아닙니다.
