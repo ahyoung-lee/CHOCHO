@@ -2,11 +2,12 @@
 'use strict';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const defaultState=()=>({origin:'hagye',category:'all',region:'all',terrace:false,time:30,strict:false,query:'',sort:'near',natural:false,artificial:false,parking:false,indoor:false,official:false,favorite:false,weight:null,knownWeight:false,day:'',favorites:[],compare:[],selected:null});
+function matchesCategory(p,category){return category==='all'||(['packing','harness'].includes(category)?p.category==='companion'&&p.companionModes?.includes(category):p.category===category);}
 function filterPlaces(data,state){
  const q=state.query.trim().toLocaleLowerCase('ko');
  return data.places.filter(p=>{
   if(p.status==='closed'||p.status==='unverified')return false;
-  if(state.category!=='all'&&p.category!==state.category)return false;
+  if(!matchesCategory(p,state.category))return false;
   if(state.region!=='all'&&p.region!==state.region)return false;
   if(state.terrace&&p.terrace!==true)return false;
   const range=p.times[state.origin];
@@ -44,16 +45,17 @@ function evidenceBadge(p){return p.level==='official'?'공식 정보 포함':p.l
 function rangeLabel(p){const t=p.times[state.origin];return `${t[0]}–${t[1]}분`;}
 function edgeBadge(p){return p.times[state.origin][1]>state.time?'<span class="badge amber">시간 경계 후보</span>':'';}
 function parkingLabel(p){return p.parking===true?'주차 가능':p.parking===false?'주차 없음':'주차 미확인';}
-function categoryLabel(p){return p.category==='playground'?'운동장 카페':'일반 동반 카페';}
+function categoryLabel(p){if(p.category==='playground')return '운동장 카페';const modes=(p.companionModes||[]).map(mode=>mode==='packing'?'동반 카페(패킹)':'동반 카페(하네스)');return modes.length?modes.join(' · '):'일반 동반 카페 · 방식 미확인';}
 function playgroundLabel(p){return p.playground===true?'운동장 있음':p.playground===false?'운동장 없음':'운동장 미확인';}
 function card(p){const selected=p.id===state.selected,fav=state.favorites.includes(p.id),comparison=state.compare.includes(p.id);return `<article class="place-card ${selected?'selected':''}" id="card-${p.id}" aria-labelledby="name-${p.id}"><div class="card-top"><span class="card-number">${String(p.number).padStart(2,'0')}</span><div class="card-title"><button class="card-name" id="name-${p.id}" data-select="${p.id}" aria-label="${esc(p.name)} 지도에서 선택" aria-pressed="${selected}">${esc(p.name)}</button><p class="card-area">${esc(p.region)} · ${esc(p.area)}</p></div><button class="favorite-button" data-fav="${p.id}" aria-label="${esc(p.name)} 저장" aria-pressed="${fav}">${fav?'♥':'♡'}</button></div><p class="card-subtitle">${esc(p.feature)}</p><div class="card-badges"><span class="badge">${evidenceBadge(p)}</span><span class="badge outline">${categoryLabel(p)}</span><span class="badge outline">${playgroundLabel(p)}</span>${edgeBadge(p)}${p.position.includes('추정')?'<span class="badge amber">위치 추정</span>':''}</div><div class="card-facts"><div class="fact"><span class="fact-icon">↗</span><div><strong>약 ${rangeLabel(p)}</strong><small>${data.origins[state.origin].name} 출발 · 계획 추정</small></div></div><div class="fact"><span class="fact-icon">↟</span><div><strong>${p.playground===true?esc(p.surface):'동반 구역 안내'}</strong><small>${esc(p.petArea)}</small></div></div><div class="fact"><span class="fact-icon">P</span><div><strong>${parkingLabel(p)}</strong><small>빈자리·요금은 재확인</small></div></div><div class="fact"><span class="fact-icon">♧</span><div><strong>${p.weightLimit===null?'체중 기준 문의':`${p.weightLimit}kg ${p.exclusive?'미만':'이하'}`}</strong><small>${p.weightLimit===null?'최신 제한 조건 문의':p.id==='mongle'?'체고 40cm 이하 안내':'입장 제한 재확인'}</small></div></div></div><p class="hour-line"><span>◷</span>${esc(p.hours)}</p><span class="conflict">${p.hoursConflict?'△ 영업시간 안내 차이 · 방문 전 재확인':'△ 임시휴무·입장 조건 재확인'}</span><div class="card-actions"><button class="detail-button" data-detail="${p.id}">정보·출처 ↗</button><a class="nav-link" href="${mapURL(p)}" target="_blank" rel="noopener noreferrer">네이버 지도 ↗</a><button class="compare-button" data-compare="${p.id}" aria-pressed="${comparison}">${comparison?'✓ 비교 선택':'+ 비교'}</button></div></article>`;}
 function render(){
  visible=filterPlaces(data,state);if(!visible.some(p=>p.id===state.selected))state.selected=visible[0]?.id||null;
- $('results').innerHTML=visible.length?visible.map(card).join(''):`<div class="empty"><strong>이 조건의 장소가 없어요.</strong><p>잔디 종류나 시간 범위를 바꿔보세요.<br>미확인 조건까지 제외하면 후보가 줄어들 수 있어요.</p><button class="outline-button" data-reset>필터 초기화 ↺</button></div>`;
+ const emptyHint=['packing','harness'].includes(state.category)?'이 동반 방식이 확인된 카페가 없거나 다른 필터에서 제외됐어요.<br>방식 미확인 카페는 전체 카페에서 확인해 주세요.':'잔디 종류나 시간 범위를 바꿔보세요.<br>미확인 조건까지 제외하면 후보가 줄어들 수 있어요.';
+ $('results').innerHTML=visible.length?visible.map(card).join(''):`<div class="empty"><strong>이 조건의 장소가 없어요.</strong><p>${emptyHint}</p><button class="outline-button" data-reset>필터 초기화 ↺</button></div>`;
  $('resultCount').textContent=visible.length;
  const eligible=filterPlaces(data,{...state,category:'all'});
  doc.querySelectorAll('[data-category]').forEach(el=>el.setAttribute('aria-pressed',String(el.dataset.category===state.category)));
- doc.querySelectorAll('[data-category-count]').forEach(el=>el.textContent=el.dataset.categoryCount==='all'?eligible.length:eligible.filter(p=>p.category===el.dataset.categoryCount).length);
+ doc.querySelectorAll('[data-category-count]').forEach(el=>el.textContent=eligible.filter(p=>matchesCategory(p,el.dataset.categoryCount)).length);
  $('resultSummary').textContent=`${data.origins[state.origin].name} 출발 · ${state.strict?'추정 상한':'추정 하한'} ${state.time}분 이내`;
  $('mapCount').textContent=`${visible.length}곳 표시`;
  const count=['natural','artificial','parking','indoor','official','favorite','terrace','strict','knownWeight'].filter(k=>state[k]).length+Number(state.weight!==null)+Number(state.day!=='')+Number(state.region!=='all')+Number(state.category!=='all');
