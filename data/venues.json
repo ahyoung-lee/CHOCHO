@@ -15024,6 +15024,177 @@
       "terrace": null,
       "registerNumber": null,
       "registerIndustry": null
+    },
+    {
+      "id": "large-dog-mokkoji",
+      "number": 244,
+      "name": "모꼬지댕카페",
+      "area": "화도읍",
+      "region": "남양주",
+      "address": "경기 남양주시 화도읍 모꼬지로17번길 18",
+      "phone": null,
+      "lat": null,
+      "lng": null,
+      "position": "지도 좌표 미확인",
+      "positionNote": "업체 소개의 도로명 주소를 확인했습니다. 건물 좌표와 출입구는 미확인이며 네이버 지도 링크에서 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "천연잔디",
+      "outdoor": true,
+      "indoor": null,
+      "parking": true,
+      "parkingText": "주차장 안내 · 무료 여부 및 빈자리 미확인",
+      "dogRule": "소형견 구역은 11kg 이하·체고 35cm 이하, 그 외 반려견은 중·대형견 운동장 이용 안내. 위협적 행동을 보이는 반려견은 제한.",
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "중학생 이상 입장 안내 · 유모차 영아 예외 조건 문의",
+      "hours": "11:00–22:00 · 화요일 휴무",
+      "hoursNote": "업체 소개 등록 시간이며 임시휴무·운동장 개방시간은 방문 전 확인하세요.",
+      "schedule": [
+        [
+          660,
+          1320
+        ],
+        [
+          660,
+          1320
+        ],
+        null,
+        [
+          660,
+          1320
+        ],
+        [
+          660,
+          1320
+        ],
+        [
+          660,
+          1320
+        ],
+        [
+          660,
+          1320
+        ]
+      ],
+      "breaks": null,
+      "hoursConflict": false,
+      "fee": "음료·반려견 입장료 최신 금액 문의",
+      "feeNote": "최신 입장료와 주문 조건 확인 필요",
+      "feature": "천연잔디 소형견·중대형견 분리 운동장과 카페",
+      "yard": "소형견 운동장과 중·대형견 운동장 분리",
+      "evidence": "2026-10-16 반려생활 업체 소개 및 이용안내에서 카페 운영과 중·대형견 분리 운동장 안내를 확인했습니다. 전화·현장 확인은 하지 않았습니다.",
+      "level": "listing",
+      "checks": [
+        "오늘 영업 및 중·대형견 운동장 개방 여부",
+        "반려견 체중·견종·접종 조건과 동반 허용 구역",
+        "주차·입장료·카페 주문 조건"
+      ],
+      "sources": [
+        {
+          "name": "반려생활 · 모꼬지댕카페 업체 소개 및 운동장 이용안내",
+          "url": "https://www.ban-life.com/store/view?id=24735&type=s",
+          "type": "업체 소개·이용규정 · 2026-10-16 확인"
+        }
+      ],
+      "category": "playground",
+      "playground": true,
+      "petArea": "카페·운동장 동반 구역은 업체에 재확인",
+      "status": "listed",
+      "checkedAt": "2026-10-16",
+      "largeDogPlayground": true,
+      "largeDogPlaygroundEvidence": "업체 이용안내의 소형견/중·대형견 분리 운동장 명시",
+      "terrace": null
+    },
+    {
+      "id": "large-dog-pinetree",
+      "number": 245,
+      "name": "파인트리숲",
+      "area": "향남읍",
+      "region": "화성",
+      "address": "경기 화성시 향남읍 토성로 383-43",
+      "phone": null,
+      "lat": null,
+      "lng": null,
+      "position": "지도 좌표 미확인",
+      "positionNote": "업체 소개의 도로명 주소를 확인했습니다. 건물 좌표와 출입구는 미확인이며 네이버 지도 링크에서 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "천연잔디",
+      "outdoor": true,
+      "indoor": null,
+      "parking": true,
+      "parkingText": "주차장 안내 · 무료 여부 및 빈자리 미확인",
+      "dogRule": "대형견 동반 및 30kg 이하 표기. B동 펫카페·소형견/중대형견 분리 운동장 이용. 일반 베이커리카페는 반려견 출입 제한.",
+      "weightLimit": 30,
+      "exclusive": false,
+      "kids": "어린이 동반 조건 문의",
+      "hours": "평일·일요일 10:00–20:00 / 토요일 10:00–21:00",
+      "hoursNote": "업체 소개 등록 시간이며 임시휴무·운동장 개방시간은 방문 전 확인하세요.",
+      "schedule": [
+        [
+          600,
+          1200
+        ],
+        [
+          600,
+          1200
+        ],
+        [
+          600,
+          1200
+        ],
+        [
+          600,
+          1200
+        ],
+        [
+          600,
+          1200
+        ],
+        [
+          600,
+          1200
+        ],
+        [
+          600,
+          1260
+        ]
+      ],
+      "breaks": null,
+      "hoursConflict": false,
+      "fee": "음료·반려견 입장료 최신 금액 문의",
+      "feeNote": "파인트리숲은 1인 1음료 및 반려견 입장료 안내",
+      "feature": "천연잔디 소형견·중대형견 분리 운동장과 카페",
+      "yard": "소형견 운동장과 중·대형견 운동장 분리",
+      "evidence": "2026-10-16 반려생활 업체 소개 및 이용안내에서 카페 운영과 중·대형견 분리 운동장 안내를 확인했습니다. 전화·현장 확인은 하지 않았습니다.",
+      "level": "listing",
+      "checks": [
+        "오늘 영업 및 중·대형견 운동장 개방 여부",
+        "반려견 체중·견종·접종 조건과 동반 허용 구역",
+        "주차·입장료·카페 주문 조건"
+      ],
+      "sources": [
+        {
+          "name": "반려생활 · 파인트리숲 업체 소개 및 운동장 이용안내",
+          "url": "https://www.ban-life.com/store/view?id=26746&type=s",
+          "type": "업체 소개·이용규정 · 2026-10-16 확인"
+        }
+      ],
+      "category": "playground",
+      "playground": true,
+      "petArea": "B동 펫카페 및 펫운동장 · 일반 베이커리카페 출입 제한",
+      "status": "listed",
+      "checkedAt": "2026-10-16",
+      "largeDogPlayground": true,
+      "largeDogPlaygroundEvidence": "업체 이용안내의 소형견/중·대형견 분리 운동장 명시",
+      "terrace": null
     }
   ],
   "version": 1,
