@@ -61,7 +61,7 @@ function categoryLabel(p){if(p.category==='restaurant')return '동반 음식점'
 function playgroundLabel(p){return p.playground===true?'운동장 있음':p.playground===false?'운동장 없음':'운동장 미확인';}
 function card(p){const selected=p.id===state.selected,fav=state.favorites.includes(p.id),comparison=state.compare.includes(p.id);return `<article class="place-card ${selected?'selected':''}" id="card-${p.id}" aria-labelledby="name-${p.id}"><div class="card-top"><span class="card-number">${String(p.number).padStart(2,'0')}</span><div class="card-title"><button class="card-name" id="name-${p.id}" data-select="${p.id}" aria-label="${esc(p.name)} 지도에서 선택" aria-pressed="${selected}">${esc(p.name)}</button><p class="card-area">${esc(p.region)} · ${esc(p.area)}</p></div><button class="favorite-button" data-fav="${p.id}" aria-label="${esc(p.name)} 저장" aria-pressed="${fav}">${fav?'♥':'♡'}</button></div><p class="card-subtitle">${esc(p.feature)}</p><div class="card-badges"><span class="badge">${evidenceBadge(p)}</span><span class="badge outline">${categoryLabel(p)}</span><span class="badge outline">${playgroundLabel(p)}</span>${edgeBadge(p)}${p.position.includes('추정')?'<span class="badge amber">위치 추정</span>':''}</div><div class="card-facts"><div class="fact"><span class="fact-icon">↗</span><div><strong>${travelLabel(p)}</strong><small>${esc(data.origins[state.origin].name)} 출발 · ${['current','custom'].includes(state.origin)||state.time===0?'직선거리 기준':'계획 추정'}</small></div></div><div class="fact"><span class="fact-icon">↟</span><div><strong>${p.playground===true?esc(p.surface):'동반 구역 안내'}</strong><small>${esc(p.petArea)}</small></div></div><div class="fact"><span class="fact-icon">P</span><div><strong>${parkingLabel(p)}</strong><small>빈자리·요금은 재확인</small></div></div><div class="fact"><span class="fact-icon">♧</span><div><strong>${p.weightLimit===null?'체중 기준 문의':`${p.weightLimit}kg ${p.exclusive?'미만':'이하'}`}</strong><small>${p.playgroundWeightLimit!==undefined?'운동장만 '+p.playgroundWeightLimit+'kg '+(p.playgroundWeightExclusive?'미만':'이하'):p.weightLimit===null?'최신 제한 조건 문의':p.id==='mongle'?'체고 40cm 이하 안내':'입장 제한 재확인'}</small></div></div></div><p class="hour-line"><span>◷</span>${esc(p.hours)}</p><span class="conflict">${p.hoursConflict?'△ 영업시간 안내 차이 · 방문 전 재확인':'△ 임시휴무·입장 조건 재확인'}</span><div class="card-actions"><button class="detail-button" data-detail="${p.id}">정보·출처 ↗</button><a class="nav-link" href="${mapURL(p)}" target="_blank" rel="noopener noreferrer">네이버 지도 ↗</a><button class="compare-button" data-compare="${p.id}" aria-pressed="${comparison}">${comparison?'✓ 비교 선택':'+ 비교'}</button></div></article>`;}
 function render(){
- $('time').disabled=['current','custom'].includes(state.origin);$('strict').disabled=['current','custom'].includes(state.origin)||state.time===0;
+ $('time').disabled=['current','custom'].includes(state.origin);
  $('timeField').hidden=['current','custom'].includes(state.origin);
  $('time').value=['current','custom'].includes(state.origin)?'0':String(state.time);
  $('time').title=['current','custom'].includes(state.origin)?'현재 위치·직접 입력한 출발지는 이동시간 대신 직선거리를 표시합니다.':'';
@@ -76,8 +76,6 @@ function render(){
  const mapped=visible.filter(hasCoordinates).length;
  $('mapCount').textContent=`지도 ${mapped}곳 · 목록 ${visible.length}곳`;
  $('locationCoverage').textContent=mapped<visible.length?`주소만 확인된 ${visible.length-mapped}곳은 목록과 네이버 지도 링크로 확인할 수 있어요. 좌표를 확인하기 전에는 지도 핀과 거리를 표시하지 않습니다.`:'';
- const count=['natural','artificial','parking','indoor','official','favorite','terrace','strict','knownWeight'].filter(k=>state[k]).length+Number(state.weight!==null)+Number(state.day!=='')+Number(state.region!=='all')+Number(state.category!=='all');
- $('filterCount').textContent=count?count:'';
  doc.querySelectorAll('[data-toggle]').forEach(el=>el.setAttribute('aria-pressed',String(state[el.dataset.toggle])));
  const tray=$('compareTray');tray.hidden=!state.compare.length;doc.body.classList.toggle('has-tray',!!state.compare.length);
  $('compareCount').textContent=`비교할 장소 ${state.compare.length} / 3`;$('compareNames').textContent=state.compare.map(id=>byId(id).name).join(' · ');$('openCompare').disabled=state.compare.length<2;
@@ -93,7 +91,7 @@ function compare(){if(state.compare.length<2){toast('비교할 장소를 2곳 �
  const rows=[['장소 유형',p=>`${categoryLabel(p)}<small>${playgroundLabel(p)}</small>`],['동반 구역',p=>esc(p.petArea)],['주소',p=>esc(p.address)],['예상 이동',p=>`${travelLabel(p)}<small>${esc(data.origins[state.origin].name)} 출발 · ${['current','custom'].includes(state.origin)||state.time===0?'직선거리 기준':'수동 추정'}</small>${edgeBadge(p)}`],['운동장',p=>esc(p.yard)],['영업시간',p=>`${esc(p.hours)}<small>${esc(p.hoursNote)}</small>`],['주차',p=>`${esc(p.parkingText)}<small>빈자리·요금은 현장 확인</small>`],['반려견 입장',p=>esc(p.dogRule)],['어린이 입장',p=>esc(p.kids)],['이용요금',p=>`${esc(p.fee)}<small>${esc(p.feeNote)}</small>`],['위치 정확도',p=>`${esc(p.position)}<small>${esc(p.positionNote)}</small>`],['운영 근거',p=>esc(p.evidence)],['재확인 항목',p=>`<ul>${p.checks.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`],['지도·문의',p=>`<a href="${mapURL(p)}" target="_blank" rel="noopener noreferrer">네이버 지도 ↗</a><br>${phoneLink(p)}`]];
  $('compareContent').innerHTML=`<div class="table-scroll" tabindex="0" aria-label="장소 비교표. 모바일에서 좌우로 스크롤하세요."><table><thead><tr><th scope="col">비교 항목</th>${ps.map(p=>`<th scope="col">${esc(p.name)}</th>`).join('')}</tr></thead><tbody>${rows.map(([name,fn])=>`<tr><th scope="row">${name}</th>${ps.map(p=>`<td>${fn(p)}</td>`).join('')}</tr>`).join('')}</tbody></table></div><p class="compare-note">모바일에서는 표를 좌우로 밀어 비교할 수 있어요. 요금·운영시간·입장 조건은 방문 전 재확인하세요.</p>`;showDialog('compareDialog');
 }
-function reset(){const favorites=state.favorites,comparison=state.compare,origin=state.origin;locationVersion++;locationPending=false;clearOriginSearch();$('origin').value=data.origins[origin].name;$('locationStatus').textContent=`조건을 초기화했어요. 출발지는 ${data.origins[origin].name}입니다.`;Object.assign(state,defaultState(),{favorites,compare:comparison,origin});$('time').value='0';$('region').value='all';$('search').value='';$('sort').value='near';$('weight').value='';$('day').value='';$('strict').checked=false;$('knownWeight').checked=false;render();if(['current','custom'].includes(origin))tileMap.focus(data.origins[origin]);else tileMap.showNationwide();}
+function reset(){const favorites=state.favorites,comparison=state.compare,origin=state.origin;locationVersion++;locationPending=false;clearOriginSearch();$('origin').value=data.origins[origin].name;$('locationStatus').textContent=`조건을 초기화했어요. 출발지는 ${data.origins[origin].name}입니다.`;Object.assign(state,defaultState(),{favorites,compare:comparison,origin});$('time').value='0';$('search').value='';$('sort').value='near';render();if(['current','custom'].includes(origin))tileMap.focus(data.origins[origin]);else tileMap.showNationwide();}
 class TileMap{
  constructor(){this.center={lat:35.75,lng:128.25};this.zoom=6;this.isNationwide=true;this.tiles=new Map();this.tileErrors=0;this.tileLoaded=false;this.pointers=new Map();this.dragged=false;this.last=null;this.setup();}
  size(){const r=$('map').getBoundingClientRect();return {w:r.width||600,h:r.height||500};}
@@ -134,7 +132,7 @@ function clearOriginSearch(){originSearchController?.abort();originCandidates=[]
 function applyOrigin(key,point){
  locationVersion++;locationPending=false;clearOriginSearch();
  if(point)data.origins[key]=point;
- state.origin=key;$('origin').value=data.origins[key].name;state.strict=false;$('strict').checked=false;
+ state.origin=key;$('origin').value=data.origins[key].name;state.strict=false;
  $('locationStatus').textContent=key==='custom'?`${point.name}을 출발지로 적용했어요.${point.approximate?' 도로·지역의 참고 위치입니다.':''} 거리는 직선거리 기준이에요.`:'선택한 출발지를 적용했어요.';
  render();tileMap.focus(data.origins[key]);
 }
@@ -170,21 +168,18 @@ function requestLocation(){
   const {latitude:lat,longitude:lng}=position.coords;
   if(!Number.isFinite(lat)||!Number.isFinite(lng)||Math.abs(lat)>90||Math.abs(lng)>180){fail();return;}
   data.origins.current={name:'현재 위치',lat:Math.max(-85.051128,Math.min(85.051128,lat)),lng};
-  state.origin='current';$('origin').value='현재 위치';state.strict=false;$('strict').checked=false;
+  state.origin='current';$('origin').value='현재 위치';state.strict=false;
   $('locationStatus').textContent='';
   render();tileMap.focus(data.origins.current);
  },error=>{if(version!==locationVersion)return;state.origin=previous;fail(error);},{enableHighAccuracy:true,timeout:12000,maximumAge:60000});
 }
-for(const [id,key,fn]of [['region','region',x=>x],['time','time',Number],['sort','sort',x=>x],['day','day',x=>x]])$(id).addEventListener('change',()=>{state[key]=fn($(id).value);if(id==='time'&&state.time===0){state.strict=false;$('strict').checked=false;}render();if(id==='time')tileMap.fit();});
+for(const [id,key,fn]of [['time','time',Number],['sort','sort',x=>x]])$(id).addEventListener('change',()=>{state[key]=fn($(id).value);if(id==='time'&&state.time===0){state.strict=false;}render();if(id==='time')tileMap.fit();});
 $('origin').addEventListener('input',()=>{locationVersion++;locationPending=false;clearOriginSearch();$('locationStatus').textContent='입력한 출발지를 적용하려면 검색해 주세요.';});
 $('origin').addEventListener('change',()=>{const query=$('origin').value.trim();if(['현재 위치','current',...Object.keys(data.origins),...Object.values(data.origins).filter(p=>p.name!=='현재 위치').map(p=>p.name)].includes(query))submitOrigin();});
 $('origin').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();submitOrigin();}else if(e.key==='Escape')clearOriginSearch();});
 $('originSearch').addEventListener('click',submitOrigin);
 $('useCurrent').addEventListener('click',requestLocation);
 $('search').addEventListener('input',()=>{state.query=$('search').value;render();});
-$('strict').addEventListener('change',()=>{state.strict=$('strict').checked;render();tileMap.fit();});
-$('knownWeight').addEventListener('change',()=>{state.knownWeight=$('knownWeight').checked;render();});
-$('weight').addEventListener('input',()=>{const v=$('weight').value,n=Number(v);state.weight=v.trim()===''||!Number.isFinite(n)||n<0?null:n;render();});
 $('reset').addEventListener('click',reset);
 ['guideButton','noticeGuide','bottomGuide'].forEach(id=>$(id).addEventListener('click',()=>showDialog('guideDialog')));
 $('clearCompare').addEventListener('click',()=>{state.compare=[];render();});$('openCompare').addEventListener('click',compare);
