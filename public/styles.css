@@ -8,5 +8,6 @@
 
 .map-controls #nationwide{font-size:11px;font-weight:650;color:var(--brand)}
 .map.national-overview .marker-label{display:none}
+.map.national-overview .marker.selected .marker-label{display:block}
 .category-help{font-size:11px;color:var(--muted);margin:-5px 0 16px}
 @media(max-width:760px){.category-tabs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.category-tabs button{width:100%;white-space:nowrap}.category-help{font-size:10px}}

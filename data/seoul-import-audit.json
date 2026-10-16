@@ -1,0 +1,3414 @@
+{
+  "checkedAt": "2026-10-16",
+  "source": "https://www.foodsafetykorea.go.kr/portal/petKorea.do",
+  "decisions": [
+    {
+      "registerNumber": 1,
+      "name": "(주) 세녹코리아",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 2,
+      "name": "(주) 예빈당",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 3,
+      "name": "(주)커피 리브레",
+      "decision": "imported",
+      "id": "seoul-mfds-3",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 4,
+      "name": "(주)커피빈코리아 몽촌토성역점",
+      "decision": "imported",
+      "id": "seoul-mfds-4",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 5,
+      "name": "(주)커피빈코리아 송파파크하비오점",
+      "decision": "imported",
+      "id": "seoul-mfds-5",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 6,
+      "name": "(주)툭툭누들타이(티티그릴)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 7,
+      "name": "(주)플레이버타운",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 8,
+      "name": "213점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 9,
+      "name": "23플래터",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 10,
+      "name": "79파운야드 목동41타워점",
+      "decision": "imported",
+      "id": "seoul-mfds-10",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 11,
+      "name": "97.7화씨",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 12,
+      "name": "9램(9ram)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 13,
+      "name": "Always on(올웨이즈온)",
+      "decision": "imported",
+      "id": "seoul-mfds-13",
+      "reason": "카페 소개 자료와 공식 등록 대조"
+    },
+    {
+      "registerNumber": 14,
+      "name": "DRIFTWOOD(드리프트우드)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 15,
+      "name": "HeyVERT",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 16,
+      "name": "Hrr(흐르르)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 17,
+      "name": "LUV PLUTO 러브 플루토",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 18,
+      "name": "OU_TOPOS(우토포스)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 19,
+      "name": "SECOND BREATH(세컨브레스)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 20,
+      "name": "Spring moment(스프링 모먼트)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 21,
+      "name": "errd(에르디)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 22,
+      "name": "flot(플로)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 23,
+      "name": "hebe coffee(헤베 커피)",
+      "decision": "imported",
+      "id": "seoul-mfds-23",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 24,
+      "name": "pold coffee(폴드커피)",
+      "decision": "imported",
+      "id": "seoul-mfds-24",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 25,
+      "name": "the whatever(더 왓에버)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 26,
+      "name": "ttitto 띠또분식",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 27,
+      "name": "生맥줏집",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 28,
+      "name": "강릉장칼 신내역점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 29,
+      "name": "개인공간",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 30,
+      "name": "고램지",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 31,
+      "name": "골목에 핀 생화",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 32,
+      "name": "공책",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 33,
+      "name": "과일 데일리프룻 금천점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 34,
+      "name": "구십이도",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 35,
+      "name": "군자가라지(gunja garage)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 36,
+      "name": "굿피플초이스",
+      "decision": "imported",
+      "id": "seoul-mfds-36",
+      "reason": "카페 소개 자료와 공식 등록 대조"
+    },
+    {
+      "registerNumber": 37,
+      "name": "그라메도(GRMD)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 38,
+      "name": "그랑웨이브(GRANWAVE)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 39,
+      "name": "그레베르",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 40,
+      "name": "그로그(GROG)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 41,
+      "name": "그루버스",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 42,
+      "name": "그리팅(Greetin')",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 43,
+      "name": "그린룸 GRIN ROOM",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 44,
+      "name": "금수연남",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 45,
+      "name": "금은방",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 46,
+      "name": "기절초풍물닭갈비",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 47,
+      "name": "까치집",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 48,
+      "name": "꼬메",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 49,
+      "name": "꼬미다 큐큐큐 (Comida QQQ)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 50,
+      "name": "꼼삐(compi)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 51,
+      "name": "꾸며주는언니＆화창한오후cafe",
+      "decision": "imported",
+      "id": "seoul-mfds-51",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 52,
+      "name": "나니아(narnia)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 53,
+      "name": "나의 모양(my shape)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 54,
+      "name": "네가 있어 고마워",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 55,
+      "name": "네임이즈마빈(NAME iS MAVIN) 망원한강점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 56,
+      "name": "노스티 상일점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 57,
+      "name": "놀면뭐하개",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 58,
+      "name": "누메로 뜨레쓰",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 59,
+      "name": "누메로도스",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 60,
+      "name": "누부크",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 61,
+      "name": "누야그",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 62,
+      "name": "뉴케이스 망원본점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 63,
+      "name": "늘",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 64,
+      "name": "능동타코집",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 65,
+      "name": "닐",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 66,
+      "name": "다니엘 카페&펍 by waff",
+      "decision": "imported",
+      "id": "seoul-mfds-66",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 67,
+      "name": "닥터로빈 서래마을점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 68,
+      "name": "닷",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 69,
+      "name": "댕크(Dank)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 70,
+      "name": "도그피에스",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 71,
+      "name": "도라보울 신사",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 72,
+      "name": "도주",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 73,
+      "name": "동막역",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 74,
+      "name": "두유라이크잇",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 75,
+      "name": "디 진테제 카페",
+      "decision": "imported",
+      "id": "seoul-mfds-75",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 76,
+      "name": "디아일",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 77,
+      "name": "디엠 합정점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 78,
+      "name": "디프(Diff)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 79,
+      "name": "라라브레드&키친 수유",
+      "decision": "imported",
+      "id": "seoul-mfds-79",
+      "reason": "카페 소개 자료와 공식 등록 대조"
+    },
+    {
+      "registerNumber": 80,
+      "name": "라아(Raah)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 81,
+      "name": "라파리나 금호",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 82,
+      "name": "라프레아(Lafrea)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 83,
+      "name": "랑게(Langhe)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 84,
+      "name": "레오띠(LEOTTI)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 85,
+      "name": "레이업(LAYUP)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 86,
+      "name": "레인웨이커피",
+      "decision": "imported",
+      "id": "seoul-mfds-86",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 87,
+      "name": "레츠잇치킨",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 88,
+      "name": "레커레커(LECKER LECKER)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 89,
+      "name": "레코드피자 천호점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 90,
+      "name": "로데오라",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 91,
+      "name": "로우앵글클럽(LOW ANGLE CLUB)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 92,
+      "name": "루이지",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 93,
+      "name": "루트로우(rootraw)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 94,
+      "name": "룽디저트",
+      "decision": "imported",
+      "id": "seoul-mfds-94",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 95,
+      "name": "르베지왕",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 96,
+      "name": "리몬 서울",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 97,
+      "name": "리브레리(Librairie)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 98,
+      "name": "리요리요",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 99,
+      "name": "리크커피클럽",
+      "decision": "imported",
+      "id": "seoul-mfds-99",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 100,
+      "name": "리트 하우스(Lit Haus)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 101,
+      "name": "리프레셔스",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 102,
+      "name": "리플렉트",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 103,
+      "name": "림보",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 104,
+      "name": "마그넷 케이크룸(MAGNETTT-cakeroom)",
+      "decision": "imported",
+      "id": "seoul-mfds-104",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 105,
+      "name": "마나",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 106,
+      "name": "마더오프라인(MOTHER OFFLINE)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 107,
+      "name": "마우디(Maudie)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 108,
+      "name": "마이닥스",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 109,
+      "name": "마이즈루",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 110,
+      "name": "망고정(월계점)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 111,
+      "name": "망깍지",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 112,
+      "name": "머치커피(muchcoffee)",
+      "decision": "imported",
+      "id": "seoul-mfds-112",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 113,
+      "name": "먹태의꿈",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 114,
+      "name": "먼치스(MUNCHEZ)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 115,
+      "name": "멍뭉다방",
+      "decision": "imported",
+      "id": "seoul-mfds-115",
+      "reason": "카페 소개 자료와 공식 등록 대조"
+    },
+    {
+      "registerNumber": 116,
+      "name": "멍지트",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 117,
+      "name": "메쉬커피(Mesh Coffee-24)",
+      "decision": "imported",
+      "id": "seoul-mfds-117",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 118,
+      "name": "메이 베이크",
+      "decision": "imported",
+      "id": "seoul-mfds-118",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 119,
+      "name": "메이플탑",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 120,
+      "name": "메클러 커피",
+      "decision": "imported",
+      "id": "seoul-mfds-120",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 121,
+      "name": "멜리",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 122,
+      "name": "명동왕만두칼국수",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 123,
+      "name": "모르겐글루트(Morgenglut)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 124,
+      "name": "모모코 부엌",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 125,
+      "name": "모스가든",
+      "decision": "imported",
+      "id": "seoul-mfds-125",
+      "reason": "카페 소개 자료와 공식 등록 대조"
+    },
+    {
+      "registerNumber": 126,
+      "name": "모안",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 127,
+      "name": "모프(mof)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 128,
+      "name": "목목",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 129,
+      "name": "몬탁 방배점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 130,
+      "name": "무이로커피(MUIRO)",
+      "decision": "imported",
+      "id": "seoul-mfds-130",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 131,
+      "name": "묵골쌈밥 본점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 132,
+      "name": "문전성시",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 133,
+      "name": "문타로",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 134,
+      "name": "뭇로스터리",
+      "decision": "imported",
+      "id": "seoul-mfds-134",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 135,
+      "name": "뭉치",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 136,
+      "name": "미뉴엣",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 137,
+      "name": "미니멈올데이",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 138,
+      "name": "미미미 신논현",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 139,
+      "name": "미열 미아사거리 혼술바",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 140,
+      "name": "미츠바",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 141,
+      "name": "밀거래",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 142,
+      "name": "밀리언 빌리지 커피 바(MILLION VILLAGE COFFEE BAR)",
+      "decision": "imported",
+      "id": "seoul-mfds-142",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 143,
+      "name": "밀앤루",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 144,
+      "name": "밉 MIP",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 145,
+      "name": "밍기적",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 146,
+      "name": "바르세울로나",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 147,
+      "name": "바밤바(Bar Bam Bar)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 148,
+      "name": "바크바",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 149,
+      "name": "발디 Waldi",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 150,
+      "name": "버우드 Burwood",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 151,
+      "name": "버터럼부티크",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 152,
+      "name": "베란다",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 153,
+      "name": "베리하운드(BERRY HOUND)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 154,
+      "name": "보마켓 서울숲점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 155,
+      "name": "본솔커피(연희점)",
+      "decision": "imported",
+      "id": "seoul-mfds-155",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 156,
+      "name": "봄과여름사이",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 157,
+      "name": "봉맨션",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 158,
+      "name": "북가좌 거기",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 159,
+      "name": "브라운씨",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 160,
+      "name": "브로벨커피 로스터리",
+      "decision": "imported",
+      "id": "seoul-mfds-160",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 161,
+      "name": "비로소 하우스",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 162,
+      "name": "비비드(ViVi:D)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 163,
+      "name": "비비컬",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 164,
+      "name": "빌라드블루",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 165,
+      "name": "빌라레코드 바(Villa Records Bar)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 166,
+      "name": "빠루(BBARU)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 167,
+      "name": "빵쌤 송파점(BbangSsaem)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 168,
+      "name": "사랑은 초록",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 169,
+      "name": "사랑호 막회",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 170,
+      "name": "사루",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 171,
+      "name": "사루",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 172,
+      "name": "사직커피",
+      "decision": "imported",
+      "id": "seoul-mfds-172",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 173,
+      "name": "삼보 수제갈비",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 174,
+      "name": "삼삼이네 홍은동점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 175,
+      "name": "서아진 루프탑 송리단길점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 176,
+      "name": "서울안심",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 177,
+      "name": "서초커피작업실(Gilmajoong-gil)",
+      "decision": "imported",
+      "id": "seoul-mfds-177",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 178,
+      "name": "서촌다과방",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 179,
+      "name": "선유슬로우(sunu.slow)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 180,
+      "name": "설곡랩커피로스터스",
+      "decision": "imported",
+      "id": "seoul-mfds-180",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 181,
+      "name": "세러데이즈(Saturdays)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 182,
+      "name": "소밧(SOVAT)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 183,
+      "name": "소서(SOSEO)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 184,
+      "name": "송경솥밥",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 185,
+      "name": "송리단양조장",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 186,
+      "name": "송주불냉면 영등포점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 187,
+      "name": "숙이네닭한마리칼국수",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 188,
+      "name": "순서",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 189,
+      "name": "술인",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 190,
+      "name": "숩숩(sup sup)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 191,
+      "name": "숲담",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 192,
+      "name": "숲속다락",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 193,
+      "name": "쉘위커피(shall we coffee)",
+      "decision": "imported",
+      "id": "seoul-mfds-193",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 194,
+      "name": "스이",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 195,
+      "name": "스킵(SKIPPP)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 196,
+      "name": "스태픽스(staff picks)",
+      "decision": "imported",
+      "id": "seoul-mfds-196",
+      "reason": "카페 소개 자료와 공식 등록 대조"
+    },
+    {
+      "registerNumber": 197,
+      "name": "스테레오커피",
+      "decision": "imported",
+      "id": "seoul-mfds-197",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 198,
+      "name": "스테이(sta2)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 199,
+      "name": "스톤앤워터(STONE+WATER)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 200,
+      "name": "스틸하우스(STILL HAUS)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 201,
+      "name": "스페이스 노들 케이",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 202,
+      "name": "슬레이트 하우스",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 203,
+      "name": "슬루센(SLUSSEN)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 204,
+      "name": "시아 아틀리에(sia atelier)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 205,
+      "name": "시에로시네마 CieloCinema",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 206,
+      "name": "시엠프레꼬모도밍고",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 207,
+      "name": "시칠리 블루스(Sicily Blues)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 208,
+      "name": "심플매터 커피 로스터스 SIMPLE MATTER",
+      "decision": "imported",
+      "id": "seoul-mfds-208",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 209,
+      "name": "싱글벙글",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 210,
+      "name": "써머레인",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 211,
+      "name": "쏘뇨 하우스",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 212,
+      "name": "씨케이브(SEA CAVE)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 213,
+      "name": "씬(scene)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 214,
+      "name": "아리",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 215,
+      "name": "아우어루꼴라",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 216,
+      "name": "아워 베스트 시즌(our best season)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 217,
+      "name": "아일(isle)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 218,
+      "name": "아지브런치",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 219,
+      "name": "아키비스트 송파",
+      "decision": "imported",
+      "id": "seoul-mfds-219",
+      "reason": "카페 소개 자료와 공식 등록 대조"
+    },
+    {
+      "registerNumber": 220,
+      "name": "아키비스트(Archivist)",
+      "decision": "imported",
+      "id": "seoul-mfds-220",
+      "reason": "카페 소개 자료와 공식 등록 대조"
+    },
+    {
+      "registerNumber": 221,
+      "name": "알로하터틀",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 222,
+      "name": "애견동반카페 멍",
+      "decision": "imported",
+      "id": "seoul-mfds-222",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 223,
+      "name": "앤드에이",
+      "decision": "imported",
+      "id": "seoul-mfds-223",
+      "reason": "카페 소개 자료와 공식 등록 대조"
+    },
+    {
+      "registerNumber": 224,
+      "name": "야미스터피",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 225,
+      "name": "얌얌플레이트",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 226,
+      "name": "어딕티브",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 227,
+      "name": "어라운드 히어",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 228,
+      "name": "어로드사이드",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 229,
+      "name": "어보블(abovl)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 230,
+      "name": "언더바닐라",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 231,
+      "name": "언톨드(UNTOLD)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 232,
+      "name": "에놀라 톤",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 233,
+      "name": "에드 로스트웍스 Ed roastworks",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 234,
+      "name": "에떼(ete)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 235,
+      "name": "에이치비씨(HBC)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 236,
+      "name": "에이치앰퍼샌드",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 237,
+      "name": "에프터나인(AFTER9)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 238,
+      "name": "엔바이콘",
+      "decision": "imported",
+      "id": "seoul-mfds-238",
+      "reason": "카페 소개 자료와 공식 등록 대조"
+    },
+    {
+      "registerNumber": 239,
+      "name": "엘마드레",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 240,
+      "name": "여름집",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 241,
+      "name": "여의도커피",
+      "decision": "imported",
+      "id": "seoul-mfds-241",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 242,
+      "name": "연미정",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 243,
+      "name": "영동포차나",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 244,
+      "name": "영원",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 245,
+      "name": "예고없이",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 246,
+      "name": "오'블루",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 247,
+      "name": "오늘통닭 오금점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 248,
+      "name": "오드커피하우스(odee coffee house)",
+      "decision": "imported",
+      "id": "seoul-mfds-248",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 249,
+      "name": "오류동역4번출구 카페",
+      "decision": "imported",
+      "id": "seoul-mfds-249",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 250,
+      "name": "오르노 마포본점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 251,
+      "name": "오르노 목동점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 252,
+      "name": "오르노 서울역점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 253,
+      "name": "오르노 성수점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 254,
+      "name": "오르노 합정점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 255,
+      "name": "오르노 합정점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 256,
+      "name": "오베뉴 한남",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 257,
+      "name": "오스테리아 오알오",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 258,
+      "name": "오아시스",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 259,
+      "name": "오아제",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 260,
+      "name": "오엠잼(OMJAM)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 261,
+      "name": "오터스(otters)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 262,
+      "name": "옥고집",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 263,
+      "name": "옥상나들이",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 264,
+      "name": "온류",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 265,
+      "name": "올어라운드유(ALL AROUND YOU)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 266,
+      "name": "왕스덕",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 267,
+      "name": "원써드",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 268,
+      "name": "원일 양념 닭발",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 269,
+      "name": "위 아더 퓨쳐",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 270,
+      "name": "윌리엄커피",
+      "decision": "imported",
+      "id": "seoul-mfds-270",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 271,
+      "name": "유메노조미케이터링",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 272,
+      "name": "유앤미블루",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 273,
+      "name": "율목커피",
+      "decision": "imported",
+      "id": "seoul-mfds-273",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 274,
+      "name": "이리카페",
+      "decision": "imported",
+      "id": "seoul-mfds-274",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 275,
+      "name": "이알커피(ER coffee)",
+      "decision": "imported",
+      "id": "seoul-mfds-275",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 276,
+      "name": "이이오(eeo)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 277,
+      "name": "이인",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 278,
+      "name": "이지화이트브레드 장위뉴타운점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 279,
+      "name": "이포크",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 280,
+      "name": "인뚜즈 커피하우스",
+      "decision": "imported",
+      "id": "seoul-mfds-280",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 281,
+      "name": "인투커피-Into coffee",
+      "decision": "imported",
+      "id": "seoul-mfds-281",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 282,
+      "name": "일과",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 283,
+      "name": "일상적",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 284,
+      "name": "잇웰",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 285,
+      "name": "잔디 속에 있다고 상상을 해",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 286,
+      "name": "전이랑명태랑치킨이랑",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 287,
+      "name": "조각집",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 288,
+      "name": "조효상점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 289,
+      "name": "진스바바(JINS_Barba)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 290,
+      "name": "차고버거(BurgerGarage)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 291,
+      "name": "차르도르 애견카페&펫살롱",
+      "decision": "imported",
+      "id": "seoul-mfds-291",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 292,
+      "name": "차보이(CHA.BOEE)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 293,
+      "name": "청춘닭강정",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 294,
+      "name": "청춘식당 미래소년",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 295,
+      "name": "체리커피",
+      "decision": "imported",
+      "id": "seoul-mfds-295",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 296,
+      "name": "춘천진숯불닭갈비",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 297,
+      "name": "치트키 룸",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 298,
+      "name": "칩멍크",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 299,
+      "name": "칩스",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 300,
+      "name": "카나에",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 301,
+      "name": "카페 드 리옹 방배점",
+      "decision": "imported",
+      "id": "seoul-mfds-301",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 302,
+      "name": "카페 드뉴(Denu)",
+      "decision": "imported",
+      "id": "seoul-mfds-302",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 303,
+      "name": "카페 시엘/Cafe Ciel",
+      "decision": "imported",
+      "id": "seoul-mfds-303",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 304,
+      "name": "카페 ？잔",
+      "decision": "imported",
+      "id": "seoul-mfds-304",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 305,
+      "name": "카페노버든",
+      "decision": "imported",
+      "id": "seoul-mfds-305",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 306,
+      "name": "카페본작",
+      "decision": "imported",
+      "id": "seoul-mfds-306",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 307,
+      "name": "카페이유",
+      "decision": "imported",
+      "id": "seoul-mfds-307",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 308,
+      "name": "카페이츠",
+      "decision": "imported",
+      "id": "seoul-mfds-308",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 309,
+      "name": "카페포치(cafe Porch)",
+      "decision": "imported",
+      "id": "seoul-mfds-309",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 310,
+      "name": "칼리프하우스(Calif house) 문래",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 311,
+      "name": "커피,평화",
+      "decision": "imported",
+      "id": "seoul-mfds-311",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 312,
+      "name": "커피스토어(COFFEE.STORE)",
+      "decision": "imported",
+      "id": "seoul-mfds-312",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 313,
+      "name": "커피엣마켓 독립문영천시장",
+      "decision": "imported",
+      "id": "seoul-mfds-313",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 314,
+      "name": "컴 폴 커피(come for coffee)",
+      "decision": "imported",
+      "id": "seoul-mfds-314",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 315,
+      "name": "케익바(Cakebar)",
+      "decision": "imported",
+      "id": "seoul-mfds-315",
+      "reason": "카페 소개 자료와 공식 등록 대조"
+    },
+    {
+      "registerNumber": 316,
+      "name": "코니스(CONIS)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 317,
+      "name": "코레",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 318,
+      "name": "코모레비",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 319,
+      "name": "코시아 커피(COSIA COFFEE)",
+      "decision": "imported",
+      "id": "seoul-mfds-319",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 320,
+      "name": "코엔(Koen) 간데메 공원",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 321,
+      "name": "쿄우커피",
+      "decision": "imported",
+      "id": "seoul-mfds-321",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 322,
+      "name": "쿠카하우스",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 323,
+      "name": "쿡히앤컵히",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 324,
+      "name": "큐컴버드(Cucumbird)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 325,
+      "name": "큐큐큐큐(QQQQ)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 326,
+      "name": "크레스타운 압구정점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 327,
+      "name": "크렘캉캉",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 328,
+      "name": "크림베이글",
+      "decision": "imported",
+      "id": "seoul-mfds-328",
+      "reason": "카페 소개 자료와 공식 등록 대조"
+    },
+    {
+      "registerNumber": 329,
+      "name": "크림베이글 잠실점",
+      "decision": "imported",
+      "id": "seoul-mfds-329",
+      "reason": "카페 소개 자료와 공식 등록 대조"
+    },
+    {
+      "registerNumber": 330,
+      "name": "크림빔(Cream Beam)",
+      "decision": "imported",
+      "id": "seoul-mfds-330",
+      "reason": "카페 소개 자료와 공식 등록 대조"
+    },
+    {
+      "registerNumber": 331,
+      "name": "키노 연희",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 332,
+      "name": "킹브로",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 333,
+      "name": "타비",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 334,
+      "name": "타프나드",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 335,
+      "name": "탈안주 성신여대점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 336,
+      "name": "테라다식당 신사점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 337,
+      "name": "토닥 더치킨샵",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 338,
+      "name": "투 리틀 베이커스(two little bakers)",
+      "decision": "imported",
+      "id": "seoul-mfds-338",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 339,
+      "name": "투뿔205",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 340,
+      "name": "투치치",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 341,
+      "name": "트라이브 커피(TR!BE COFFEE)",
+      "decision": "imported",
+      "id": "seoul-mfds-341",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 342,
+      "name": "트래키(TRAKII)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 343,
+      "name": "트램 서울(Trem Seoul)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 344,
+      "name": "티틸",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 345,
+      "name": "티핑포인트(Tipping point)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 346,
+      "name": "틱택 커피(tick-tack coffee)",
+      "decision": "imported",
+      "id": "seoul-mfds-346",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 347,
+      "name": "파도",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 348,
+      "name": "파를린베리스PARLINBERIS",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 349,
+      "name": "파인커피(Fine coffee)",
+      "decision": "imported",
+      "id": "seoul-mfds-349",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 350,
+      "name": "팔월(八月)잔칫날",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 351,
+      "name": "팜스프링스",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 352,
+      "name": "팜폼",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 353,
+      "name": "퍼그피자하우스 신림점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 354,
+      "name": "펠른(perlen)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 355,
+      "name": "펫터니아 하우스",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 356,
+      "name": "포르르",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 357,
+      "name": "포차 몽",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 358,
+      "name": "포텐",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 359,
+      "name": "푸르토아(pour toi)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 360,
+      "name": "푸쉬커피",
+      "decision": "imported",
+      "id": "seoul-mfds-360",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 361,
+      "name": "프레오",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 362,
+      "name": "프로젝트 파이",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 363,
+      "name": "플루이드(FLUID)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 364,
+      "name": "피자사만다 강남구청점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 365,
+      "name": "피자익스프레스",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 366,
+      "name": "피크니크 시흥은행나무점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 367,
+      "name": "피크닉마나올라나",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 368,
+      "name": "피테커 피자",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 369,
+      "name": "픽어툴",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 370,
+      "name": "픽픽(pick pick)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 371,
+      "name": "필리커피",
+      "decision": "imported",
+      "id": "seoul-mfds-371",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 372,
+      "name": "필앳홈스테이크하우스 잠실점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 373,
+      "name": "하이어그라운드",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 374,
+      "name": "하이커피",
+      "decision": "imported",
+      "id": "seoul-mfds-374",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 375,
+      "name": "하츠헤븐",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 376,
+      "name": "해임시(haeimsi)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 377,
+      "name": "해피페페(HAPPY FEFE)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 378,
+      "name": "행복하개 키울고양",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 379,
+      "name": "헤리티지 클럽",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 380,
+      "name": "헤리티지 클럽 1",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 381,
+      "name": "헤이더그린",
+      "decision": "imported",
+      "id": "seoul-mfds-381",
+      "reason": "카페 소개 자료와 공식 등록 대조"
+    },
+    {
+      "registerNumber": 382,
+      "name": "헤이림",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 383,
+      "name": "헨릭",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 384,
+      "name": "헬카페 로스터즈",
+      "decision": "imported",
+      "id": "seoul-mfds-384",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 385,
+      "name": "호미커피",
+      "decision": "imported",
+      "id": "seoul-mfds-385",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 386,
+      "name": "호미커피 HOMI COFFEE",
+      "decision": "imported",
+      "id": "seoul-mfds-386",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 387,
+      "name": "호미커피(HOMIE COFFEE)",
+      "decision": "imported",
+      "id": "seoul-mfds-387",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 388,
+      "name": "호이 폴로이 커피 로스터스(HOI POLLOI COFFEE ROASTERS)",
+      "decision": "imported",
+      "id": "seoul-mfds-388",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 389,
+      "name": "호재네",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 390,
+      "name": "홀리버거(HOLY BURGER)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 391,
+      "name": "홈숍집 앤",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 392,
+      "name": "홍댕",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 393,
+      "name": "후룹로스터스",
+      "decision": "imported",
+      "id": "seoul-mfds-393",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 394,
+      "name": "후후라운지",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 395,
+      "name": "희희잇",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 396,
+      "name": "히소히소(HisoHiso)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 397,
+      "name": "히크 엣 눙크",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 398,
+      "name": "An coffee 안커피",
+      "decision": "imported",
+      "id": "seoul-mfds-398",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 399,
+      "name": "INNER PEACE(이너피스)",
+      "decision": "imported",
+      "id": "seoul-mfds-399",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 400,
+      "name": "POPO archive(포포 아카이브)",
+      "decision": "imported",
+      "id": "seoul-mfds-400",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 401,
+      "name": "UNSIDE COFFEE ROASTERS(언사이드 커피 로스터스)",
+      "decision": "imported",
+      "id": "seoul-mfds-401",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 402,
+      "name": "cafe ACC",
+      "decision": "imported",
+      "id": "seoul-mfds-402",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 403,
+      "name": "고몽순 커피",
+      "decision": "imported",
+      "id": "seoul-mfds-403",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 404,
+      "name": "고양이가밟은쿠키",
+      "decision": "imported",
+      "id": "seoul-mfds-404",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 405,
+      "name": "굿띵(Good Thing)",
+      "decision": "imported",
+      "id": "seoul-mfds-405",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 406,
+      "name": "굿모닝 거트 클럽(GMGC/Good Morning Gut Club)",
+      "decision": "imported",
+      "id": "seoul-mfds-406",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 407,
+      "name": "그레이 펭귄 커피",
+      "decision": "imported",
+      "id": "seoul-mfds-407",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 408,
+      "name": "까사드선주",
+      "decision": "imported",
+      "id": "seoul-mfds-408",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 409,
+      "name": "깔롱",
+      "decision": "imported",
+      "id": "seoul-mfds-409",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 410,
+      "name": "꼬늘커피",
+      "decision": "imported",
+      "id": "seoul-mfds-410",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 411,
+      "name": "꼬모윤(comoyoon)",
+      "decision": "imported",
+      "id": "seoul-mfds-411",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 412,
+      "name": "꽁냥꽁냥",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 413,
+      "name": "낫트 NATT",
+      "decision": "imported",
+      "id": "seoul-mfds-413",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 414,
+      "name": "누커리",
+      "decision": "imported",
+      "id": "seoul-mfds-414",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 415,
+      "name": "뉘앙스 서울(nuance Seoul)",
+      "decision": "imported",
+      "id": "seoul-mfds-415",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 416,
+      "name": "덕(DUCK)",
+      "decision": "imported",
+      "id": "seoul-mfds-416",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 417,
+      "name": "독스아일랜드 논현",
+      "decision": "imported",
+      "id": "seoul-mfds-417",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 418,
+      "name": "디어피피 펫푸드 앤 카페",
+      "decision": "imported",
+      "id": "seoul-mfds-418",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 419,
+      "name": "라온다",
+      "decision": "imported",
+      "id": "seoul-mfds-419",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 420,
+      "name": "로커피",
+      "decision": "imported",
+      "id": "seoul-mfds-420",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 421,
+      "name": "룸프(LOOMP)",
+      "decision": "imported",
+      "id": "seoul-mfds-421",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 422,
+      "name": "르쿠에르",
+      "decision": "imported",
+      "id": "seoul-mfds-422",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 423,
+      "name": "리모리",
+      "decision": "imported",
+      "id": "seoul-mfds-423",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 424,
+      "name": "리브릭(Libreak)",
+      "decision": "imported",
+      "id": "seoul-mfds-424",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 425,
+      "name": "마시쓰(massiss)",
+      "decision": "imported",
+      "id": "seoul-mfds-425",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 426,
+      "name": "맘마앤독",
+      "decision": "imported",
+      "id": "seoul-mfds-426",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 427,
+      "name": "메이베이크",
+      "decision": "imported",
+      "id": "seoul-mfds-427",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 428,
+      "name": "몬슈",
+      "decision": "imported",
+      "id": "seoul-mfds-428",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 429,
+      "name": "무무무",
+      "decision": "imported",
+      "id": "seoul-mfds-429",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 430,
+      "name": "바빌(Babil)",
+      "decision": "imported",
+      "id": "seoul-mfds-430",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 431,
+      "name": "반느커피",
+      "decision": "imported",
+      "id": "seoul-mfds-431",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 432,
+      "name": "밤앤송 카페",
+      "decision": "imported",
+      "id": "seoul-mfds-432",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 433,
+      "name": "배추공주와페키들의감성놀이터",
+      "decision": "imported",
+      "id": "seoul-mfds-433",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 434,
+      "name": "버터온",
+      "decision": "imported",
+      "id": "seoul-mfds-434",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 435,
+      "name": "베이비 피그 Baby Pig",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 436,
+      "name": "부트 카페 서울",
+      "decision": "imported",
+      "id": "seoul-mfds-436",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 437,
+      "name": "브라우닝 커피(Browning coffee)",
+      "decision": "imported",
+      "id": "seoul-mfds-437",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 438,
+      "name": "브루마이마인",
+      "decision": "imported",
+      "id": "seoul-mfds-438",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 439,
+      "name": "브루잉이펙트",
+      "decision": "imported",
+      "id": "seoul-mfds-439",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 440,
+      "name": "블랙시드 선유도",
+      "decision": "imported",
+      "id": "seoul-mfds-440",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 441,
+      "name": "비비비(Bite By Bite)",
+      "decision": "imported",
+      "id": "seoul-mfds-441",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 442,
+      "name": "빈트웰브(Beantwelve)",
+      "decision": "imported",
+      "id": "seoul-mfds-442",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 443,
+      "name": "산예",
+      "decision": "imported",
+      "id": "seoul-mfds-443",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 444,
+      "name": "삼이일공 커피공장",
+      "decision": "imported",
+      "id": "seoul-mfds-444",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 445,
+      "name": "세븐일레븐 금천에이스점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 446,
+      "name": "소담",
+      "decision": "imported",
+      "id": "seoul-mfds-446",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 447,
+      "name": "소림커피 로그원점",
+      "decision": "imported",
+      "id": "seoul-mfds-447",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 448,
+      "name": "수키",
+      "decision": "imported",
+      "id": "seoul-mfds-448",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 449,
+      "name": "스태시(Stash)",
+      "decision": "imported",
+      "id": "seoul-mfds-449",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 450,
+      "name": "시고리",
+      "decision": "imported",
+      "id": "seoul-mfds-450",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 451,
+      "name": "시월에 토리",
+      "decision": "imported",
+      "id": "seoul-mfds-451",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 452,
+      "name": "아키비스트 한남",
+      "decision": "imported",
+      "id": "seoul-mfds-452",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 453,
+      "name": "어피럽",
+      "decision": "imported",
+      "id": "seoul-mfds-453",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 454,
+      "name": "에그밀",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 455,
+      "name": "엔트런스",
+      "decision": "imported",
+      "id": "seoul-mfds-455",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 456,
+      "name": "엠엠티(MmT)",
+      "decision": "imported",
+      "id": "seoul-mfds-456",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 457,
+      "name": "예스리 토스트",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 458,
+      "name": "오카페(O'Cafe)",
+      "decision": "imported",
+      "id": "seoul-mfds-458",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 459,
+      "name": "오티오커피(OTO coffee)",
+      "decision": "imported",
+      "id": "seoul-mfds-459",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 460,
+      "name": "원더월커피로스터스",
+      "decision": "imported",
+      "id": "seoul-mfds-460",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 461,
+      "name": "원바이트(OneBite)",
+      "decision": "imported",
+      "id": "seoul-mfds-461",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 462,
+      "name": "위아커피컴퍼니",
+      "decision": "imported",
+      "id": "seoul-mfds-462",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 463,
+      "name": "유아마이젤라또(You are my gelato)",
+      "decision": "imported",
+      "id": "seoul-mfds-463",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 464,
+      "name": "이나 더 베어(inah the bear)",
+      "decision": "imported",
+      "id": "seoul-mfds-464",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 465,
+      "name": "일도커피",
+      "decision": "imported",
+      "id": "seoul-mfds-465",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 466,
+      "name": "저스트시즌(just season)",
+      "decision": "imported",
+      "id": "seoul-mfds-466",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 467,
+      "name": "정우 티하우스",
+      "decision": "imported",
+      "id": "seoul-mfds-467",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 468,
+      "name": "주식회사 하프파운드",
+      "decision": "imported",
+      "id": "seoul-mfds-468",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 469,
+      "name": "츄로스커피&아이스크림",
+      "decision": "imported",
+      "id": "seoul-mfds-469",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 470,
+      "name": "카페 433",
+      "decision": "imported",
+      "id": "seoul-mfds-470",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 471,
+      "name": "카페 암스테르담",
+      "decision": "imported",
+      "id": "seoul-mfds-471",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 472,
+      "name": "카페 일다경",
+      "decision": "imported",
+      "id": "seoul-mfds-472",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 473,
+      "name": "카페29",
+      "decision": "imported",
+      "id": "seoul-mfds-473",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 474,
+      "name": "카페그린그린 cafe greengreen",
+      "decision": "imported",
+      "id": "seoul-mfds-474",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 475,
+      "name": "카페디차",
+      "decision": "imported",
+      "id": "seoul-mfds-475",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 476,
+      "name": "카페라",
+      "decision": "imported",
+      "id": "seoul-mfds-476",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 477,
+      "name": "카페리브레",
+      "decision": "imported",
+      "id": "seoul-mfds-477",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 478,
+      "name": "카페소소",
+      "decision": "imported",
+      "id": "seoul-mfds-478",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 479,
+      "name": "카페인중독 개봉점",
+      "decision": "imported",
+      "id": "seoul-mfds-479",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 480,
+      "name": "커스텀커피 마곡나루점",
+      "decision": "imported",
+      "id": "seoul-mfds-480",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 481,
+      "name": "커스텀커피(동작구청점)",
+      "decision": "imported",
+      "id": "seoul-mfds-481",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 482,
+      "name": "커피 스피릿",
+      "decision": "imported",
+      "id": "seoul-mfds-482",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 483,
+      "name": "커피가게 동경(연희점)",
+      "decision": "imported",
+      "id": "seoul-mfds-483",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 484,
+      "name": "커피인류 개포점",
+      "decision": "imported",
+      "id": "seoul-mfds-484",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 485,
+      "name": "컴포즈커피 공덕오거리점",
+      "decision": "imported",
+      "id": "seoul-mfds-485",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 486,
+      "name": "케뚜",
+      "decision": "imported",
+      "id": "seoul-mfds-486",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 487,
+      "name": "콘파타테",
+      "decision": "imported",
+      "id": "seoul-mfds-487",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 488,
+      "name": "타이즈커피(TIES COFFEE)",
+      "decision": "imported",
+      "id": "seoul-mfds-488",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 489,
+      "name": "티거래빗커피",
+      "decision": "imported",
+      "id": "seoul-mfds-489",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 490,
+      "name": "티르 (tiir)",
+      "decision": "imported",
+      "id": "seoul-mfds-490",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 491,
+      "name": "티소트",
+      "decision": "imported",
+      "id": "seoul-mfds-491",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 492,
+      "name": "파딜라 베이크 숍(padilla bake shop)",
+      "decision": "imported",
+      "id": "seoul-mfds-492",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 493,
+      "name": "패치스 워크 클럽",
+      "decision": "imported",
+      "id": "seoul-mfds-493",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 494,
+      "name": "페이머스베이커리",
+      "decision": "imported",
+      "id": "seoul-mfds-494",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 495,
+      "name": "펫타리움 청담점",
+      "decision": "imported",
+      "id": "seoul-mfds-495",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 496,
+      "name": "평화의 나라",
+      "decision": "imported",
+      "id": "seoul-mfds-496",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 497,
+      "name": "포엣룸",
+      "decision": "imported",
+      "id": "seoul-mfds-497",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 498,
+      "name": "플레이스 디",
+      "decision": "imported",
+      "id": "seoul-mfds-498",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 499,
+      "name": "플로렛",
+      "decision": "imported",
+      "id": "seoul-mfds-499",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 500,
+      "name": "피망룸(P.mang room)",
+      "decision": "imported",
+      "id": "seoul-mfds-500",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 501,
+      "name": "하우스 라로바",
+      "decision": "imported",
+      "id": "seoul-mfds-501",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 502,
+      "name": "하프커피 익스프레스 퍼블릭가산점",
+      "decision": "imported",
+      "id": "seoul-mfds-502",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 503,
+      "name": "한성커피",
+      "decision": "imported",
+      "id": "seoul-mfds-503",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 504,
+      "name": "해로커피",
+      "decision": "imported",
+      "id": "seoul-mfds-504",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 505,
+      "name": "해머스미스 커피 역삼언주역점",
+      "decision": "imported",
+      "id": "seoul-mfds-505",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 506,
+      "name": "헤렌디커피 주식회사",
+      "decision": "imported",
+      "id": "seoul-mfds-506",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 507,
+      "name": "헤비로테이트",
+      "decision": "imported",
+      "id": "seoul-mfds-507",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 508,
+      "name": "？커피,MOCC",
+      "decision": "imported",
+      "id": "seoul-mfds-508",
+      "reason": "휴게음식점 등록 · 카페/디저트 후보"
+    },
+    {
+      "registerNumber": 509,
+      "name": "로핀(Loafin')",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 510,
+      "name": "몬슈",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 511,
+      "name": "보카타 마사마드레",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 512,
+      "name": "소서",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 513,
+      "name": "소피 SOffee",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 514,
+      "name": "스위트모먼트",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 515,
+      "name": "스팀비(steam B)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 516,
+      "name": "아워아워(OUR HOUR)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 517,
+      "name": "아일 베이커리",
+      "decision": "imported",
+      "id": "seoul-mfds-517",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 518,
+      "name": "예티 커피 하우스",
+      "decision": "imported",
+      "id": "seoul-mfds-518",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 519,
+      "name": "오드 온",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 520,
+      "name": "오프투커피",
+      "decision": "imported",
+      "id": "seoul-mfds-520",
+      "reason": "상호의 카페/커피/디저트 업종 표기"
+    },
+    {
+      "registerNumber": 521,
+      "name": "온뒤",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 522,
+      "name": "온초점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 523,
+      "name": "유가루 하우스",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 524,
+      "name": "유랑",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 525,
+      "name": "은근한방앗간",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 526,
+      "name": "주식회사 하프파운드",
+      "decision": "duplicate",
+      "reason": "같은 상호·도로명 주소 중복"
+    },
+    {
+      "registerNumber": 527,
+      "name": "천상가옥",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 528,
+      "name": "코보",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 529,
+      "name": "콰상",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 530,
+      "name": "퀸즈베리도넛하우스 방배점",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 531,
+      "name": "퀸즈베리도넛하우스(Queensberry Donut House)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 532,
+      "name": "필리(Philly)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 533,
+      "name": "해프닝",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 534,
+      "name": "허그허그러브",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 535,
+      "name": "화르르",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    },
+    {
+      "registerNumber": 536,
+      "name": "휘낭드 (finande)",
+      "decision": "not-imported",
+      "reason": "카페 유형 근거 미확인 또는 카페 외 업종. 반려견 동반 불가를 뜻하지 않습니다."
+    }
+  ]
+}
