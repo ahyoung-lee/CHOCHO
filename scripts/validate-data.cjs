@@ -10,6 +10,8 @@ function validate(data){
   if(p.category!=='playground'&&p.playground===true)errors.push(`${prefix}: 운동장 확인 장소의 유형을 다시 확인하세요.`);
   if(!['playground','companion','restaurant','bar'].includes(p.category))errors.push(`${prefix}: category는 playground/companion/restaurant/bar입니다.`);
   if(p.companionModes!==undefined&&(!Array.isArray(p.companionModes)||p.companionModes.some(mode=>!['packing','harness'].includes(mode))||new Set(p.companionModes).size!==p.companionModes.length))errors.push(`${prefix}: companionModes는 packing/harness 배열이며 중복 없이 입력합니다.`);
+  if(p.largeDogPlayground!==undefined&&typeof p.largeDogPlayground!=='boolean')errors.push(`${prefix}: largeDogPlayground는 boolean입니다.`);
+  if(p.largeDogPlayground===true&&(p.category!=='playground'||p.playground!==true||!p.largeDogPlaygroundEvidence?.trim()))errors.push(`${prefix}: 대형견 운동장은 운동장 확인과 별도 이용 근거가 필요합니다.`);
   if(!['listed','closed','unverified'].includes(p.status))errors.push(`${prefix}: status는 listed/closed/unverified입니다.`);
   if(p.category==='playground'&&p.playground!==true)errors.push(`${prefix}: 운동장 카페는 운동장 확인 근거가 필요합니다.`);
   for(const key of ['playground','parking','indoor','outdoor','terrace'])if(p[key]!==undefined&&p[key]!==null&&typeof p[key]!=='boolean')errors.push(`${prefix}: ${key}는 true/false/null입니다.`);

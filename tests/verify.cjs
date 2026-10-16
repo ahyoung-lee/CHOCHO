@@ -22,8 +22,8 @@ class ClassList{constructor(){this.s=new Set();}add(v){this.s.add(v);}remove(v){
 class Element{constructor(id){this.id=id;this.listeners={};this.classList=new ClassList();this.hidden=false;this.attributes={};this.dataset={};this.style={};this.value='';this.checked=false;this.innerHTML='';this.textContent='';this.children=[];this.open=false;this.disabled=false;}setAttribute(k,v){this.attributes[k]=v;}addEventListener(k,f){(this.listeners[k]??=[]).push(f);}fire(k,e={}){for(const f of this.listeners[k]||[])f({target:this,preventDefault(){},...e});}getBoundingClientRect(){return {width:700,height:520,left:0,right:700,top:0,bottom:520};}appendChild(x){this.children.push(x);}remove(){}focus(){}showModal(){this.open=true;}close(){this.open=false;this.fire('close');}setPointerCapture(){}}
 const html=fs.readFileSync(__dirname+'/../public/index.html','utf8');const elements={};for(const m of html.matchAll(/\bid="([^"]+)"/g)){assert(!elements[m[1]],'duplicate HTML id');elements[m[1]]=new Element(m[1]);}
 const chips=['parking','indoor','official','favorite','terrace'].map(k=>{const e=new Element(k);e.dataset.toggle=k;return e;});
-const categories=['all','playground','companion','packing','harness','restaurant','bar'].map(k=>{const e=new Element(k);e.dataset.category=k;return e;});
-const categoryCounts=['all','playground','companion','packing','harness','restaurant','bar'].map(k=>{const e=new Element(k);e.dataset.categoryCount=k;return e;});
+const categories=['all','playground','companion','packing','harness','restaurant','bar','large-dog'].map(k=>{const e=new Element(k);e.dataset.category=k;return e;});
+const categoryCounts=['all','playground','companion','packing','harness','restaurant','bar','large-dog'].map(k=>{const e=new Element(k);e.dataset.categoryCount=k;return e;});
 const explorer=new Element('explorer'),documentListeners={};
 const doc={getElementById:id=>{assert(elements[id],`missing element ${id}`);return elements[id];},querySelector:s=>{assert.equal(s,'.explorer');return explorer;},querySelectorAll:s=>{if(s==='[data-toggle]')return chips;if(s==='[data-category]')return categories;if(s==='[data-category-count]')return categoryCounts;throw new Error('Unexpected selector '+s);},createElement:tag=>new Element(tag),addEventListener:(k,f)=>(documentListeners[k]??=[]).push(f),body:new Element('body'),contains:()=>false,activeElement:null};
 const storage=new Map();let fetchHandler=async()=>({ok:true,json:async()=>({features:[]})});
@@ -96,6 +96,24 @@ test('dining categories use real records and compose with search, region and cou
   currentApp.state.query='no-such-dining-place';currentApp.render();assert.equal(currentApp.getFiltered().length,0);
  }
  currentApp.reset();assert.equal(currentApp.getFiltered().length,fullData.places.length);
+});
+test('large-dog cafes require confirmed playground access and respect weight limits',()=>{
+ const matches=core.filterPlaces(fullData,state({time:0,category:'large-dog'}));assert.equal(matches.length,2);
+ assert(matches.every(p=>p.playground===true&&p.largeDogPlayground===true));
+ assert(!matches.some(p=>['nimung','coco','urban','gaedde','seoul-mfds-381'].includes(p.id)));
+ const base=fullData.places.find(p=>p.id==='seoul-mfds-381');
+ const fixture={...fullData,places:[{...base,largeDogPlayground:true},{...base,id:'unknown',largeDogPlayground:undefined},{...base,id:'no-yard',playground:false,largeDogPlayground:true}]};
+ assert.equal(core.filterPlaces(fixture,state({time:0,category:'large-dog',weight:13})).length,0);
+ assert.deepEqual(core.filterPlaces(fullData,state({time:0,category:'large-dog',weight:31})).map(p=>p.id),['large-dog-mokkoji']);
+ currentApp.reset();click('[data-category]',{category:'large-dog'});assert.equal(currentApp.getFiltered().length,2);
+ assert.equal(categoryCounts.find(e=>e.dataset.categoryCount==='large-dog').textContent,2);
+ currentApp.state.query='모꼬지';currentApp.state.region='남양주';currentApp.render();assert.equal(currentApp.getFiltered()[0].id,'large-dog-mokkoji');
+ assert(elements.results.innerHTML.includes('대형견 운동장'));
+ assert(html.indexOf('data-category="companion"')<html.indexOf('data-category="large-dog"'));assert(html.indexOf('data-category="large-dog"')<html.indexOf('data-category="restaurant"'));
+ const sourceData=JSON.parse(fs.readFileSync(__dirname+'/../data/venues.json','utf8'));
+ require('../scripts/validate-data.cjs').validate(sourceData);
+ assert.throws(()=>require('../scripts/validate-data.cjs').validate({...sourceData,places:[{...matches[0],largeDogPlaygroundEvidence:''}]}));
+ currentApp.reset();
 });
 console.log(`\n${checks} verification scenarios passed.`);
 })().catch(error=>{console.error(error);process.exitCode=1;});

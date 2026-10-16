@@ -6,11 +6,12 @@ const cafeName=/(카페|커피|coffee|cafe|카훼|티하우스|찻집|로스터|
 const excludedRefreshment=new Set([412,435,445,454,457]); // animal-experience cafés, convenience store, meal/toast shops
 const extraCafes=new Set([13,36,79,115,125,196,219,220,223,238,315,328,329,330,381]);
 const supplements=read('data/seoul-cafe-supplements.json');
+const largeDogCafes=read('data/large-dog-cafes.json'),largeDogIds=new Set(largeDogCafes.map(p=>p.id));
 const {classifyDining}=require('./classify-dining.cjs');
 const decisions=[],seen=new Set();
 const normalizeAddress=s=>s.replace(/\(.*/, '').replace(/\s+/g,' ').trim();
 const normalizeName=s=>s.replace(/\(주\)|주식회사/g,'').replace(/[^가-힣a-z0-9]/gi,'').toLowerCase();
-data.places=data.places.filter(p=>!p.id.startsWith('seoul-mfds-')&&!p.id.startsWith('seoul-extra-'));
+data.places=data.places.filter(p=>!largeDogIds.has(p.id)&&!p.id.startsWith('seoul-mfds-')&&!p.id.startsWith('seoul-extra-'));
 for(const row of snapshot.rows){
  const diningCategory=classifyDining(row);
  const include=diningCategory||(row.indutyNm==='휴게음식점'&&!excludedRefreshment.has(row.rnum))||cafeName.test(row.bsshNm)||extraCafes.has(row.rnum);
@@ -36,6 +37,7 @@ for(const [id,extra] of Object.entries(supplements))if(id.startsWith('seoul-extr
  const p={...template,...extra,id,number:data.places.length+1,registerNumber:null,registerIndustry:null,level:'owner'};
  data.places.push(p);
 }
+for(const p of largeDogCafes)data.places.push({...p,number:data.places.length+1});
 data.checkedAt=snapshot.checkedAt;
 data.coverage={scope:'서울 25개 구 및 기존 서울 근교',complete:false,source:snapshot.source,checkedAt:snapshot.checkedAt,registerRows:snapshot.rows.length,note:'공식 동반 업소 현황에서 카페·디저트와 상호에 음식·주점 업종이 명시된 음식점·술집을 선별했습니다. 업종이 모호한 상호는 추측해 추가하지 않았으며 서울 전수 목록은 아닙니다.'};
 fs.writeFileSync(path.join(base,'data/venues.json'),JSON.stringify(data,null,2)+'\n');

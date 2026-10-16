@@ -89,3 +89,7 @@
 `restaurant`와 `bar`는 동반 방식(`companionModes`)과 별도 업종입니다. 2026-10-16 공식 반려동물 동반 업소 스냅샷 중 일반음식점 등록과 상호의 명시적 음식·주점 표기를 함께 사용합니다. `scripts/classify-dining.cjs`에서 분류하며 업종이 모호한 상호는 제외합니다. 공식 등록만으로 술 판매나 주점 여부를 추측하지 않습니다. 최신 메뉴·동반 조건은 현장 미확인입니다.
 
 재생성 순서: `node scripts/import-seoul-cafes.cjs`, `node scripts/apply-seoul-coordinates.cjs`, `npm run build`. 메인 소개 문구는 `public/index.html`에서 수정하며 JavaScript가 덮어쓰지 않습니다.
+
+## 대형견 카페
+
+`largeDogPlayground: true`는 전용 운동장과 대형견 이용 근거가 둘 다 확인된 경우에만 지정합니다. 체중 제한이 없거나 미확인이라는 이유로 추정하지 않습니다. `largeDogPlaygroundEvidence`와 출처가 필요하며, 대형견 탭에도 운동장 별도 체중 상한을 적용합니다. `data/large-dog-cafes.json`은 2026-10-16 확인한 모꼬지댕카페·파인트리숲의 이용안내를 보관하고 기존 수입 스크립트가 함께 반영합니다. 좌표·이동시간은 미확인 값을 임의로 채우지 않습니다.
