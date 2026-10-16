@@ -176,5 +176,14 @@ test('supplemented bar coordinates match official street addresses and retain pr
  const bars=fullData.places.filter(p=>p.category==='bar'),mapped=bars.filter(core.hasCoordinates);assert.equal(mapped.length,4);assert.equal(bars.filter(p=>!core.hasCoordinates(p)).length,6);
  for(const p of mapped){const address=p.address.replace(/\(.*/,'').trim(),match=selectAddressMatch(p,cache[address].results);assert(match);assert.equal(p.lat,match.lat);assert.equal(p.lng,match.lng);assert(p.sources.some(s=>s.url.startsWith('https://www.openstreetmap.org/')));}
 });
+test('venue search button and Enter search while list, map and details use result-order numbers',()=>{
+ currentApp.reset();const originalNumbers=fullData.places.map(p=>p.number);
+ const assertNumbers=()=>{const visible=currentApp.getFiltered(),numbers=[...elements.results.innerHTML.matchAll(/class="card-number">(\d+)<\/span>/g)].map(m=>Number(m[1]));assert.deepEqual(numbers,visible.map((_,i)=>i+1));for(const p of visible.filter(core.hasCoordinates)){const match=elements.markerLayer.innerHTML.match(new RegExp('data-marker="'+p.id+'"[\\s\\S]*?<b>(\\d+)</b>'));if(match)assert.equal(Number(match[1]),visible.findIndex(x=>x.id===p.id)+1);}};
+ assertNumbers();const first=currentApp.getFiltered()[0];currentApp.detail(first.id);assert(elements.detailContent.innerHTML.includes('PLACE 1 ·'));
+ elements.search.value='미열';elements.venueSearch.fire('click');assert(currentApp.getFiltered().length>0);assert(currentApp.getFiltered().every(p=>p.name.includes('미열')));assertNumbers();
+ elements.search.value='송리단';elements.search.fire('keydown',{key:'Enter'});assert(currentApp.getFiltered().some(p=>p.name==='송리단양조장'));assertNumbers();
+ elements.search.value='없는업체명123';elements.venueSearch.fire('click');assert.equal(currentApp.getFiltered().length,0);assertNumbers();
+ currentApp.reset();assertNumbers();assert.deepEqual(fullData.places.map(p=>p.number),originalNumbers);
+});
 console.log(`\n${checks} verification scenarios passed.`);
 })().catch(error=>{console.error(error);process.exitCode=1;});
