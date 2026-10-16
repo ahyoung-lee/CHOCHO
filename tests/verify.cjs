@@ -22,8 +22,8 @@ class ClassList{constructor(){this.s=new Set();}add(v){this.s.add(v);}remove(v){
 class Element{constructor(id){this.id=id;this.listeners={};this.classList=new ClassList();this.hidden=false;this.attributes={};this.dataset={};this.style={};this.value='';this.checked=false;this.innerHTML='';this.textContent='';this.children=[];this.open=false;this.disabled=false;}setAttribute(k,v){this.attributes[k]=v;}addEventListener(k,f){(this.listeners[k]??=[]).push(f);}fire(k,e={}){for(const f of this.listeners[k]||[])f({target:this,preventDefault(){},...e});}getBoundingClientRect(){return {width:700,height:520,left:0,right:700,top:0,bottom:520};}appendChild(x){this.children.push(x);}remove(){}focus(){}showModal(){this.open=true;}close(){this.open=false;this.fire('close');}setPointerCapture(){}}
 const html=fs.readFileSync(__dirname+'/../public/index.html','utf8');const elements={};for(const m of html.matchAll(/\bid="([^"]+)"/g)){assert(!elements[m[1]],'duplicate HTML id');elements[m[1]]=new Element(m[1]);}
 const chips=['parking','indoor','official','favorite','terrace'].map(k=>{const e=new Element(k);e.dataset.toggle=k;return e;});
-const categories=['all','playground','companion','packing','harness'].map(k=>{const e=new Element(k);e.dataset.category=k;return e;});
-const categoryCounts=['all','playground','companion','packing','harness'].map(k=>{const e=new Element(k);e.dataset.categoryCount=k;return e;});
+const categories=['all','playground','companion','packing','harness','restaurant','bar'].map(k=>{const e=new Element(k);e.dataset.category=k;return e;});
+const categoryCounts=['all','playground','companion','packing','harness','restaurant','bar'].map(k=>{const e=new Element(k);e.dataset.categoryCount=k;return e;});
 const explorer=new Element('explorer'),documentListeners={};
 const doc={getElementById:id=>{assert(elements[id],`missing element ${id}`);return elements[id];},querySelector:s=>{assert.equal(s,'.explorer');return explorer;},querySelectorAll:s=>{if(s==='[data-toggle]')return chips;if(s==='[data-category]')return categories;if(s==='[data-category-count]')return categoryCounts;throw new Error('Unexpected selector '+s);},createElement:tag=>new Element(tag),addEventListener:(k,f)=>(documentListeners[k]??=[]).push(f),body:new Element('body'),contains:()=>false,activeElement:null};
 const storage=new Map();let fetchHandler=async()=>({ok:true,json:async()=>({features:[]})});
@@ -75,5 +75,27 @@ await testAsync('failed address search keeps the applied origin and map',async()
 await testAsync('late search and GPS callbacks cannot overwrite a manually selected origin',async()=>{let resolve;fetchHandler=()=>new Promise(r=>resolve=r);elements.origin.value='지연되는주소';const pending=currentApp.submitOrigin();elements.origin.value='노원역';await currentApp.submitOrigin();resolve({ok:true,json:async()=>({features:[{geometry:{type:'Point',coordinates:[127,37.5]},properties:{name:'지연결과',city:'서울특별시',countrycode:'KR'}}]})});await pending;assert.equal(currentApp.state.origin,'nowon');assert(elements.originResults.hidden);locationSuccess({coords:{latitude:35,longitude:129}});assert.equal(currentApp.state.origin,'nowon');});
 await testAsync('manual origin labels cannot inject HTML into results or map',async()=>{const name='<img src=x onerror=alert(1)>';fetchHandler=async()=>({ok:true,json:async()=>({features:[{geometry:{type:'Point',coordinates:[127,37.5]},properties:{name,city:'서울특별시',countrycode:'KR'}}]})});elements.origin.value='보안검증장소';await currentApp.submitOrigin();assert(!elements.originResults.innerHTML.includes('<img'));currentApp.chooseOrigin(0);assert(!elements.results.innerHTML.includes('<img'));assert(elements.results.innerHTML.includes('&lt;img'));assert(!elements.markerLayer.innerHTML.includes('<img'));});
 test('HTML uses editable departure and only the requested condition row',()=>{assert(html.includes('id="origin" type="search"'));assert(!html.includes('id="filterButton"'));assert(!html.includes('data-toggle="natural"'));assert(!html.includes('data-toggle="artificial"'));assert(html.includes('id="conditionHeading">조건필터'));for(const text of ['주차가능','실내 동반','테라스 동반'])assert(html.includes(text));});
+test('dining categories use real records and compose with search, region and count controls',()=>{
+ const {classifyDining}=require('../scripts/classify-dining.cjs');
+ assert.equal(classifyDining({indutyNm:'일반음식점',bsshNm:'생맥줏집'}),'bar');
+ assert.equal(classifyDining({indutyNm:'일반음식점',bsshNm:'차고버거(BurgerGarage)'}),'restaurant');
+ assert.equal(classifyDining({indutyNm:'일반음식점',bsshNm:'이름만으로 모르는 가게'}),null);
+ assert(!html.includes('data-category="packing"'));assert(!html.includes('data-category="harness"'));
+ assert(html.includes('data-category="restaurant"'));assert(html.includes('data-category="bar"'));
+ assert(!fs.readFileSync(__dirname+'/../public/app.js','utf8').includes("$('introCopy').textContent="));
+ for(const category of ['restaurant','bar']){
+  const expected=fullData.places.filter(p=>p.category===category);assert(expected.length>0);
+  currentApp.reset();click('[data-category]',{category});
+  assert.equal(currentApp.getFiltered().length,expected.length);
+  assert.equal(categoryCounts.find(e=>e.dataset.categoryCount===category).textContent,expected.length);
+  assert(currentApp.getFiltered().every(p=>p.category===category));
+  assert(elements.results.innerHTML.includes(category==='bar'?'동반 술집':'동반 음식점'));
+  const place=expected[0];currentApp.state.query=place.name;currentApp.state.region=place.region;currentApp.render();
+  assert(currentApp.getFiltered().some(p=>p.id===place.id));
+  assert(currentApp.getFiltered().every(p=>p.category===category&&p.region===place.region));
+  currentApp.state.query='no-such-dining-place';currentApp.render();assert.equal(currentApp.getFiltered().length,0);
+ }
+ currentApp.reset();assert.equal(currentApp.getFiltered().length,fullData.places.length);
+});
 console.log(`\n${checks} verification scenarios passed.`);
 })().catch(error=>{console.error(error);process.exitCode=1;});
