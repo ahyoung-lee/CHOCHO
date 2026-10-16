@@ -1,6 +1,7 @@
 (function(root){
 'use strict';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const NEARBY_RADIUS_KM=10;
 const defaultState=()=>({origin:'hagye',category:'all',region:'all',terrace:false,time:0,strict:false,query:'',sort:'near',natural:false,artificial:false,parking:false,indoor:false,official:false,favorite:false,weight:null,knownWeight:false,day:'',favorites:[],compare:[],selected:null});
 function matchesCategory(p,category){return category==='all'||(category==='large-dog'?p.category==='playground'&&p.playground===true&&p.largeDogPlayground===true:['packing','harness'].includes(category)?p.category==='companion'&&p.companionModes?.includes(category):p.category===category);}
 function hasCoordinates(p){return !!p&&Number.isFinite(p.lat)&&Number.isFinite(p.lng);}
@@ -10,6 +11,7 @@ function filterPlaces(data,state){
  return data.places.filter(p=>{
   if(p.status==='closed'||p.status==='unverified')return false;
   if(!matchesCategory(p,state.category))return false;
+  if(state.origin==='current'&&(!hasCoordinates(p)||!hasCoordinates(data.origins.current)||distanceKm(data.origins.current,p)>NEARBY_RADIUS_KM))return false;
   if(state.region==='seoul'&&!/^서울/.test(p.address))return false;
   if(!['all','seoul'].includes(state.region)&&p.region!==state.region)return false;
   if(state.terrace&&p.terrace!==true)return false;
@@ -66,13 +68,13 @@ function render(){
  $('time').value=['current','custom'].includes(state.origin)?'0':String(state.time);
  $('time').title=['current','custom'].includes(state.origin)?'현재 위치·직접 입력한 출발지는 이동시간 대신 직선거리를 표시합니다.':'';
  visible=filterPlaces(data,state);if(!visible.some(p=>p.id===state.selected))state.selected=visible[0]?.id||null;
- const emptyHint=['packing','harness'].includes(state.category)?'이 동반 방식이 확인된 카페가 없거나 다른 필터에서 제외됐어요.<br>방식 미확인 카페는 전체 카페에서 확인해 주세요.':'선택한 업종에서 지역·검색어·조건에 맞는 장소가 없어요.<br>시간 제한이나 조건 필터를 해제해 보세요.';
+ const emptyHint=state.origin==='current'?`현재 위치에서 직선거리 ${NEARBY_RADIUS_KM}km 이내에 조건에 맞는 장소가 없어요.<br>좌표가 확인된 장소만 표시합니다. 다른 출발지나 조건으로 검색해 보세요.`:['packing','harness'].includes(state.category)?'이 동반 방식이 확인된 카페가 없거나 다른 필터에서 제외됐어요.<br>방식 미확인 카페는 전체 카페에서 확인해 주세요.':'선택한 업종에서 지역·검색어·조건에 맞는 장소가 없어요.<br>시간 제한이나 조건 필터를 해제해 보세요.';
  $('results').innerHTML=visible.length?visible.map(card).join(''):`<div class="empty"><strong>이 조건의 장소가 없어요.</strong><p>${emptyHint}</p><button class="outline-button" data-reset>필터 초기화 ↺</button></div>`;
  $('resultCount').textContent=visible.length;
  const eligible=filterPlaces(data,{...state,category:'all'});
  doc.querySelectorAll('[data-category]').forEach(el=>el.setAttribute('aria-pressed',String(el.dataset.category===state.category)));
  doc.querySelectorAll('[data-category-count]').forEach(el=>el.textContent=eligible.filter(p=>matchesCategory(p,el.dataset.categoryCount)).length);
- $('resultSummary').textContent=['current','custom'].includes(state.origin)?`${data.origins[state.origin].name} 출발 · 직선거리 기준 · 이동시간 필터 미적용`:state.time===0?`${esc(data.origins[state.origin].name)} 출발 · 시간 제한 없음 · 좌표 확인 장소부터 표시`:`${esc(data.origins[state.origin].name)} 출발 · ${state.strict?'추정 상한':'추정 하한'} ${state.time}분 이내 · 시간 미확인 제외`;
+ $('resultSummary').textContent=state.origin==='current'?`현재 위치 주변 ${NEARBY_RADIUS_KM}km 이내 · 직선거리 기준`:state.origin==='custom'?`${data.origins[state.origin].name} 출발 · 직선거리 기준 · 이동시간 필터 미적용`:state.time===0?`${esc(data.origins[state.origin].name)} 출발 · 시간 제한 없음 · 좌표 확인 장소부터 표시`:`${esc(data.origins[state.origin].name)} 출발 · ${state.strict?'추정 상한':'추정 하한'} ${state.time}분 이내 · 시간 미확인 제외`;
  const mapped=visible.filter(hasCoordinates).length;
  $('mapCount').textContent=`지도 ${mapped}곳 · 목록 ${visible.length}곳`;
  $('locationCoverage').textContent=mapped<visible.length?`주소만 확인된 ${visible.length-mapped}곳은 목록과 네이버 지도 링크로 확인할 수 있어요. 좌표를 확인하기 전에는 지도 핀과 거리를 표시하지 않습니다.`:'';
@@ -140,7 +142,7 @@ function chooseOrigin(index){const point=originCandidates[index];if(point)applyO
 async function submitOrigin(){
  const query=$('origin').value.trim();
  if(!query){$('locationStatus').textContent='출발할 주소나 장소를 입력해 주세요.';return;}
- if(query==='현재 위치'||query==='current'){requestLocation();return;}
+ if(query.replace(/\s/g,'')==='현재위치'||query==='current'){requestLocation();return;}
  const preset=Object.entries(data.origins).find(([key,p])=>!['current','custom'].includes(key)&&(p.name===query||key===query));
  if(preset){applyOrigin(preset[0]);return;}
  locationVersion++;locationPending=false;clearOriginSearch();
@@ -175,17 +177,35 @@ function requestLocation(){
 }
 for(const [id,key,fn]of [['time','time',Number],['sort','sort',x=>x]])$(id).addEventListener('change',()=>{state[key]=fn($(id).value);if(id==='time'&&state.time===0){state.strict=false;}render();if(id==='time')tileMap.fit();});
 $('origin').addEventListener('input',()=>{locationVersion++;locationPending=false;clearOriginSearch();$('locationStatus').textContent='입력한 출발지를 적용하려면 검색해 주세요.';});
-$('origin').addEventListener('change',()=>{const query=$('origin').value.trim();if(['현재 위치','current',...Object.keys(data.origins),...Object.values(data.origins).filter(p=>p.name!=='현재 위치').map(p=>p.name)].includes(query))submitOrigin();});
+$('origin').addEventListener('change',()=>{const query=$('origin').value.trim();if(['현재 위치','현재위치','current',...Object.keys(data.origins),...Object.values(data.origins).filter(p=>p.name!=='현재 위치').map(p=>p.name)].includes(query))submitOrigin();});
 $('origin').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();submitOrigin();}else if(e.key==='Escape')clearOriginSearch();});
 $('originSearch').addEventListener('click',submitOrigin);
 $('useCurrent').addEventListener('click',requestLocation);
 $('search').addEventListener('input',()=>{state.query=$('search').value;render();});
+let registrationCandidates=[],registrationVersion=0,registrationController;
+function clearRegistrationAddress(){registrationVersion++;registrationController?.abort();registrationCandidates=[];$('registrationResults').hidden=true;$('registrationResults').innerHTML='';$('registrationSelected').textContent='';}
+$('openRegistration').addEventListener('click',()=>{clearRegistrationAddress();$('registrationName').value='';$('registrationCategory').value='companion';$('registrationAddress').value='';$('registrationConsent').checked=false;$('registrationStatus').textContent='공유 등록을 준비 중이에요. 아직 등록할 수 없습니다.';showDialog('registrationDialog');});
+$('registrationAddress').addEventListener('input',clearRegistrationAddress);
+async function searchRegistrationAddress(){
+ clearRegistrationAddress();const query=$('registrationAddress').value.trim(),version=registrationVersion;
+ if(!query){$('registrationStatus').textContent='검색할 주소나 업체명을 입력해 주세요.';return;}
+ const controller=new AbortController();registrationController=controller;const timeout=setTimeout(()=>controller.abort(),10000);
+ $('registrationStatus').textContent='주소를 검색하고 있어요.';
+ try{const points=await lookupOrigin(query,controller.signal);if(version!==registrationVersion)return;registrationCandidates=points;$('registrationResults').hidden=!points.length;$('registrationResults').innerHTML=points.map((p,i)=>`<button type="button" data-registration-result="${i}" ${p.approximate?'disabled':''}><strong>${esc(p.name)}</strong><small>${esc(p.address)}${p.approximate?' · 도로/지역 위치: 상세 주소로 다시 검색':''}</small></button>`).join('');$('registrationStatus').textContent=points.length?'등록할 건물의 주소를 선택해 주세요.':'검색 결과가 없어요. 도로명과 건물번호로 다시 검색해 주세요.';}
+ catch(_){if(version===registrationVersion)$('registrationStatus').textContent='주소 검색에 연결하지 못했어요. 잠시 후 다시 시도해 주세요.';}
+ finally{clearTimeout(timeout);}
+}
+$('registrationAddressSearch').addEventListener('click',searchRegistrationAddress);
+$('registrationAddress').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();searchRegistrationAddress();}});
+$('registrationDialog').addEventListener('close',clearRegistrationAddress);
+$('registrationForm').addEventListener('submit',e=>{e.preventDefault();$('registrationStatus').textContent='공유 등록을 준비 중이에요. 아직 등록할 수 없습니다.';});
 $('reset').addEventListener('click',reset);
 ['guideButton','noticeGuide','bottomGuide'].forEach(id=>$(id).addEventListener('click',()=>showDialog('guideDialog')));
 $('clearCompare').addEventListener('click',()=>{state.compare=[];render();});$('openCompare').addEventListener('click',compare);
 function switchView(mapView){doc.querySelector('.explorer').classList.toggle('mobile-map',mapView);$('listView').setAttribute('aria-pressed',String(!mapView));$('mapView').setAttribute('aria-pressed',String(mapView));if(mapView){if(tileMap.isNationwide)tileMap.showNationwide();else tileMap.render();}}
 $('listView').addEventListener('click',()=>switchView(false));$('mapView').addEventListener('click',()=>switchView(true));
 doc.addEventListener('click',e=>{let t;if((t=e.target.closest('[data-category]'))){state.category=t.dataset.category;render();tileMap.fit();}
+ else if((t=e.target.closest('[data-registration-result]'))){const p=registrationCandidates[Number(t.dataset.registrationResult)];if(p&&!p.approximate){$('registrationSelected').textContent=p.name+' · '+p.address;$('registrationStatus').textContent='공유 등록을 준비 중이에요. 아직 등록할 수 없습니다.';}}
  else if((t=e.target.closest('[data-origin-result]')))chooseOrigin(Number(t.dataset.originResult));
  else if((t=e.target.closest('[data-toggle]'))){const k=t.dataset.toggle;state[k]=!state[k];if(k==='natural'&&state[k])state.artificial=false;if(k==='artificial'&&state[k])state.natural=false;render();tileMap.fit();}
  else if((t=e.target.closest('[data-detail]')))detail(t.dataset.detail);
@@ -196,7 +216,7 @@ doc.addEventListener('click',e=>{let t;if((t=e.target.closest('[data-category]')
  else if((t=e.target.closest('[data-close]')))$(t.dataset.close).close();
  else if(e.target.closest('[data-reset]'))reset();
 });
-['detailDialog','compareDialog','guideDialog'].forEach(id=>{const d=$(id);d.addEventListener('close',()=>{const el=opener.get(d);if(el&&doc.contains(el))el.focus();});d.addEventListener('click',e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close();}});});
+['detailDialog','compareDialog','guideDialog','registrationDialog'].forEach(id=>{const d=$(id);d.addEventListener('close',()=>{const el=opener.get(d);if(el&&doc.contains(el))el.focus();});d.addEventListener('click',e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close();}});});
 render();tileMap.showNationwide();requestLocation();
 root.PAW_APP={state,getFiltered:()=>visible,selectPlace,toggleCompare:id=>{const r=toggleCompare(state,id);render();return r;},render,compare,detail,reset,map:tileMap,switchView,submitOrigin,chooseOrigin};
 })(typeof window!=='undefined'?window:globalThis);
