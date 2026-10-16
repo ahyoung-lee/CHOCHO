@@ -44,7 +44,7 @@ function toggleCompare(state,id){
 }
 function project(lat,lng,zoom){const scale=256*2**zoom,s=Math.sin(lat*Math.PI/180);return {x:(lng+180)/360*scale,y:(.5-Math.log((1+s)/(1-s))/(4*Math.PI))*scale};}
 function unproject(x,y,zoom){const scale=256*2**zoom;return {lng:x/scale*360-180,lat:Math.atan(Math.sinh(Math.PI*(1-2*y/scale)))*180/Math.PI};}
-function mapURL(p){return `https://map.naver.com/p/search/${encodeURIComponent(`${p.name} ${p.address}`)}`;}
+function mapURL(p){const address=p.address.replace(/\(.*/, '').replace(/\s+(?:지하\s*)?\d+층.*$/, '').trim();return `https://map.naver.com/p/search/${encodeURIComponent(address)}`;}
 const core={defaultState,filterPlaces,toggleCompare,project,unproject,mapURL,esc,hasCoordinates,distanceKm};
 if(typeof module!=='undefined')module.exports=core;
 if(!root.document||!root.CAFE_DATA)return;
@@ -166,7 +166,7 @@ function requestLocation(){
   if(!Number.isFinite(lat)||!Number.isFinite(lng)||Math.abs(lat)>90||Math.abs(lng)>180){fail();return;}
   data.origins.current={name:'현재 위치',lat:Math.max(-85.051128,Math.min(85.051128,lat)),lng};
   state.origin='current';state.time=0;state.strict=false;state.sort='near';$('origin').value='현재 위치';
-  $('locationStatus').textContent='현재 위치 주변 업체를 가까운 순으로 표시합니다.';
+  $('locationStatus').textContent='';
   render();tileMap.fit();
  },error=>{if(version!==locationVersion)return;state.origin=previous;fail(error);},{enableHighAccuracy:true,timeout:12000,maximumAge:0});
 }
