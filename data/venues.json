@@ -2896,10 +2896,10 @@
       "region": "강북구",
       "address": "서울특별시 강북구 도봉로8길 15(지하1층 미아동)",
       "phone": null,
-      "lat": null,
-      "lng": null,
-      "position": "지도 좌표 미확인",
-      "positionNote": "공식 목록의 도로명 주소를 확인했습니다. 건물 좌표를 확인하기 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 상호와 주소를 확인하세요.",
+      "lat": 37.612749,
+      "lng": 127.0310905,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "공식 등록 주소의 자치구·도로명·건물번호와 일치하는 OpenStreetMap 주소 위치입니다. 같은 건물의 다른 점포가 검색될 수 있으며 출입구·층·현재 영업을 확인한 좌표는 아닙니다.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -2936,6 +2936,11 @@
           "name": "식품안전나라 · 반려동물 동반 가능 업소 현황",
           "url": "https://www.foodsafetykorea.go.kr/portal/petKorea.do",
           "type": "공식 등록 현황 · 2026-10-16 조회 · 연번 139"
+        },
+        {
+          "name": "OpenStreetMap · 도로명 주소 좌표",
+          "url": "https://www.openstreetmap.org/node/13946852343",
+          "type": "ODbL · 자치구/도로명/건물번호 일치 · 2026-10-16"
         }
       ],
       "checkedAt": "2026-10-16",
@@ -3680,10 +3685,10 @@
       "region": "송파구",
       "address": "서울특별시 송파구 백제고분로45길 11(2층 송파동, 렉스프라자)",
       "phone": null,
-      "lat": null,
-      "lng": null,
-      "position": "지도 좌표 미확인",
-      "positionNote": "공식 목록의 도로명 주소를 확인했습니다. 건물 좌표를 확인하기 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 상호와 주소를 확인하세요.",
+      "lat": 37.5094542,
+      "lng": 127.1100482,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "공식 등록 주소의 자치구·도로명·건물번호와 일치하는 OpenStreetMap 주소 위치입니다. 같은 건물의 다른 점포가 검색될 수 있으며 출입구·층·현재 영업을 확인한 좌표는 아닙니다.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -3720,6 +3725,11 @@
           "name": "식품안전나라 · 반려동물 동반 가능 업소 현황",
           "url": "https://www.foodsafetykorea.go.kr/portal/petKorea.do",
           "type": "공식 등록 현황 · 2026-10-16 조회 · 연번 185"
+        },
+        {
+          "name": "OpenStreetMap · 도로명 주소 좌표",
+          "url": "https://www.openstreetmap.org/node/10783517480",
+          "type": "ODbL · 자치구/도로명/건물번호 일치 · 2026-10-16"
         }
       ],
       "checkedAt": "2026-10-16",
@@ -3860,10 +3870,10 @@
       "region": "서대문구",
       "address": "서울특별시 서대문구 통일로 421(2층 홍제동)",
       "phone": null,
-      "lat": null,
-      "lng": null,
-      "position": "지도 좌표 미확인",
-      "positionNote": "공식 목록의 도로명 주소를 확인했습니다. 건물 좌표를 확인하기 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 상호와 주소를 확인하세요.",
+      "lat": 37.586832,
+      "lng": 126.9459787,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "공식 등록 주소의 자치구·도로명·건물번호와 일치하는 OpenStreetMap 주소 위치입니다. 같은 건물의 다른 점포가 검색될 수 있으며 출입구·층·현재 영업을 확인한 좌표는 아닙니다.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -3900,6 +3910,11 @@
           "name": "식품안전나라 · 반려동물 동반 가능 업소 현황",
           "url": "https://www.foodsafetykorea.go.kr/portal/petKorea.do",
           "type": "공식 등록 현황 · 2026-10-16 조회 · 연번 189"
+        },
+        {
+          "name": "OpenStreetMap · 도로명 주소 좌표",
+          "url": "https://www.openstreetmap.org/node/13930571011",
+          "type": "ODbL · 자치구/도로명/건물번호 일치 · 2026-10-16"
         }
       ],
       "checkedAt": "2026-10-16",
@@ -4590,10 +4605,10 @@
       "region": "강남구",
       "address": "서울특별시 강남구 언주로148길 14(청호불교문화원 나동 지상2층 208호,209호 논현동)",
       "phone": null,
-      "lat": null,
-      "lng": null,
-      "position": "지도 좌표 미확인",
-      "positionNote": "공식 목록의 도로명 주소를 확인했습니다. 건물 좌표를 확인하기 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 상호와 주소를 확인하세요.",
+      "lat": 37.5204198,
+      "lng": 127.0354833,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "공식 등록 주소의 자치구·도로명·건물번호와 일치하는 OpenStreetMap 주소 위치입니다. 같은 건물의 다른 점포가 검색될 수 있으며 출입구·층·현재 영업을 확인한 좌표는 아닙니다.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -4630,6 +4645,11 @@
           "name": "식품안전나라 · 반려동물 동반 가능 업소 현황",
           "url": "https://www.foodsafetykorea.go.kr/portal/petKorea.do",
           "type": "공식 등록 현황 · 2026-10-16 조회 · 연번 243"
+        },
+        {
+          "name": "OpenStreetMap · 도로명 주소 좌표",
+          "url": "https://www.openstreetmap.org/node/12060298862",
+          "type": "ODbL · 자치구/도로명/건물번호 일치 · 2026-10-16"
         }
       ],
       "checkedAt": "2026-10-16",

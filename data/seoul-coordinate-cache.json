@@ -13905,5 +13905,747 @@
         ]
       }
     ]
+  },
+  "서울특별시 마포구 월드컵로29길 7": {
+    "checkedAt": "2026-10-16",
+    "url": "https://nominatim.openstreetmap.org/search?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EB%A7%88%ED%8F%AC%EA%B5%AC+%EC%9B%94%EB%93%9C%EC%BB%B5%EB%A1%9C29%EA%B8%B8+7&format=jsonv2&countrycodes=kr&limit=3&addressdetails=1",
+    "results": [
+      {
+        "place_id": 223453244,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 31780689,
+        "lat": "37.5589324",
+        "lon": "126.9029254",
+        "category": "highway",
+        "type": "residential",
+        "place_rank": 26,
+        "importance": 0.05340631342030972,
+        "addresstype": "road",
+        "name": "월드컵로29길",
+        "display_name": "월드컵로29길, 6통, 망원2동, 마포구, 서울특별시, 03959, 대한민국",
+        "address": {
+          "road": "월드컵로29길",
+          "neighbourhood": "6통",
+          "suburb": "망원2동",
+          "borough": "마포구",
+          "city": "서울특별시",
+          "ISO3166-2-lvl4": "KR-11",
+          "postcode": "03959",
+          "country": "대한민국",
+          "country_code": "kr"
+        },
+        "boundingbox": [
+          "37.5575064",
+          "37.5605227",
+          "126.8997436",
+          "126.9060230"
+        ]
+      },
+      {
+        "place_id": 223436107,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 469019945,
+        "lat": "37.5580816",
+        "lon": "126.9017799",
+        "category": "highway",
+        "type": "service",
+        "place_rank": 27,
+        "importance": 0.04007298008697641,
+        "addresstype": "road",
+        "name": "월드컵로29길",
+        "display_name": "월드컵로29길, 5통, 망원2동, 마포구, 서울특별시, 03959, 대한민국",
+        "address": {
+          "road": "월드컵로29길",
+          "neighbourhood": "5통",
+          "suburb": "망원2동",
+          "borough": "마포구",
+          "city": "서울특별시",
+          "ISO3166-2-lvl4": "KR-11",
+          "postcode": "03959",
+          "country": "대한민국",
+          "country_code": "kr"
+        },
+        "boundingbox": [
+          "37.5573526",
+          "37.5588074",
+          "126.9012530",
+          "126.9023025"
+        ]
+      },
+      {
+        "place_id": 223284808,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 701068758,
+        "lat": "37.5588772",
+        "lon": "126.9039740",
+        "category": "highway",
+        "type": "service",
+        "place_rank": 27,
+        "importance": 0.04007298008697641,
+        "addresstype": "road",
+        "name": "월드컵로29길",
+        "display_name": "월드컵로29길, 6통, 망원2동, 마포구, 서울특별시, 03964, 대한민국",
+        "address": {
+          "road": "월드컵로29길",
+          "neighbourhood": "6통",
+          "suburb": "망원2동",
+          "borough": "마포구",
+          "city": "서울특별시",
+          "ISO3166-2-lvl4": "KR-11",
+          "postcode": "03964",
+          "country": "대한민국",
+          "country_code": "kr"
+        },
+        "boundingbox": [
+          "37.5584779",
+          "37.5592766",
+          "126.9036911",
+          "126.9042570"
+        ]
+      }
+    ]
+  },
+  "서울특별시 강북구 도봉로8길 15": {
+    "checkedAt": "2026-10-16",
+    "url": "https://nominatim.openstreetmap.org/search?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EA%B0%95%EB%B6%81%EA%B5%AC+%EB%8F%84%EB%B4%89%EB%A1%9C8%EA%B8%B8+15&format=jsonv2&countrycodes=kr&limit=3&addressdetails=1",
+    "results": [
+      {
+        "place_id": 420106486,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 13946852343,
+        "lat": "37.6127490",
+        "lon": "127.0310905",
+        "category": "amenity",
+        "type": "restaurant",
+        "place_rank": 30,
+        "importance": 0.0000729800869763793,
+        "addresstype": "amenity",
+        "name": "더파이어셰프(THE FIRE CHEF)",
+        "display_name": "더파이어셰프(THE FIRE CHEF), 15, 도봉로8길, 송중동, 강북구, 서울특별시, 01221, 대한민국",
+        "address": {
+          "amenity": "더파이어셰프(THE FIRE CHEF)",
+          "house_number": "15",
+          "road": "도봉로8길",
+          "suburb": "송중동",
+          "borough": "강북구",
+          "city": "서울특별시",
+          "ISO3166-2-lvl4": "KR-11",
+          "postcode": "01221",
+          "country": "대한민국",
+          "country_code": "kr"
+        },
+        "boundingbox": [
+          "37.6126990",
+          "37.6127990",
+          "127.0310405",
+          "127.0311405"
+        ]
+      }
+    ]
+  },
+  "서울특별시 영등포구 영중로4길 25": {
+    "checkedAt": "2026-10-16",
+    "url": "https://nominatim.openstreetmap.org/search?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC+%EC%98%81%EC%A4%91%EB%A1%9C4%EA%B8%B8+25&format=jsonv2&countrycodes=kr&limit=3&addressdetails=1",
+    "results": [
+      {
+        "place_id": 420510565,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 13930561037,
+        "lat": "37.5178139",
+        "lon": "126.9091668",
+        "category": "amenity",
+        "type": "restaurant",
+        "place_rank": 30,
+        "importance": 0.0000729800869763793,
+        "addresstype": "amenity",
+        "name": "부엉이 산장",
+        "display_name": "부엉이 산장, 25-1, 영중로4길, 영등포동3가, 영등포동, 영등포구, 서울특별시, 07304, 대한민국",
+        "address": {
+          "amenity": "부엉이 산장",
+          "house_number": "25-1",
+          "road": "영중로4길",
+          "quarter": "영등포동3가",
+          "suburb": "영등포동",
+          "borough": "영등포구",
+          "city": "서울특별시",
+          "ISO3166-2-lvl4": "KR-11",
+          "postcode": "07304",
+          "country": "대한민국",
+          "country_code": "kr"
+        },
+        "boundingbox": [
+          "37.5177639",
+          "37.5178639",
+          "126.9091168",
+          "126.9092168"
+        ]
+      },
+      {
+        "place_id": 224447266,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 464832503,
+        "lat": "37.5175164",
+        "lon": "126.9084851",
+        "category": "highway",
+        "type": "residential",
+        "place_rank": 26,
+        "importance": 0.05340631342030972,
+        "addresstype": "road",
+        "name": "영중로4길",
+        "display_name": "영중로4길, 영등포동3가, 영등포동, 영등포구, 서울특별시, 07304, 대한민국",
+        "address": {
+          "road": "영중로4길",
+          "quarter": "영등포동3가",
+          "suburb": "영등포동",
+          "borough": "영등포구",
+          "city": "서울특별시",
+          "ISO3166-2-lvl4": "KR-11",
+          "postcode": "07304",
+          "country": "대한민국",
+          "country_code": "kr"
+        },
+        "boundingbox": [
+          "37.5170088",
+          "37.5183128",
+          "126.9063473",
+          "126.9105217"
+        ]
+      },
+      {
+        "place_id": 221473430,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 277174834,
+        "lat": "37.5176212",
+        "lon": "126.9074532",
+        "category": "highway",
+        "type": "service",
+        "place_rank": 27,
+        "importance": 0.04007298008697641,
+        "addresstype": "road",
+        "name": "영중로4길",
+        "display_name": "영중로4길, 영등포동3가, 영등포동, 영등포구, 서울특별시, 07304, 대한민국",
+        "address": {
+          "road": "영중로4길",
+          "quarter": "영등포동3가",
+          "suburb": "영등포동",
+          "borough": "영등포구",
+          "city": "서울특별시",
+          "ISO3166-2-lvl4": "KR-11",
+          "postcode": "07304",
+          "country": "대한민국",
+          "country_code": "kr"
+        },
+        "boundingbox": [
+          "37.5172877",
+          "37.5179570",
+          "126.9074196",
+          "126.9075052"
+        ]
+      }
+    ]
+  },
+  "서울특별시 노원구 노원로26길 69": {
+    "checkedAt": "2026-10-16",
+    "url": "https://nominatim.openstreetmap.org/search?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EB%85%B8%EC%9B%90%EA%B5%AC+%EB%85%B8%EC%9B%90%EB%A1%9C26%EA%B8%B8+69&format=jsonv2&countrycodes=kr&limit=3&addressdetails=1",
+    "results": [
+      {
+        "place_id": 222964417,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 414489583,
+        "lat": "37.6541772",
+        "lon": "127.0717002",
+        "category": "highway",
+        "type": "secondary",
+        "place_rank": 26,
+        "importance": 0.05340631342030972,
+        "addresstype": "road",
+        "name": "노원로26길",
+        "display_name": "노원로26길, 상계2동, 노원구, 서울특별시, 01707, 대한민국",
+        "address": {
+          "road": "노원로26길",
+          "suburb": "상계2동",
+          "borough": "노원구",
+          "city": "서울특별시",
+          "ISO3166-2-lvl4": "KR-11",
+          "postcode": "01707",
+          "country": "대한민국",
+          "country_code": "kr"
+        },
+        "boundingbox": [
+          "37.6507900",
+          "37.6588472",
+          "127.0684800",
+          "127.0719000"
+        ]
+      }
+    ]
+  },
+  "서울특별시 강남구 강남대로158길 25": {
+    "checkedAt": "2026-10-16",
+    "url": "https://nominatim.openstreetmap.org/search?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EA%B0%95%EB%82%A8%EA%B5%AC+%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C158%EA%B8%B8+25&format=jsonv2&countrycodes=kr&limit=3&addressdetails=1",
+    "results": [
+      {
+        "place_id": 222541429,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 47073338,
+        "lat": "37.5193985",
+        "lon": "127.0209907",
+        "category": "highway",
+        "type": "residential",
+        "place_rank": 26,
+        "importance": 0.05340631342030972,
+        "addresstype": "road",
+        "name": "강남대로158길",
+        "display_name": "강남대로158길, 가로수길, 신사동, 강남구, 서울특별시, 06034, 대한민국",
+        "address": {
+          "road": "강남대로158길",
+          "neighbourhood": "가로수길",
+          "suburb": "신사동",
+          "borough": "강남구",
+          "city": "서울특별시",
+          "ISO3166-2-lvl4": "KR-11",
+          "postcode": "06034",
+          "country": "대한민국",
+          "country_code": "kr"
+        },
+        "boundingbox": [
+          "37.5187408",
+          "37.5200487",
+          "127.0196775",
+          "127.0223078"
+        ]
+      }
+    ]
+  },
+  "서울특별시 송파구 백제고분로45길 11": {
+    "checkedAt": "2026-10-16",
+    "url": "https://nominatim.openstreetmap.org/search?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EC%86%A1%ED%8C%8C%EA%B5%AC+%EB%B0%B1%EC%A0%9C%EA%B3%A0%EB%B6%84%EB%A1%9C45%EA%B8%B8+11&format=jsonv2&countrycodes=kr&limit=3&addressdetails=1",
+    "results": [
+      {
+        "place_id": 222158236,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 10783517480,
+        "lat": "37.5094542",
+        "lon": "127.1100482",
+        "category": "amenity",
+        "type": "restaurant",
+        "place_rank": 30,
+        "importance": 0.0000729800869763793,
+        "addresstype": "amenity",
+        "name": "토나리우동",
+        "display_name": "토나리우동, 11, 백제고분로45길, 송파동, 송파1동, 송파구, 서울특별시, 05622, 대한민국",
+        "address": {
+          "amenity": "토나리우동",
+          "house_number": "11",
+          "road": "백제고분로45길",
+          "quarter": "송파동",
+          "suburb": "송파1동",
+          "borough": "송파구",
+          "city": "서울특별시",
+          "ISO3166-2-lvl4": "KR-11",
+          "postcode": "05622",
+          "country": "대한민국",
+          "country_code": "kr"
+        },
+        "boundingbox": [
+          "37.5094042",
+          "37.5095042",
+          "127.1099982",
+          "127.1100982"
+        ]
+      },
+      {
+        "place_id": 416868092,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 13805636037,
+        "lat": "37.5094078",
+        "lon": "127.1099871",
+        "category": "shop",
+        "type": "beauty",
+        "place_rank": 30,
+        "importance": 0.0000729800869763793,
+        "addresstype": "shop",
+        "name": "나쯔네일",
+        "display_name": "나쯔네일, 11, 4층 401호, 백제고분로45길, 송파동, 송파1동, 송파구, 서울특별시, 05619, 대한민국",
+        "address": {
+          "shop": "나쯔네일",
+          "house_number": "11, 4층 401호",
+          "road": "백제고분로45길",
+          "quarter": "송파동",
+          "suburb": "송파1동",
+          "borough": "송파구",
+          "city": "서울특별시",
+          "ISO3166-2-lvl4": "KR-11",
+          "postcode": "05619",
+          "country": "대한민국",
+          "country_code": "kr"
+        },
+        "boundingbox": [
+          "37.5093578",
+          "37.5094578",
+          "127.1099371",
+          "127.1100371"
+        ]
+      },
+      {
+        "place_id": 418130016,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 13851212615,
+        "lat": "37.5094078",
+        "lon": "127.1099871",
+        "category": "shop",
+        "type": "beauty",
+        "place_rank": 30,
+        "importance": 0.0000729800869763793,
+        "addresstype": "shop",
+        "name": "나쯔네일",
+        "display_name": "나쯔네일, 11, 백제고분로45길, 송파동, 송파1동, 송파구, 서울특별시, 05619, 대한민국",
+        "address": {
+          "shop": "나쯔네일",
+          "house_number": "11",
+          "road": "백제고분로45길",
+          "quarter": "송파동",
+          "suburb": "송파1동",
+          "borough": "송파구",
+          "city": "서울특별시",
+          "ISO3166-2-lvl4": "KR-11",
+          "postcode": "05619",
+          "country": "대한민국",
+          "country_code": "kr"
+        },
+        "boundingbox": [
+          "37.5093578",
+          "37.5094578",
+          "127.1099371",
+          "127.1100371"
+        ]
+      }
+    ]
+  },
+  "서울특별시 서대문구 통일로 421": {
+    "checkedAt": "2026-10-16",
+    "url": "https://nominatim.openstreetmap.org/search?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EC%84%9C%EB%8C%80%EB%AC%B8%EA%B5%AC+%ED%86%B5%EC%9D%BC%EB%A1%9C+421&format=jsonv2&countrycodes=kr&limit=3&addressdetails=1",
+    "results": [
+      {
+        "place_id": 419737501,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 13930571011,
+        "lat": "37.5868320",
+        "lon": "126.9459787",
+        "category": "amenity",
+        "type": "restaurant",
+        "place_rank": 30,
+        "importance": 0.0000729800869763793,
+        "addresstype": "amenity",
+        "name": "화린",
+        "display_name": "화린, 421, 통일로, 홍제1동, 서대문구, 서울특별시, 03646, 대한민국",
+        "address": {
+          "amenity": "화린",
+          "house_number": "421",
+          "road": "통일로",
+          "suburb": "홍제1동",
+          "borough": "서대문구",
+          "city": "서울특별시",
+          "ISO3166-2-lvl4": "KR-11",
+          "postcode": "03646",
+          "country": "대한민국",
+          "country_code": "kr"
+        },
+        "boundingbox": [
+          "37.5867820",
+          "37.5868820",
+          "126.9459287",
+          "126.9460287"
+        ]
+      }
+    ]
+  },
+  "서울특별시 강남구 언주로148길 14": {
+    "checkedAt": "2026-10-16",
+    "url": "https://nominatim.openstreetmap.org/search?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EA%B0%95%EB%82%A8%EA%B5%AC+%EC%96%B8%EC%A3%BC%EB%A1%9C148%EA%B8%B8+14&format=jsonv2&countrycodes=kr&limit=3&addressdetails=1",
+    "results": [
+      {
+        "place_id": 223301898,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 12060298862,
+        "lat": "37.5204198",
+        "lon": "127.0354833",
+        "category": "amenity",
+        "type": "restaurant",
+        "place_rank": 30,
+        "importance": 0.0000729800869763793,
+        "addresstype": "amenity",
+        "name": "한성칼국수",
+        "display_name": "한성칼국수, 14, 언주로148길, 논현2동, 강남구, 서울특별시, 06057, 대한민국",
+        "address": {
+          "amenity": "한성칼국수",
+          "house_number": "14",
+          "road": "언주로148길",
+          "suburb": "논현2동",
+          "borough": "강남구",
+          "city": "서울특별시",
+          "ISO3166-2-lvl4": "KR-11",
+          "postcode": "06057",
+          "country": "대한민국",
+          "country_code": "kr"
+        },
+        "boundingbox": [
+          "37.5203698",
+          "37.5204698",
+          "127.0354333",
+          "127.0355333"
+        ]
+      },
+      {
+        "place_id": 419199975,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 13911614000,
+        "lat": "37.5206300",
+        "lon": "127.0361630",
+        "category": "shop",
+        "type": "convenience",
+        "place_rank": 30,
+        "importance": 0.0000729800869763793,
+        "addresstype": "shop",
+        "name": "이마트24 논현소망점",
+        "display_name": "이마트24 논현소망점, 14,, 언주로148길, 논현2동, 강남구, 서울특별시, 06057, 대한민국",
+        "address": {
+          "shop": "이마트24 논현소망점",
+          "house_number": "14,",
+          "road": "언주로148길",
+          "suburb": "논현2동",
+          "borough": "강남구",
+          "city": "서울특별시",
+          "ISO3166-2-lvl4": "KR-11",
+          "postcode": "06057",
+          "country": "대한민국",
+          "country_code": "kr"
+        },
+        "boundingbox": [
+          "37.5205800",
+          "37.5206800",
+          "127.0361130",
+          "127.0362130"
+        ]
+      },
+      {
+        "place_id": 420105901,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "node",
+        "osm_id": 13946799168,
+        "lat": "37.5206301",
+        "lon": "127.0361626",
+        "category": "amenity",
+        "type": "restaurant",
+        "place_rank": 30,
+        "importance": 0.0000729800869763793,
+        "addresstype": "amenity",
+        "name": "왕소금구이",
+        "display_name": "왕소금구이, 14, 언주로148길, 논현2동, 강남구, 서울특별시, 06057, 대한민국",
+        "address": {
+          "amenity": "왕소금구이",
+          "house_number": "14",
+          "road": "언주로148길",
+          "suburb": "논현2동",
+          "borough": "강남구",
+          "city": "서울특별시",
+          "ISO3166-2-lvl4": "KR-11",
+          "postcode": "06057",
+          "country": "대한민국",
+          "country_code": "kr"
+        },
+        "boundingbox": [
+          "37.5205801",
+          "37.5206801",
+          "127.0361126",
+          "127.0362126"
+        ]
+      }
+    ]
+  },
+  "서울특별시 성북구 보문로34길 94": {
+    "checkedAt": "2026-10-16",
+    "url": "https://nominatim.openstreetmap.org/search?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EC%84%B1%EB%B6%81%EA%B5%AC+%EB%B3%B4%EB%AC%B8%EB%A1%9C34%EA%B8%B8+94&format=jsonv2&countrycodes=kr&limit=3&addressdetails=1",
+    "results": [
+      {
+        "place_id": 222544016,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 26271772,
+        "lat": "37.5909074",
+        "lon": "127.0184004",
+        "category": "highway",
+        "type": "residential",
+        "place_rank": 26,
+        "importance": 0.05340631342030972,
+        "addresstype": "road",
+        "name": "보문로34길",
+        "display_name": "보문로34길, 동선동1가, 동선동, 성북구, 서울특별시, 02849, 대한민국",
+        "address": {
+          "road": "보문로34길",
+          "quarter": "동선동1가",
+          "suburb": "동선동",
+          "borough": "성북구",
+          "city": "서울특별시",
+          "ISO3166-2-lvl4": "KR-11",
+          "postcode": "02849",
+          "country": "대한민국",
+          "country_code": "kr"
+        },
+        "boundingbox": [
+          "37.5904106",
+          "37.5913749",
+          "127.0169073",
+          "127.0199029"
+        ]
+      },
+      {
+        "place_id": 222568327,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 379603752,
+        "lat": "37.5910185",
+        "lon": "127.0194368",
+        "category": "highway",
+        "type": "residential",
+        "place_rank": 26,
+        "importance": 0.05340631342030972,
+        "addresstype": "road",
+        "name": "보문로34길",
+        "display_name": "보문로34길, 동선동2가, 동선동, 성북구, 서울특별시, 02849, 대한민국",
+        "address": {
+          "road": "보문로34길",
+          "quarter": "동선동2가",
+          "suburb": "동선동",
+          "borough": "성북구",
+          "city": "서울특별시",
+          "ISO3166-2-lvl4": "KR-11",
+          "postcode": "02849",
+          "country": "대한민국",
+          "country_code": "kr"
+        },
+        "boundingbox": [
+          "37.5908292",
+          "37.5912078",
+          "127.0193473",
+          "127.0195262"
+        ]
+      },
+      {
+        "place_id": 219860894,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 377540921,
+        "lat": "37.5904041",
+        "lon": "127.0156259",
+        "category": "highway",
+        "type": "residential",
+        "place_rank": 26,
+        "importance": 0.05340631342030972,
+        "addresstype": "road",
+        "name": "보문로34길",
+        "display_name": "보문로34길, 동소문동5가, 삼선동, 성북구, 서울특별시, 02847, 대한민국",
+        "address": {
+          "road": "보문로34길",
+          "quarter": "동소문동5가",
+          "suburb": "삼선동",
+          "borough": "성북구",
+          "city": "서울특별시",
+          "ISO3166-2-lvl4": "KR-11",
+          "postcode": "02847",
+          "country": "대한민국",
+          "country_code": "kr"
+        },
+        "boundingbox": [
+          "37.5900885",
+          "37.5907196",
+          "127.0152733",
+          "127.0159785"
+        ]
+      }
+    ]
+  },
+  "서울특별시 구로구 공원로8길 45": {
+    "checkedAt": "2026-10-16",
+    "url": "https://nominatim.openstreetmap.org/search?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EA%B5%AC%EB%A1%9C%EA%B5%AC+%EA%B3%B5%EC%9B%90%EB%A1%9C8%EA%B8%B8+45&format=jsonv2&countrycodes=kr&limit=3&addressdetails=1",
+    "results": [
+      {
+        "place_id": 222685970,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 277530227,
+        "lat": "37.5034396",
+        "lon": "126.8910043",
+        "category": "highway",
+        "type": "residential",
+        "place_rank": 26,
+        "importance": 0.05340631342030972,
+        "addresstype": "road",
+        "name": "공원로8길",
+        "display_name": "공원로8길, 구로5동, 구로구, 서울특별시, 08296, 대한민국",
+        "address": {
+          "road": "공원로8길",
+          "suburb": "구로5동",
+          "borough": "구로구",
+          "city": "서울특별시",
+          "ISO3166-2-lvl4": "KR-11",
+          "postcode": "08296",
+          "country": "대한민국",
+          "country_code": "kr"
+        },
+        "boundingbox": [
+          "37.5026441",
+          "37.5042370",
+          "126.8894522",
+          "126.8925554"
+        ]
+      },
+      {
+        "place_id": 222632990,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 277530226,
+        "lat": "37.5026482",
+        "lon": "126.8915460",
+        "category": "highway",
+        "type": "service",
+        "place_rank": 27,
+        "importance": 0.04007298008697641,
+        "addresstype": "road",
+        "name": "공원로8길",
+        "display_name": "공원로8길, 구로5동, 구로구, 서울특별시, 08296, 대한민국",
+        "address": {
+          "road": "공원로8길",
+          "suburb": "구로5동",
+          "borough": "구로구",
+          "city": "서울특별시",
+          "ISO3166-2-lvl4": "KR-11",
+          "postcode": "08296",
+          "country": "대한민국",
+          "country_code": "kr"
+        },
+        "boundingbox": [
+          "37.5018936",
+          "37.5034028",
+          "126.8909325",
+          "126.8921595"
+        ]
+      }
+    ]
   }
 }
