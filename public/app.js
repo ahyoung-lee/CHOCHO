@@ -69,7 +69,7 @@ function render(){
  $('resultCount').textContent=visible.length;
  const eligible=filterPlaces(data,{...state,category:'all'});
  doc.querySelectorAll('[data-category]').forEach(el=>el.setAttribute('aria-pressed',String(el.dataset.category===state.category)));
- doc.querySelectorAll('[data-category-count]').forEach(el=>el.textContent=eligible.filter(p=>matchesCategory(p,el.dataset.categoryCount)).length);
+ doc.querySelectorAll('[data-category-count]').forEach(el=>el.textContent=el.dataset.categoryCount==='all'?data.places.length:eligible.filter(p=>matchesCategory(p,el.dataset.categoryCount)).length);
  $('resultSummary').textContent=state.origin==='current'?'현재 위치 주변 · 가까운 순':`${data.origins[state.origin].name} 출발 · 가까운 순`;
  const mapped=visible.filter(hasCoordinates).length;
  $('mapCount').textContent=`지도 ${mapped}곳 · 목록 ${visible.length}곳`;
