@@ -216,5 +216,20 @@ test('published workbook venues render, combine services, overlap categories and
  const unknown=published.places.find(p=>p.lat===null);registered.state.query=unknown.name;registered.render();
  assert(registered.getFiltered().some(p=>p.id===unknown.id));assert(!elements.markerLayer.innerHTML.includes('data-marker="'+unknown.id+'"'));
 });
+test('venue cards show city and district, callable contact and parking without lawn or hours',()=>{
+ const registered=window.PAW_APP;registered.reset();
+ elements.search.value='펫타리움 청담점';elements.search.fire('input');
+ assert.equal(registered.getFiltered().length,1);
+ let cards=elements.results.innerHTML;
+ assert(cards.includes('<p class="card-area">서울시 강남구</p>'));
+ assert(cards.includes('href="tel:050714031704"'));
+ assert(cards.includes('주차 가능'));
+ assert(!cards.includes('잔디'));assert(!cards.includes('hour-line'));assert(!cards.includes('영업시간'));
+ elements.search.value='리블링코코';elements.search.fire('input');
+ assert(elements.results.innerHTML.includes('<p class="card-area">경기도 남양주시</p>'));
+ const place=registered.getFiltered()[0],phone=place.phone,parking=place.parking;
+ try{place.phone=null;place.parking=false;registered.render();cards=elements.results.innerHTML;assert(cards.includes('전화번호 미확인'));assert(!cards.includes('tel:null'));assert(cards.includes('주차 없음'));}
+ finally{place.phone=phone;place.parking=parking;registered.reset();}
+});
 console.log(`\n${checks} verification scenarios passed.`);
 })().catch(error=>{console.error(error);process.exitCode=1;});
