@@ -8,13 +8,15 @@ function validate(data){
   for(const key of ['name','area','region','address','position','positionNote','petArea','dogRule','yard','hours','hoursNote','fee','evidence','checkedAt'])if(typeof p[key]!=='string'||!p[key].trim())errors.push(`${prefix}: ${key}가 필요합니다.`);
   if(p.phone!==null&&!/^[0-9-]{8,20}$/.test(p.phone))errors.push(`${prefix}: 전화번호는 숫자와 하이픈 또는 미확인 null만 가능합니다.`);
   if(p.category!=='playground'&&p.playground===true)errors.push(`${prefix}: 운동장 확인 장소의 유형을 다시 확인하세요.`);
-  if(!['playground','companion','restaurant','bar'].includes(p.category))errors.push(`${prefix}: category는 playground/companion/restaurant/bar입니다.`);
+  const categories=['playground','companion','restaurant','bar','pension'];
+  if(!categories.includes(p.category))errors.push(`${prefix}: 지원하지 않는 category입니다.`);
+  if(p.categories!==undefined&&(!Array.isArray(p.categories)||!p.categories.length||p.categories.some(c=>!categories.includes(c))||new Set(p.categories).size!==p.categories.length||!p.categories.includes(p.category)||p.categories.includes('playground')!==(p.playground===true)))errors.push(`${prefix}: categories에 실제 업종을 중복 없이 입력하고 운동장 여부와 일치시켜 주세요.`);
   if(p.companionModes!==undefined&&(!Array.isArray(p.companionModes)||p.companionModes.some(mode=>!['packing','harness'].includes(mode))||new Set(p.companionModes).size!==p.companionModes.length))errors.push(`${prefix}: companionModes는 packing/harness 배열이며 중복 없이 입력합니다.`);
   if(p.largeDogPlayground!==undefined&&typeof p.largeDogPlayground!=='boolean')errors.push(`${prefix}: largeDogPlayground는 boolean입니다.`);
   if(p.largeDogPlayground===true&&(p.category!=='playground'||p.playground!==true||!p.largeDogPlaygroundEvidence?.trim()))errors.push(`${prefix}: 대형견 운동장은 운동장 확인과 별도 이용 근거가 필요합니다.`);
   if(!['listed','closed','unverified'].includes(p.status))errors.push(`${prefix}: status는 listed/closed/unverified입니다.`);
   if(p.category==='playground'&&p.playground!==true)errors.push(`${prefix}: 운동장 카페는 운동장 확인 근거가 필요합니다.`);
-  for(const key of ['playground','parking','indoor','outdoor','terrace'])if(p[key]!==undefined&&p[key]!==null&&typeof p[key]!=='boolean')errors.push(`${prefix}: ${key}는 true/false/null입니다.`);
+  for(const key of ['playground','parking','indoor','outdoor','terrace','hoteling','daycare','grooming'])if(p[key]!==undefined&&p[key]!==null&&typeof p[key]!=='boolean')errors.push(`${prefix}: ${key}는 true/false/null입니다.`);
   if(p.weightLimit!==null&&(!Number.isFinite(p.weightLimit)||p.weightLimit<=0))errors.push(`${prefix}: weightLimit이 잘못되었습니다.`);
   if(p.playgroundWeightLimit!==undefined&&(!Number.isFinite(p.playgroundWeightLimit)||p.playgroundWeightLimit<=0||p.playground!==true))errors.push(`${prefix}: playgroundWeightLimit은 운동장에만 양수로 입력합니다.`);
   if(!/^\d{4}-\d{2}-\d{2}$/.test(p.checkedAt))errors.push(`${prefix}: 확인일은 YYYY-MM-DD 형식입니다.`);

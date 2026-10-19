@@ -1,7 +1,8 @@
 (async()=>{
 const assert=require('node:assert/strict');
 const fs=require('node:fs');const vm=require('node:vm');
-const fullData=require('../public/data.js'),data={...fullData,origins:{...fullData.origins},places:fullData.places.filter(p=>['nimung','urban','twohundred','vibe','coco','mongle','gaedde'].includes(p.id))},core=require('../public/app.js');
+// Keep historical boundary cases separate from the owner's published workbook.
+const fullData=require('./fixtures/historical-venues.json'),data={...fullData,origins:{...fullData.origins},places:fullData.places.filter(p=>['nimung','urban','twohundred','vibe','coco','mongle','gaedde'].includes(p.id))},core=require('../public/app.js');
 let checks=0;const test=(name,f)=>{f();checks++;console.log('PASS',name);};
 const state=(overrides={})=>Object.assign(core.defaultState(),{time:30},overrides);
 test('packing and harness filters allow overlap and exclude unverified modes',()=>{const base=data.places.find(p=>p.category==='companion');const d={...data,places:[{...base,id:'packing-only',companionModes:['packing']},{...base,id:'harness-only',companionModes:['harness']},{...base,id:'both',companionModes:['packing','harness']},{...base,id:'unknown',companionModes:[]},{...data.places[0],id:'playground',companionModes:['harness']}]};assert.deepEqual(core.filterPlaces(d,state({category:'packing'})).map(p=>p.id),['packing-only','both']);assert.deepEqual(core.filterPlaces(d,state({category:'harness'})).map(p=>p.id),['harness-only','both']);assert.equal(core.filterPlaces(d,state()).length,5);});
@@ -78,8 +79,8 @@ test('unknown location, phone and time values remain usable without invented dis
 
 test('coordinate matching rejects roads, wrong districts, dong mismatches and ambiguous complexes',()=>{const {selectAddressMatch}=require('../scripts/apply-seoul-coordinates.cjs');const p={address:'서울특별시 강남구 학동로 123(1층 논현동)',area:'논현동',region:'강남구'},r={lat:'37.5',lon:'127.04',address:{borough:'강남구',city:'서울특별시',road:'학동로',house_number:'123',quarter:'논현동'}};assert(selectAddressMatch(p,[r]));assert.equal(selectAddressMatch(p,[{...r,address:{...r.address,house_number:undefined}}]),null);assert.equal(selectAddressMatch(p,[{...r,address:{...r.address,borough:'서초구'}}]),null);assert.equal(selectAddressMatch(p,[{...r,address:{...r.address,quarter:'역삼동'}}]),null);assert.equal(selectAddressMatch(p,[r,{...r,lat:'37.51'}]),null);});
 test('supplemented weekday and zone-specific weight conditions are respected',()=>{const s=overrides=>state({time:0,...overrides}),has=(overrides,id)=>core.filterPlaces(fullData,s(overrides)).some(p=>p.id===id);assert(!has({day:'2'},'seoul-mfds-115'));assert(!has({day:'1'},'seoul-mfds-495'));assert(has({day:'6'},'seoul-mfds-495'));assert(has({weight:13},'seoul-mfds-381'));assert(!has({weight:13,category:'playground'},'seoul-mfds-381'));assert(has({weight:12,category:'playground'},'seoul-mfds-381'));});
-test('expanded dataset covers all 25 Seoul districts with provenance and no fabricated unknowns',()=>{const seoul=fullData.places.filter(p=>/^서울/.test(p.address));assert(seoul.length>=190);assert.equal(new Set(seoul.map(p=>p.region)).size,25);assert.equal(fullData.coverage.complete,false);assert(seoul.some(p=>p.category==='playground'));for(const p of seoul){assert(p.sources.length);assert(p.checkedAt);if(p.phone===null)assert(!p.phone);if(p.lat===null)assert.equal(p.lng,null);if(p.registerNumber)assert.equal(p.times.hagye,null);}assert(!seoul.some(p=>/세븐일레븐|고양이놀이터|꼬리살랑/.test(p.name)));assert.equal(new Set(fullData.places.map(p=>p.number)).size,fullData.places.length);require('../scripts/validate-data.cjs').validate(fullData);});
-test('full production dataset renders, searches every district, and handles missing coordinates in detail/compare',()=>{window.CAFE_DATA=fullData;vm.runInContext(fs.readFileSync(__dirname+'/../public/app.js','utf8'),vm.createContext({window,document:doc,AbortController,setTimeout:()=>1,clearTimeout(){},console}));const all=window.PAW_APP;assert.equal(elements.resultCount.textContent,fullData.places.length);assert.equal(all.state.time,0);for(const region of new Set(fullData.places.filter(p=>/^서울/.test(p.address)).map(p=>p.region))){all.state.region=region;all.render();assert(all.getFiltered().length>0);assert(all.getFiltered().every(p=>p.region===region));assert(!/NaN|undefined/.test(elements.results.innerHTML));assert(!/NaN/.test(elements.markerLayer.innerHTML));}all.state.region='seoul';all.render();assert(all.getFiltered().every(p=>/^서울/.test(p.address)));const missing=fullData.places.find(p=>p.lat===null);all.state.region='all';all.state.query=missing.name;all.render();assert(all.getFiltered().some(p=>p.id===missing.id));all.selectPlace(missing.id,true);assert(Number.isFinite(all.map.center.lat));all.detail(missing.id);assert(elements.detailContent.innerHTML.includes('전화번호 미확인'));assert(!elements.detailContent.innerHTML.includes('tel:null'));all.state.compare=[missing.id,'coco'];all.compare();assert(elements.compareContent.innerHTML.includes('전화번호 미확인'));all.reset();all.state.origin='current';fullData.origins.current={name:'현재 위치',lat:37.55,lng:126.98};all.render();assert(all.getFiltered().length>0);assert(all.getFiltered().length<fullData.places.length);assert(all.getFiltered().every(p=>core.hasCoordinates(p)&&core.distanceKm(fullData.origins.current,p)<=10));assert(!/NaN|undefined/.test(elements.results.innerHTML));delete fullData.origins.current;});
+test('historical fixtures cover Seoul districts, provenance and unknown-value regressions',()=>{const seoul=fullData.places.filter(p=>/^서울/.test(p.address));assert(seoul.length>=25);assert.equal(new Set(seoul.map(p=>p.region)).size,25);assert.equal(fullData.coverage.complete,false);assert(seoul.some(p=>p.category==='playground'));for(const p of seoul){assert(p.sources.length);assert(p.checkedAt);if(p.phone===null)assert(!p.phone);if(p.lat===null)assert.equal(p.lng,null);if(p.registerNumber)assert.equal(p.times.hagye,null);}assert(!seoul.some(p=>/세븐일레븐|고양이놀이터|꼬리살랑/.test(p.name)));assert.equal(new Set(fullData.places.map(p=>p.number)).size,fullData.places.length);require('../scripts/validate-data.cjs').validate(fullData);});
+test('historical regression dataset renders and handles missing coordinates in detail/compare',()=>{window.CAFE_DATA=fullData;vm.runInContext(fs.readFileSync(__dirname+'/../public/app.js','utf8'),vm.createContext({window,document:doc,AbortController,setTimeout:()=>1,clearTimeout(){},console}));const all=window.PAW_APP;assert.equal(elements.resultCount.textContent,fullData.places.length);assert.equal(all.state.time,0);for(const region of new Set(fullData.places.filter(p=>/^서울/.test(p.address)).map(p=>p.region))){all.state.region=region;all.render();assert(all.getFiltered().length>0);assert(all.getFiltered().every(p=>p.region===region));assert(!/NaN|undefined/.test(elements.results.innerHTML));assert(!/NaN/.test(elements.markerLayer.innerHTML));}all.state.region='seoul';all.render();assert(all.getFiltered().every(p=>/^서울/.test(p.address)));const missing=fullData.places.find(p=>p.lat===null);all.state.region='all';all.state.query=missing.name;all.render();assert(all.getFiltered().some(p=>p.id===missing.id));all.selectPlace(missing.id,true);assert(Number.isFinite(all.map.center.lat));all.detail(missing.id);assert(elements.detailContent.innerHTML.includes('전화번호 미확인'));assert(!elements.detailContent.innerHTML.includes('tel:null'));all.state.compare=[missing.id,'coco'];all.compare();assert(elements.compareContent.innerHTML.includes('전화번호 미확인'));all.reset();all.state.origin='current';fullData.origins.current={name:'현재 위치',lat:37.55,lng:126.98};all.render();assert(all.getFiltered().length>0);assert(all.getFiltered().length<fullData.places.length);assert(all.getFiltered().every(p=>core.hasCoordinates(p)&&core.distanceKm(fullData.origins.current,p)<=10));assert(!/NaN|undefined/.test(elements.results.innerHTML));delete fullData.origins.current;});
 
 async function testAsync(name,f){await f();checks++;console.log('PASS',name);}
 const currentApp=window.PAW_APP;
@@ -89,10 +90,10 @@ await testAsync('failed address search keeps the applied origin and map',async()
 await testAsync('late search and GPS callbacks cannot overwrite a manually selected origin',async()=>{let resolve;fetchHandler=()=>new Promise(r=>resolve=r);elements.origin.value='지연되는주소';const pending=currentApp.submitOrigin();elements.origin.value='노원역';await currentApp.submitOrigin();resolve({ok:true,json:async()=>({features:[{geometry:{type:'Point',coordinates:[127,37.5]},properties:{name:'지연결과',city:'서울특별시',countrycode:'KR'}}]})});await pending;assert.equal(currentApp.state.origin,'nowon');assert(elements.originResults.hidden);locationSuccess({coords:{latitude:35,longitude:129}});assert.equal(currentApp.state.origin,'nowon');});
 await testAsync('manual origin labels cannot inject HTML into results or map',async()=>{const name='<img src=x onerror=alert(1)>';fetchHandler=async()=>({ok:true,json:async()=>({features:[{geometry:{type:'Point',coordinates:[127,37.5]},properties:{name,city:'서울특별시',countrycode:'KR'}}]})});elements.origin.value='보안검증장소';await currentApp.submitOrigin();assert(!elements.originResults.innerHTML.includes('<img'));currentApp.chooseOrigin(0);assert(!elements.results.innerHTML.includes('<img'));assert(elements.markerLayer.innerHTML.includes('&lt;img'));assert(!elements.markerLayer.innerHTML.includes('<img'));});
 test('HTML uses editable departure and only the requested condition row',()=>{assert(html.includes('id="origin" type="search"'));assert(!html.includes('id="filterButton"'));assert(!html.includes('data-toggle="natural"'));assert(!html.includes('data-toggle="artificial"'));assert(html.includes('id="conditionHeading">조건필터'));for(const text of ['주차가능','실내 동반','테라스 동반','저장한 곳'])assert(html.includes(text));});
-test('removed extra controls leave defaults unrestricted and saved places next to terrace',()=>{
+test('removed extra controls leave defaults unrestricted and saved places last',()=>{
  for(const id of ['region','strict','weight','knownWeight','day','filterCount','extraFilters','time','timeField','sort'])assert(!elements[id],id+' must be removed');
  assert(!html.includes('more-filters'));assert(!html.includes('data-toggle="official"'));
- assert.match(html,/data-toggle="terrace"[^>]*>[^<]*<\/button><button class="chip" data-toggle="favorite"/);
+ assert.match(html,/data-toggle="grooming"[^>]*>[^<]*<\/button><button class="chip" data-toggle="favorite"/);
  assert.equal(chips.filter(e=>e.dataset.toggle==='favorite').length,1);
  currentApp.reset();assert.equal(currentApp.getFiltered().length,fullData.places.length);
  const s=currentApp.state;assert.equal(s.region,'all');assert.equal(s.weight,null);assert.equal(s.day,'');assert(!s.strict&&!s.official&&!s.knownWeight);
@@ -184,6 +185,35 @@ test('venue search button and Enter search while list, map and details use resul
  elements.search.value='송리단';elements.search.fire('keydown',{key:'Enter'});assert(currentApp.getFiltered().some(p=>p.name==='송리단양조장'));assertNumbers();
  elements.search.value='없는업체명123';elements.venueSearch.fire('click');assert.equal(currentApp.getFiltered().length,0);assertNumbers();
  currentApp.reset();assertNumbers();assert.deepEqual(fullData.places.map(p=>p.number),originalNumbers);
+});
+test('published workbook venues render, combine services, overlap categories and keep saved places usable',()=>{
+ const published=require('../public/data.js'),source=JSON.parse(fs.readFileSync(__dirname+'/../data/venues.json','utf8'));
+ assert.deepEqual(published,source);require('../scripts/validate-data.cjs').validate(published);
+ assert.equal(published.coverage.mode,'manual-workbook');assert(published.places.every(p=>p.registration&&p.categories));
+ window.CAFE_DATA=published;vm.runInContext(fs.readFileSync(__dirname+'/../public/app.js','utf8'),vm.createContext({window,document:doc,AbortController,setTimeout:()=>1,clearTimeout(){},console}));
+ const registered=window.PAW_APP;
+ assert.equal(registered.getFiltered().length,published.places.length);
+ for(const key of ['hoteling','daycare','grooming']){
+  registered.reset();click('[data-toggle]',{toggle:key});
+  const expected=published.places.filter(p=>p[key]===true);
+  assert.deepEqual(Array.from(registered.getFiltered(),p=>p.id).sort(),expected.map(p=>p.id).sort());
+  assert.equal(chips.find(c=>c.dataset.toggle===key).attributes['aria-pressed'],'true');
+  assert(!/NaN|undefined/.test(elements.results.innerHTML));
+  assert.equal(chips.find(c=>c.dataset.toggle==='favorite').attributes['aria-pressed'],'false');
+ }
+ registered.reset();click('[data-category]',{category:'restaurant'});
+ assert.equal(registered.getFiltered().length,published.places.filter(p=>p.categories.includes('restaurant')).length);
+ assert(registered.getFiltered().some(p=>p.category==='playground'));
+ const place=published.places.find(p=>p.daycare&&p.hoteling);
+ click('[data-fav]',{fav:place.id});click('[data-toggle]',{toggle:'favorite'});
+ click('[data-toggle]',{toggle:'daycare'});click('[data-toggle]',{toggle:'hoteling'});
+ registered.state.category='all';registered.render();
+ assert.deepEqual(Array.from(registered.getFiltered(),p=>p.id),[place.id]);
+ registered.detail(place.id);assert(elements.detailContent.innerHTML.includes(place.name));
+ registered.reset();assert.equal(registered.getFiltered().length,published.places.length);
+ for(const key of ['hoteling','daycare','grooming','favorite'])assert.equal(registered.state[key],false);
+ const unknown=published.places.find(p=>p.lat===null);registered.state.query=unknown.name;registered.render();
+ assert(registered.getFiltered().some(p=>p.id===unknown.id));assert(!elements.markerLayer.innerHTML.includes('data-marker="'+unknown.id+'"'));
 });
 console.log(`\n${checks} verification scenarios passed.`);
 })().catch(error=>{console.error(error);process.exitCode=1;});
