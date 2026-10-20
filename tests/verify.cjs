@@ -164,7 +164,7 @@ await testAsync('current-location search and my-location refresh nearby ordering
  click('[data-category]',{category:'bar'});const nearbyBars=currentApp.getFiltered();assert(nearbyBars.length>0);assert.equal(nearbyBars[0].id,bar.id);assert(nearbyBars.every(p=>p.category==='bar'));
  assert(distances().every((d,i,all)=>i===0||d>=all[i-1]));
  for(const p of nearbyBars)assert(elements.markerLayer.innerHTML.includes('data-marker="'+p.id+'"'));
- const old={lat:fullData.origins.current.lat,lng:fullData.origins.current.lng};elements.useCurrent.fire('click');
+ const old={lat:fullData.origins.current.lat,lng:fullData.origins.current.lng};elements.mapUseCurrent.fire('click');
  locationSuccess({coords:{latitude:old.lat+0.01,longitude:old.lng+0.01}});assert.equal(fullData.origins.current.lat,old.lat+0.01);assert.equal(currentApp.state.sort,'near');
  assert(currentApp.getFiltered().every(p=>p.category==='bar'&&core.distanceKm(fullData.origins.current,p)<=10));assert(currentApp.getFiltered().every(p=>['주소 좌표 확인','도로명 주소 좌표 확인'].includes(p.position)));
  assert(!html.includes('시간 제한 없음'));assert(!html.includes('id="time"'));assert(!html.includes('id="sort"'));
@@ -223,11 +223,11 @@ test('venue cards show city and district, callable contact and parking without l
  assert(cards.includes('<p class="card-area">서울시 강남구</p>'));
  assert(cards.includes('href="tel:050714031704"'));
  assert(cards.includes('주차 가능'));
- assert(!cards.includes('잔디'));assert(!cards.includes('hour-line'));assert(!cards.includes('영업시간'));
+ assert(!cards.includes('잔디'));assert(!cards.includes('hour-line'));assert(!cards.includes('영업시간'));assert(!cards.includes('직접 등록 정보'));assert(!cards.includes('체중 기준 문의'));
  elements.search.value='리블링코코';elements.search.fire('input');
  assert(elements.results.innerHTML.includes('<p class="card-area">경기도 남양주시</p>'));
  const place=registered.getFiltered()[0],phone=place.phone,parking=place.parking;
- try{place.phone=null;place.parking=false;registered.render();cards=elements.results.innerHTML;assert(cards.includes('전화번호 미확인'));assert(!cards.includes('tel:null'));assert(cards.includes('주차 없음'));}
+ try{place.phone=null;place.parking=false;registered.render();cards=elements.results.innerHTML;assert(cards.includes('전화번호 미확인'));assert(!cards.includes('tel:null'));assert(cards.includes('주차 불가능'));}
  finally{place.phone=phone;place.parking=parking;registered.reset();}
 });
 await testAsync('landmark search shows only nearest registered venues and centers the surrounding map',async()=>{
