@@ -34,6 +34,7 @@ Dog-cafe-finder
 
 ```powershell
 python scripts/import-workbook.py
+node scripts/apply-registered-coordinates.cjs
 node scripts/validate-data.cjs
 node scripts/build.mjs
 npm test
@@ -42,7 +43,13 @@ python tests/workbook.py
 
 엑셀에서 삭제한 업체는 반영 시 목록에서 제외됩니다. 새 업체나 주소를 바꾼 업체는 좌표 확인 전까지 검색 목록에만 표시되며, 위치를 임의로 추정해 핀을 만들지 않습니다. 확인 후 변경 파일을 커밋하고 `main`에 푸시하면 Pages 배포가 시작됩니다.
 
-장소 목록 검색은 네이버 장소 검색 API를 사용하지 않습니다. 출발지의 일반 주소 검색은 기존 Photon 검색을 사용합니다. 지도 인증 또는 연결 실패 시에도 업체 목록·필터·비교 기능은 이용할 수 있습니다.
+장소 목록 검색은 등록 업체만 사용합니다. 업체명 검색에 등록되지 않은 주소·장소(예: 구리시 공설묘지)를 입력하면 Photon으로 기준 위치를 찾습니다. 결과가 하나면 바로 적용하고, 여러 곳이면 사용자가 선택합니다. 출발지 검색도 동일하게 동작합니다.
+
+직접 검색한 기준 위치와 '내 위치'는 동일하게 10km 이내의 주소 좌표가 확인된 등록 업체만 직선거리 순으로 나열합니다. 지도는 기준 위치를 중심에 유지하면서 목록의 모든 업체 핀이 들어오도록 범위를 맞춥니다. 기준 위치를 새로 적용하면 이전 업체명 검색어는 해제합니다. 위치 권한을 거부하거나 주소 검색이 실패하면 적용 중인 위치를 유지합니다.
+
+현재 등록 업체 36곳의 도로명·건물번호와 일치하는 건물 주소 좌표를 `data/registered-kakao-address-cache.json`에 보관합니다. 이 캐시는 업체 목록을 추가하지 않습니다. 새 주소는 `node scripts/locate-registered-kakao-addresses.mjs`로 확인 후 `node scripts/apply-registered-coordinates.cjs`로 반영합니다. 웹사이트 방문 시 이 주소 확인 API를 호출하지 않습니다. 엑셀에서 주소를 바꾸면 기존 좌표는 제거하고 새 주소를 확인해야 합니다.
+
+지도 인증 또는 연결 실패 시에도 업체 목록·필터·비교 기능은 이용할 수 있습니다.
 
 [Node.js 공식 사이트](https://nodejs.org/)에서 Node.js 20 이상을 설치합니다. 별도 npm 패키지 설치는 필요하지 않습니다.
 

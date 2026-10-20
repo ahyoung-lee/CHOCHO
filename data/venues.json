@@ -32,10 +32,10 @@
       "region": "강남구",
       "address": "서울 강남구 영동대로 725 6층",
       "phone": "0507-1403-1704",
-      "lat": 37.5224778,
-      "lng": 127.0551562,
+      "lat": 37.522478322305,
+      "lng": 127.05515575569,
       "position": "도로명 주소 좌표 확인",
-      "positionNote": "공식 등록 주소의 자치구·도로명·건물번호와 일치하는 OpenStreetMap 주소 위치입니다. 같은 건물의 다른 점포가 검색될 수 있으며 카페 출입구·층·현재 영업을 확인한 좌표는 아닙니다. 네이버 지도에서 매장 위치를 재확인하세요.",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -98,6 +98,12 @@
           "type": "ODbL · 자치구/도로명/건물번호 일치 · 2026-10-16"
         },
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EC%98%81%EB%8F%99%EB%8C%80%EB%A1%9C%20725",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EC%98%81%EB%8F%99%EB%8C%80%EB%A1%9C%20725%206%EC%B8%B5",
           "type": "사용자 직접 등록 주소 검색"
@@ -125,7 +131,16 @@
       "grooming": false,
       "largeDogPlayground": false,
       "referenceDogRule": "운영자 소개에 오프리쉬·노매너벨트 안내 · 최신 체중/접종 제한은 문의",
-      "registrationNote": ""
+      "registrationNote": "",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 강남구 영동대로 725",
+        "matchedAddress": "서울 강남구 영동대로 725",
+        "addressId": "N30974742",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EC%98%81%EB%8F%99%EB%8C%80%EB%A1%9C%20725"
+      }
     },
     {
       "id": "nimung",
@@ -135,10 +150,10 @@
       "region": "남양주시",
       "address": "경기 남양주시 불암산로 172",
       "phone": "0507-1345-7457",
-      "lat": 37.659,
-      "lng": 127.102,
-      "position": "주변 위치 추정",
-      "positionNote": "주소의 불암사 진입로 주변을 표시한 참고 위치입니다. 건물 좌표는 독립 확인하지 못했습니다. 정확한 위치는 네이버 지도에서 상호와 주소를 확인하세요.",
+      "lat": 37.6567719707707,
+      "lng": 127.101728514144,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": [
           15,
@@ -222,6 +237,12 @@
           "type": "장소 플랫폼"
         },
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%EB%B6%88%EC%95%94%EC%82%B0%EB%A1%9C%20172",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%EB%B6%88%EC%95%94%EC%82%B0%EB%A1%9C%20172",
           "type": "사용자 직접 등록 주소 검색"
@@ -247,7 +268,16 @@
       "grooming": false,
       "largeDogPlayground": false,
       "referenceDogRule": "중·소형견 전용 · 정확한 체중 기준 문의",
-      "registrationNote": ""
+      "registrationNote": "",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "경기 남양주시 불암산로 172",
+        "matchedAddress": "경기 남양주시 불암산로 172",
+        "addressId": "N31403748",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%EB%B6%88%EC%95%94%EC%82%B0%EB%A1%9C%20172"
+      }
     },
     {
       "id": "manual-1a2c2e9e4648",
@@ -283,10 +313,10 @@
       "yard": "사용자 등록: 운동장 미선택",
       "evidence": "사용자가 업체정보_간편입력.xlsx 4행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "실내 케이지 필수",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.7597835796268,
+      "lng": 127.229957699504,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -306,6 +336,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%ED%8F%AC%EC%B2%9C%EC%8B%9C%20%EB%82%B4%EC%B4%8C%EB%A9%B4%20%EB%A7%A4%EB%B4%89%EA%B8%B8%2064-1",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%ED%8F%AC%EC%B2%9C%EC%8B%9C%20%EB%82%B4%EC%B4%8C%EB%A9%B4%20%EB%A7%A4%EB%B4%89%EA%B8%B8%2064-1%20%EB%8B%A4%EB%8F%99%201%EC%B8%B5",
           "type": "사용자 직접 등록 주소 검색"
@@ -316,7 +352,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "경기 포천시 내촌면 매봉길 64-1",
+        "matchedAddress": "경기 포천시 내촌면 매봉길 64-1",
+        "addressId": "N302179924",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%ED%8F%AC%EC%B2%9C%EC%8B%9C%20%EB%82%B4%EC%B4%8C%EB%A9%B4%20%EB%A7%A4%EB%B4%89%EA%B8%B8%2064-1"
+      }
     },
     {
       "id": "manual-14733a0a42ae",
@@ -353,10 +398,10 @@
       "yard": "사용자 등록: 운동장 있음",
       "evidence": "사용자가 업체정보_간편입력.xlsx 5행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "운동장카페 · 동반 카페",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.7949497290162,
+      "lng": 127.165424736955,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -376,6 +421,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%ED%8F%AC%EC%B2%9C%EC%8B%9C%20%EC%86%8C%ED%9D%98%EC%9D%8D%20%EC%A3%BD%EC%97%BD%EC%82%B0%EB%A1%9C%20442",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%ED%8F%AC%EC%B2%9C%EC%8B%9C%20%EC%86%8C%ED%9D%98%EC%9D%8D%20%EC%A3%BD%EC%97%BD%EC%82%B0%EB%A1%9C%20442%201%EC%B8%B5",
           "type": "사용자 직접 등록 주소 검색"
@@ -386,7 +437,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "경기 포천시 소흘읍 죽엽산로 442",
+        "matchedAddress": "경기 포천시 소흘읍 죽엽산로 442",
+        "addressId": "N30501343",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%ED%8F%AC%EC%B2%9C%EC%8B%9C%20%EC%86%8C%ED%9D%98%EC%9D%8D%20%EC%A3%BD%EC%97%BD%EC%82%B0%EB%A1%9C%20442"
+      }
     },
     {
       "id": "manual-39de1e590ae1",
@@ -425,10 +485,10 @@
       "yard": "사용자 등록: 운동장 있음",
       "evidence": "사용자가 업체정보_간편입력.xlsx 6행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "운동장카페 · 동반 카페 · 동반 음식점",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.8609887552133,
+      "lng": 127.23471642306,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -448,6 +508,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%ED%8F%AC%EC%B2%9C%EC%8B%9C%20%EA%B5%B0%EB%82%B4%EB%A9%B4%20%EA%BD%83%EB%B0%B0%EC%82%B02%EA%B8%B8%20107",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%ED%8F%AC%EC%B2%9C%EC%8B%9C%20%EA%B5%B0%EB%82%B4%EB%A9%B4%20%EA%BD%83%EB%B0%B0%EC%82%B02%EA%B8%B8%20107",
           "type": "사용자 직접 등록 주소 검색"
@@ -458,7 +524,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "경기 포천시 군내면 꽃배산2길 107",
+        "matchedAddress": "경기 포천시 군내면 꽃배산2길 107",
+        "addressId": "N327818544",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%ED%8F%AC%EC%B2%9C%EC%8B%9C%20%EA%B5%B0%EB%82%B4%EB%A9%B4%20%EA%BD%83%EB%B0%B0%EC%82%B02%EA%B8%B8%20107"
+      }
     },
     {
       "id": "urban",
@@ -468,10 +543,10 @@
       "region": "의정부시",
       "address": "경기 의정부시 호국로 952 1층",
       "phone": "0507-1468-1261",
-      "lat": 37.74,
-      "lng": 127.01,
-      "position": "주변 위치 추정",
-      "positionNote": "호국로 가능동 구간 주변을 표시한 참고 위치입니다. 건물 좌표는 독립 확인하지 못했습니다. 주소 검색으로 정확한 진입구를 확인하세요.",
+      "lat": 37.7366990140049,
+      "lng": 127.011868208916,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": [
           25,
@@ -532,6 +607,12 @@
           "type": "업체 SNS · 본문 열람 제한"
         },
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EC%9D%98%EC%A0%95%EB%B6%80%EC%8B%9C%20%ED%98%B8%EA%B5%AD%EB%A1%9C%20952",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EC%9D%98%EC%A0%95%EB%B6%80%EC%8B%9C%20%ED%98%B8%EA%B5%AD%EB%A1%9C%20952%201%EC%B8%B5",
           "type": "사용자 직접 등록 주소 검색"
@@ -558,7 +639,16 @@
       "grooming": false,
       "largeDogPlayground": false,
       "referenceDogRule": "13kg 미만만 입장 · 견종 제한 문의",
-      "registrationNote": ""
+      "registrationNote": "",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "경기 의정부시 호국로 952",
+        "matchedAddress": "경기 의정부시 호국로 952",
+        "addressId": "N302534856",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EC%9D%98%EC%A0%95%EB%B6%80%EC%8B%9C%20%ED%98%B8%EA%B5%AD%EB%A1%9C%20952"
+      }
     },
     {
       "id": "manual-cec92107d2d6",
@@ -596,10 +686,10 @@
       "yard": "사용자 등록: 운동장 있음",
       "evidence": "사용자가 업체정보_간편입력.xlsx 8행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "운동장카페 · 동반 카페 · 동반 음식점",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.7291564230498,
+      "lng": 127.070038954653,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -619,6 +709,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EC%9D%98%EC%A0%95%EB%B6%80%EC%8B%9C%20%EB%91%94%EB%B0%B0%EB%AF%B8%EB%B6%81%EA%B8%B8%2014",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EC%9D%98%EC%A0%95%EB%B6%80%EC%8B%9C%20%EB%91%94%EB%B0%B0%EB%AF%B8%EB%B6%81%EA%B8%B8%2014",
           "type": "사용자 직접 등록 주소 검색"
@@ -629,7 +725,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "경기 의정부시 둔배미북길 14",
+        "matchedAddress": "경기 의정부시 둔배미북길 14",
+        "addressId": "N312168952",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EC%9D%98%EC%A0%95%EB%B6%80%EC%8B%9C%20%EB%91%94%EB%B0%B0%EB%AF%B8%EB%B6%81%EA%B8%B8%2014"
+      }
     },
     {
       "id": "manual-fdb674bffb49",
@@ -667,10 +772,10 @@
       "yard": "사용자 등록: 운동장 있음",
       "evidence": "사용자가 업체정보_간편입력.xlsx 9행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "운동장카페 · 동반 카페 · 동반 음식점",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.5548669403533,
+      "lng": 127.241313309074,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -690,6 +795,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%EC%99%80%EB%B6%80%EC%9D%8D%20%ED%8C%94%EB%8B%B9%EB%A1%9C81%EB%B2%88%EA%B8%B8%2074-65",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%EC%99%80%EB%B6%80%EC%9D%8D%20%ED%8C%94%EB%8B%B9%EB%A1%9C81%EB%B2%88%EA%B8%B8%2074-65",
           "type": "사용자 직접 등록 주소 검색"
@@ -700,7 +811,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "경기 남양주시 와부읍 팔당로81번길 74-65",
+        "matchedAddress": "경기 남양주시 와부읍 팔당로81번길 74-65",
+        "addressId": "N33981287",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%EC%99%80%EB%B6%80%EC%9D%8D%20%ED%8C%94%EB%8B%B9%EB%A1%9C81%EB%B2%88%EA%B8%B8%2074-65"
+      }
     },
     {
       "id": "manual-5e2d2141eb9f",
@@ -738,10 +858,10 @@
       "yard": "사용자 등록: 운동장 있음",
       "evidence": "사용자가 업체정보_간편입력.xlsx 10행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "운동장카페 · 동반 카페",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.8725930326031,
+      "lng": 127.024844687726,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -761,6 +881,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EC%96%91%EC%A3%BC%EC%8B%9C%20%EC%9D%80%ED%98%84%EB%A9%B4%20%EC%9D%80%ED%98%84%EB%A1%9C46%EB%B2%88%EA%B8%B8%2026",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EC%96%91%EC%A3%BC%EC%8B%9C%20%EC%9D%80%ED%98%84%EB%A9%B4%20%EC%9D%80%ED%98%84%EB%A1%9C46%EB%B2%88%EA%B8%B8%2026",
           "type": "사용자 직접 등록 주소 검색"
@@ -771,7 +897,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "경기 양주시 은현면 은현로46번길 26",
+        "matchedAddress": "경기 양주시 은현면 은현로46번길 26",
+        "addressId": "N311646561",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EC%96%91%EC%A3%BC%EC%8B%9C%20%EC%9D%80%ED%98%84%EB%A9%B4%20%EC%9D%80%ED%98%84%EB%A1%9C46%EB%B2%88%EA%B8%B8%2026"
+      }
     },
     {
       "id": "manual-e8429337b0e2",
@@ -808,10 +943,10 @@
       "yard": "사용자 등록: 운동장 미선택",
       "evidence": "사용자가 업체정보_간편입력.xlsx 11행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "동반 카페 · 동반 음식점",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.6525382156451,
+      "lng": 127.370233192016,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -831,6 +966,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%ED%99%94%EB%8F%84%EC%9D%8D%20%EB%B6%81%ED%95%9C%EA%B0%95%EB%A1%9C%201630-18",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%ED%99%94%EB%8F%84%EC%9D%8D%20%EB%B6%81%ED%95%9C%EA%B0%95%EB%A1%9C%201630-18%201%EC%B8%B5",
           "type": "사용자 직접 등록 주소 검색"
@@ -841,7 +982,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "경기 남양주시 화도읍 북한강로 1630-18",
+        "matchedAddress": "경기 남양주시 화도읍 북한강로 1630-18",
+        "addressId": "N34622495",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%ED%99%94%EB%8F%84%EC%9D%8D%20%EB%B6%81%ED%95%9C%EA%B0%95%EB%A1%9C%201630-18"
+      }
     },
     {
       "id": "manual-563ab37ee4f8",
@@ -879,10 +1029,10 @@
       "yard": "사용자 등록: 운동장 있음",
       "evidence": "사용자가 업체정보_간편입력.xlsx 12행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "운동장카페 · 동반 카페",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.6533527136757,
+      "lng": 127.368588752744,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -902,6 +1052,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%ED%99%94%EB%8F%84%EC%9D%8D%20%EB%B6%81%ED%95%9C%EA%B0%95%EB%A1%9C%201627",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%ED%99%94%EB%8F%84%EC%9D%8D%20%EB%B6%81%ED%95%9C%EA%B0%95%EB%A1%9C%201627",
           "type": "사용자 직접 등록 주소 검색"
@@ -912,7 +1068,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "경기 남양주시 화도읍 북한강로 1627",
+        "matchedAddress": "경기 남양주시 화도읍 북한강로 1627",
+        "addressId": "N29993504",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%ED%99%94%EB%8F%84%EC%9D%8D%20%EB%B6%81%ED%95%9C%EA%B0%95%EB%A1%9C%201627"
+      }
     },
     {
       "id": "manual-f2761e09bc4c",
@@ -950,10 +1115,10 @@
       "yard": "사용자 등록: 운동장 있음",
       "evidence": "사용자가 업체정보_간편입력.xlsx 13행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "운동장카페 · 동반 카페",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.7781736370046,
+      "lng": 127.240670917044,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -973,6 +1138,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%ED%8F%AC%EC%B2%9C%EC%8B%9C%20%EB%82%B4%EC%B4%8C%EB%A9%B4%20%EC%86%8C%EB%A6%AC%EA%B0%9C%EA%B8%B8%2086-22",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%ED%8F%AC%EC%B2%9C%EC%8B%9C%20%EB%82%B4%EC%B4%8C%EB%A9%B4%20%EC%86%8C%EB%A6%AC%EA%B0%9C%EA%B8%B8%2086-22",
           "type": "사용자 직접 등록 주소 검색"
@@ -983,7 +1154,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "경기 포천시 내촌면 소리개길 86-22",
+        "matchedAddress": "경기 포천시 내촌면 소리개길 86-22",
+        "addressId": "N30417755",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%ED%8F%AC%EC%B2%9C%EC%8B%9C%20%EB%82%B4%EC%B4%8C%EB%A9%B4%20%EC%86%8C%EB%A6%AC%EA%B0%9C%EA%B8%B8%2086-22"
+      }
     },
     {
       "id": "manual-25a4f77428bb",
@@ -1021,10 +1201,10 @@
       "yard": "사용자 등록: 운동장 있음",
       "evidence": "사용자가 업체정보_간편입력.xlsx 14행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "운동장카페 · 동반 카페",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.7200134527684,
+      "lng": 127.212866619656,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -1044,6 +1224,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%EC%A7%84%EC%A0%91%EC%9D%8D%20%ED%95%B4%EB%B0%80%EC%98%88%EB%8B%B92%EB%A1%9C%20230",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%EC%A7%84%EC%A0%91%EC%9D%8D%20%ED%95%B4%EB%B0%80%EC%98%88%EB%8B%B92%EB%A1%9C%20230%201%EC%B8%B5",
           "type": "사용자 직접 등록 주소 검색"
@@ -1054,7 +1240,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "경기 남양주시 진접읍 해밀예당2로 230",
+        "matchedAddress": "경기 남양주시 진접읍 해밀예당2로 230",
+        "addressId": "N369294833",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%EC%A7%84%EC%A0%91%EC%9D%8D%20%ED%95%B4%EB%B0%80%EC%98%88%EB%8B%B92%EB%A1%9C%20230"
+      }
     },
     {
       "id": "manual-0f7ef6150b57",
@@ -1090,10 +1285,10 @@
       "yard": "사용자 등록: 운동장 미선택",
       "evidence": "사용자가 업체정보_간편입력.xlsx 15행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "동반 카페 · 유치원",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.7327245397614,
+      "lng": 127.084721108545,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -1113,6 +1308,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EC%9D%98%EC%A0%95%EB%B6%80%EC%8B%9C%20%EC%98%A4%EB%AA%A9%EB%A1%9C15%EB%B2%88%EA%B8%B8%202",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EC%9D%98%EC%A0%95%EB%B6%80%EC%8B%9C%20%EC%98%A4%EB%AA%A9%EB%A1%9C15%EB%B2%88%EA%B8%B8%202%201%EC%B8%B5",
           "type": "사용자 직접 등록 주소 검색"
@@ -1123,7 +1324,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "경기 의정부시 오목로15번길 2",
+        "matchedAddress": "경기 의정부시 오목로15번길 2",
+        "addressId": "N32366604",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EC%9D%98%EC%A0%95%EB%B6%80%EC%8B%9C%20%EC%98%A4%EB%AA%A9%EB%A1%9C15%EB%B2%88%EA%B8%B8%202"
+      }
     },
     {
       "id": "manual-bfe91aee824a",
@@ -1159,10 +1369,10 @@
       "yard": "사용자 등록: 운동장 미선택",
       "evidence": "사용자가 업체정보_간편입력.xlsx 16행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "동반 카페",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.7517834955826,
+      "lng": 127.080019688398,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -1182,6 +1392,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EC%9D%98%EC%A0%95%EB%B6%80%EC%8B%9C%20%EB%B6%80%EC%9A%A9%EB%A1%9C185%EB%B2%88%EA%B8%B8%2053",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EC%9D%98%EC%A0%95%EB%B6%80%EC%8B%9C%20%EB%B6%80%EC%9A%A9%EB%A1%9C185%EB%B2%88%EA%B8%B8%2053%201%EC%B8%B5",
           "type": "사용자 직접 등록 주소 검색"
@@ -1192,7 +1408,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "경기 의정부시 부용로185번길 53",
+        "matchedAddress": "경기 의정부시 부용로185번길 53",
+        "addressId": "N35119950",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EC%9D%98%EC%A0%95%EB%B6%80%EC%8B%9C%20%EB%B6%80%EC%9A%A9%EB%A1%9C185%EB%B2%88%EA%B8%B8%2053"
+      }
     },
     {
       "id": "manual-45e2b22d2a39",
@@ -1229,10 +1454,10 @@
       "yard": "사용자 등록: 운동장 미선택",
       "evidence": "사용자가 업체정보_간편입력.xlsx 17행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "동반 카페 · 동반 음식점",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.7462840192881,
+      "lng": 127.094911838099,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -1252,6 +1477,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EC%9D%98%EC%A0%95%EB%B6%80%EC%8B%9C%20%EC%98%A4%EB%AA%A9%EB%A1%9C225%EB%B2%88%EA%B8%B8%20105",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EC%9D%98%EC%A0%95%EB%B6%80%EC%8B%9C%20%EC%98%A4%EB%AA%A9%EB%A1%9C225%EB%B2%88%EA%B8%B8%20105%203%EC%B8%B5%20306%ED%98%B8",
           "type": "사용자 직접 등록 주소 검색"
@@ -1262,7 +1493,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "경기 의정부시 오목로225번길 105",
+        "matchedAddress": "경기 의정부시 오목로225번길 105",
+        "addressId": "N44766795",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EC%9D%98%EC%A0%95%EB%B6%80%EC%8B%9C%20%EC%98%A4%EB%AA%A9%EB%A1%9C225%EB%B2%88%EA%B8%B8%20105"
+      }
     },
     {
       "id": "manual-2b1bcf39f820",
@@ -1301,10 +1541,10 @@
       "yard": "사용자 등록: 운동장 있음",
       "evidence": "사용자가 업체정보_간편입력.xlsx 18행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "운동장카페 · 동반 카페 · 동반 음식점 · 호텔링 · 유치원",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.731823434939,
+      "lng": 127.102582309989,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -1324,6 +1564,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EC%9D%98%EC%A0%95%EB%B6%80%EC%8B%9C%20%EA%B3%A0%EC%82%B0%EB%A1%9C81%EB%B2%88%EA%B8%B8%2061",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EC%9D%98%EC%A0%95%EB%B6%80%EC%8B%9C%20%EA%B3%A0%EC%82%B0%EB%A1%9C81%EB%B2%88%EA%B8%B8%2061%201%EC%B8%B5",
           "type": "사용자 직접 등록 주소 검색"
@@ -1334,7 +1580,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "경기 의정부시 고산로81번길 61",
+        "matchedAddress": "경기 의정부시 고산로81번길 61",
+        "addressId": "N33718820",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EC%9D%98%EC%A0%95%EB%B6%80%EC%8B%9C%20%EA%B3%A0%EC%82%B0%EB%A1%9C81%EB%B2%88%EA%B8%B8%2061"
+      }
     },
     {
       "id": "mongle",
@@ -1344,10 +1599,10 @@
       "region": "남양주시",
       "address": "경기 남양주시 별내면 용암비루개길 204",
       "phone": "0507-1342-8807",
-      "lat": 37.7387744,
-      "lng": 127.1293078,
-      "position": "주소 좌표 확인",
-      "positionNote": "ClarioSync의 인허가 주소 기반 좌표. 건물 출입구와 차이가 있을 수 있습니다.",
+      "lat": 37.7387834516963,
+      "lng": 127.129303464278,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": [
           30,
@@ -1434,6 +1689,12 @@
           "type": "장소 플랫폼 · 기준 2025-12-22"
         },
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%EB%B3%84%EB%82%B4%EB%A9%B4%20%EC%9A%A9%EC%95%94%EB%B9%84%EB%A3%A8%EA%B0%9C%EA%B8%B8%20204",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%EB%B3%84%EB%82%B4%EB%A9%B4%20%EC%9A%A9%EC%95%94%EB%B9%84%EB%A3%A8%EA%B0%9C%EA%B8%B8%20204",
           "type": "사용자 직접 등록 주소 검색"
@@ -1459,7 +1720,16 @@
       "grooming": false,
       "largeDogPlayground": false,
       "referenceDogRule": "12kg 이하·체고 40cm 이하 안내",
-      "registrationNote": ""
+      "registrationNote": "",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "경기 남양주시 별내면 용암비루개길 204",
+        "matchedAddress": "경기 남양주시 별내면 용암비루개길 204",
+        "addressId": "N286379822",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%EB%B3%84%EB%82%B4%EB%A9%B4%20%EC%9A%A9%EC%95%94%EB%B9%84%EB%A3%A8%EA%B0%9C%EA%B8%B8%20204"
+      }
     },
     {
       "id": "manual-14a7aeda3746",
@@ -1496,10 +1766,10 @@
       "yard": "사용자 등록: 운동장 있음",
       "evidence": "사용자가 업체정보_간편입력.xlsx 20행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "운동장카페 · 동반 카페 · 호텔링 · 유치원",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.7953276110952,
+      "lng": 127.075259194431,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -1519,6 +1789,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EC%96%91%EC%A3%BC%EC%8B%9C%20%EB%B6%80%ED%9D%A5%EB%A1%9C1907%EB%B2%88%EA%B8%B8%2050",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EC%96%91%EC%A3%BC%EC%8B%9C%20%EB%B6%80%ED%9D%A5%EB%A1%9C1907%EB%B2%88%EA%B8%B8%2050%201%2C%202F",
           "type": "사용자 직접 등록 주소 검색"
@@ -1529,7 +1805,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "경기 양주시 부흥로1907번길 50",
+        "matchedAddress": "경기 양주시 부흥로1907번길 50",
+        "addressId": "N32700174",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EC%96%91%EC%A3%BC%EC%8B%9C%20%EB%B6%80%ED%9D%A5%EB%A1%9C1907%EB%B2%88%EA%B8%B8%2050"
+      }
     },
     {
       "id": "coco",
@@ -1539,10 +1824,10 @@
       "region": "남양주시",
       "address": "경기 남양주시 별내면 송산로 519-7 1층",
       "phone": "0507-1301-2053",
-      "lat": 37.6871749,
-      "lng": 127.1335208,
-      "position": "주소 좌표 확인",
-      "positionNote": "FINDBY의 도로명주소 좌표. 실제 주차장 진입구와 다를 수 있습니다.",
+      "lat": 37.687174986384,
+      "lng": 127.133520746666,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": [
           20,
@@ -1634,6 +1919,12 @@
           "type": "주소 데이터"
         },
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%EB%B3%84%EB%82%B4%EB%A9%B4%20%EC%86%A1%EC%82%B0%EB%A1%9C%20519-7",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%EB%B3%84%EB%82%B4%EB%A9%B4%20%EC%86%A1%EC%82%B0%EB%A1%9C%20519-7%201%EC%B8%B5",
           "type": "사용자 직접 등록 주소 검색"
@@ -1660,7 +1951,16 @@
       "grooming": false,
       "largeDogPlayground": false,
       "referenceDogRule": "12kg 미만만 입장 · 12kg 불가",
-      "registrationNote": ""
+      "registrationNote": "",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "경기 남양주시 별내면 송산로 519-7",
+        "matchedAddress": "경기 남양주시 별내면 송산로 519-7",
+        "addressId": "N45085000",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%EB%B3%84%EB%82%B4%EB%A9%B4%20%EC%86%A1%EC%82%B0%EB%A1%9C%20519-7"
+      }
     },
     {
       "id": "manual-77ac9f671203",
@@ -1696,10 +1996,10 @@
       "yard": "사용자 등록: 운동장 미선택",
       "evidence": "사용자가 업체정보_간편입력.xlsx 22행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "동반 카페",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.5229050350666,
+      "lng": 127.056494441884,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -1719,6 +2019,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EC%98%81%EB%8F%99%EB%8C%80%EB%A1%9C138%EA%B8%B8%209",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EC%98%81%EB%8F%99%EB%8C%80%EB%A1%9C138%EA%B8%B8%209%20%EC%8B%A0%ED%95%9C%EC%96%91%EC%83%81%EA%B0%80%20102%ED%98%B8",
           "type": "사용자 직접 등록 주소 검색"
@@ -1729,7 +2035,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 강남구 영동대로138길 9",
+        "matchedAddress": "서울 강남구 영동대로138길 9",
+        "addressId": "N31162940",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EC%98%81%EB%8F%99%EB%8C%80%EB%A1%9C138%EA%B8%B8%209"
+      }
     },
     {
       "id": "manual-f647c3fcdbd4",
@@ -1765,10 +2080,10 @@
       "yard": "사용자 등록: 운동장 미선택",
       "evidence": "사용자가 업체정보_간편입력.xlsx 23행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "동반 카페 · 호텔링",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.5252688315044,
+      "lng": 127.134244601379,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -1788,6 +2103,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%8F%99%EA%B5%AC%20%EC%96%91%EC%9E%AC%EB%8C%80%EB%A1%9C89%EA%B0%80%EA%B8%B8%2030",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%8F%99%EA%B5%AC%20%EC%96%91%EC%9E%AC%EB%8C%80%EB%A1%9C89%EA%B0%80%EA%B8%B8%2030%203%EC%B8%B5",
           "type": "사용자 직접 등록 주소 검색"
@@ -1798,7 +2119,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 강동구 양재대로89가길 30",
+        "matchedAddress": "서울 강동구 양재대로89가길 30",
+        "addressId": "N29446539",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%8F%99%EA%B5%AC%20%EC%96%91%EC%9E%AC%EB%8C%80%EB%A1%9C89%EA%B0%80%EA%B8%B8%2030"
+      }
     },
     {
       "id": "manual-ce294ae4ea55",
@@ -1836,10 +2166,10 @@
       "yard": "사용자 등록: 운동장 있음",
       "evidence": "사용자가 업체정보_간편입력.xlsx 24행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "운동장카페 · 동반 카페 · 동반 음식점",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.5058022450145,
+      "lng": 127.138582568208,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -1859,6 +2189,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%86%A1%ED%8C%8C%EA%B5%AC%20%EB%8F%99%EB%82%A8%EB%A1%9C29%EA%B8%B8%208-10",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EC%86%A1%ED%8C%8C%EA%B5%AC%20%EB%8F%99%EB%82%A8%EB%A1%9C29%EA%B8%B8%208-10%20205%ED%98%B8",
           "type": "사용자 직접 등록 주소 검색"
@@ -1869,7 +2205,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 송파구 동남로29길 8-10",
+        "matchedAddress": "서울 송파구 동남로29길 8-10",
+        "addressId": "N262970898",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%86%A1%ED%8C%8C%EA%B5%AC%20%EB%8F%99%EB%82%A8%EB%A1%9C29%EA%B8%B8%208-10"
+      }
     },
     {
       "id": "manual-bfcefd75d4dd",
@@ -1907,10 +2252,10 @@
       "yard": "사용자 등록: 운동장 있음",
       "evidence": "사용자가 업체정보_간편입력.xlsx 25행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "운동장카페 · 동반 카페 · 동반 음식점",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.5170442081859,
+      "lng": 127.146746634473,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -1930,6 +2275,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%ED%95%98%EB%82%A8%EC%8B%9C%20%EC%84%9C%ED%95%98%EB%82%A8%EB%A1%9C%2023",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%ED%95%98%EB%82%A8%EC%8B%9C%20%EC%84%9C%ED%95%98%EB%82%A8%EB%A1%9C%2023",
           "type": "사용자 직접 등록 주소 검색"
@@ -1940,7 +2291,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "경기 하남시 서하남로 23",
+        "matchedAddress": "경기 하남시 서하남로 23",
+        "addressId": "N44660219",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%ED%95%98%EB%82%A8%EC%8B%9C%20%EC%84%9C%ED%95%98%EB%82%A8%EB%A1%9C%2023"
+      }
     },
     {
       "id": "manual-74d3695bec75",
@@ -1976,10 +2336,10 @@
       "yard": "사용자 등록: 운동장 미선택",
       "evidence": "사용자가 업체정보_간편입력.xlsx 26행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "동반 카페 · 호텔링 · 유치원",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.5970235983504,
+      "lng": 127.131464822571,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -1999,6 +2359,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EA%B5%AC%EB%A6%AC%EC%8B%9C%20%EC%95%88%EA%B3%A8%EB%A1%9C%204",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EA%B5%AC%EB%A6%AC%EC%8B%9C%20%EC%95%88%EA%B3%A8%EB%A1%9C%204%202%EC%B8%B5",
           "type": "사용자 직접 등록 주소 검색"
@@ -2009,7 +2375,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "경기 구리시 안골로 4",
+        "matchedAddress": "경기 구리시 안골로 4",
+        "addressId": "N34598524",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EA%B5%AC%EB%A6%AC%EC%8B%9C%20%EC%95%88%EA%B3%A8%EB%A1%9C%204"
+      }
     },
     {
       "id": "manual-cb12abb8bd71",
@@ -2045,10 +2420,10 @@
       "yard": "사용자 등록: 운동장 미선택",
       "evidence": "사용자가 업체정보_간편입력.xlsx 27행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "동반 카페 · 애견미용",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.5982631917,
+      "lng": 127.100034140297,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -2068,6 +2443,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EB%9E%91%EA%B5%AC%20%EC%9A%A9%EB%A7%88%EC%82%B0%EB%A1%9C%20529",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EC%A4%91%EB%9E%91%EA%B5%AC%20%EC%9A%A9%EB%A7%88%EC%82%B0%EB%A1%9C%20529%204%EC%B8%B5",
           "type": "사용자 직접 등록 주소 검색"
@@ -2078,7 +2459,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 중랑구 용마산로 529",
+        "matchedAddress": "서울 중랑구 용마산로 529",
+        "addressId": "N34092569",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EB%9E%91%EA%B5%AC%20%EC%9A%A9%EB%A7%88%EC%82%B0%EB%A1%9C%20529"
+      }
     },
     {
       "id": "manual-0f81125f0730",
@@ -2115,10 +2505,10 @@
       "yard": "사용자 등록: 운동장 있음",
       "evidence": "사용자가 업체정보_간편입력.xlsx 28행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "운동장카페 · 동반 카페",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.616388361348,
+      "lng": 127.221774244496,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -2138,6 +2528,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%EC%99%80%EB%B6%80%EC%9D%8D%20%EC%84%9D%EC%8B%A4%EB%A1%9C%EC%9C%A8%EC%84%9D%EA%B8%B8%20108-13",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%EC%99%80%EB%B6%80%EC%9D%8D%20%EC%84%9D%EC%8B%A4%EB%A1%9C%EC%9C%A8%EC%84%9D%EA%B8%B8%20108-13",
           "type": "사용자 직접 등록 주소 검색"
@@ -2148,7 +2544,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "경기 남양주시 와부읍 석실로율석길 108-13",
+        "matchedAddress": "경기 남양주시 와부읍 석실로율석길 108-13",
+        "addressId": "N32912405",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%EC%99%80%EB%B6%80%EC%9D%8D%20%EC%84%9D%EC%8B%A4%EB%A1%9C%EC%9C%A8%EC%84%9D%EA%B8%B8%20108-13"
+      }
     },
     {
       "id": "manual-5fd8bbdd53ef",
@@ -2184,10 +2589,10 @@
       "yard": "사용자 등록: 운동장 미선택",
       "evidence": "사용자가 업체정보_간편입력.xlsx 29행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "동반 카페 · 호텔링 · 유치원",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.5620173617791,
+      "lng": 127.190330072193,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -2207,6 +2612,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%ED%95%98%EB%82%A8%EC%8B%9C%20%EB%AF%B8%EC%82%AC%EA%B0%95%EB%B3%80%EC%A4%91%EC%95%99%EB%A1%9C%20173",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%ED%95%98%EB%82%A8%EC%8B%9C%20%EB%AF%B8%EC%82%AC%EA%B0%95%EB%B3%80%EC%A4%91%EC%95%99%EB%A1%9C%20173%20307%ED%98%B8%20308-1%ED%98%B8",
           "type": "사용자 직접 등록 주소 검색"
@@ -2217,7 +2628,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "경기 하남시 미사강변중앙로 173",
+        "matchedAddress": "경기 하남시 미사강변중앙로 173",
+        "addressId": "N38893185",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%ED%95%98%EB%82%A8%EC%8B%9C%20%EB%AF%B8%EC%82%AC%EA%B0%95%EB%B3%80%EC%A4%91%EC%95%99%EB%A1%9C%20173"
+      }
     },
     {
       "id": "manual-f7da249c4bac",
@@ -2253,10 +2673,10 @@
       "yard": "사용자 등록: 운동장 미선택",
       "evidence": "사용자가 업체정보_간편입력.xlsx 30행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "동반 카페 · 호텔링 · 유치원",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.4713404854822,
+      "lng": 127.142775905947,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -2276,6 +2696,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EC%84%B1%EB%82%A8%EC%8B%9C%20%EC%88%98%EC%A0%95%EA%B5%AC%20%EC%9C%84%EB%A1%80%EA%B4%91%EC%9E%A5%EB%A1%9C%20328",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EC%84%B1%EB%82%A8%EC%8B%9C%20%EC%88%98%EC%A0%95%EA%B5%AC%20%EC%9C%84%EB%A1%80%EA%B4%91%EC%9E%A5%EB%A1%9C%20328%20%EC%9A%B0%EC%84%B1%EC%9C%84%EB%A1%80%ED%83%80%EC%9B%8C%201%EC%B8%B5",
           "type": "사용자 직접 등록 주소 검색"
@@ -2286,7 +2712,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "경기 성남시 수정구 위례광장로 328",
+        "matchedAddress": "경기 성남시 수정구 위례광장로 328",
+        "addressId": "N45218462",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EC%84%B1%EB%82%A8%EC%8B%9C%20%EC%88%98%EC%A0%95%EA%B5%AC%20%EC%9C%84%EB%A1%80%EA%B4%91%EC%9E%A5%EB%A1%9C%20328"
+      }
     },
     {
       "id": "manual-f70ed011b277",
@@ -2322,10 +2757,10 @@
       "yard": "사용자 등록: 운동장 미선택",
       "evidence": "사용자가 업체정보_간편입력.xlsx 31행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "동반 카페 · 호텔링 · 유치원",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.4586741586786,
+      "lng": 127.12649058694,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -2345,6 +2780,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EC%84%B1%EB%82%A8%EC%8B%9C%20%EC%88%98%EC%A0%95%EA%B5%AC%20%EB%B3%B5%EC%A0%95%EB%A1%9C%2063-1",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EC%84%B1%EB%82%A8%EC%8B%9C%20%EC%88%98%EC%A0%95%EA%B5%AC%20%EB%B3%B5%EC%A0%95%EB%A1%9C%2063-1%204%EC%B8%B5",
           "type": "사용자 직접 등록 주소 검색"
@@ -2355,7 +2796,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "경기 성남시 수정구 복정로 63-1",
+        "matchedAddress": "경기 성남시 수정구 복정로 63-1",
+        "addressId": "N33813682",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EC%84%B1%EB%82%A8%EC%8B%9C%20%EC%88%98%EC%A0%95%EA%B5%AC%20%EB%B3%B5%EC%A0%95%EB%A1%9C%2063-1"
+      }
     },
     {
       "id": "manual-4e09437da92a",
@@ -2392,10 +2842,10 @@
       "yard": "사용자 등록: 운동장 미선택",
       "evidence": "사용자가 업체정보_간편입력.xlsx 32행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "동반 카페 · 동반 음식점",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.5054313830011,
+      "lng": 126.942872826454,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -2415,6 +2865,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EB%8F%99%EC%9E%91%EA%B5%AC%20%EC%83%81%EB%8F%84%EB%A1%9C%20217-4",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EB%8F%99%EC%9E%91%EA%B5%AC%20%EC%83%81%EB%8F%84%EB%A1%9C%20217-4%20%ED%95%9C%EC%9A%B8%EB%B9%8C%EB%94%A9%20%EC%A7%80%ED%95%981%EC%B8%B5",
           "type": "사용자 직접 등록 주소 검색"
@@ -2425,7 +2881,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 동작구 상도로 217-4",
+        "matchedAddress": "서울 동작구 상도로 217-4",
+        "addressId": "N29634545",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EB%8F%99%EC%9E%91%EA%B5%AC%20%EC%83%81%EB%8F%84%EB%A1%9C%20217-4"
+      }
     },
     {
       "id": "manual-df07af275290",
@@ -2462,10 +2927,10 @@
       "yard": "사용자 등록: 운동장 있음",
       "evidence": "사용자가 업체정보_간편입력.xlsx 33행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "운동장카페 · 동반 카페 · 호텔링 · 유치원 · 애견미용",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.4884486551326,
+      "lng": 126.97911918211,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -2485,6 +2950,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EB%8F%99%EC%9E%91%EA%B5%AC%20%EB%8F%99%EC%9E%91%EB%8C%80%EB%A1%9C29%EA%B8%B8%2053",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EB%8F%99%EC%9E%91%EA%B5%AC%20%EB%8F%99%EC%9E%91%EB%8C%80%EB%A1%9C29%EA%B8%B8%2053%203%2C4%EC%B8%B5",
           "type": "사용자 직접 등록 주소 검색"
@@ -2495,7 +2966,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 동작구 동작대로29길 53",
+        "matchedAddress": "서울 동작구 동작대로29길 53",
+        "addressId": "N30786086",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EB%8F%99%EC%9E%91%EA%B5%AC%20%EB%8F%99%EC%9E%91%EB%8C%80%EB%A1%9C29%EA%B8%B8%2053"
+      }
     },
     {
       "id": "manual-eded32860d76",
@@ -2531,10 +3011,10 @@
       "yard": "사용자 등록: 운동장 미선택",
       "evidence": "사용자가 업체정보_간편입력.xlsx 34행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "동반 카페 · 호텔링 · 애견미용",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.4931470939107,
+      "lng": 126.986172438541,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -2554,6 +3034,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EB%B0%A9%EB%B0%B0%EC%A4%91%EC%95%99%EB%A1%9C%20157",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EB%B0%A9%EB%B0%B0%EC%A4%91%EC%95%99%EB%A1%9C%20157%20%EB%8C%80%ED%9D%A5%EB%B9%8C%EB%94%A9%20A%EB%8F%99%202%EC%B8%B5",
           "type": "사용자 직접 등록 주소 검색"
@@ -2564,7 +3050,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 서초구 방배중앙로 157",
+        "matchedAddress": "서울 서초구 방배중앙로 157",
+        "addressId": "N30222254",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EB%B0%A9%EB%B0%B0%EC%A4%91%EC%95%99%EB%A1%9C%20157"
+      }
     },
     {
       "id": "manual-8a893d1815ca",
@@ -2600,10 +3095,10 @@
       "yard": "사용자 등록: 운동장 미선택",
       "evidence": "사용자가 업체정보_간편입력.xlsx 35행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "동반 카페 · 애견미용",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.4839347653905,
+      "lng": 127.011931791891,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -2623,6 +3118,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EB%B0%98%ED%8F%AC%EB%8C%80%EB%A1%9C%2038",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EB%B0%98%ED%8F%AC%EB%8C%80%EB%A1%9C%2038%20%EC%99%80%EB%9D%BC%EB%B9%8C%EB%94%A9%20%EC%A7%80%ED%95%981%EC%B8%B5",
           "type": "사용자 직접 등록 주소 검색"
@@ -2633,7 +3134,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 서초구 반포대로 38",
+        "matchedAddress": "서울 서초구 반포대로 38",
+        "addressId": "N29916885",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EB%B0%98%ED%8F%AC%EB%8C%80%EB%A1%9C%2038"
+      }
     },
     {
       "id": "manual-08c0cc23d669",
@@ -2670,10 +3180,10 @@
       "yard": "사용자 등록: 운동장 미선택",
       "evidence": "사용자가 업체정보_간편입력.xlsx 36행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "동반 카페 · 동반 음식점 · 호텔링 · 유치원 · 애견미용",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.5038947689214,
+      "lng": 127.08726628529,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -2693,6 +3203,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%86%A1%ED%8C%8C%EA%B5%AC%20%EC%82%BC%EC%A0%84%EB%A1%9C%2053",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EC%86%A1%ED%8C%8C%EA%B5%AC%20%EC%82%BC%EC%A0%84%EB%A1%9C%2053%20%EB%9C%A8%EB%A0%88%ED%94%BC%EC%9B%80%20%EC%A7%80%ED%95%981%EC%B8%B5",
           "type": "사용자 직접 등록 주소 검색"
@@ -2703,7 +3219,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 송파구 삼전로 53",
+        "matchedAddress": "서울 송파구 삼전로 53",
+        "addressId": "N29963971",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%86%A1%ED%8C%8C%EA%B5%AC%20%EC%82%BC%EC%A0%84%EB%A1%9C%2053"
+      }
     },
     {
       "id": "manual-a9cd1839ec6d",
@@ -2739,10 +3264,10 @@
       "yard": "사용자 등록: 운동장 미선택",
       "evidence": "사용자가 업체정보_간편입력.xlsx 37행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
       "feature": "동반 카페 · 호텔링 · 유치원",
-      "lat": null,
-      "lng": null,
-      "position": "좌표 미확인",
-      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "lat": 37.5099799418237,
+      "lng": 127.105927037774,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
       "times": {
         "hagye": null,
         "nowon": null,
@@ -2762,6 +3287,12 @@
       "checkedAt": "2026-10-19",
       "sources": [
         {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%86%A1%ED%8C%8C%EA%B5%AC%20%EC%84%9D%EC%B4%8C%ED%98%B8%EC%88%98%EB%A1%9C%20272",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-20"
+        },
+        {
           "name": "직접 등록 주소 · 네이버 지도 검색",
           "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EC%86%A1%ED%8C%8C%EA%B5%AC%20%EC%84%9D%EC%B4%8C%ED%98%B8%EC%88%98%EB%A1%9C%20272%20%EC%A7%80%ED%95%981%EC%B8%B5",
           "type": "사용자 직접 등록 주소 검색"
@@ -2772,7 +3303,16 @@
         "실제 출입구·주차 위치",
         "최신 요금·서비스 예약 가능 여부"
       ],
-      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의"
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 송파구 석촌호수로 272",
+        "matchedAddress": "서울 송파구 석촌호수로 272",
+        "addressId": "N32479101",
+        "checkedAt": "2026-10-20",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%86%A1%ED%8C%8C%EA%B5%AC%20%EC%84%9D%EC%B4%8C%ED%98%B8%EC%88%98%EB%A1%9C%20272"
+      }
     }
   ]
 }
