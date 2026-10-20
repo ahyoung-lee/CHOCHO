@@ -96,39 +96,36 @@ function compare(){if(state.compare.length<2){toast('비교할 장소를 2곳 �
  $('compareContent').innerHTML=`<div class="table-scroll" tabindex="0" aria-label="장소 비교표. 모바일에서 좌우로 스크롤하세요."><table><thead><tr><th scope="col">비교 항목</th>${ps.map(p=>`<th scope="col">${esc(p.name)}</th>`).join('')}</tr></thead><tbody>${rows.map(([name,fn])=>`<tr><th scope="row">${name}</th>${ps.map(p=>`<td>${fn(p)}</td>`).join('')}</tr>`).join('')}</tbody></table></div><p class="compare-note">모바일에서는 표를 좌우로 밀어 비교할 수 있어요. 요금·운영시간·입장 조건은 방문 전 재확인하세요.</p>`;showDialog('compareDialog');
 }
 function reset(){const favorites=state.favorites,comparison=state.compare,origin=state.origin;locationVersion++;locationPending=false;clearOriginSearch();$('origin').value=data.origins[origin].name;$('locationStatus').textContent=`조건을 초기화했어요. 출발지는 ${data.origins[origin].name}입니다.`;Object.assign(state,defaultState(),{favorites,compare:comparison,origin});$('search').value='';render();if(origin==='current')tileMap.fit();else if(origin==='custom')tileMap.focus(data.origins[origin]);else tileMap.showNationwide();}
-class TileMap{
- constructor(){this.center={lat:35.75,lng:128.25};this.zoom=6;this.isNationwide=true;this.tiles=new Map();this.tileErrors=0;this.tileLoaded=false;this.pointers=new Map();this.dragged=false;this.last=null;this.setup();}
+class NaverMap{
+ constructor(){this.center={lat:35.75,lng:128.25};this.zoom=6;this.isNationwide=true;this.bridge=null;this.setup();}
  size(){const r=$('map').getBoundingClientRect();return {w:r.width||600,h:r.height||500};}
- setup(){const el=$('map');
-  el.addEventListener('pointerdown',e=>{if(e.target.closest('button,a'))return;this.isNationwide=false;this.dragged=false;this.pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});el.setPointerCapture(e.pointerId);this.last={x:e.clientX,y:e.clientY};this.pinching=this.pointers.size===2?this.pinchDistance():null;});
-  el.addEventListener('pointermove',e=>{if(!this.pointers.has(e.pointerId))return;const old=this.pointers.get(e.pointerId);this.pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});if(Math.abs(e.clientX-old.x)+Math.abs(e.clientY-old.y)>2)this.dragged=true;
-   if(this.pointers.size===2){const d=this.pinchDistance();if(this.pinching&&d/this.pinching>1.4){this.setZoom(this.zoom+1);this.pinching=d;}else if(this.pinching&&d/this.pinching<.7){this.setZoom(this.zoom-1);this.pinching=d;}}
-   else{const c=project(this.center.lat,this.center.lng,this.zoom);this.center=unproject(c.x-(e.clientX-old.x),c.y-(e.clientY-old.y),this.zoom);this.clampCenter();this.render();}
-  });
-  const end=e=>{this.pointers.delete(e.pointerId);this.pinching=null;};el.addEventListener('pointerup',end);el.addEventListener('pointercancel',end);
-  el.addEventListener('wheel',e=>{if(!e.ctrlKey)return;e.preventDefault();this.setZoom(this.zoom+(e.deltaY<0?1:-1));},{passive:false});
-  el.addEventListener('keydown',e=>{if(e.target!==el)return;const moves={ArrowLeft:[-70,0],ArrowRight:[70,0],ArrowUp:[0,-70],ArrowDown:[0,70]};if(moves[e.key]){e.preventDefault();const c=project(this.center.lat,this.center.lng,this.zoom),[x,y]=moves[e.key];this.center=unproject(c.x+x,c.y+y,this.zoom);this.clampCenter();this.render();}else if(e.key==='+'||e.key==='='){e.preventDefault();this.setZoom(this.zoom+1);}else if(e.key==='-'){e.preventDefault();this.setZoom(this.zoom-1);}});
-  $('zoomIn').addEventListener('click',()=>this.setZoom(this.zoom+1));$('zoomOut').addEventListener('click',()=>this.setZoom(this.zoom-1));$('fit').addEventListener('click',()=>this.fit());$('nationwide').addEventListener('click',()=>this.showNationwide());$('retryTiles').addEventListener('click',()=>{this.tileErrors=0;this.tileLoaded=false;this.tiles.forEach(t=>t.remove());this.tiles.clear();$('tileWarning').hidden=true;this.render();});
-  root.addEventListener('resize',()=>this.isNationwide?this.showNationwide():this.render());
+ setup(){
+  const failure=message=>{$('mapError').textContent=message;$('tileWarning').hidden=false;};
+  if(root.NAVER_MAP)this.bridge=root.NAVER_MAP.create({element:$('tileLayer'),key:'lw1yxfxtxh',
+   onChange:view=>{const moved=Math.abs(this.center.lat-view.center.lat)>1e-8||Math.abs(this.center.lng-view.center.lng)>1e-8||this.zoom!==view.zoom;this.center=view.center;this.zoom=view.zoom;if(moved)this.isNationwide=false;this.render();},
+   onReady:()=>{$('tileWarning').hidden=true;this.render();},onError:failure});
+  $('zoomIn').addEventListener('click',()=>this.setZoom(this.zoom+1));$('zoomOut').addEventListener('click',()=>this.setZoom(this.zoom-1));$('fit').addEventListener('click',()=>this.fit());$('nationwide').addEventListener('click',()=>this.showNationwide());
+  $('retryTiles').addEventListener('click',()=>{if(this.bridge){$('tileWarning').hidden=true;this.bridge.load();}else failure('지도 연결 파일을 불러오지 못했어요. 페이지를 새로고침해 주세요.');});
+  root.addEventListener('resize',()=>{this.bridge?.resize();this.isNationwide?this.showNationwide():this.render();});
+  $('map').addEventListener('keydown',e=>{if(e.target!==$('map'))return;const moves={ArrowLeft:[-70,0],ArrowRight:[70,0],ArrowUp:[0,-70],ArrowDown:[0,70]};if(moves[e.key]){e.preventDefault();this.isNationwide=false;const c=project(this.center.lat,this.center.lng,this.zoom),[x,y]=moves[e.key];this.center=unproject(c.x+x,c.y+y,this.zoom);this.clampCenter();this.render();}else if(e.key==='+'||e.key==='='){e.preventDefault();this.setZoom(this.zoom+1);}else if(e.key==='-'){e.preventDefault();this.setZoom(this.zoom-1);}});
  }
- pinchDistance(){const [a,b]=[...this.pointers.values()];return Math.hypot(a.x-b.x,a.y-b.y);}
+ start(){if(this.bridge)this.bridge.load();else{$('mapError').textContent='지도 연결 파일을 불러오지 못했어요. 페이지를 새로고침해 주세요.';$('tileWarning').hidden=false;}}
  clampCenter(){if(['current','custom'].includes(state.origin)){this.center.lat=Math.min(85.051128,Math.max(-85.051128,this.center.lat));this.center.lng=((this.center.lng+180)%360+360)%360-180;return;}this.center.lat=Math.min(39.5,Math.max(32,this.center.lat));this.center.lng=Math.min(133,Math.max(123,this.center.lng));}
  setZoom(z){this.isNationwide=false;this.zoom=Math.min(16,Math.max(5,z));this.render();}
  focus(p){if(!hasCoordinates(p)){toast('지도 좌표가 미확인된 장소예요. 네이버 지도에서 주소를 확인해 주세요.');return;}this.isNationwide=false;this.center={lat:p.lat,lng:p.lng};this.zoom=Math.max(12,Math.min(this.zoom,14));this.render();}
  fit(){const points=[...visible,data.origins[state.origin]].filter(hasCoordinates),minLat=Math.min(...points.map(p=>p.lat)),maxLat=Math.max(...points.map(p=>p.lat)),minLng=Math.min(...points.map(p=>p.lng)),maxLng=Math.max(...points.map(p=>p.lng));this.fitBounds(minLat,maxLat,minLng,maxLng);}
  showNationwide(){this.fitBounds(32.7,38.8,124.5,132);this.isNationwide=true;$('mapTitle').textContent='대한민국 한눈에 보기';}
  fitBounds(minLat,maxLat,minLng,maxLng){this.isNationwide=false;this.center={lat:(minLat+maxLat)/2,lng:(minLng+maxLng)/2};const {w,h}=this.size();this.zoom=5;for(let z=5;z<=14;z++){const a=project(minLat,minLng,z),b=project(maxLat,maxLng,z);if(Math.abs(a.x-b.x)<=Math.max(100,w-150)&&Math.abs(a.y-b.y)<=Math.max(150,h-140))this.zoom=z;}this.render();}
- render(){const {w,h}=this.size(),c=project(this.center.lat,this.center.lng,this.zoom),left=c.x-w/2,top=c.y-h/2;const layer=$('tileLayer'),needed=new Set(),count=2**this.zoom;$('map').classList.toggle('national-overview',this.zoom<12);
-  $('mapTitle').textContent=this.isNationwide?'대한민국 한눈에 보기':['current','custom'].includes(state.origin)?data.origins[state.origin].name+' 기준 지도':'카페 지도';
-  // Only the current viewport is requested. Browser HTTP caching is left intact.
-  if($('map').getBoundingClientRect().width>0){for(let x=Math.floor(left/256);x<=Math.floor((left+w)/256);x++)for(let y=Math.floor(top/256);y<=Math.floor((top+h)/256);y++){if(y<0||y>=count)continue;const key=`${this.zoom}/${x}/${y}`;needed.add(key);let tile=this.tiles.get(key);if(!tile){tile=doc.createElement('img');tile.alt='';tile.draggable=false;tile.decoding='async';tile.onload=()=>{this.tileLoaded=true;$('tileWarning').hidden=true;};tile.onerror=()=>{this.tileErrors++;if(!this.tileLoaded&&this.tileErrors>=3)$('tileWarning').hidden=false;};tile.src=`https://tile.openstreetmap.org/${this.zoom}/${((x%count)+count)%count}/${y}.png`;layer.appendChild(tile);this.tiles.set(key,tile);}tile.style.left=`${x*256-left}px`;tile.style.top=`${y*256-top}px`;}for(const [key,t]of this.tiles)if(!needed.has(key)){t.remove();this.tiles.delete(key);}}
-  const pos=p=>{const a=project(p.lat,p.lng,this.zoom);return {x:a.x-left,y:a.y-top};};
+ render(){const {w,h}=this.size(),c=project(this.center.lat,this.center.lng,this.zoom),left=c.x-w/2,top=c.y-h/2;$('map').classList.toggle('national-overview',this.zoom<12);
+  $('mapTitle').textContent=this.isNationwide?'대한민국 한눈에 보기':['current','custom'].includes(state.origin)?data.origins[state.origin].name+' 기준 지도':'업체 지도';
+  this.bridge?.setView(this.center,this.zoom);
+  const pos=p=>{const native=this.bridge?.project(p);if(native)return native;const a=project(p.lat,p.lng,this.zoom);return {x:a.x-left,y:a.y-top};};
   const html=visible.filter(hasCoordinates).map(p=>{const xy=pos(p),approx=p.position.includes('추정');if(xy.x< -150||xy.x>w+150||xy.y< -150||xy.y>h+150)return '';const radius=600/(156543.03392*Math.cos(p.lat*Math.PI/180)/2**this.zoom);return `${approx?`<span class="uncertainty-circle" style="left:${xy.x}px;top:${xy.y}px;width:${radius*2}px;height:${radius*2}px"></span>`:''}<button class="marker ${p.id===state.selected?'selected':''} ${approx?'approx':''}" style="left:${xy.x}px;top:${xy.y}px" data-marker="${p.id}" aria-pressed="${p.id===state.selected}" aria-label="${esc(p.name)}, ${esc(p.position)}"><span class="pin"><b>${resultNumber(p)}</b></span><span class="marker-label">${esc(p.name)}${approx?' · 추정':''}</span></button>`;}).join('');
   const o=data.origins[state.origin],op=pos(o);$('markerLayer').innerHTML=html+`<div class="origin-marker" style="left:${op.x}px;top:${op.y}px"><b></b><span>${esc(o.name)} 출발</span></div>`;
   $('zoomIn').disabled=this.zoom>=16;$('zoomOut').disabled=this.zoom<=5;
  }
 }
-const tileMap=new TileMap();
+const tileMap=new NaverMap();
 let locationPending=false,locationVersion=0;
 let originCandidates=[],originSearchController;
 const lookupOrigin=root.ORIGIN_SEARCH.createLookup(root.fetch?.bind(root));
@@ -206,7 +203,7 @@ $('registrationForm').addEventListener('submit',e=>{e.preventDefault();$('regist
 $('reset').addEventListener('click',reset);
 ['guideButton','noticeGuide','bottomGuide'].forEach(id=>$(id).addEventListener('click',()=>showDialog('guideDialog')));
 $('clearCompare').addEventListener('click',()=>{state.compare=[];render();});$('openCompare').addEventListener('click',compare);
-function switchView(mapView){doc.querySelector('.explorer').classList.toggle('mobile-map',mapView);$('listView').setAttribute('aria-pressed',String(!mapView));$('mapView').setAttribute('aria-pressed',String(mapView));if(mapView){if(tileMap.isNationwide)tileMap.showNationwide();else tileMap.render();}}
+function switchView(mapView){doc.querySelector('.explorer').classList.toggle('mobile-map',mapView);$('listView').setAttribute('aria-pressed',String(!mapView));$('mapView').setAttribute('aria-pressed',String(mapView));if(mapView){tileMap.bridge?.resize();if(tileMap.isNationwide)tileMap.showNationwide();else tileMap.render();}}
 $('listView').addEventListener('click',()=>switchView(false));$('mapView').addEventListener('click',()=>switchView(true));
 doc.addEventListener('click',e=>{let t;if((t=e.target.closest('[data-category]'))){state.category=t.dataset.category;render();tileMap.fit();}
  else if((t=e.target.closest('[data-registration-result]'))){const p=registrationCandidates[Number(t.dataset.registrationResult)];if(p&&!p.approximate){$('registrationSelected').textContent=p.name+' · '+p.address;$('registrationStatus').textContent='공유 등록을 준비 중이에요. 아직 등록할 수 없습니다.';}}
@@ -221,6 +218,6 @@ doc.addEventListener('click',e=>{let t;if((t=e.target.closest('[data-category]')
  else if(e.target.closest('[data-reset]'))reset();
 });
 ['detailDialog','compareDialog','guideDialog','registrationDialog'].forEach(id=>{const d=$(id);d.addEventListener('close',()=>{const el=opener.get(d);if(el&&doc.contains(el))el.focus();});d.addEventListener('click',e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close();}});});
-render();tileMap.showNationwide();requestLocation();
+render();tileMap.showNationwide();tileMap.start();requestLocation();
 root.PAW_APP={state,getFiltered:()=>visible,selectPlace,toggleCompare:id=>{const r=toggleCompare(state,id);render();return r;},render,compare,detail,reset,map:tileMap,switchView,submitOrigin,chooseOrigin};
 })(typeof window!=='undefined'?window:globalThis);
