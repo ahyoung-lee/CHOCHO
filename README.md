@@ -26,6 +26,24 @@ Dog-cafe-finder
 
 ## 실행 방법
 
+### 네이버 지도와 엑셀 업체 검색
+
+지도 배경은 네이버 Maps Dynamic Map을 사용합니다. `public/app.js`의 지도 설정에 Client ID를 지정하고, 네이버 클라우드 Maps Application의 Web 서비스 URL에 배포 도메인을 등록합니다. 로컬 미리보기에는 `http://localhost`도 등록해야 합니다. Client Secret은 브라우저 코드에 넣지 않습니다.
+
+업체 검색은 `업체정보/업체정보_간편입력.xlsx`에서 반영한 등록 업체만 대상으로 합니다. 엑셀 저장만으로 공개 사이트가 갱신되지는 않습니다. 수정 후 다음 순서로 반영하고 배포합니다.
+
+```powershell
+python scripts/import-workbook.py
+node scripts/validate-data.cjs
+node scripts/build.mjs
+npm test
+python tests/workbook.py
+```
+
+엑셀에서 삭제한 업체는 반영 시 목록에서 제외됩니다. 새 업체나 주소를 바꾼 업체는 좌표 확인 전까지 검색 목록에만 표시되며, 위치를 임의로 추정해 핀을 만들지 않습니다. 확인 후 변경 파일을 커밋하고 `main`에 푸시하면 Pages 배포가 시작됩니다.
+
+장소 목록 검색은 네이버 장소 검색 API를 사용하지 않습니다. 출발지의 일반 주소 검색은 기존 Photon 검색을 사용합니다. 지도 인증 또는 연결 실패 시에도 업체 목록·필터·비교 기능은 이용할 수 있습니다.
+
 [Node.js 공식 사이트](https://nodejs.org/)에서 Node.js 20 이상을 설치합니다. 별도 npm 패키지 설치는 필요하지 않습니다.
 
 ```bash

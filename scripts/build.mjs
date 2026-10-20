@@ -13,7 +13,7 @@ await cp(path.join(root,'public'),path.join(root,'dist'),{recursive:true});
 // Content versions prevent a new HTML page from loading cached scripts/data.
 const indexPath=path.join(root,'dist/index.html');
 let html=await readFile(indexPath,'utf8');
-for(const asset of ['styles.css','data.js','origin-search.js','app.js']){
+for(const asset of ['styles.css','data.js','origin-search.js','naver-map.js','app.js']){
  const version=createHash('sha256').update(await readFile(path.join(root,'dist',asset))).digest('hex').slice(0,12);
  html=html.replaceAll(`"${asset}"`,`"${asset}?v=${version}"`);
 }
