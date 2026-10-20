@@ -270,5 +270,15 @@ await testAsync('a later registered-venue search cancels older landmark requests
  elements.search.value='리블링코코';await registered.submitVenueSearch();assert(elements.originResults.hidden);
  registered.chooseOrigin(0);assert.equal(registered.state.origin,'hagye');assert.equal(registered.state.query,'리블링코코');
 });
+test('native marker keyboard selection avoids SDK pointer handlers and legend is removed',()=>{
+ const registered=window.PAW_APP;registered.state.origin='hagye';registered.reset();
+ const places=registered.getFiltered();
+ for(const [index,key]of ['Enter',' '].entries()){
+  const id=places[index+1].id,button={dataset:{marker:id}},target={closest:s=>s==='.native-marker'?button:null};let prevented=false,stopped=false;
+  for(const handler of documentListeners.keydown)handler({key,target,preventDefault(){prevented=true;},stopPropagation(){stopped=true;}});
+  assert(prevented&&stopped);assert.equal(registered.state.selected,id);
+ }
+ assert(!html.includes('class="map-legend"'));
+});
 console.log(`\n${checks} verification scenarios passed.`);
 })().catch(error=>{console.error(error);process.exitCode=1;});

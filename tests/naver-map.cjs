@@ -21,6 +21,18 @@ assert.equal(changes.at(-1).center.lat,35.1);
 bridge.setView({lat:33.4,lng:126.5},10);assert.equal(bridge.map.getCenter().lat(),33.4);
 bridge.load();assert.equal(count,1,'filter/render changes never recreate map');
 bridge.resize();assert.equal(bridge.map.size.width,700);
+const nativeMarkers=[];
+class Marker{constructor(options){Object.assign(this,options);nativeMarkers.push(this);}setMap(map){this.map=map;}setPosition(position){this.position=position;}setIcon(icon){this.icon=icon;}setZIndex(zIndex){this.zIndex=zIndex;}}
+root.naver.maps.Marker=Marker;root.naver.maps.Point=class{constructor(x,y){this.x=x;this.y=y;}};
+const places=[{id:'a',name:'첫 업체',lat:37.5,lng:127,number:1},{id:'b',name:'둘째 업체',lat:37.5,lng:127,number:2}];
+bridge.syncMarkers(places,{name:'기준 위치',lat:37.4,lng:127},'a',()=>{});
+const first=nativeMarkers.find(m=>m.title==='첫 업체'),second=nativeMarkers.find(m=>m.title==='둘째 업체');
+assert(first.zIndex>second.zIndex,'selected coincident marker must be above the other marker');
+assert.equal(first.icon.anchor.x,22);assert.equal(first.icon.anchor.y,50,'pin tip is anchored to geographic coordinates');
+bridge.syncMarkers(places,{name:'기준 위치',lat:37.4,lng:127},'b',()=>{});
+assert(second.zIndex>first.zIndex,'new selection must come to the front');assert.equal(nativeMarkers.length,3,'map redraw reuses native markers');
+bridge.setView({lat:37.5,lng:127},16);assert.equal(first.position.lat(),37.5);assert.equal(second.position.lng(),127);
+bridge.syncMarkers([places[1]],{name:'기준 위치',lat:37.4,lng:127},'b',()=>{});assert.equal(first.map,null,'filtered markers are removed');
 root.navermap_authFailure();assert(errors.at(-1).includes('인증'));
 const failedMap=bridge.map;bridge.load();assert(failedMap.destroyed,'retry disposes an unauthorized map');
 root.initChochoNaverMap();ready.shift()();assert.equal(count,2,'authentication failure can retry');
