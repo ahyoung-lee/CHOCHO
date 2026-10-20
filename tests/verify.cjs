@@ -84,7 +84,7 @@ test('historical regression dataset renders and handles missing coordinates in d
 
 async function testAsync(name,f){await f();checks++;console.log('PASS',name);}
 const currentApp=window.PAW_APP;
-await testAsync('manual address selection updates map, departure and distance sorting safely',async()=>{const feature={geometry:{type:'Point',coordinates:[126.97,37.55]},properties:{name:'서울역',city:'서울특별시',street:'한강대로',countrycode:'KR',type:'house'}};fetchHandler=async()=>({ok:true,json:async()=>({features:[feature]})});elements.origin.value='서울역';await currentApp.submitOrigin();assert(elements.originResults.innerHTML.includes('서울역'));currentApp.chooseOrigin(0);assert.equal(currentApp.state.origin,'custom');assert.equal(elements.origin.value,'서울역');assert.equal(currentApp.map.center.lat,37.55);assert.equal(currentApp.map.center.lng,126.97);assert(elements.resultSummary.textContent.includes('서울역 출발'));assert(!/NaN|undefined/.test(elements.results.innerHTML));assert(!elements.results.innerHTML.includes('직선거리'));});
+await testAsync('manual address selection updates map, departure and distance sorting safely',async()=>{const feature={geometry:{type:'Point',coordinates:[126.97,37.55]},properties:{name:'서울역',city:'서울특별시',street:'한강대로',countrycode:'KR',type:'house'}};fetchHandler=async()=>({ok:true,json:async()=>({features:[feature]})});elements.origin.value='서울역';await currentApp.submitOrigin();assert(elements.originResults.hidden);assert.equal(currentApp.state.origin,'custom');assert.equal(currentApp.state.origin,'custom');assert.equal(elements.origin.value,'서울역');assert.equal(currentApp.map.center.lat,37.55);assert.equal(currentApp.map.center.lng,126.97);assert(elements.resultSummary.textContent.includes('서울역 출발'));assert(!/NaN|undefined/.test(elements.results.innerHTML));assert(!elements.results.innerHTML.includes('직선거리'));});
 await testAsync('reset returns to the custom departure instead of retained GPS coordinates',async()=>{fullData.origins.current={name:'현재 위치',lat:37.6,lng:127.1};currentApp.map.focus(fullData.places[0]);currentApp.reset();assert.equal(currentApp.state.origin,'custom');assert.equal(elements.origin.value,'서울역');assert.equal(currentApp.map.center.lat,37.55);assert.equal(currentApp.map.center.lng,126.97);delete fullData.origins.current;});
 await testAsync('failed address search keeps the applied origin and map',async()=>{const center={...currentApp.map.center};fetchHandler=async()=>{throw new Error('offline');};elements.origin.value='주소검색실패';await currentApp.submitOrigin();assert.equal(currentApp.state.origin,'custom');assert.equal(currentApp.map.center.lat,center.lat);assert(elements.locationStatus.textContent.includes('기존 출발지를 유지'));elements.origin.value='검색결과없음';fetchHandler=async()=>({ok:true,json:async()=>({features:[]})});await currentApp.submitOrigin();assert(elements.locationStatus.textContent.includes('검색 결과가 없어요'));assert.equal(currentApp.state.origin,'custom');});
 await testAsync('late search and GPS callbacks cannot overwrite a manually selected origin',async()=>{let resolve;fetchHandler=()=>new Promise(r=>resolve=r);elements.origin.value='지연되는주소';const pending=currentApp.submitOrigin();elements.origin.value='노원역';await currentApp.submitOrigin();resolve({ok:true,json:async()=>({features:[{geometry:{type:'Point',coordinates:[127,37.5]},properties:{name:'지연결과',city:'서울특별시',countrycode:'KR'}}]})});await pending;assert.equal(currentApp.state.origin,'nowon');assert(elements.originResults.hidden);locationSuccess({coords:{latitude:35,longitude:129}});assert.equal(currentApp.state.origin,'nowon');});
@@ -95,7 +95,7 @@ test('removed extra controls leave defaults unrestricted and saved places last',
  assert(!html.includes('more-filters'));assert(!html.includes('data-toggle="official"'));
  assert.match(html,/data-toggle="grooming"[^>]*>[^<]*<\/button><button class="chip" data-toggle="favorite"/);
  assert.equal(chips.filter(e=>e.dataset.toggle==='favorite').length,1);
- currentApp.reset();assert.equal(currentApp.getFiltered().length,fullData.places.length);
+ currentApp.state.origin='hagye';currentApp.reset();assert.equal(currentApp.getFiltered().length,fullData.places.length);
  const s=currentApp.state;assert.equal(s.region,'all');assert.equal(s.weight,null);assert.equal(s.day,'');assert(!s.strict&&!s.official&&!s.knownWeight);
  click('[data-fav]',{fav:'twohundred'});click('[data-toggle]',{toggle:'favorite'});click('[data-toggle]',{toggle:'terrace'});
  assert.deepEqual(Array.from(currentApp.getFiltered(),p=>p.id),['twohundred']);
@@ -143,7 +143,7 @@ test('large-dog cafes require confirmed playground access and respect weight lim
  currentApp.reset();
 });
 await testAsync('registration popup previews addresses without saving and rejects stale results',async()=>{
- assert(html.includes('placeholder="업체명 검색"'));assert(html.includes('id="openRegistration"'));
+ assert(html.includes('placeholder="업체명·주소·장소 검색"'));assert(html.includes('id="openRegistration"'));
  const fireLast=async(id,event)=>{const listeners=elements[id].listeners[event];return await listeners[listeners.length-1]({target:elements[id],preventDefault(){}});};
  await fireLast('openRegistration','click');assert(elements.registrationDialog.open);assert.match(html,/<button[^>]*id="registrationSubmit"[^>]*disabled/);assert(elements.registrationStatus.textContent.includes('준비 중'));
  fetchHandler=async()=>({ok:true,json:async()=>({features:[{geometry:{type:'Point',coordinates:[127.04,37.54]},properties:{name:'등록 주소 <img>',street:'테스트로',housenumber:'10',city:'서울',countrycode:'KR',type:'house'}}]})});
@@ -168,7 +168,7 @@ await testAsync('current-location search and my-location refresh nearby ordering
  locationSuccess({coords:{latitude:old.lat+0.01,longitude:old.lng+0.01}});assert.equal(fullData.origins.current.lat,old.lat+0.01);assert.equal(currentApp.state.sort,'near');
  assert(currentApp.getFiltered().every(p=>p.category==='bar'&&core.distanceKm(fullData.origins.current,p)<=10));assert(currentApp.getFiltered().every(p=>['주소 좌표 확인','도로명 주소 좌표 확인'].includes(p.position)));
  assert(!html.includes('시간 제한 없음'));assert(!html.includes('id="time"'));assert(!html.includes('id="sort"'));
- assert(!elements.results.innerHTML.includes('직선거리'));assert(!elements.resultSummary.textContent.includes('km'));
+ assert(!elements.results.innerHTML.includes('직선거리'));assert(elements.resultSummary.textContent.includes('10km'));
  elements.origin.value='하계역';await currentApp.submitOrigin();assert.equal(currentApp.state.origin,'hagye');assert(!elements.time);assert.equal(currentApp.state.time,0);
  currentApp.reset();
 });
@@ -213,8 +213,7 @@ test('published workbook venues render, combine services, overlap categories and
  registered.detail(place.id);assert(elements.detailContent.innerHTML.includes(place.name));
  registered.reset();assert.equal(registered.getFiltered().length,published.places.length);
  for(const key of ['hoteling','daycare','grooming','favorite'])assert.equal(registered.state[key],false);
- const unknown=published.places.find(p=>p.lat===null);registered.state.query=unknown.name;registered.render();
- assert(registered.getFiltered().some(p=>p.id===unknown.id));assert(!elements.markerLayer.innerHTML.includes('data-marker="'+unknown.id+'"'));
+ const unknown=published.places.find(p=>p.lat===null)||published.places[0],coords={lat:unknown.lat,lng:unknown.lng};try{unknown.lat=null;unknown.lng=null;registered.state.query=unknown.name;registered.render();assert(registered.getFiltered().some(p=>p.id===unknown.id));assert(!elements.markerLayer.innerHTML.includes('data-marker="'+unknown.id+'"'));}finally{Object.assign(unknown,coords);}
 });
 test('venue cards show city and district, callable contact and parking without lawn or hours',()=>{
  const registered=window.PAW_APP;registered.reset();
@@ -230,6 +229,46 @@ test('venue cards show city and district, callable contact and parking without l
  const place=registered.getFiltered()[0],phone=place.phone,parking=place.parking;
  try{place.phone=null;place.parking=false;registered.render();cards=elements.results.innerHTML;assert(cards.includes('전화번호 미확인'));assert(!cards.includes('tel:null'));assert(cards.includes('주차 없음'));}
  finally{place.phone=phone;place.parking=parking;registered.reset();}
+});
+await testAsync('landmark search shows only nearest registered venues and centers the surrounding map',async()=>{
+ const registered=window.PAW_APP,source=window.CAFE_DATA,point={name:'구리시 공설묘지',lat:37.6276431,lng:127.1338692};
+ registered.state.origin='hagye';registered.reset();
+ fetchHandler=async()=>({ok:true,json:async()=>({features:[{geometry:{type:'Point',coordinates:[point.lng,point.lat]},properties:{name:point.name,city:'구리시',countrycode:'KR',type:'other'}}]})});
+ elements.search.value=point.name;await registered.submitVenueSearch();
+ assert.equal(registered.state.origin,'custom');assert.equal(registered.state.query,'');assert.equal(elements.search.value,'');
+ assert.equal(registered.map.center.lat,point.lat);assert.equal(registered.map.center.lng,point.lng);
+ const expected=source.places.filter(p=>core.hasCoordinates(p)&&core.distanceKm(point,p)<=10).sort((a,b)=>core.distanceKm(point,a)-core.distanceKm(point,b));
+ assert(expected.length>0&&expected.length<source.places.length);
+ assert.deepEqual(Array.from(registered.getFiltered(),p=>p.id),expected.map(p=>p.id));
+ assert.equal((elements.markerLayer.innerHTML.match(/data-marker=/g)||[]).length,expected.length);
+ const {w,h}=registered.map.size(),center=core.project(point.lat,point.lng,registered.map.zoom);
+ for(const p of expected){const xy=core.project(p.lat,p.lng,registered.map.zoom);assert(Math.abs(xy.x-center.x)<w/2);assert(Math.abs(xy.y-center.y)<h/2);assert(elements.markerLayer.innerHTML.includes('data-marker="'+p.id+'"'));}
+ assert(elements.resultSummary.textContent.includes(point.name));
+ elements.search.value='이전 업체 검색';registered.state.query='이전 업체 검색';elements.useCurrent.fire('click');
+ locationSuccess({coords:{latitude:point.lat,longitude:point.lng}});
+ assert.equal(registered.state.origin,'current');assert.equal(registered.state.query,'');assert.equal(elements.search.value,'');
+ assert.equal(registered.map.center.lat,point.lat);assert.equal(registered.map.center.lng,point.lng);
+ assert.deepEqual(Array.from(registered.getFiltered(),p=>p.id),expected.map(p=>p.id));
+});
+await testAsync('ambiguous landmark candidates keep the applied origin until a result is selected',async()=>{
+ const registered=window.PAW_APP,oldCenter={...registered.map.center};
+ fetchHandler=async()=>({ok:true,json:async()=>({features:[{geometry:{type:'Point',coordinates:[127.1,37.6]},properties:{name:'같은이름 A',city:'구리시',countrycode:'KR'}},{geometry:{type:'Point',coordinates:[127.2,37.7]},properties:{name:'같은이름 B',city:'남양주시',countrycode:'KR'}}]})});
+ elements.origin.value='같은이름';await registered.submitOrigin();assert.equal(registered.state.origin,'current');assert.equal(registered.map.center.lat,oldCenter.lat);assert(!elements.originResults.hidden);
+ registered.chooseOrigin(1);assert.equal(registered.state.origin,'custom');assert.equal(registered.map.center.lat,37.7);assert.equal(registered.map.center.lng,127.2);assert(elements.originResults.hidden);
+});
+await testAsync('a later registered-venue search cancels older landmark requests and candidates',async()=>{
+ const registered=window.PAW_APP;registered.state.origin='hagye';registered.reset();
+ let finish;fetchHandler=()=>new Promise(resolve=>{finish=resolve;});
+ elements.search.value='오래걸리는장소';const pending=registered.submitVenueSearch();
+ elements.search.value='리블링코코';await registered.submitVenueSearch();
+ const center={...registered.map.center};
+ const feature={geometry:{type:'Point',coordinates:[127.1338692,37.6276431]},properties:{name:'늦은장소',countrycode:'KR'}};
+ finish({ok:true,json:async()=>({features:[feature]})});await pending;
+ assert.equal(registered.state.origin,'hagye');assert.equal(registered.state.query,'리블링코코');assert.equal(registered.map.center.lat,center.lat);assert(elements.originResults.hidden);
+ fetchHandler=async()=>({ok:true,json:async()=>({features:[feature,{...feature,properties:{name:'또다른장소',countrycode:'KR'}}]})});
+ elements.origin.value='여러후보장소';await registered.submitOrigin();assert(!elements.originResults.hidden);
+ elements.search.value='리블링코코';await registered.submitVenueSearch();assert(elements.originResults.hidden);
+ registered.chooseOrigin(0);assert.equal(registered.state.origin,'hagye');assert.equal(registered.state.query,'리블링코코');
 });
 console.log(`\n${checks} verification scenarios passed.`);
 })().catch(error=>{console.error(error);process.exitCode=1;});
