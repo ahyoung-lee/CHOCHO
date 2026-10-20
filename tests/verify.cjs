@@ -143,7 +143,7 @@ test('large-dog cafes require confirmed playground access and respect weight lim
  currentApp.reset();
 });
 await testAsync('registration popup previews addresses without saving and rejects stale results',async()=>{
- assert(html.includes('placeholder="업체명·주소·장소 검색"'));assert(html.includes('id="openRegistration"'));
+ assert(html.includes('placeholder="이 사이트에는 입력 내용을 저장하지 않아요."'));assert(html.includes('id="openRegistration"'));
  const fireLast=async(id,event)=>{const listeners=elements[id].listeners[event];return await listeners[listeners.length-1]({target:elements[id],preventDefault(){}});};
  await fireLast('openRegistration','click');assert(elements.registrationDialog.open);assert.match(html,/<button[^>]*id="registrationSubmit"[^>]*disabled/);assert(elements.registrationStatus.textContent.includes('준비 중'));
  fetchHandler=async()=>({ok:true,json:async()=>({features:[{geometry:{type:'Point',coordinates:[127.04,37.54]},properties:{name:'등록 주소 <img>',street:'테스트로',housenumber:'10',city:'서울',countrycode:'KR',type:'house'}}]})});
