@@ -19,17 +19,19 @@
 <div class="compare-tray" id="compareTray" hidden><div><strong id="compareCount"></strong><span id="compareNames"></span></div><div class="tray-actions"><button id="clearCompare" class="text-button">비우기</button><button id="openCompare" class="primary-button">한눈에 비교 ↗</button></div></div>
 <dialog id="registrationDialog" class="registration-dialog" aria-labelledby="registrationTitle">
 <button type="button" class="dialog-close" data-close="registrationDialog" aria-label="업체 등록 닫기">×</button>
-<h2 id="registrationTitle">업체 등록</h2><p class="registration-intro">업체 등록 기능을 준비하고 있어요. 현재 입력한 내용은 저장되거나 공개되지 않습니다.</p>
+<h2 id="registrationTitle">업체 등록</h2><p class="registration-intro">등록 요청은 운영자 메일로 전달됩니다. 검토 후 목록에 반영하며, 요청만으로 바로 공개되지는 않습니다.</p>
 <form id="registrationForm">
+<input id="registrationHoney" type="text" name="_honey" hidden tabindex="-1" autocomplete="off">
 <label class="registration-field" for="registrationName">업체명<input id="registrationName" name="name" required maxlength="100" placeholder="업체명을 입력해 주세요"></label>
-<label class="registration-field" for="registrationCategory">업종<select id="registrationCategory" required><option value="companion">애견동반 카페</option><option value="restaurant">동반 음식점</option><option value="bar">동반 술집</option></select></label>
+<label class="registration-field" for="registrationCategory">업종<select id="registrationCategory" required><option value="playground">운동장 카페</option><option value="companion">애견동반 카페</option><option value="large-dog">대형견 카페</option><option value="restaurant">동반 음식점</option><option value="bar">동반 술집</option></select></label>
 <label class="registration-field" for="registrationAddress">주소 검색</label><div class="registration-address-row"><input id="registrationAddress" type="search" maxlength="160" placeholder="도로명 주소 또는 업체명"><button id="registrationAddressSearch" type="button" class="outline-button">검색</button></div>
 <p class="registration-note">검색어는 주소 검색 서비스로 전송됩니다. 건물 위치가 확인되는 결과를 선택해 주세요.</p>
 <div id="registrationResults" class="origin-results" role="group" aria-label="등록할 업체 주소 검색 결과" hidden></div>
 <p id="registrationSelected" class="registration-selected"></p>
-<label class="registration-consent"><input id="registrationConsent" type="checkbox" required> 반려견 동반 가능 업체임을 확인했어요.</label>
+<label class="registration-field" for="registrationMemo">동반 조건 및 메모사항<textarea id="registrationMemo" name="memo" rows="4" maxlength="2000" placeholder="예: 실내 이동가방 필수, 대형견 동반 가능 여부, 기타 안내사항 (선택)"></textarea></label>
+<label class="registration-consent"><input id="registrationConsent" type="checkbox" required> 반려견 동반 가능 업체임을 확인했으며, 입력 정보를 FormSubmit을 통해 운영자에게 전송하는 데 동의해요.</label>
 <p id="registrationStatus" role="status" aria-live="polite"></p>
-<button type="submit" class="primary-button" id="registrationSubmit" disabled>등록하기</button>
+<button type="submit" class="primary-button" id="registrationSubmit" disabled>등록 요청</button>
 </form></dialog>
 <dialog id="detailDialog" class="detail-dialog" aria-labelledby="detailTitle"><button class="dialog-close" data-close="detailDialog" aria-label="상세 정보 닫기">×</button><div id="detailContent"></div></dialog>
 <dialog id="compareDialog" class="compare-dialog" aria-labelledby="compareTitle"><div class="dialog-heading"><div><p class="eyebrow">SIDE BY SIDE</p><h2 id="compareTitle">우리에게 맞는 곳 비교하기</h2></div><button class="dialog-close" data-close="compareDialog" aria-label="비교 닫기">×</button></div><div id="compareContent"></div></dialog>
