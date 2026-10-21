@@ -23,8 +23,8 @@ class ClassList{constructor(){this.s=new Set();}add(v){this.s.add(v);}remove(v){
 class Element{constructor(id){this.id=id;this.listeners={};this.classList=new ClassList();this.hidden=false;this.attributes={};this.dataset={};this.style={};this.value='';this.checked=false;this.innerHTML='';this.textContent='';this.children=[];this.open=false;this.disabled=false;}setAttribute(k,v){this.attributes[k]=v;}addEventListener(k,f){(this.listeners[k]??=[]).push(f);}fire(k,e={}){for(const f of this.listeners[k]||[])f({target:this,preventDefault(){},...e});}getBoundingClientRect(){return {width:700,height:520,left:0,right:700,top:0,bottom:520};}appendChild(x){this.children.push(x);}remove(){}focus(){}showModal(){this.open=true;}close(){this.open=false;this.fire('close');}setPointerCapture(){}}
 const html=fs.readFileSync(__dirname+'/../public/index.html','utf8');const elements={};for(const m of html.matchAll(/\bid="([^"]+)"/g)){assert(!elements[m[1]],'duplicate HTML id');elements[m[1]]=new Element(m[1]);}
 const chips=[...html.matchAll(/data-toggle="([^"]+)"/g)].map(m=>m[1]).map(k=>{const e=new Element(k);e.dataset.toggle=k;return e;});
-const categories=['all','playground','companion','packing','harness','restaurant','bar','large-dog'].map(k=>{const e=new Element(k);e.dataset.category=k;return e;});
-const categoryCounts=['all','playground','companion','packing','harness','restaurant','bar','large-dog'].map(k=>{const e=new Element(k);e.dataset.categoryCount=k;return e;});
+const categories=['all','playground','companion','packing','harness','restaurant','bar','large-dog','pension'].map(k=>{const e=new Element(k);e.dataset.category=k;return e;});
+const categoryCounts=['all','playground','companion','packing','harness','restaurant','bar','large-dog','pension'].map(k=>{const e=new Element(k);e.dataset.categoryCount=k;return e;});
 const explorer=new Element('explorer'),documentListeners={};
 const doc={getElementById:id=>{assert(elements[id],`missing element ${id}`);return elements[id];},querySelector:s=>{assert.equal(s,'.explorer');return explorer;},querySelectorAll:s=>{if(s==='[data-toggle]')return chips;if(s==='[data-category]')return categories;if(s==='[data-category-count]')return categoryCounts;throw new Error('Unexpected selector '+s);},createElement:tag=>new Element(tag),addEventListener:(k,f)=>(documentListeners[k]??=[]).push(f),body:new Element('body'),contains:()=>false,activeElement:null};
 const storage=new Map();let fetchHandler=async()=>({ok:true,json:async()=>({features:[]})});
@@ -152,9 +152,11 @@ await testAsync('registration sends only valid selected addresses and handles de
  const addressLookup=fetchHandler;let requests=[];fetchHandler=async(url,options)=>{requests.push({url,options});return {ok:true,json:async()=>({success:true})};};
  await fireLast('registrationForm','submit');assert.equal(requests.length,0);
  elements.registrationName.value='테스트 업체';elements.registrationConsent.checked=true;elements.registrationCategory.value='large-dog';elements.registrationMemo.value='실내에서는 이동가방 필수\n대형견은 테라스 이용 가능';
+ elements.registrationCategory.value='pension';elements.registrationParking.checked=true;elements.registrationIndoor.checked=true;elements.registrationTerrace.checked=false;elements.registrationHoteling.checked=true;elements.registrationDaycare.checked=false;elements.registrationGrooming.checked=true;
  fetchHandler=async(url,options)=>{requests.push({url,options});return {ok:true,json:async()=>({success:false})};};
  await fireLast('registrationForm','submit');assert(elements.registrationStatus.textContent.includes('실패'));assert(!elements.registrationSubmit.disabled);assert.equal(elements.registrationName.value,'테스트 업체');
- assert.equal(requests[0].url,'https://formsubmit.co/ajax/ay_lee@naver.com');assert.equal(requests[0].options.method,'POST');const payload=JSON.parse(requests[0].options.body);assert.equal(payload['업체명'],'테스트 업체');assert.equal(payload['업종'],'대형견 카페');assert(payload['주소'].includes('테스트로'));assert.equal(payload['반려견 동반 확인'],'동의');
+ assert.equal(requests[0].url,'https://formsubmit.co/ajax/ay_lee@naver.com');assert.equal(requests[0].options.method,'POST');const payload=JSON.parse(requests[0].options.body);assert.equal(payload['업체명'],'테스트 업체');assert.equal(payload['업종'],'애견동반 펜션');assert(payload['주소'].includes('테스트로'));assert.equal(payload['반려견 동반 확인'],'동의');
+ assert.deepEqual(['주차가능','실내동반','테라스동반','호텔링','유치원','애견미용'].map(label=>payload[label]),['선택','선택','미선택','선택','미선택','선택']);
  assert.equal(payload['동반 조건 및 메모사항'],'실내에서는 이동가방 필수\n대형견은 테라스 이용 가능');assert.equal(elements.registrationMemo.value,'실내에서는 이동가방 필수\n대형견은 테라스 이용 가능');
  fetchHandler=async()=>{throw new Error('offline');};await fireLast('registrationForm','submit');assert(elements.registrationStatus.textContent.includes('실패'));assert(!elements.registrationSubmit.disabled);
  fetchHandler=async()=>({ok:false,json:async()=>({success:true})});await fireLast('registrationForm','submit');assert(elements.registrationStatus.textContent.includes('실패'));assert(!elements.registrationSubmit.disabled);
@@ -165,7 +167,7 @@ await testAsync('registration sends only valid selected addresses and handles de
  let resolve;fetchHandler=()=>new Promise(r=>resolve=r);elements.registrationAddress.value='지연등록검색';const pending=fireLast('registrationAddressSearch','click');await fireLast('registrationAddress','input');resolve({ok:true,json:async()=>({features:[]})});await pending;assert(elements.registrationResults.hidden);
  const before=fullData.places.length;let writes=0;fetchHandler=async()=>{writes++;throw new Error('No registration writes allowed');};await fireLast('registrationForm','submit');assert.equal(writes,0);assert(elements.registrationSubmit.disabled);assert.equal(fullData.places.length,before);
  elements.registrationDialog.close();
- await fireLast('openRegistration','click');assert.equal(elements.registrationMemo.value,'');elements.registrationDialog.close();
+ await fireLast('openRegistration','click');assert.equal(elements.registrationMemo.value,'');for(const suffix of ['Parking','Indoor','Terrace','Hoteling','Daycare','Grooming'])assert.equal(elements['registration'+suffix].checked,false);elements.registrationDialog.close();
 });
 await testAsync('current-location search and my-location refresh nearby ordering, category results and map pins',async()=>{
  currentApp.reset();const bar=fullData.places.find(p=>p.category==='bar'&&core.hasCoordinates(p));assert(bar);
@@ -227,6 +229,13 @@ test('published workbook venues render, combine services, overlap categories and
  registered.reset();assert.equal(registered.getFiltered().length,published.places.length);
  for(const key of ['hoteling','daycare','grooming','favorite'])assert.equal(registered.state[key],false);
  const unknown=published.places.find(p=>p.lat===null)||published.places[0],coords={lat:unknown.lat,lng:unknown.lng};try{unknown.lat=null;unknown.lng=null;registered.state.query=unknown.name;registered.render();assert(registered.getFiltered().some(p=>p.id===unknown.id));assert(!elements.markerLayer.innerHTML.includes('data-marker="'+unknown.id+'"'));}finally{Object.assign(unknown,coords);}
+});
+test('pension category filters registered venues and preserves the total count',()=>{
+ const registered=window.PAW_APP,published=require('../data/venues.json');registered.reset();click('[data-category]',{category:'pension'});
+ assert.deepEqual(Array.from(registered.getFiltered(),place=>place.id).sort(),published.places.filter(place=>place.categories.includes('pension')).map(place=>place.id).sort());
+ assert.equal(categoryCounts.find(element=>element.dataset.categoryCount==='all').textContent,published.places.length);
+ const base=published.places[0],sample={...published,places:[{...base,id:'pension-only',category:'pension',categories:['pension'],playground:false,largeDogPlayground:false},{...base,id:'cafe-only',category:'companion',categories:['companion'],playground:false,largeDogPlayground:false}]};
+ assert.deepEqual(core.filterPlaces(sample,{...core.defaultState(),category:'pension'}).map(place=>place.id),['pension-only']);registered.reset();
 });
 test('venue cards show city and district, callable contact and parking without lawn or hours',()=>{
  const registered=window.PAW_APP;registered.reset();

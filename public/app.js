@@ -59,7 +59,7 @@ function evidenceBadge(p){return p.registration?'직접 등록 정보':p.level==
 function phoneLink(p,label){return p.phone?`<a href="tel:${p.phone.replace(/-/g,'')}">${esc(label||p.phone)}</a>`:'<span>전화번호 미확인 · 네이버 지도에서 확인</span>';}
 function parkingLabel(p){return p.parking===true?'주차 가능':p.parking===false?'주차 불가능':'주차 미확인';}
 function memoText(p,fallback){return p.registrationNote?.trim()?`<span class="venue-memo">${esc(p.registrationNote)}</span>`:esc(fallback);}
-function categoryLabel(p){if(p.categories)return p.categories.map(key=>({playground:'운동장 카페',companion:'동반 카페',restaurant:'동반 음식점',bar:'동반 술집',pension:'동반 펜션'}[key])).concat(p.largeDogPlayground?['대형견 운동장']:[]).join(' · ');if(p.category==='restaurant')return '동반 음식점';if(p.category==='bar')return '동반 술집';if(p.category==='playground')return p.largeDogPlayground===true?'운동장 카페 · 대형견 운동장':'운동장 카페';const modes=(p.companionModes||[]).map(mode=>mode==='packing'?'동반 카페(패킹)':'동반 카페(하네스)');return modes.length?modes.join(' · '):'일반 동반 카페 · 방식 미확인';}
+function categoryLabel(p){if(p.categories)return p.categories.map(key=>({playground:'운동장 카페',companion:'동반 카페',restaurant:'동반 음식점',bar:'동반 술집',pension:'애견동반 펜션'}[key])).concat(p.largeDogPlayground?['대형견 운동장']:[]).join(' · ');if(p.category==='pension')return '애견동반 펜션';if(p.category==='restaurant')return '동반 음식점';if(p.category==='bar')return '동반 술집';if(p.category==='playground')return p.largeDogPlayground===true?'운동장 카페 · 대형견 운동장':'운동장 카페';const modes=(p.companionModes||[]).map(mode=>mode==='packing'?'동반 카페(패킹)':'동반 카페(하네스)');return modes.length?modes.join(' · '):'일반 동반 카페 · 방식 미확인';}
 function playgroundLabel(p){return p.playground===true?'운동장 있음':p.playground===false?'운동장 없음':'운동장 미확인';}
 function weightFact(p){
  const general=Number.isFinite(p.weightLimit),playground=Number.isFinite(p.playgroundWeightLimit);
@@ -208,9 +208,10 @@ async function submitVenueSearch(){
 $('venueSearch').addEventListener('click',submitVenueSearch);
 $('search').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();submitVenueSearch();}});
 let registrationCandidates=[],registrationVersion=0,registrationController,registrationAddress=null,registrationSending=false,registrationSent=false;
-const registrationCategories={playground:'운동장 카페',companion:'애견동반 카페','large-dog':'대형견 카페',restaurant:'동반 음식점',bar:'동반 술집'};
+const registrationCategories={playground:'운동장 카페',companion:'애견동반 카페','large-dog':'대형견 카페',restaurant:'동반 음식점',bar:'동반 술집',pension:'애견동반 펜션'};
+const registrationServices={registrationParking:'주차가능',registrationIndoor:'실내동반',registrationTerrace:'테라스동반',registrationHoteling:'호텔링',registrationDaycare:'유치원',registrationGrooming:'애견미용'};
 function clearRegistrationAddress(){registrationVersion++;registrationController?.abort();registrationCandidates=[];registrationAddress=null;registrationSent=false;$('registrationSubmit').disabled=true;$('registrationResults').hidden=true;$('registrationResults').innerHTML='';$('registrationSelected').textContent='';}
-$('openRegistration').addEventListener('click',()=>{if(registrationSending)return;clearRegistrationAddress();$('registrationName').value='';$('registrationCategory').value='companion';$('registrationAddress').value='';$('registrationMemo').value='';$('registrationHoney').value='';$('registrationConsent').checked=false;$('registrationStatus').textContent='업체명과 업종을 입력하고 검색 결과에서 건물 주소를 선택해 주세요.';showDialog('registrationDialog');});
+$('openRegistration').addEventListener('click',()=>{if(registrationSending)return;clearRegistrationAddress();$('registrationName').value='';$('registrationCategory').value='companion';$('registrationAddress').value='';$('registrationMemo').value='';$('registrationHoney').value='';$('registrationConsent').checked=false;Object.keys(registrationServices).forEach(id=>$(id).checked=false);$('registrationStatus').textContent='업체명과 업종을 입력하고 검색 결과에서 건물 주소를 선택해 주세요.';showDialog('registrationDialog');});
 $('registrationAddress').addEventListener('input',clearRegistrationAddress);
 async function searchRegistrationAddress(){
  clearRegistrationAddress();const query=$('registrationAddress').value.trim(),version=registrationVersion;
@@ -233,7 +234,7 @@ $('registrationForm').addEventListener('submit',async e=>{
  registrationSending=true;$('registrationSubmit').disabled=true;$('registrationSubmit').textContent='전송 중…';$('registrationStatus').textContent='등록 요청을 전송하고 있어요.';
  const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),15000);
  try{
-  const response=await root.fetch('https://formsubmit.co/ajax/ay_lee@naver.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},signal:controller.signal,body:JSON.stringify({_subject:'[CHOCHO] 업체 등록 요청',_template:'table',_captcha:'false',_honey:'','업체명':name,'업종':category,'주소':address.address,'검색 장소명':address.name,'위도':address.lat,'경도':address.lng,'동반 조건 및 메모사항':memo,'반려견 동반 확인':'동의'})});
+  const response=await root.fetch('https://formsubmit.co/ajax/ay_lee@naver.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},signal:controller.signal,body:JSON.stringify({_subject:'[CHOCHO] 업체 등록 요청',_template:'table',_captcha:'false',_honey:'','업체명':name,'업종':category,'주소':address.address,'검색 장소명':address.name,'위도':address.lat,'경도':address.lng,'동반 조건 및 메모사항':memo,'반려견 동반 확인':'동의',...Object.fromEntries(Object.entries(registrationServices).map(([id,label])=>[label,$(id).checked?'선택':'미선택']))})});
   const result=await response.json();if(!response.ok||!(result.success===true||result.success==='true'))throw new Error('Registration rejected');
   registrationSent=true;$('registrationStatus').textContent='등록 요청이 접수 서비스에 전달됐어요. 운영자가 확인한 뒤 반영합니다. 최초 이용 시 운영자의 수신 메일 인증이 필요해요.';
  }catch(_){$('registrationStatus').textContent='전송 결과를 확인하지 못했어요(연결 또는 접수 실패). 잠시 후 다시 시도해 주세요.';}
