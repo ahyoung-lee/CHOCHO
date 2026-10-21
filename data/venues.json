@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-19",
+  "checkedAt": "2026-10-21",
   "origins": {
     "hagye": {
       "name": "하계역",
@@ -21,7 +21,7 @@
     "complete": false,
     "source": "업체정보_간편입력.xlsx",
     "mode": "manual-workbook",
-    "registeredCount": 36
+    "registeredCount": 65
   },
   "places": [
     {
@@ -124,7 +124,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 2,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "hoteling": false,
       "daycare": false,
@@ -260,7 +260,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 3,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "terrace": true,
       "hoteling": false,
@@ -297,7 +297,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 4,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -382,7 +382,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 5,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -468,7 +468,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 6,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -631,7 +631,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 7,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "terrace": true,
       "hoteling": false,
@@ -670,7 +670,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 8,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -756,7 +756,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 9,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -841,7 +841,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 10,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -927,7 +927,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 11,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -1012,7 +1012,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 12,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -1098,7 +1098,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 13,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -1184,7 +1184,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 14,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -1269,7 +1269,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 15,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -1353,7 +1353,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 16,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -1438,7 +1438,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 17,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -1524,7 +1524,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 18,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -1712,7 +1712,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 19,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "terrace": true,
       "hoteling": false,
@@ -1750,7 +1750,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 20,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -1943,7 +1943,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 21,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "terrace": true,
       "hoteling": false,
@@ -1980,7 +1980,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 22,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -2064,7 +2064,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 23,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -2150,7 +2150,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 24,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -2236,7 +2236,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 25,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -2320,7 +2320,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 26,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -2404,7 +2404,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 27,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": false,
       "indoor": true,
@@ -2489,7 +2489,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 28,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -2573,7 +2573,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 29,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -2657,7 +2657,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 30,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -2741,7 +2741,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 31,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": false,
       "indoor": true,
@@ -2826,7 +2826,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 32,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -2911,7 +2911,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 33,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -2995,7 +2995,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 34,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": false,
       "indoor": true,
@@ -3079,7 +3079,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 35,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -3164,7 +3164,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 36,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -3248,7 +3248,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 37,
-        "updatedAt": "2026-10-19"
+        "updatedAt": "2026-10-21"
       },
       "parking": true,
       "indoor": true,
@@ -3312,6 +3312,2444 @@
         "checkedAt": "2026-10-20",
         "precision": "street-address",
         "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%86%A1%ED%8C%8C%EA%B5%AC%20%EC%84%9D%EC%B4%8C%ED%98%B8%EC%88%98%EB%A1%9C%20272"
+      }
+    },
+    {
+      "id": "manual-2c4c215feb22",
+      "number": 37,
+      "name": "다슬음",
+      "address": "서울 강남구 강남대로62길 23 역삼빌딩 1층",
+      "phone": "0507-1484-3401",
+      "region": "강남구",
+      "area": "강남구",
+      "category": "bar",
+      "categories": [
+        "bar"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 38,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": false,
+      "indoor": true,
+      "terrace": false,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 불가",
+      "petArea": "실내 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 38행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "동반 술집",
+      "lat": 37.4908556061437,
+      "lng": 127.033428947382,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C62%EA%B8%B8%2023",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C62%EA%B8%B8%2023%20%EC%97%AD%EC%82%BC%EB%B9%8C%EB%94%A9%201%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 강남구 강남대로62길 23",
+        "matchedAddress": "서울 강남구 강남대로62길 23",
+        "addressId": "N29399354",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C62%EA%B8%B8%2023"
+      }
+    },
+    {
+      "id": "manual-e0936168ba48",
+      "number": 38,
+      "name": "맷집",
+      "address": "서울 마포구 와우산로17길 19-17 1층",
+      "phone": "0507-1384-7968",
+      "region": "마포구",
+      "area": "마포구",
+      "category": "bar",
+      "categories": [
+        "bar"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 39,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": false,
+      "indoor": true,
+      "terrace": false,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 불가",
+      "petArea": "실내 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 39행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "동반 술집",
+      "lat": 37.5494298799352,
+      "lng": 126.921615197284,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EC%99%80%EC%9A%B0%EC%82%B0%EB%A1%9C17%EA%B8%B8%2019-17",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EC%99%80%EC%9A%B0%EC%82%B0%EB%A1%9C17%EA%B8%B8%2019-17%201%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 마포구 와우산로17길 19-17",
+        "matchedAddress": "서울 마포구 와우산로17길 19-17",
+        "addressId": "N33000596",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EC%99%80%EC%9A%B0%EC%82%B0%EB%A1%9C17%EA%B8%B8%2019-17"
+      }
+    },
+    {
+      "id": "manual-82eeab0c34a7",
+      "number": 39,
+      "name": "호락호락",
+      "address": "서울 송파구 오금로11길 37 109호",
+      "phone": "0507-1341-2682",
+      "region": "송파구",
+      "area": "송파구",
+      "category": "bar",
+      "categories": [
+        "bar"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 40,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": false,
+      "indoor": true,
+      "terrace": false,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 불가",
+      "petArea": "실내 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 40행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "동반 술집",
+      "lat": 37.5156434098608,
+      "lng": 127.111189601349,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%86%A1%ED%8C%8C%EA%B5%AC%20%EC%98%A4%EA%B8%88%EB%A1%9C11%EA%B8%B8%2037",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EC%86%A1%ED%8C%8C%EA%B5%AC%20%EC%98%A4%EA%B8%88%EB%A1%9C11%EA%B8%B8%2037%20109%ED%98%B8",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 송파구 오금로11길 37",
+        "matchedAddress": "서울 송파구 오금로11길 37",
+        "addressId": "N32032711",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%86%A1%ED%8C%8C%EA%B5%AC%20%EC%98%A4%EA%B8%88%EB%A1%9C11%EA%B8%B8%2037"
+      }
+    },
+    {
+      "id": "manual-a1f9aa2240f4",
+      "number": 40,
+      "name": "까치집",
+      "address": "서울 강서구 강서로5나길 16 1층",
+      "phone": "0507-1325-2538",
+      "region": "강서구",
+      "area": "강서구",
+      "category": "bar",
+      "categories": [
+        "bar"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 41,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": false,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 41행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "동반 술집",
+      "lat": 37.5287442599731,
+      "lng": 126.847424806704,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EC%84%9C%EA%B5%AC%20%EA%B0%95%EC%84%9C%EB%A1%9C5%EB%82%98%EA%B8%B8%2016",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EA%B0%95%EC%84%9C%EA%B5%AC%20%EA%B0%95%EC%84%9C%EB%A1%9C5%EB%82%98%EA%B8%B8%2016%201%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 강서구 강서로5나길 16",
+        "matchedAddress": "서울 강서구 강서로5나길 16",
+        "addressId": "N29939723",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EC%84%9C%EA%B5%AC%20%EA%B0%95%EC%84%9C%EB%A1%9C5%EB%82%98%EA%B8%B8%2016"
+      }
+    },
+    {
+      "id": "manual-bddb4e380c6d",
+      "number": 41,
+      "name": "술로맨스",
+      "address": "경기 남양주시 진접읍 해밀예당3로 7 2층",
+      "phone": "0507-1329-7286",
+      "region": "남양주시",
+      "area": "진접읍",
+      "category": "bar",
+      "categories": [
+        "bar"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 42,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 42행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "동반 술집",
+      "lat": 37.7105136669138,
+      "lng": 127.198420562012,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%EC%A7%84%EC%A0%91%EC%9D%8D%20%ED%95%B4%EB%B0%80%EC%98%88%EB%8B%B93%EB%A1%9C%207",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%EC%A7%84%EC%A0%91%EC%9D%8D%20%ED%95%B4%EB%B0%80%EC%98%88%EB%8B%B93%EB%A1%9C%207%202%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "경기 남양주시 진접읍 해밀예당3로 7",
+        "matchedAddress": "경기 남양주시 진접읍 해밀예당3로 7",
+        "addressId": "N50853814",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%EC%A7%84%EC%A0%91%EC%9D%8D%20%ED%95%B4%EB%B0%80%EC%98%88%EB%8B%B93%EB%A1%9C%207"
+      }
+    },
+    {
+      "id": "manual-1914c7bd9010",
+      "number": 42,
+      "name": "문래가온",
+      "address": "서울 영등포구 도림로 445 102호",
+      "phone": "0507-1336-1858",
+      "region": "영등포구",
+      "area": "영등포구",
+      "category": "bar",
+      "categories": [
+        "bar"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 43,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": false,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 43행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "동반 술집",
+      "lat": 37.5147905794479,
+      "lng": 126.893469611248,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC%20%EB%8F%84%EB%A6%BC%EB%A1%9C%20445",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC%20%EB%8F%84%EB%A6%BC%EB%A1%9C%20445%20102%ED%98%B8",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 영등포구 도림로 445",
+        "matchedAddress": "서울 영등포구 도림로 445",
+        "addressId": "N33191169",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC%20%EB%8F%84%EB%A6%BC%EB%A1%9C%20445"
+      }
+    },
+    {
+      "id": "manual-e3e42b3879eb",
+      "number": 43,
+      "name": "야간매점",
+      "address": "경기 안양시 만안구 장내로 101 지상1층",
+      "phone": "010-6293-3439",
+      "region": "안양시",
+      "area": "안양시",
+      "category": "bar",
+      "categories": [
+        "bar"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 44,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": false,
+      "indoor": true,
+      "terrace": false,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 불가",
+      "petArea": "실내 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 44행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "동반 술집",
+      "lat": 37.3959524372169,
+      "lng": 126.919313141873,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EC%95%88%EC%96%91%EC%8B%9C%20%EB%A7%8C%EC%95%88%EA%B5%AC%20%EC%9E%A5%EB%82%B4%EB%A1%9C%20101",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EC%95%88%EC%96%91%EC%8B%9C%20%EB%A7%8C%EC%95%88%EA%B5%AC%20%EC%9E%A5%EB%82%B4%EB%A1%9C%20101%20%EC%A7%80%EC%83%811%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "경기 안양시 만안구 장내로 101",
+        "matchedAddress": "경기 안양시 만안구 장내로 101",
+        "addressId": "N32366638",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EC%95%88%EC%96%91%EC%8B%9C%20%EB%A7%8C%EC%95%88%EA%B5%AC%20%EC%9E%A5%EB%82%B4%EB%A1%9C%20101"
+      }
+    },
+    {
+      "id": "manual-a9908777b075",
+      "number": 44,
+      "name": "중앙실비",
+      "address": "서울 강남구 학동로 342 SK허브블루상가 1층",
+      "phone": "0507-1391-0320",
+      "region": "강남구",
+      "area": "강남구",
+      "category": "bar",
+      "categories": [
+        "bar"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 45,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": false,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 45행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "동반 술집",
+      "lat": 37.5167560126387,
+      "lng": 127.040841265738,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%ED%95%99%EB%8F%99%EB%A1%9C%20342",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%ED%95%99%EB%8F%99%EB%A1%9C%20342%20SK%ED%97%88%EB%B8%8C%EB%B8%94%EB%A3%A8%EC%83%81%EA%B0%80%201%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 강남구 학동로 342",
+        "matchedAddress": "서울 강남구 학동로 342",
+        "addressId": "N29702328",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%ED%95%99%EB%8F%99%EB%A1%9C%20342"
+      }
+    },
+    {
+      "id": "manual-9a5eba0f7afc",
+      "number": 45,
+      "name": "트키",
+      "address": "서울 강남구 도산대로45길 10-2 1층",
+      "phone": "0507-1370-2654",
+      "region": "강남구",
+      "area": "강남구",
+      "category": "companion",
+      "categories": [
+        "companion"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 46,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 46행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "동반 카페",
+      "lat": 37.5230853508609,
+      "lng": 127.035937150738,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EB%8F%84%EC%82%B0%EB%8C%80%EB%A1%9C45%EA%B8%B8%2010-2",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EB%8F%84%EC%82%B0%EB%8C%80%EB%A1%9C45%EA%B8%B8%2010-2%201%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 강남구 도산대로45길 10-2",
+        "matchedAddress": "서울 강남구 도산대로45길 10-2",
+        "addressId": "N31703651",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EB%8F%84%EC%82%B0%EB%8C%80%EB%A1%9C45%EA%B8%B8%2010-2"
+      }
+    },
+    {
+      "id": "manual-276dda54eda8",
+      "number": 46,
+      "name": "타카이",
+      "address": "서울 강남구 학동로53길 19 1층",
+      "phone": "0507-1455-0321",
+      "region": "강남구",
+      "area": "강남구",
+      "category": "restaurant",
+      "categories": [
+        "restaurant"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 47,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": false,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 47행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "동반 음식점",
+      "lat": 37.5183483566211,
+      "lng": 127.03978324254,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%ED%95%99%EB%8F%99%EB%A1%9C53%EA%B8%B8%2019",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%ED%95%99%EB%8F%99%EB%A1%9C53%EA%B8%B8%2019%201%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 강남구 학동로53길 19",
+        "matchedAddress": "서울 강남구 학동로53길 19",
+        "addressId": "N32550349",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%ED%95%99%EB%8F%99%EB%A1%9C53%EA%B8%B8%2019"
+      }
+    },
+    {
+      "id": "manual-69993d830082",
+      "number": 47,
+      "name": "더코너하우스",
+      "address": "서울 강남구 도산대로49길 6-7 1층",
+      "phone": "0507-1394-5990",
+      "region": "강남구",
+      "area": "강남구",
+      "category": "restaurant",
+      "categories": [
+        "restaurant"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 48,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": true,
+      "indoor": false,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "테라스석 동반 가능",
+      "dogRule": "테라스석 동반 가능",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "테라스 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 48행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "테라스석 동반 가능",
+      "lat": 37.5234794158554,
+      "lng": 127.037776866131,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EB%8F%84%EC%82%B0%EB%8C%80%EB%A1%9C49%EA%B8%B8%206-7",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EB%8F%84%EC%82%B0%EB%8C%80%EB%A1%9C49%EA%B8%B8%206-7%201%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 강남구 도산대로49길 6-7",
+        "matchedAddress": "서울 강남구 도산대로49길 6-7",
+        "addressId": "N29940414",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EB%8F%84%EC%82%B0%EB%8C%80%EB%A1%9C49%EA%B8%B8%206-7"
+      }
+    },
+    {
+      "id": "manual-c175a38d7143",
+      "number": 48,
+      "name": "오제 오징어제육",
+      "address": "서울 강남구 도산대로27길 40 1층",
+      "phone": "0507-1404-3971",
+      "region": "강남구",
+      "area": "강남구",
+      "category": "restaurant",
+      "categories": [
+        "restaurant"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 49,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": false,
+      "indoor": true,
+      "terrace": false,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 불가",
+      "petArea": "실내 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 49행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "동반 음식점",
+      "lat": 37.5223754254143,
+      "lng": 127.027666246727,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EB%8F%84%EC%82%B0%EB%8C%80%EB%A1%9C27%EA%B8%B8%2040",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EB%8F%84%EC%82%B0%EB%8C%80%EB%A1%9C27%EA%B8%B8%2040%201%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 강남구 도산대로27길 40",
+        "matchedAddress": "서울 강남구 도산대로27길 40",
+        "addressId": "N33333864",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EB%8F%84%EC%82%B0%EB%8C%80%EB%A1%9C27%EA%B8%B8%2040"
+      }
+    },
+    {
+      "id": "manual-ea761987e0fc",
+      "number": 49,
+      "name": "모스가든",
+      "address": "서울 강남구 논현로139길 12",
+      "phone": "0507-1489-1988",
+      "region": "강남구",
+      "area": "강남구",
+      "category": "restaurant",
+      "categories": [
+        "restaurant"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 50,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": false,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 50행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "동반 음식점",
+      "lat": 37.5166867855424,
+      "lng": 127.02832745164,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EB%85%BC%ED%98%84%EB%A1%9C139%EA%B8%B8%2012",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EB%85%BC%ED%98%84%EB%A1%9C139%EA%B8%B8%2012",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 강남구 논현로139길 12",
+        "matchedAddress": "서울 강남구 논현로139길 12",
+        "addressId": "N34592596",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EB%85%BC%ED%98%84%EB%A1%9C139%EA%B8%B8%2012"
+      }
+    },
+    {
+      "id": "manual-7537833f0981",
+      "number": 50,
+      "name": "구월의 소철",
+      "address": "서울 강남구 학동로 343 B1층 구월의소철",
+      "phone": "0507-1417-3212",
+      "region": "강남구",
+      "area": "강남구",
+      "category": "bar",
+      "categories": [
+        "bar"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 51,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": false,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "룸 동반 가능",
+      "dogRule": "룸 동반 가능",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 51행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "룸 동반 가능",
+      "lat": 37.5174832874385,
+      "lng": 127.040624026927,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%ED%95%99%EB%8F%99%EB%A1%9C%20343",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%ED%95%99%EB%8F%99%EB%A1%9C%20343%20B1%EC%B8%B5%20%EA%B5%AC%EC%9B%94%EC%9D%98%EC%86%8C%EC%B2%A0",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 강남구 학동로 343",
+        "matchedAddress": "서울 강남구 학동로 343",
+        "addressId": "N32858895",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%ED%95%99%EB%8F%99%EB%A1%9C%20343"
+      }
+    },
+    {
+      "id": "manual-b003cc85467c",
+      "number": 51,
+      "name": "파퓰러커피",
+      "address": "서울 강남구 학동로21길 6",
+      "phone": "0507-1342-5064",
+      "region": "강남구",
+      "area": "강남구",
+      "category": "companion",
+      "categories": [
+        "companion"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 52,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": false,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 불가",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 52행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "동반 카페",
+      "lat": 37.513592604268,
+      "lng": 127.028135352245,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%ED%95%99%EB%8F%99%EB%A1%9C21%EA%B8%B8%206",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%ED%95%99%EB%8F%99%EB%A1%9C21%EA%B8%B8%206",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 강남구 학동로21길 6",
+        "matchedAddress": "서울 강남구 학동로21길 6",
+        "addressId": "N34830157",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%ED%95%99%EB%8F%99%EB%A1%9C21%EA%B8%B8%206"
+      }
+    },
+    {
+      "id": "manual-439a1cbf3a1d",
+      "number": 52,
+      "name": "동대문대하구이사계절집",
+      "address": "서울 동대문구 장한로6길 53 102호",
+      "phone": "0507-1370-4530",
+      "region": "동대문구",
+      "area": "동대문구",
+      "category": "bar",
+      "categories": [
+        "bar"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 53,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": false,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "소형견 가능 리드줄 필수",
+      "dogRule": "소형견 가능 리드줄 필수",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 53행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "소형견 가능 리드줄 필수",
+      "lat": 37.5625553138569,
+      "lng": 127.068890749379,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC%20%EC%9E%A5%ED%95%9C%EB%A1%9C6%EA%B8%B8%2053",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC%20%EC%9E%A5%ED%95%9C%EB%A1%9C6%EA%B8%B8%2053%20102%ED%98%B8",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 동대문구 장한로6길 53",
+        "matchedAddress": "서울 동대문구 장한로6길 53",
+        "addressId": "N33807370",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC%20%EC%9E%A5%ED%95%9C%EB%A1%9C6%EA%B8%B8%2053"
+      }
+    },
+    {
+      "id": "manual-f49341082c57",
+      "number": 53,
+      "name": "신당육",
+      "address": "서울 중구 다산로46길 36 2층, 3층, 4층",
+      "phone": "02-6953-8816",
+      "region": "중구",
+      "area": "중구",
+      "category": "restaurant",
+      "categories": [
+        "restaurant",
+        "bar"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 54,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "소형견 가능",
+      "dogRule": "소형견 가능",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 54행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "소형견 가능",
+      "lat": 37.5664552202589,
+      "lng": 127.018272489717,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%EB%8B%A4%EC%82%B0%EB%A1%9C46%EA%B8%B8%2036",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%EB%8B%A4%EC%82%B0%EB%A1%9C46%EA%B8%B8%2036%202%EC%B8%B5%2C%203%EC%B8%B5%2C%204%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 중구 다산로46길 36",
+        "matchedAddress": "서울 중구 다산로46길 36",
+        "addressId": "N30902160",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%EB%8B%A4%EC%82%B0%EB%A1%9C46%EA%B8%B8%2036"
+      }
+    },
+    {
+      "id": "manual-f4d0e88bbb7a",
+      "number": 54,
+      "name": "심세정",
+      "address": "서울 중구 퇴계로 409-11 1층",
+      "phone": "0507-1444-7579",
+      "region": "중구",
+      "area": "중구",
+      "category": "companion",
+      "categories": [
+        "companion"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 55,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": false,
+      "indoor": false,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "별관, 테라스 가능",
+      "dogRule": "별관, 테라스 가능",
+      "parkingText": "사용자 등록: 주차 불가",
+      "petArea": "테라스 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 55행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "별관, 테라스 가능",
+      "lat": 37.5660582461423,
+      "lng": 127.017035911651,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%ED%87%B4%EA%B3%84%EB%A1%9C%20409-11",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%ED%87%B4%EA%B3%84%EB%A1%9C%20409-11%201%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 중구 퇴계로 409-11",
+        "matchedAddress": "서울 중구 퇴계로 409-11",
+        "addressId": "N29514797",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%ED%87%B4%EA%B3%84%EB%A1%9C%20409-11"
+      }
+    },
+    {
+      "id": "manual-a8a95b15de87",
+      "number": 55,
+      "name": "서울돼지구이",
+      "address": "서울 광진구 능동로 264 한사랑빌딩 1층",
+      "phone": "0507-1336-1116",
+      "region": "광진구",
+      "area": "광진구",
+      "category": "bar",
+      "categories": [
+        "bar"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 56,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": false,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "유모차, 케이지 필수",
+      "dogRule": "유모차, 케이지 필수",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 56행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "유모차, 케이지 필수",
+      "lat": 37.5535123956685,
+      "lng": 127.077834656543,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B4%91%EC%A7%84%EA%B5%AC%20%EB%8A%A5%EB%8F%99%EB%A1%9C%20264",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EA%B4%91%EC%A7%84%EA%B5%AC%20%EB%8A%A5%EB%8F%99%EB%A1%9C%20264%20%ED%95%9C%EC%82%AC%EB%9E%91%EB%B9%8C%EB%94%A9%201%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 광진구 능동로 264",
+        "matchedAddress": "서울 광진구 능동로 264",
+        "addressId": "N29656618",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B4%91%EC%A7%84%EA%B5%AC%20%EB%8A%A5%EB%8F%99%EB%A1%9C%20264"
+      }
+    },
+    {
+      "id": "manual-fac0a590a802",
+      "number": 56,
+      "name": "Wnch동묘(운치)",
+      "address": "서울 중구 청계천로 360 나동 104호",
+      "phone": "0507-1330-8166",
+      "region": "중구",
+      "area": "중구",
+      "category": "restaurant",
+      "categories": [
+        "restaurant",
+        "bar"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 57,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": false,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 57행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "동반 음식점 · 동반 술집",
+      "lat": 37.5701620577569,
+      "lng": 127.017938449419,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%EC%B2%AD%EA%B3%84%EC%B2%9C%EB%A1%9C%20360",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%EC%B2%AD%EA%B3%84%EC%B2%9C%EB%A1%9C%20360%20%EB%82%98%EB%8F%99%20104%ED%98%B8",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 중구 청계천로 360",
+        "matchedAddress": "서울 중구 청계천로 360",
+        "addressId": "N30854925",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%EC%B2%AD%EA%B3%84%EC%B2%9C%EB%A1%9C%20360"
+      }
+    },
+    {
+      "id": "manual-b295dda045c7",
+      "number": 57,
+      "name": "전시회",
+      "address": "서울 동대문구 왕산로 131 2층",
+      "phone": "0507-1394-8570",
+      "region": "동대문구",
+      "area": "동대문구",
+      "category": "bar",
+      "categories": [
+        "bar"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 58,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "케이지 필수",
+      "dogRule": "케이지 필수",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 58행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "케이지 필수",
+      "lat": 37.5783964370568,
+      "lng": 127.03804346286,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC%20%EC%99%95%EC%82%B0%EB%A1%9C%20131",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC%20%EC%99%95%EC%82%B0%EB%A1%9C%20131%202%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 동대문구 왕산로 131",
+        "matchedAddress": "서울 동대문구 왕산로 131",
+        "addressId": "N33166136",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC%20%EC%99%95%EC%82%B0%EB%A1%9C%20131"
+      }
+    },
+    {
+      "id": "manual-512a491ceccc",
+      "number": 58,
+      "name": "오신돼지갈비",
+      "address": "서울 중구 다산로 232 1층",
+      "phone": "0507-1357-9288",
+      "region": "중구",
+      "area": "중구",
+      "category": "bar",
+      "categories": [
+        "bar"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 59,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": true,
+      "indoor": false,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "소형견, 테라스 가능",
+      "dogRule": "소형견, 테라스 가능",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "테라스 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 59행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "소형견, 테라스 가능",
+      "lat": 37.5636224436505,
+      "lng": 127.016103725284,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%EB%8B%A4%EC%82%B0%EB%A1%9C%20232",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%EB%8B%A4%EC%82%B0%EB%A1%9C%20232%201%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 중구 다산로 232",
+        "matchedAddress": "서울 중구 다산로 232",
+        "addressId": "N31983644",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%EB%8B%A4%EC%82%B0%EB%A1%9C%20232"
+      }
+    },
+    {
+      "id": "manual-15e4b54c02de",
+      "number": 59,
+      "name": "금뚜껑",
+      "address": "서울 성북구 동소문로22길 64 1층",
+      "phone": "0507-1361-0997",
+      "region": "성북구",
+      "area": "성북구",
+      "category": "bar",
+      "categories": [
+        "bar"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 60,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": false,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "유모차, 케이지 필수",
+      "dogRule": "유모차, 케이지 필수",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 60행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "유모차, 케이지 필수",
+      "lat": 37.5902711600642,
+      "lng": 127.01851608532,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%B6%81%EA%B5%AC%20%EB%8F%99%EC%86%8C%EB%AC%B8%EB%A1%9C22%EA%B8%B8%2064",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%B6%81%EA%B5%AC%20%EB%8F%99%EC%86%8C%EB%AC%B8%EB%A1%9C22%EA%B8%B8%2064%201%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 성북구 동소문로22길 64",
+        "matchedAddress": "서울 성북구 동소문로22길 64",
+        "addressId": "N30150611",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%B6%81%EA%B5%AC%20%EB%8F%99%EC%86%8C%EB%AC%B8%EB%A1%9C22%EA%B8%B8%2064"
+      }
+    },
+    {
+      "id": "manual-5df94dea5214",
+      "number": 60,
+      "name": "피자빌리지",
+      "address": "서울 중랑구 봉우재로43길 12 1층",
+      "phone": "0507-1448-1263",
+      "region": "중랑구",
+      "area": "중랑구",
+      "category": "restaurant",
+      "categories": [
+        "restaurant"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 61,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": false,
+      "indoor": false,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "테라스 가능",
+      "dogRule": "테라스 가능",
+      "parkingText": "사용자 등록: 주차 불가",
+      "petArea": "테라스 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 61행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "테라스 가능",
+      "lat": 37.5942366765652,
+      "lng": 127.090294871416,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EB%9E%91%EA%B5%AC%20%EB%B4%89%EC%9A%B0%EC%9E%AC%EB%A1%9C43%EA%B8%B8%2012",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EC%A4%91%EB%9E%91%EA%B5%AC%20%EB%B4%89%EC%9A%B0%EC%9E%AC%EB%A1%9C43%EA%B8%B8%2012%201%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 중랑구 봉우재로43길 12",
+        "matchedAddress": "서울 중랑구 봉우재로43길 12",
+        "addressId": "N30338450",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EB%9E%91%EA%B5%AC%20%EB%B4%89%EC%9A%B0%EC%9E%AC%EB%A1%9C43%EA%B8%B8%2012"
+      }
+    },
+    {
+      "id": "manual-0e4eea4b1a37",
+      "number": 61,
+      "name": "메종 드 잠봉",
+      "address": "서울 성북구 동소문로22길 57-16 1층",
+      "phone": "0507-1403-0031",
+      "region": "성북구",
+      "area": "성북구",
+      "category": "restaurant",
+      "categories": [
+        "restaurant"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 62,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": false,
+      "indoor": false,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "테라스 가능",
+      "dogRule": "테라스 가능",
+      "parkingText": "사용자 등록: 주차 불가",
+      "petArea": "테라스 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 62행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "테라스 가능",
+      "lat": 37.5906906167711,
+      "lng": 127.019359954621,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%B6%81%EA%B5%AC%20%EB%8F%99%EC%86%8C%EB%AC%B8%EB%A1%9C22%EA%B8%B8%2057-16",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%B6%81%EA%B5%AC%20%EB%8F%99%EC%86%8C%EB%AC%B8%EB%A1%9C22%EA%B8%B8%2057-16%201%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 성북구 동소문로22길 57-16",
+        "matchedAddress": "서울 성북구 동소문로22길 57-16",
+        "addressId": "N30949918",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%B6%81%EA%B5%AC%20%EB%8F%99%EC%86%8C%EB%AC%B8%EB%A1%9C22%EA%B8%B8%2057-16"
+      }
+    },
+    {
+      "id": "manual-55602dc442b6",
+      "number": 62,
+      "name": "운치",
+      "address": "서울 성북구 고려대로7길 48 1층",
+      "phone": "0507-1475-4644",
+      "region": "성북구",
+      "area": "성북구",
+      "category": "restaurant",
+      "categories": [
+        "restaurant"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 63,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 63행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "동반 음식점",
+      "lat": 37.5880671533694,
+      "lng": 127.020159306903,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%B6%81%EA%B5%AC%20%EA%B3%A0%EB%A0%A4%EB%8C%80%EB%A1%9C7%EA%B8%B8%2048",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%B6%81%EA%B5%AC%20%EA%B3%A0%EB%A0%A4%EB%8C%80%EB%A1%9C7%EA%B8%B8%2048%201%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 성북구 고려대로7길 48",
+        "matchedAddress": "서울 성북구 고려대로7길 48",
+        "addressId": "N49347572",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%B6%81%EA%B5%AC%20%EA%B3%A0%EB%A0%A4%EB%8C%80%EB%A1%9C7%EA%B8%B8%2048"
+      }
+    },
+    {
+      "id": "manual-e4524dfe3c5d",
+      "number": 63,
+      "name": "누리담",
+      "address": "서울 중구 퇴계로81길 10 1층",
+      "phone": "0507-1386-3922",
+      "region": "중구",
+      "area": "중구",
+      "category": "bar",
+      "categories": [
+        "bar"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 64,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": false,
+      "indoor": true,
+      "terrace": false,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 불가",
+      "petArea": "실내 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 64행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "동반 술집",
+      "lat": 37.5662359214556,
+      "lng": 127.018249119076,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%ED%87%B4%EA%B3%84%EB%A1%9C81%EA%B8%B8%2010",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%ED%87%B4%EA%B3%84%EB%A1%9C81%EA%B8%B8%2010%201%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 중구 퇴계로81길 10",
+        "matchedAddress": "서울 중구 퇴계로81길 10",
+        "addressId": "N30196927",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%ED%87%B4%EA%B3%84%EB%A1%9C81%EA%B8%B8%2010"
+      }
+    },
+    {
+      "id": "manual-92577b8d5b5e",
+      "number": 64,
+      "name": "보메청담",
+      "address": "서울 중구 퇴계로 461 1층 101호",
+      "phone": "02-2233-0937",
+      "region": "중구",
+      "area": "중구",
+      "category": "restaurant",
+      "categories": [
+        "restaurant"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 65,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "유모차, 케이지 필수",
+      "dogRule": "유모차, 케이지 필수",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 65행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "유모차, 케이지 필수",
+      "lat": 37.5654978890631,
+      "lng": 127.023038399771,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%ED%87%B4%EA%B3%84%EB%A1%9C%20461",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%ED%87%B4%EA%B3%84%EB%A1%9C%20461%201%EC%B8%B5%20101%ED%98%B8",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 중구 퇴계로 461",
+        "matchedAddress": "서울 중구 퇴계로 461",
+        "addressId": "N29891507",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%ED%87%B4%EA%B3%84%EB%A1%9C%20461"
+      }
+    },
+    {
+      "id": "manual-86ab74a4e5c4",
+      "number": 65,
+      "name": "펫터니아 하우스",
+      "address": "서울 성북구 고려대로1길 69 1층",
+      "phone": "0507-1334-2014",
+      "region": "성북구",
+      "area": "성북구",
+      "category": "companion",
+      "categories": [
+        "companion"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 66,
+        "updatedAt": "2026-10-21"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 66행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "동반 카페",
+      "lat": 37.5883166087102,
+      "lng": 127.018118640921,
+      "position": "도로명 주소 좌표 확인",
+      "positionNote": "등록 주소의 시·군·구·도로명·건물번호가 일치하는 카카오맵 주소 위치입니다. 건물 기준 좌표이며 매장 출입구·층·현재 영업 여부는 방문 전 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-21",
+      "sources": [
+        {
+          "name": "카카오맵 · 등록 도로명 주소 좌표",
+          "url": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%B6%81%EA%B5%AC%20%EA%B3%A0%EB%A0%A4%EB%8C%80%EB%A1%9C1%EA%B8%B8%2069",
+          "type": "등록 도로명 주소 좌표",
+          "checkedAt": "2026-10-21"
+        },
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%B6%81%EA%B5%AC%20%EA%B3%A0%EB%A0%A4%EB%8C%80%EB%A1%9C1%EA%B8%B8%2069%201%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ],
+      "coordinateEvidence": {
+        "provider": "Kakao Map public address search",
+        "query": "서울 성북구 고려대로1길 69",
+        "matchedAddress": "서울 성북구 고려대로1길 69",
+        "addressId": "N49346433",
+        "checkedAt": "2026-10-21",
+        "precision": "street-address",
+        "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%B6%81%EA%B5%AC%20%EA%B3%A0%EB%A0%A4%EB%8C%80%EB%A1%9C1%EA%B8%B8%2069"
       }
     }
   ]

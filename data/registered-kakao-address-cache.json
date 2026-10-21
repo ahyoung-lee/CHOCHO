@@ -754,5 +754,614 @@
         "sub_bunji": "0"
       }
     ]
+  },
+  "서울 강남구 강남대로62길 23": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "서울 강남구 강남대로62길 23",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EA%B0%95%EB%82%A8%EA%B5%AC+%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C62%EA%B8%B8+23&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C62%EA%B8%B8%2023",
+    "addresses": [
+      {
+        "docid": "N29399354",
+        "addr": "서울 강남구 강남대로62길 23",
+        "lat": 37.4908556061437,
+        "lon": 127.033428947382,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "강남구",
+        "d3_roadname": "강남대로62길",
+        "main_bunji": "23",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 마포구 와우산로17길 19-17": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "서울 마포구 와우산로17길 19-17",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EB%A7%88%ED%8F%AC%EA%B5%AC+%EC%99%80%EC%9A%B0%EC%82%B0%EB%A1%9C17%EA%B8%B8+19-17&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EC%99%80%EC%9A%B0%EC%82%B0%EB%A1%9C17%EA%B8%B8%2019-17",
+    "addresses": [
+      {
+        "docid": "N33000596",
+        "addr": "서울 마포구 와우산로17길 19-17",
+        "lat": 37.5494298799352,
+        "lon": 126.921615197284,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "마포구",
+        "d3_roadname": "와우산로17길",
+        "main_bunji": "19",
+        "sub_bunji": "17"
+      }
+    ]
+  },
+  "서울 송파구 오금로11길 37": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "서울 송파구 오금로11길 37",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EC%86%A1%ED%8C%8C%EA%B5%AC+%EC%98%A4%EA%B8%88%EB%A1%9C11%EA%B8%B8+37&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%86%A1%ED%8C%8C%EA%B5%AC%20%EC%98%A4%EA%B8%88%EB%A1%9C11%EA%B8%B8%2037",
+    "addresses": [
+      {
+        "docid": "N32032711",
+        "addr": "서울 송파구 오금로11길 37",
+        "lat": 37.5156434098608,
+        "lon": 127.111189601349,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "송파구",
+        "d3_roadname": "오금로11길",
+        "main_bunji": "37",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 강서구 강서로5나길 16": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "서울 강서구 강서로5나길 16",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EA%B0%95%EC%84%9C%EA%B5%AC+%EA%B0%95%EC%84%9C%EB%A1%9C5%EB%82%98%EA%B8%B8+16&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EC%84%9C%EA%B5%AC%20%EA%B0%95%EC%84%9C%EB%A1%9C5%EB%82%98%EA%B8%B8%2016",
+    "addresses": [
+      {
+        "docid": "N29939723",
+        "addr": "서울 강서구 강서로5나길 16",
+        "lat": 37.5287442599731,
+        "lon": 126.847424806704,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "강서구",
+        "d3_roadname": "강서로5나길",
+        "main_bunji": "16",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "경기 남양주시 진접읍 해밀예당3로 7": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "경기 남양주시 진접읍 해밀예당3로 7",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EA%B2%BD%EA%B8%B0+%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C+%EC%A7%84%EC%A0%91%EC%9D%8D+%ED%95%B4%EB%B0%80%EC%98%88%EB%8B%B93%EB%A1%9C+7&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EB%82%A8%EC%96%91%EC%A3%BC%EC%8B%9C%20%EC%A7%84%EC%A0%91%EC%9D%8D%20%ED%95%B4%EB%B0%80%EC%98%88%EB%8B%B93%EB%A1%9C%207",
+    "addresses": [
+      {
+        "docid": "N50853814",
+        "addr": "경기 남양주시 진접읍 해밀예당3로 7",
+        "lat": 37.7105136669138,
+        "lon": 127.198420562012,
+        "is_alive": "Y",
+        "d1_name": "경기",
+        "d2_name": "남양주시",
+        "d3_roadname": "해밀예당3로",
+        "main_bunji": "7",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 영등포구 도림로 445": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "서울 영등포구 도림로 445",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC+%EB%8F%84%EB%A6%BC%EB%A1%9C+445&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC%20%EB%8F%84%EB%A6%BC%EB%A1%9C%20445",
+    "addresses": [
+      {
+        "docid": "N33191169",
+        "addr": "서울 영등포구 도림로 445",
+        "lat": 37.5147905794479,
+        "lon": 126.893469611248,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "영등포구",
+        "d3_roadname": "도림로",
+        "main_bunji": "445",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "경기 안양시 만안구 장내로 101": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "경기 안양시 만안구 장내로 101",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EA%B2%BD%EA%B8%B0+%EC%95%88%EC%96%91%EC%8B%9C+%EB%A7%8C%EC%95%88%EA%B5%AC+%EC%9E%A5%EB%82%B4%EB%A1%9C+101&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EA%B2%BD%EA%B8%B0%20%EC%95%88%EC%96%91%EC%8B%9C%20%EB%A7%8C%EC%95%88%EA%B5%AC%20%EC%9E%A5%EB%82%B4%EB%A1%9C%20101",
+    "addresses": [
+      {
+        "docid": "N32366638",
+        "addr": "경기 안양시 만안구 장내로 101",
+        "lat": 37.3959524372169,
+        "lon": 126.919313141873,
+        "is_alive": "Y",
+        "d1_name": "경기",
+        "d2_name": "안양시 만안구",
+        "d3_roadname": "장내로",
+        "main_bunji": "101",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 강남구 학동로 342": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "서울 강남구 학동로 342",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EA%B0%95%EB%82%A8%EA%B5%AC+%ED%95%99%EB%8F%99%EB%A1%9C+342&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%ED%95%99%EB%8F%99%EB%A1%9C%20342",
+    "addresses": [
+      {
+        "docid": "N29702328",
+        "addr": "서울 강남구 학동로 342",
+        "lat": 37.5167560126387,
+        "lon": 127.040841265738,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "강남구",
+        "d3_roadname": "학동로",
+        "main_bunji": "342",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 강남구 도산대로45길 10-2": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "서울 강남구 도산대로45길 10-2",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EA%B0%95%EB%82%A8%EA%B5%AC+%EB%8F%84%EC%82%B0%EB%8C%80%EB%A1%9C45%EA%B8%B8+10-2&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EB%8F%84%EC%82%B0%EB%8C%80%EB%A1%9C45%EA%B8%B8%2010-2",
+    "addresses": [
+      {
+        "docid": "N31703651",
+        "addr": "서울 강남구 도산대로45길 10-2",
+        "lat": 37.5230853508609,
+        "lon": 127.035937150738,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "강남구",
+        "d3_roadname": "도산대로45길",
+        "main_bunji": "10",
+        "sub_bunji": "2"
+      }
+    ]
+  },
+  "서울 강남구 학동로53길 19": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "서울 강남구 학동로53길 19",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EA%B0%95%EB%82%A8%EA%B5%AC+%ED%95%99%EB%8F%99%EB%A1%9C53%EA%B8%B8+19&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%ED%95%99%EB%8F%99%EB%A1%9C53%EA%B8%B8%2019",
+    "addresses": [
+      {
+        "docid": "N32550349",
+        "addr": "서울 강남구 학동로53길 19",
+        "lat": 37.5183483566211,
+        "lon": 127.03978324254,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "강남구",
+        "d3_roadname": "학동로53길",
+        "main_bunji": "19",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 강남구 도산대로49길 6-7": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "서울 강남구 도산대로49길 6-7",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EA%B0%95%EB%82%A8%EA%B5%AC+%EB%8F%84%EC%82%B0%EB%8C%80%EB%A1%9C49%EA%B8%B8+6-7&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EB%8F%84%EC%82%B0%EB%8C%80%EB%A1%9C49%EA%B8%B8%206-7",
+    "addresses": [
+      {
+        "docid": "N29940414",
+        "addr": "서울 강남구 도산대로49길 6-7",
+        "lat": 37.5234794158554,
+        "lon": 127.037776866131,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "강남구",
+        "d3_roadname": "도산대로49길",
+        "main_bunji": "6",
+        "sub_bunji": "7"
+      }
+    ]
+  },
+  "서울 강남구 도산대로27길 40": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "서울 강남구 도산대로27길 40",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EA%B0%95%EB%82%A8%EA%B5%AC+%EB%8F%84%EC%82%B0%EB%8C%80%EB%A1%9C27%EA%B8%B8+40&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EB%8F%84%EC%82%B0%EB%8C%80%EB%A1%9C27%EA%B8%B8%2040",
+    "addresses": [
+      {
+        "docid": "N33333864",
+        "addr": "서울 강남구 도산대로27길 40",
+        "lat": 37.5223754254143,
+        "lon": 127.027666246727,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "강남구",
+        "d3_roadname": "도산대로27길",
+        "main_bunji": "40",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 강남구 논현로139길 12": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "서울 강남구 논현로139길 12",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EA%B0%95%EB%82%A8%EA%B5%AC+%EB%85%BC%ED%98%84%EB%A1%9C139%EA%B8%B8+12&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%EB%85%BC%ED%98%84%EB%A1%9C139%EA%B8%B8%2012",
+    "addresses": [
+      {
+        "docid": "N34592596",
+        "addr": "서울 강남구 논현로139길 12",
+        "lat": 37.5166867855424,
+        "lon": 127.02832745164,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "강남구",
+        "d3_roadname": "논현로139길",
+        "main_bunji": "12",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 강남구 학동로 343": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "서울 강남구 학동로 343",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EA%B0%95%EB%82%A8%EA%B5%AC+%ED%95%99%EB%8F%99%EB%A1%9C+343&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%ED%95%99%EB%8F%99%EB%A1%9C%20343",
+    "addresses": [
+      {
+        "docid": "N32858895",
+        "addr": "서울 강남구 학동로 343",
+        "lat": 37.5174832874385,
+        "lon": 127.040624026927,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "강남구",
+        "d3_roadname": "학동로",
+        "main_bunji": "343",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 강남구 학동로21길 6": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "서울 강남구 학동로21길 6",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EA%B0%95%EB%82%A8%EA%B5%AC+%ED%95%99%EB%8F%99%EB%A1%9C21%EA%B8%B8+6&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B0%95%EB%82%A8%EA%B5%AC%20%ED%95%99%EB%8F%99%EB%A1%9C21%EA%B8%B8%206",
+    "addresses": [
+      {
+        "docid": "N34830157",
+        "addr": "서울 강남구 학동로21길 6",
+        "lat": 37.513592604268,
+        "lon": 127.028135352245,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "강남구",
+        "d3_roadname": "학동로21길",
+        "main_bunji": "6",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 동대문구 장한로6길 53": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "서울 동대문구 장한로6길 53",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC+%EC%9E%A5%ED%95%9C%EB%A1%9C6%EA%B8%B8+53&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC%20%EC%9E%A5%ED%95%9C%EB%A1%9C6%EA%B8%B8%2053",
+    "addresses": [
+      {
+        "docid": "N33807370",
+        "addr": "서울 동대문구 장한로6길 53",
+        "lat": 37.5625553138569,
+        "lon": 127.068890749379,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "동대문구",
+        "d3_roadname": "장한로6길",
+        "main_bunji": "53",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 중구 다산로46길 36": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "서울 중구 다산로46길 36",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EC%A4%91%EA%B5%AC+%EB%8B%A4%EC%82%B0%EB%A1%9C46%EA%B8%B8+36&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%EB%8B%A4%EC%82%B0%EB%A1%9C46%EA%B8%B8%2036",
+    "addresses": [
+      {
+        "docid": "N30902160",
+        "addr": "서울 중구 다산로46길 36",
+        "lat": 37.5664552202589,
+        "lon": 127.018272489717,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "중구",
+        "d3_roadname": "다산로46길",
+        "main_bunji": "36",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 중구 퇴계로 409-11": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "서울 중구 퇴계로 409-11",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EC%A4%91%EA%B5%AC+%ED%87%B4%EA%B3%84%EB%A1%9C+409-11&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%ED%87%B4%EA%B3%84%EB%A1%9C%20409-11",
+    "addresses": [
+      {
+        "docid": "N29514797",
+        "addr": "서울 중구 퇴계로 409-11",
+        "lat": 37.5660582461423,
+        "lon": 127.017035911651,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "중구",
+        "d3_roadname": "퇴계로",
+        "main_bunji": "409",
+        "sub_bunji": "11"
+      }
+    ]
+  },
+  "서울 광진구 능동로 264": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "서울 광진구 능동로 264",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EA%B4%91%EC%A7%84%EA%B5%AC+%EB%8A%A5%EB%8F%99%EB%A1%9C+264&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EA%B4%91%EC%A7%84%EA%B5%AC%20%EB%8A%A5%EB%8F%99%EB%A1%9C%20264",
+    "addresses": [
+      {
+        "docid": "N29656618",
+        "addr": "서울 광진구 능동로 264",
+        "lat": 37.5535123956685,
+        "lon": 127.077834656543,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "광진구",
+        "d3_roadname": "능동로",
+        "main_bunji": "264",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 중구 청계천로 360": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "서울 중구 청계천로 360",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EC%A4%91%EA%B5%AC+%EC%B2%AD%EA%B3%84%EC%B2%9C%EB%A1%9C+360&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%EC%B2%AD%EA%B3%84%EC%B2%9C%EB%A1%9C%20360",
+    "addresses": [
+      {
+        "docid": "N30854925",
+        "addr": "서울 중구 청계천로 360",
+        "lat": 37.5701620577569,
+        "lon": 127.017938449419,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "중구",
+        "d3_roadname": "청계천로",
+        "main_bunji": "360",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 동대문구 왕산로 131": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "서울 동대문구 왕산로 131",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC+%EC%99%95%EC%82%B0%EB%A1%9C+131&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EB%8F%99%EB%8C%80%EB%AC%B8%EA%B5%AC%20%EC%99%95%EC%82%B0%EB%A1%9C%20131",
+    "addresses": [
+      {
+        "docid": "N33166136",
+        "addr": "서울 동대문구 왕산로 131",
+        "lat": 37.5783964370568,
+        "lon": 127.03804346286,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "동대문구",
+        "d3_roadname": "왕산로",
+        "main_bunji": "131",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 중구 다산로 232": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "서울 중구 다산로 232",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EC%A4%91%EA%B5%AC+%EB%8B%A4%EC%82%B0%EB%A1%9C+232&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%EB%8B%A4%EC%82%B0%EB%A1%9C%20232",
+    "addresses": [
+      {
+        "docid": "N31983644",
+        "addr": "서울 중구 다산로 232",
+        "lat": 37.5636224436505,
+        "lon": 127.016103725284,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "중구",
+        "d3_roadname": "다산로",
+        "main_bunji": "232",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 성북구 동소문로22길 64": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "서울 성북구 동소문로22길 64",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EC%84%B1%EB%B6%81%EA%B5%AC+%EB%8F%99%EC%86%8C%EB%AC%B8%EB%A1%9C22%EA%B8%B8+64&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%B6%81%EA%B5%AC%20%EB%8F%99%EC%86%8C%EB%AC%B8%EB%A1%9C22%EA%B8%B8%2064",
+    "addresses": [
+      {
+        "docid": "N30150611",
+        "addr": "서울 성북구 동소문로22길 64",
+        "lat": 37.5902711600642,
+        "lon": 127.01851608532,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "성북구",
+        "d3_roadname": "동소문로22길",
+        "main_bunji": "64",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 중랑구 봉우재로43길 12": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "서울 중랑구 봉우재로43길 12",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EC%A4%91%EB%9E%91%EA%B5%AC+%EB%B4%89%EC%9A%B0%EC%9E%AC%EB%A1%9C43%EA%B8%B8+12&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EB%9E%91%EA%B5%AC%20%EB%B4%89%EC%9A%B0%EC%9E%AC%EB%A1%9C43%EA%B8%B8%2012",
+    "addresses": [
+      {
+        "docid": "N30338450",
+        "addr": "서울 중랑구 봉우재로43길 12",
+        "lat": 37.5942366765652,
+        "lon": 127.090294871416,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "중랑구",
+        "d3_roadname": "봉우재로43길",
+        "main_bunji": "12",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 성북구 동소문로22길 57-16": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "서울 성북구 동소문로22길 57-16",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EC%84%B1%EB%B6%81%EA%B5%AC+%EB%8F%99%EC%86%8C%EB%AC%B8%EB%A1%9C22%EA%B8%B8+57-16&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%B6%81%EA%B5%AC%20%EB%8F%99%EC%86%8C%EB%AC%B8%EB%A1%9C22%EA%B8%B8%2057-16",
+    "addresses": [
+      {
+        "docid": "N30949918",
+        "addr": "서울 성북구 동소문로22길 57-16",
+        "lat": 37.5906906167711,
+        "lon": 127.019359954621,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "성북구",
+        "d3_roadname": "동소문로22길",
+        "main_bunji": "57",
+        "sub_bunji": "16"
+      }
+    ]
+  },
+  "서울 성북구 고려대로7길 48": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "서울 성북구 고려대로7길 48",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EC%84%B1%EB%B6%81%EA%B5%AC+%EA%B3%A0%EB%A0%A4%EB%8C%80%EB%A1%9C7%EA%B8%B8+48&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%B6%81%EA%B5%AC%20%EA%B3%A0%EB%A0%A4%EB%8C%80%EB%A1%9C7%EA%B8%B8%2048",
+    "addresses": [
+      {
+        "docid": "N49347572",
+        "addr": "서울 성북구 고려대로7길 48",
+        "lat": 37.5880671533694,
+        "lon": 127.020159306903,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "성북구",
+        "d3_roadname": "고려대로7길",
+        "main_bunji": "48",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 중구 퇴계로81길 10": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "서울 중구 퇴계로81길 10",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EC%A4%91%EA%B5%AC+%ED%87%B4%EA%B3%84%EB%A1%9C81%EA%B8%B8+10&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%ED%87%B4%EA%B3%84%EB%A1%9C81%EA%B8%B8%2010",
+    "addresses": [
+      {
+        "docid": "N30196927",
+        "addr": "서울 중구 퇴계로81길 10",
+        "lat": 37.5662359214556,
+        "lon": 127.018249119076,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "중구",
+        "d3_roadname": "퇴계로81길",
+        "main_bunji": "10",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 중구 퇴계로 461": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "서울 중구 퇴계로 461",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EC%A4%91%EA%B5%AC+%ED%87%B4%EA%B3%84%EB%A1%9C+461&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%A4%91%EA%B5%AC%20%ED%87%B4%EA%B3%84%EB%A1%9C%20461",
+    "addresses": [
+      {
+        "docid": "N29891507",
+        "addr": "서울 중구 퇴계로 461",
+        "lat": 37.5654978890631,
+        "lon": 127.023038399771,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "중구",
+        "d3_roadname": "퇴계로",
+        "main_bunji": "461",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 성북구 고려대로1길 69": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-21",
+    "query": "서울 성북구 고려대로1길 69",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EC%84%B1%EB%B6%81%EA%B5%AC+%EA%B3%A0%EB%A0%A4%EB%8C%80%EB%A1%9C1%EA%B8%B8+69&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%84%B1%EB%B6%81%EA%B5%AC%20%EA%B3%A0%EB%A0%A4%EB%8C%80%EB%A1%9C1%EA%B8%B8%2069",
+    "addresses": [
+      {
+        "docid": "N49346433",
+        "addr": "서울 성북구 고려대로1길 69",
+        "lat": 37.5883166087102,
+        "lon": 127.018118640921,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "성북구",
+        "d3_roadname": "고려대로1길",
+        "main_bunji": "69",
+        "sub_bunji": "0"
+      }
+    ]
   }
 }
