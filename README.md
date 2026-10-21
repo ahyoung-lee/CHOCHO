@@ -49,7 +49,7 @@ python tests/workbook.py
 
 직접 검색한 기준 위치와 '내 위치'는 동일하게 10km 이내의 주소 좌표가 확인된 등록 업체만 직선거리 순으로 나열합니다. 지도는 기준 위치를 중심에 유지하면서 목록의 모든 업체 핀이 들어오도록 범위를 맞춥니다. 기준 위치를 새로 적용하면 이전 업체명 검색어는 해제합니다. 위치 권한을 거부하거나 주소 검색이 실패하면 적용 중인 위치를 유지합니다.
 
-현재 등록 업체 36곳의 도로명·건물번호와 일치하는 건물 주소 좌표를 `data/registered-kakao-address-cache.json`에 보관합니다. 이 캐시는 업체 목록을 추가하지 않습니다. 새 주소는 `node scripts/locate-registered-kakao-addresses.mjs`로 확인 후 `node scripts/apply-registered-coordinates.cjs`로 반영합니다. 웹사이트 방문 시 이 주소 확인 API를 호출하지 않습니다. 엑셀에서 주소를 바꾸면 기존 좌표는 제거하고 새 주소를 확인해야 합니다.
+현재 등록 업체 65곳의 도로명·건물번호와 일치하는 건물 주소 좌표를 `data/registered-kakao-address-cache.json`에 보관합니다. 이 캐시는 업체 목록을 추가하지 않습니다. 새 주소는 `node scripts/locate-registered-kakao-addresses.mjs`로 확인 후 `node scripts/apply-registered-coordinates.cjs`로 반영합니다. 웹사이트 방문 시 이 주소 확인 API를 호출하지 않습니다. 엑셀에서 주소를 바꾸면 기존 좌표는 제거하고 새 주소를 확인해야 합니다.
 
 지도 인증 또는 연결 실패 시에도 업체 목록·필터·비교 기능은 이용할 수 있습니다.
 
