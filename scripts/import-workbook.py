@@ -48,8 +48,9 @@ def read_rows(path):
                     text = "".join(t.text or "" for t in cell.findall("m:is//m:t", NS))
                 values[col] = (text or "").strip()
             rows.append((int(row.attrib["r"]), values))
-    header = rows[0][1]
-    required = {"상호명", "주소", "운동장카페", "동반 카페", "대형견카페", "동반 음식점", "동반 술집", "동반 펜션", "주차가능", "실내 동반", "테라스 동반", "호텔링", "유치원", "애견미용"}
+    aliases = {"운동장카페": "운동장 카페", "대형견카페": "대형견 카페"}
+    header = {column: aliases.get(name, name) for column, name in rows[0][1].items()}
+    required = {"상호명", "주소", "운동장 카페", "동반 카페", "대형견 카페", "동반 음식점", "동반 술집", "동반 펜션", "주차가능", "실내 동반", "테라스 동반", "호텔링", "유치원", "애견미용"}
     if not required.issubset(set(header.values())):
         raise ValueError("엑셀 열 제목을 확인하세요: " + ", ".join(sorted(required - set(header.values()))))
     return [(number, {name: values.get(col, "") for col, name in header.items()}) for number, values in rows[1:]]
@@ -83,7 +84,7 @@ def normalize_name(name):
 
 def import_rows(previous, rows, filename, today):
     places, seen = [], set()
-    category_columns = {"playground": "운동장카페", "companion": "동반 카페", "restaurant": "동반 음식점", "bar": "동반 술집", "pension": "동반 펜션"}
+    category_columns = {"playground": "운동장 카페", "companion": "동반 카페", "restaurant": "동반 음식점", "bar": "동반 술집", "pension": "동반 펜션"}
     condition_columns = {"parking": "주차가능", "indoor": "실내 동반", "terrace": "테라스 동반", "hoteling": "호텔링", "daycare": "유치원", "grooming": "애견미용"}
     for row_number, row in rows:
         # The formula-only region column does not make a venue row populated.
@@ -96,7 +97,7 @@ def import_rows(previous, rows, filename, today):
         if key in seen:
             raise ValueError(f"{row_number}행: 중복 업체 {name}")
         seen.add(key)
-        categories = [key for key, column in category_columns.items() if flag(row.get(column, "")) is True]
+        categories = [key for key, column in category_columns.items() if flag(row.get(column, row.get(column.replace(" ", ""), ""))) is True]
         if not categories:
             raise ValueError(f"{row_number}행: {name}의 카테고리를 1개 이상 선택하세요.")
         phone = row.get("업체연락처", "").strip() or None
@@ -114,9 +115,9 @@ def import_rows(previous, rows, filename, today):
                  status="listed", level="owner", registration={"file": filename, "row": row_number, "updatedAt": today})
         for field, column in condition_columns.items():
             p[field] = flag(row.get(column, ""))
-        p["largeDogPlayground"] = flag(row.get("대형견카페", "")) is True and p["playground"]
+        p["largeDogPlayground"] = flag(row.get("대형견 카페", row.get("대형견카페", ""))) is True and p["playground"]
         if p["largeDogPlayground"]:
-            p["largeDogPlaygroundEvidence"] = f"사용자 직접 등록 엑셀 {row_number}행: 운동장카페·대형견카페 선택"
+            p["largeDogPlaygroundEvidence"] = f"사용자 직접 등록 엑셀 {row_number}행: 운동장 카페·대형견 카페 선택"
         else:
             p.pop("largeDogPlaygroundEvidence", None)
         reference_rule = p.get("referenceDogRule") or (p.get("dogRule") if p.get("dogRule") != p.get("registrationNote") else None)

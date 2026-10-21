@@ -136,7 +136,7 @@ test('large-dog cafes require confirmed playground access and respect weight lim
  assert.equal(categoryCounts.find(e=>e.dataset.categoryCount==='large-dog').textContent,2);
  currentApp.state.query='모꼬지';currentApp.state.region='남양주';currentApp.render();assert.equal(currentApp.getFiltered()[0].id,'large-dog-mokkoji');
  assert(elements.results.innerHTML.includes('대형견 운동장'));
- assert(html.indexOf('data-category="companion"')<html.indexOf('data-category="large-dog"'));assert(html.indexOf('data-category="large-dog"')<html.indexOf('data-category="restaurant"'));
+ const orderedCategories=['companion','playground','large-dog','restaurant','bar','pension'];assert.deepEqual([...html.matchAll(/data-category="([^"]+)"/g)].map(match=>match[1]),['all',...orderedCategories]);
  const sourceData=JSON.parse(fs.readFileSync(__dirname+'/../data/venues.json','utf8'));
  require('../scripts/validate-data.cjs').validate(sourceData);
  assert.throws(()=>require('../scripts/validate-data.cjs').validate({...sourceData,places:[{...matches[0],largeDogPlaygroundEvidence:''}]}));
@@ -155,7 +155,7 @@ await testAsync('registration sends only valid selected addresses and handles de
  elements.registrationCategory.value='pension';elements.registrationParking.checked=true;elements.registrationIndoor.checked=true;elements.registrationTerrace.checked=false;elements.registrationHoteling.checked=true;elements.registrationDaycare.checked=false;elements.registrationGrooming.checked=true;
  fetchHandler=async(url,options)=>{requests.push({url,options});return {ok:true,json:async()=>({success:false})};};
  await fireLast('registrationForm','submit');assert(elements.registrationStatus.textContent.includes('실패'));assert(!elements.registrationSubmit.disabled);assert.equal(elements.registrationName.value,'테스트 업체');
- assert.equal(requests[0].url,'https://formsubmit.co/ajax/ay_lee@naver.com');assert.equal(requests[0].options.method,'POST');const payload=JSON.parse(requests[0].options.body);assert.equal(payload['업체명'],'테스트 업체');assert.equal(payload['업종'],'애견동반 펜션');assert(payload['주소'].includes('테스트로'));assert.equal(payload['반려견 동반 확인'],'동의');
+ assert.equal(requests[0].url,'https://formsubmit.co/ajax/ay_lee@naver.com');assert.equal(requests[0].options.method,'POST');const payload=JSON.parse(requests[0].options.body);assert.equal(payload['업체명'],'테스트 업체');assert.equal(payload['업종'],'동반 펜션');assert(payload['주소'].includes('테스트로'));assert.equal(payload['반려견 동반 확인'],'동의');
  assert.deepEqual(['주차가능','실내동반','테라스동반','호텔링','유치원','애견미용'].map(label=>payload[label]),['선택','선택','미선택','선택','미선택','선택']);
  assert.equal(payload['동반 조건 및 메모사항'],'실내에서는 이동가방 필수\n대형견은 테라스 이용 가능');assert.equal(elements.registrationMemo.value,'실내에서는 이동가방 필수\n대형견은 테라스 이용 가능');
  fetchHandler=async()=>{throw new Error('offline');};await fireLast('registrationForm','submit');assert(elements.registrationStatus.textContent.includes('실패'));assert(!elements.registrationSubmit.disabled);

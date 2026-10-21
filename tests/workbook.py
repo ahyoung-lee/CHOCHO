@@ -18,6 +18,7 @@ class WorkbookTests(unittest.TestCase):
         cls.data = json.loads((ROOT / "data/venues.json").read_text(encoding="utf-8"))
 
     def test_saved_rows_are_the_entire_published_list(self):
+        self.assertEqual(list(self.rows[0][1])[3:9], ["동반 카페", "운동장 카페", "대형견 카페", "동반 음식점", "동반 술집", "동반 펜션"])
         rows = [(n, r) for n, r in self.rows if r.get("상호명")]
         self.assertEqual([(r["상호명"].strip(), r["주소"].strip()) for _, r in rows], [(p["name"], p["address"]) for p in self.data["places"]])
         columns = {"hoteling": "호텔링", "daycare": "유치원", "grooming": "애견미용", "parking": "주차가능", "indoor": "실내 동반", "terrace": "테라스 동반"}
