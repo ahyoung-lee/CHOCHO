@@ -75,7 +75,7 @@ function addressRegion(p){
  return region.join(' ');
 }
 function resultNumber(p){return visible.findIndex(place=>place.id===p.id)+1;}
-function card(p){const selected=p.id===state.selected,fav=state.favorites.includes(p.id),comparison=state.compare.includes(p.id);return `<article class="place-card ${selected?'selected':''}" id="card-${p.id}" aria-labelledby="name-${p.id}"><div class="card-top"><span class="card-number">${resultNumber(p)}</span><div class="card-title"><button class="card-name" id="name-${p.id}" data-select="${p.id}" aria-label="${esc(p.name)} 지도에서 선택" aria-pressed="${selected}">${esc(p.name)}</button><p class="card-area">${esc(addressRegion(p))}</p></div><button class="favorite-button" data-fav="${p.id}" aria-label="${esc(p.name)} 저장" aria-pressed="${fav}">${fav?'♥':'♡'}</button></div><p class="card-subtitle">${memoText(p,p.feature)}</p><div class="card-badges">${p.registration?'':`<span class="badge">${evidenceBadge(p)}</span>`}<span class="badge outline category-badge">${categoryLabel(p)}</span><span class="badge outline">${playgroundLabel(p)}</span>${p.position.includes('추정')?'<span class="badge amber">위치 추정</span>':''}</div><div class="card-facts"><div class="fact fact-phone"><span class="fact-icon" aria-hidden="true">☎</span><div><small>연락처</small><strong>${phoneLink(p)}</strong></div></div><div class="fact"><span class="fact-icon">P</span><div><strong>${parkingLabel(p)}</strong><small>빈자리·요금은 재확인</small></div></div>${weightFact(p)}</div><div class="card-actions"><button class="detail-button" data-detail="${p.id}">정보·출처 ↗</button><a class="nav-link" href="${mapURL(p)}" target="_blank" rel="noopener noreferrer">네이버 지도 ↗</a><button class="compare-button" data-compare="${p.id}" aria-pressed="${comparison}">${comparison?'✓ 비교 선택':'+ 비교'}</button></div></article>`;}
+function card(p){const selected=p.id===state.selected,fav=state.favorites.includes(p.id),comparison=state.compare.includes(p.id);return `<article class="place-card ${selected?'selected':''}" id="card-${p.id}" aria-labelledby="name-${p.id}"><div class="card-top"><span class="card-number">${resultNumber(p)}</span><div class="card-title"><button class="card-name" id="name-${p.id}" data-select="${p.id}" aria-label="${esc(p.name)} 지도에서 선택" aria-pressed="${selected}">${esc(p.name)}</button><p class="card-area">${esc(addressRegion(p))}</p></div><button class="favorite-button" data-fav="${p.id}" aria-label="${esc(p.name)} 저장" aria-pressed="${fav}">${fav?'♥':'♡'}</button></div>${p.registration&&!p.registrationNote?.trim()?'':`<p class="card-subtitle">${memoText(p,p.feature)}</p>`}<div class="card-badges">${p.registration?'':`<span class="badge">${evidenceBadge(p)}</span>`}<span class="badge outline category-badge">${categoryLabel(p)}</span><span class="badge outline">${playgroundLabel(p)}</span>${p.position.includes('추정')?'<span class="badge amber">위치 추정</span>':''}</div><div class="card-facts"><div class="fact fact-phone"><span class="fact-icon" aria-hidden="true">☎</span><div><small>연락처</small><strong>${phoneLink(p)}</strong></div></div><div class="fact fact-parking"><span class="fact-icon">P</span><div><strong>${parkingLabel(p)}</strong><small>빈자리·요금은 재확인</small></div></div>${weightFact(p)}</div><div class="card-actions"><button class="detail-button" data-detail="${p.id}">정보·출처 ↗</button><button type="button" class="review-button" disabled title="리뷰 작성 기능 준비 중">리뷰 작성</button><a class="nav-link" href="${mapURL(p)}" target="_blank" rel="noopener noreferrer">네이버 지도 ↗</a><button class="compare-button" data-compare="${p.id}" aria-pressed="${comparison}">${comparison?'✓ 비교 선택':'+ 비교'}</button></div></article>`;}
 function render(){
  visible=filterPlaces(data,state);if(!visible.some(p=>p.id===state.selected))state.selected=visible[0]?.id||null;
  const emptyHint=['current','custom'].includes(state.origin)?`${esc(data.origins[state.origin].name)} 주변 10km 이내에 조건에 맞는 장소가 없어요.<br>주소 좌표가 확인된 장소만 표시합니다. 추정 위치는 제외합니다. 다른 출발지나 조건으로 검색해 보세요.`:['packing','harness'].includes(state.category)?'이 동반 방식이 확인된 카페가 없거나 다른 필터에서 제외됐어요.<br>방식 미확인 카페는 전체 카페에서 확인해 주세요.':'선택한 업종에서 지역·검색어·조건에 맞는 장소가 없어요.<br>다른 검색어나 조건으로 검색해 보세요.';
@@ -207,9 +207,10 @@ async function submitVenueSearch(){
 }
 $('venueSearch').addEventListener('click',submitVenueSearch);
 $('search').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();submitVenueSearch();}});
-let registrationCandidates=[],registrationVersion=0,registrationController;
-function clearRegistrationAddress(){registrationVersion++;registrationController?.abort();registrationCandidates=[];$('registrationResults').hidden=true;$('registrationResults').innerHTML='';$('registrationSelected').textContent='';}
-$('openRegistration').addEventListener('click',()=>{clearRegistrationAddress();$('registrationName').value='';$('registrationCategory').value='companion';$('registrationAddress').value='';$('registrationConsent').checked=false;$('registrationStatus').textContent='공유 등록을 준비 중이에요. 아직 등록할 수 없습니다.';showDialog('registrationDialog');});
+let registrationCandidates=[],registrationVersion=0,registrationController,registrationAddress=null,registrationSending=false,registrationSent=false;
+const registrationCategories={playground:'운동장 카페',companion:'애견동반 카페','large-dog':'대형견 카페',restaurant:'동반 음식점',bar:'동반 술집'};
+function clearRegistrationAddress(){registrationVersion++;registrationController?.abort();registrationCandidates=[];registrationAddress=null;registrationSent=false;$('registrationSubmit').disabled=true;$('registrationResults').hidden=true;$('registrationResults').innerHTML='';$('registrationSelected').textContent='';}
+$('openRegistration').addEventListener('click',()=>{if(registrationSending)return;clearRegistrationAddress();$('registrationName').value='';$('registrationCategory').value='companion';$('registrationAddress').value='';$('registrationMemo').value='';$('registrationHoney').value='';$('registrationConsent').checked=false;$('registrationStatus').textContent='업체명과 업종을 입력하고 검색 결과에서 건물 주소를 선택해 주세요.';showDialog('registrationDialog');});
 $('registrationAddress').addEventListener('input',clearRegistrationAddress);
 async function searchRegistrationAddress(){
  clearRegistrationAddress();const query=$('registrationAddress').value.trim(),version=registrationVersion;
@@ -223,7 +224,21 @@ async function searchRegistrationAddress(){
 $('registrationAddressSearch').addEventListener('click',searchRegistrationAddress);
 $('registrationAddress').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();searchRegistrationAddress();}});
 $('registrationDialog').addEventListener('close',clearRegistrationAddress);
-$('registrationForm').addEventListener('submit',e=>{e.preventDefault();$('registrationStatus').textContent='공유 등록을 준비 중이에요. 아직 등록할 수 없습니다.';});
+$('registrationForm').addEventListener('submit',async e=>{
+ e.preventDefault();if(registrationSending||registrationSent||$('registrationHoney').value)return;
+ const name=$('registrationName').value.trim(),category=registrationCategories[$('registrationCategory').value],address=registrationAddress;
+ const memo=$('registrationMemo').value.trim();
+ if(memo.length>2000){$('registrationStatus').textContent='동반 조건 및 메모사항은 2,000자 이내로 입력해 주세요.';return;}
+ if(!name||name.length>100||!category||!address||!$('registrationConsent').checked){$('registrationStatus').textContent='업체명·업종·선택한 건물 주소와 전송 동의를 확인해 주세요.';return;}
+ registrationSending=true;$('registrationSubmit').disabled=true;$('registrationSubmit').textContent='전송 중…';$('registrationStatus').textContent='등록 요청을 전송하고 있어요.';
+ const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),15000);
+ try{
+  const response=await root.fetch('https://formsubmit.co/ajax/ay_lee@naver.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},signal:controller.signal,body:JSON.stringify({_subject:'[CHOCHO] 업체 등록 요청',_template:'table',_captcha:'false',_honey:'','업체명':name,'업종':category,'주소':address.address,'검색 장소명':address.name,'위도':address.lat,'경도':address.lng,'동반 조건 및 메모사항':memo,'반려견 동반 확인':'동의'})});
+  const result=await response.json();if(!response.ok||!(result.success===true||result.success==='true'))throw new Error('Registration rejected');
+  registrationSent=true;$('registrationStatus').textContent='등록 요청이 접수 서비스에 전달됐어요. 운영자가 확인한 뒤 반영합니다. 최초 이용 시 운영자의 수신 메일 인증이 필요해요.';
+ }catch(_){$('registrationStatus').textContent='전송 결과를 확인하지 못했어요(연결 또는 접수 실패). 잠시 후 다시 시도해 주세요.';}
+ finally{clearTimeout(timeout);registrationSending=false;$('registrationSubmit').disabled=registrationSent||!registrationAddress;$('registrationSubmit').textContent='등록 요청';}
+});
 $('reset').addEventListener('click',reset);
 ['guideButton','noticeGuide','bottomGuide'].forEach(id=>$(id).addEventListener('click',()=>showDialog('guideDialog')));
 $('clearCompare').addEventListener('click',()=>{state.compare=[];render();});$('openCompare').addEventListener('click',compare);
@@ -232,7 +247,7 @@ $('listView').addEventListener('click',()=>switchView(false));$('mapView').addEv
 // Handle keyboard activation before the map SDK expects pointer coordinates.
 doc.addEventListener('keydown',e=>{const button=e.target.closest?.('.native-marker');if(button&&(e.key==='Enter'||e.key===' ')){e.preventDefault();e.stopPropagation();selectPlace(button.dataset.marker);}},true);
 doc.addEventListener('click',e=>{let t;if((t=e.target.closest('[data-category]'))){state.category=t.dataset.category;render();tileMap.fit();}
- else if((t=e.target.closest('[data-registration-result]'))){const p=registrationCandidates[Number(t.dataset.registrationResult)];if(p&&!p.approximate){$('registrationSelected').textContent=p.name+' · '+p.address;$('registrationStatus').textContent='공유 등록을 준비 중이에요. 아직 등록할 수 없습니다.';}}
+ else if((t=e.target.closest('[data-registration-result]'))){const p=registrationCandidates[Number(t.dataset.registrationResult)];if(p&&!p.approximate&&!registrationSending&&!registrationSent){registrationAddress=p;registrationSent=false;$('registrationSubmit').disabled=false;$('registrationSelected').textContent=p.name+' · '+p.address;$('registrationStatus').textContent='내용과 전송 동의를 확인하고 등록 요청을 눌러 주세요.';}}
  else if((t=e.target.closest('[data-origin-result]')))chooseOrigin(Number(t.dataset.originResult));
  else if((t=e.target.closest('[data-toggle]'))){const k=t.dataset.toggle;state[k]=!state[k];if(k==='natural'&&state[k])state.artificial=false;if(k==='artificial'&&state[k])state.natural=false;render();tileMap.fit();}
  else if((t=e.target.closest('[data-detail]')))detail(t.dataset.detail);
