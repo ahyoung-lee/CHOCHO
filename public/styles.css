@@ -35,6 +35,8 @@
 .registration-field textarea{width:100%;min-width:0;min-height:100px;padding:9px 11px;border:1px solid var(--line);border-radius:7px;background:#fff;font:inherit;resize:vertical}
 .review-button{font-size:14px;color:var(--brand);white-space:nowrap}
 .registration-services{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 14px;min-width:0;margin:18px 0 6px;padding:12px;border:1px solid var(--line);border-radius:7px}.registration-services legend{padding:0 5px;font-size:14px}.registration-services label{display:flex;align-items:center;gap:6px;min-height:36px;font-size:14px}.registration-services input{accent-color:var(--brand)}
-.register-button{position:relative;overflow:visible}.registration-free{position:absolute;top:-14px;right:8px;padding:1px 7px;border-radius:9px;background:#c62828;color:#fcfaf6;font-size:11px;font-weight:750;line-height:1.5;box-shadow:0 2px 5px #3e2a1720;pointer-events:none;animation:registration-free-blink 1.8s ease-in-out infinite}.place-card .card-badges .badge.outline{border-color:#c62828;background:#c62828;color:#fcfaf6}.card-actions .review-button{padding:7px 9px;border:1px solid var(--line);border-radius:6px}.card-actions .review-button:disabled{opacity:1;color:var(--muted)}
-@keyframes registration-free-blink{0%,100%{opacity:1}50%{opacity:.35}}
+.register-button{position:relative;overflow:visible}.registration-free{position:absolute;top:-14px;right:8px;padding:1px 7px;border-radius:9px;background:#c62828;color:#fcfaf6;font-size:11px;font-weight:750;line-height:1.5;box-shadow:0 2px 5px #3e2a1720;pointer-events:none;animation:registration-free-blink .6s steps(1,end) infinite}.place-card .card-badges .badge.outline{border-color:#c62828;background:#c62828;color:#fcfaf6}.card-actions .review-button{padding:7px 9px;border:1px solid var(--line);border-radius:6px}.card-actions .review-button:disabled{opacity:1;color:var(--muted)}
+@keyframes registration-free-blink{0%,100%{opacity:1}50%{opacity:0}}
 @media(prefers-reduced-motion:reduce){.registration-free{animation:none}}
+
+.category-tabs button{font-size:16px;font-weight:750}.category-tabs span{font-size:15px;font-weight:700}
