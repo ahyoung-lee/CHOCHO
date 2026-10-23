@@ -1363,5 +1363,530 @@
         "sub_bunji": "0"
       }
     ]
+  },
+  "대구 수성구 동대구로 336": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-23",
+    "query": "대구 수성구 동대구로 336",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EB%8C%80%EA%B5%AC+%EC%88%98%EC%84%B1%EA%B5%AC+%EB%8F%99%EB%8C%80%EA%B5%AC%EB%A1%9C+336&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EC%88%98%EC%84%B1%EA%B5%AC%20%EB%8F%99%EB%8C%80%EA%B5%AC%EB%A1%9C%20336",
+    "addresses": [
+      {
+        "docid": "N45047961",
+        "addr": "대구 수성구 동대구로 336",
+        "lat": 35.8603881007831,
+        "lon": 128.627369983143,
+        "is_alive": "Y",
+        "d1_name": "대구",
+        "d2_name": "수성구",
+        "d3_roadname": "동대구로",
+        "main_bunji": "336",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "대구 동구 효신로 27": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-23",
+    "query": "대구 동구 효신로 27",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EB%8C%80%EA%B5%AC+%EB%8F%99%EA%B5%AC+%ED%9A%A8%EC%8B%A0%EB%A1%9C+27&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EB%8F%99%EA%B5%AC%20%ED%9A%A8%EC%8B%A0%EB%A1%9C%2027",
+    "addresses": [
+      {
+        "docid": "N34665641",
+        "addr": "대구 동구 효신로 27",
+        "lat": 35.874454517468,
+        "lon": 128.634106009082,
+        "is_alive": "Y",
+        "d1_name": "대구",
+        "d2_name": "동구",
+        "d3_roadname": "효신로",
+        "main_bunji": "27",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "대구 중구 봉산문화2길 40": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-23",
+    "query": "대구 중구 봉산문화2길 40",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EB%8C%80%EA%B5%AC+%EC%A4%91%EA%B5%AC+%EB%B4%89%EC%82%B0%EB%AC%B8%ED%99%942%EA%B8%B8+40&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EC%A4%91%EA%B5%AC%20%EB%B4%89%EC%82%B0%EB%AC%B8%ED%99%942%EA%B8%B8%2040",
+    "addresses": [
+      {
+        "docid": "N33620390",
+        "addr": "대구 중구 봉산문화2길 40",
+        "lat": 35.8639477612346,
+        "lon": 128.597133992661,
+        "is_alive": "Y",
+        "d1_name": "대구",
+        "d2_name": "중구",
+        "d3_roadname": "봉산문화2길",
+        "main_bunji": "40",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "대구 중구 종로 49-1": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-23",
+    "query": "대구 중구 종로 49-1",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EB%8C%80%EA%B5%AC+%EC%A4%91%EA%B5%AC+%EC%A2%85%EB%A1%9C+49-1&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EC%A4%91%EA%B5%AC%20%EC%A2%85%EB%A1%9C%2049-1",
+    "addresses": [
+      {
+        "docid": "N31940098",
+        "addr": "대구 중구 종로 49-1",
+        "lat": 35.8702285347035,
+        "lon": 128.591024380482,
+        "is_alive": "Y",
+        "d1_name": "대구",
+        "d2_name": "중구",
+        "d3_roadname": "종로",
+        "main_bunji": "49",
+        "sub_bunji": "1"
+      }
+    ]
+  },
+  "대구 중구 동덕로30길 98": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-23",
+    "query": "대구 중구 동덕로30길 98",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EB%8C%80%EA%B5%AC+%EC%A4%91%EA%B5%AC+%EB%8F%99%EB%8D%95%EB%A1%9C30%EA%B8%B8+98&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EC%A4%91%EA%B5%AC%20%EB%8F%99%EB%8D%95%EB%A1%9C30%EA%B8%B8%2098",
+    "addresses": [
+      {
+        "docid": "N29518279",
+        "addr": "대구 중구 동덕로30길 98",
+        "lat": 35.8661782806679,
+        "lon": 128.609070224721,
+        "is_alive": "Y",
+        "d1_name": "대구",
+        "d2_name": "중구",
+        "d3_roadname": "동덕로30길",
+        "main_bunji": "98",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "대구 남구 현충로7길 7": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-23",
+    "query": "대구 남구 현충로7길 7",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EB%8C%80%EA%B5%AC+%EB%82%A8%EA%B5%AC+%ED%98%84%EC%B6%A9%EB%A1%9C7%EA%B8%B8+7&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EB%82%A8%EA%B5%AC%20%ED%98%84%EC%B6%A9%EB%A1%9C7%EA%B8%B8%207",
+    "addresses": [
+      {
+        "docid": "N34523455",
+        "addr": "대구 남구 현충로7길 7",
+        "lat": 35.834709543137,
+        "lon": 128.579046592127,
+        "is_alive": "Y",
+        "d1_name": "대구",
+        "d2_name": "남구",
+        "d3_roadname": "현충로7길",
+        "main_bunji": "7",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "대구 달서구 월배로73길 56": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-23",
+    "query": "대구 달서구 월배로73길 56",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EB%8C%80%EA%B5%AC+%EB%8B%AC%EC%84%9C%EA%B5%AC+%EC%9B%94%EB%B0%B0%EB%A1%9C73%EA%B8%B8+56&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EB%8B%AC%EC%84%9C%EA%B5%AC%20%EC%9B%94%EB%B0%B0%EB%A1%9C73%EA%B8%B8%2056",
+    "addresses": [
+      {
+        "docid": "N32813998",
+        "addr": "대구 달서구 월배로73길 56",
+        "lat": 35.8288703145882,
+        "lon": 128.545923119385,
+        "is_alive": "Y",
+        "d1_name": "대구",
+        "d2_name": "달서구",
+        "d3_roadname": "월배로73길",
+        "main_bunji": "56",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "대구 남구 현충로 36": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-23",
+    "query": "대구 남구 현충로 36",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EB%8C%80%EA%B5%AC+%EB%82%A8%EA%B5%AC+%ED%98%84%EC%B6%A9%EB%A1%9C+36&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EB%82%A8%EA%B5%AC%20%ED%98%84%EC%B6%A9%EB%A1%9C%2036",
+    "addresses": [
+      {
+        "docid": "N30036345",
+        "addr": "대구 남구 현충로 36",
+        "lat": 35.8359066624701,
+        "lon": 128.579880513552,
+        "is_alive": "Y",
+        "d1_name": "대구",
+        "d2_name": "남구",
+        "d3_roadname": "현충로",
+        "main_bunji": "36",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "대구 남구 현충로 42": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-23",
+    "query": "대구 남구 현충로 42",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EB%8C%80%EA%B5%AC+%EB%82%A8%EA%B5%AC+%ED%98%84%EC%B6%A9%EB%A1%9C+42&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EB%82%A8%EA%B5%AC%20%ED%98%84%EC%B6%A9%EB%A1%9C%2042",
+    "addresses": [
+      {
+        "docid": "N29754712",
+        "addr": "대구 남구 현충로 42",
+        "lat": 35.8365284674054,
+        "lon": 128.580023543511,
+        "is_alive": "Y",
+        "d1_name": "대구",
+        "d2_name": "남구",
+        "d3_roadname": "현충로",
+        "main_bunji": "42",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "대구 남구 현충로15길 21-59": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-23",
+    "query": "대구 남구 현충로15길 21-59",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EB%8C%80%EA%B5%AC+%EB%82%A8%EA%B5%AC+%ED%98%84%EC%B6%A9%EB%A1%9C15%EA%B8%B8+21-59&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EB%82%A8%EA%B5%AC%20%ED%98%84%EC%B6%A9%EB%A1%9C15%EA%B8%B8%2021-59",
+    "addresses": [
+      {
+        "docid": "N291008305",
+        "addr": "대구 남구 현충로15길 21-59",
+        "lat": 35.8376217577432,
+        "lon": 128.579460338362,
+        "is_alive": "Y",
+        "d1_name": "대구",
+        "d2_name": "남구",
+        "d3_roadname": "현충로15길",
+        "main_bunji": "21",
+        "sub_bunji": "59"
+      }
+    ]
+  },
+  "대구 수성구 수성못2길 55-2": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-23",
+    "query": "대구 수성구 수성못2길 55-2",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EB%8C%80%EA%B5%AC+%EC%88%98%EC%84%B1%EA%B5%AC+%EC%88%98%EC%84%B1%EB%AA%BB2%EA%B8%B8+55-2&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EC%88%98%EC%84%B1%EA%B5%AC%20%EC%88%98%EC%84%B1%EB%AA%BB2%EA%B8%B8%2055-2",
+    "addresses": [
+      {
+        "docid": "N34428884",
+        "addr": "대구 수성구 수성못2길 55-2",
+        "lat": 35.8262394217028,
+        "lon": 128.622544475919,
+        "is_alive": "Y",
+        "d1_name": "대구",
+        "d2_name": "수성구",
+        "d3_roadname": "수성못2길",
+        "main_bunji": "55",
+        "sub_bunji": "2"
+      }
+    ]
+  },
+  "대구 수성구 수성못길 14": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-23",
+    "query": "대구 수성구 수성못길 14",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EB%8C%80%EA%B5%AC+%EC%88%98%EC%84%B1%EA%B5%AC+%EC%88%98%EC%84%B1%EB%AA%BB%EA%B8%B8+14&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EC%88%98%EC%84%B1%EA%B5%AC%20%EC%88%98%EC%84%B1%EB%AA%BB%EA%B8%B8%2014",
+    "addresses": [
+      {
+        "docid": "N31376608",
+        "addr": "대구 수성구 수성못길 14",
+        "lat": 35.8262766214871,
+        "lon": 128.622151972164,
+        "is_alive": "Y",
+        "d1_name": "대구",
+        "d2_name": "수성구",
+        "d3_roadname": "수성못길",
+        "main_bunji": "14",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "대구 남구 양지로13길 6-1": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-23",
+    "query": "대구 남구 양지로13길 6-1",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EB%8C%80%EA%B5%AC+%EB%82%A8%EA%B5%AC+%EC%96%91%EC%A7%80%EB%A1%9C13%EA%B8%B8+6-1&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EB%82%A8%EA%B5%AC%20%EC%96%91%EC%A7%80%EB%A1%9C13%EA%B8%B8%206-1",
+    "addresses": [
+      {
+        "docid": "N34689672",
+        "addr": "대구 남구 양지로13길 6-1",
+        "lat": 35.8520684177356,
+        "lon": 128.580043849162,
+        "is_alive": "Y",
+        "d1_name": "대구",
+        "d2_name": "남구",
+        "d3_roadname": "양지로13길",
+        "main_bunji": "6",
+        "sub_bunji": "1"
+      }
+    ]
+  },
+  "대구 남구 앞산순환로 574-45": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-23",
+    "query": "대구 남구 앞산순환로 574-45",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EB%8C%80%EA%B5%AC+%EB%82%A8%EA%B5%AC+%EC%95%9E%EC%82%B0%EC%88%9C%ED%99%98%EB%A1%9C+574-45&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EB%82%A8%EA%B5%AC%20%EC%95%9E%EC%82%B0%EC%88%9C%ED%99%98%EB%A1%9C%20574-45",
+    "addresses": [
+      {
+        "docid": "N32623358",
+        "addr": "대구 남구 앞산순환로 574-45",
+        "lat": 35.830825770148,
+        "lon": 128.588971969145,
+        "is_alive": "Y",
+        "d1_name": "대구",
+        "d2_name": "남구",
+        "d3_roadname": "앞산순환로",
+        "main_bunji": "574",
+        "sub_bunji": "45"
+      }
+    ]
+  },
+  "대구 수성구 파동로3길 112": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-23",
+    "query": "대구 수성구 파동로3길 112",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EB%8C%80%EA%B5%AC+%EC%88%98%EC%84%B1%EA%B5%AC+%ED%8C%8C%EB%8F%99%EB%A1%9C3%EA%B8%B8+112&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EC%88%98%EC%84%B1%EA%B5%AC%20%ED%8C%8C%EB%8F%99%EB%A1%9C3%EA%B8%B8%20112",
+    "addresses": [
+      {
+        "docid": "N29518897",
+        "addr": "대구 수성구 파동로3길 112",
+        "lat": 35.8142231407564,
+        "lon": 128.615087961674,
+        "is_alive": "Y",
+        "d1_name": "대구",
+        "d2_name": "수성구",
+        "d3_roadname": "파동로3길",
+        "main_bunji": "112",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "대구 남구 대덕로40길 83": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-23",
+    "query": "대구 남구 대덕로40길 83",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EB%8C%80%EA%B5%AC+%EB%82%A8%EA%B5%AC+%EB%8C%80%EB%8D%95%EB%A1%9C40%EA%B8%B8+83&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EB%82%A8%EA%B5%AC%20%EB%8C%80%EB%8D%95%EB%A1%9C40%EA%B8%B8%2083",
+    "addresses": [
+      {
+        "docid": "N285970251",
+        "addr": "대구 남구 대덕로40길 83",
+        "lat": 35.8373481142678,
+        "lon": 128.604209246677,
+        "is_alive": "Y",
+        "d1_name": "대구",
+        "d2_name": "남구",
+        "d3_roadname": "대덕로40길",
+        "main_bunji": "83",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "대구 수성구 수성못2길 26": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-23",
+    "query": "대구 수성구 수성못2길 26",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EB%8C%80%EA%B5%AC+%EC%88%98%EC%84%B1%EA%B5%AC+%EC%88%98%EC%84%B1%EB%AA%BB2%EA%B8%B8+26&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EC%88%98%EC%84%B1%EA%B5%AC%20%EC%88%98%EC%84%B1%EB%AA%BB2%EA%B8%B8%2026",
+    "addresses": [
+      {
+        "docid": "N312737602",
+        "addr": "대구 수성구 수성못2길 26",
+        "lat": 35.8253426810064,
+        "lon": 128.6245062224,
+        "is_alive": "Y",
+        "d1_name": "대구",
+        "d2_name": "수성구",
+        "d3_roadname": "수성못2길",
+        "main_bunji": "26",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "대구 수성구 지범로39길 21-9": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-23",
+    "query": "대구 수성구 지범로39길 21-9",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EB%8C%80%EA%B5%AC+%EC%88%98%EC%84%B1%EA%B5%AC+%EC%A7%80%EB%B2%94%EB%A1%9C39%EA%B8%B8+21-9&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EC%88%98%EC%84%B1%EA%B5%AC%20%EC%A7%80%EB%B2%94%EB%A1%9C39%EA%B8%B8%2021-9",
+    "addresses": [
+      {
+        "docid": "N34784838",
+        "addr": "대구 수성구 지범로39길 21-9",
+        "lat": 35.8212304789658,
+        "lon": 128.641496291316,
+        "is_alive": "Y",
+        "d1_name": "대구",
+        "d2_name": "수성구",
+        "d3_roadname": "지범로39길",
+        "main_bunji": "21",
+        "sub_bunji": "9"
+      }
+    ]
+  },
+  "대구 수성구 용학로 361": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-23",
+    "query": "대구 수성구 용학로 361",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EB%8C%80%EA%B5%AC+%EC%88%98%EC%84%B1%EA%B5%AC+%EC%9A%A9%ED%95%99%EB%A1%9C+361&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EC%88%98%EC%84%B1%EA%B5%AC%20%EC%9A%A9%ED%95%99%EB%A1%9C%20361",
+    "addresses": [
+      {
+        "docid": "N48932020",
+        "addr": "대구 수성구 용학로 361",
+        "lat": 35.8267056669276,
+        "lon": 128.64347887885,
+        "is_alive": "Y",
+        "d1_name": "대구",
+        "d2_name": "수성구",
+        "d3_roadname": "용학로",
+        "main_bunji": "361",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "대구 수성구 무학로 152": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-23",
+    "query": "대구 수성구 무학로 152",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EB%8C%80%EA%B5%AC+%EC%88%98%EC%84%B1%EA%B5%AC+%EB%AC%B4%ED%95%99%EB%A1%9C+152&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EC%88%98%EC%84%B1%EA%B5%AC%20%EB%AC%B4%ED%95%99%EB%A1%9C%20152",
+    "addresses": [
+      {
+        "docid": "N44208203",
+        "addr": "대구 수성구 무학로 152",
+        "lat": 35.829895789163,
+        "lon": 128.625147128849,
+        "is_alive": "Y",
+        "d1_name": "대구",
+        "d2_name": "수성구",
+        "d3_roadname": "무학로",
+        "main_bunji": "152",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "대구 수성구 용학로30길 80": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-23",
+    "query": "대구 수성구 용학로30길 80",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EB%8C%80%EA%B5%AC+%EC%88%98%EC%84%B1%EA%B5%AC+%EC%9A%A9%ED%95%99%EB%A1%9C30%EA%B8%B8+80&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EC%88%98%EC%84%B1%EA%B5%AC%20%EC%9A%A9%ED%95%99%EB%A1%9C30%EA%B8%B8%2080",
+    "addresses": [
+      {
+        "docid": "N30342020",
+        "addr": "대구 수성구 용학로30길 80",
+        "lat": 35.8214450515145,
+        "lon": 128.629205376984,
+        "is_alive": "Y",
+        "d1_name": "대구",
+        "d2_name": "수성구",
+        "d3_roadname": "용학로30길",
+        "main_bunji": "80",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "대구 달성군 다사읍 강정본길 68-18": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-23",
+    "query": "대구 달성군 다사읍 강정본길 68-18",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EB%8C%80%EA%B5%AC+%EB%8B%AC%EC%84%B1%EA%B5%B0+%EB%8B%A4%EC%82%AC%EC%9D%8D+%EA%B0%95%EC%A0%95%EB%B3%B8%EA%B8%B8+68-18&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EB%8B%AC%EC%84%B1%EA%B5%B0%20%EB%8B%A4%EC%82%AC%EC%9D%8D%20%EA%B0%95%EC%A0%95%EB%B3%B8%EA%B8%B8%2068-18",
+    "addresses": [
+      {
+        "docid": "N53624445",
+        "addr": "대구 달성군 다사읍 강정본길 68-18",
+        "lat": 35.8441772595731,
+        "lon": 128.465125320959,
+        "is_alive": "Y",
+        "d1_name": "대구",
+        "d2_name": "달성군",
+        "d3_roadname": "강정본길",
+        "main_bunji": "68",
+        "sub_bunji": "18"
+      }
+    ]
+  },
+  "대구 중구 공평로8길 29": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-23",
+    "query": "대구 중구 공평로8길 29",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EB%8C%80%EA%B5%AC+%EC%A4%91%EA%B5%AC+%EA%B3%B5%ED%8F%89%EB%A1%9C8%EA%B8%B8+29&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EC%A4%91%EA%B5%AC%20%EA%B3%B5%ED%8F%89%EB%A1%9C8%EA%B8%B8%2029",
+    "addresses": [
+      {
+        "docid": "N33335397",
+        "addr": "대구 중구 공평로8길 29",
+        "lat": 35.866797492029,
+        "lon": 128.60164437836,
+        "is_alive": "Y",
+        "d1_name": "대구",
+        "d2_name": "중구",
+        "d3_roadname": "공평로8길",
+        "main_bunji": "29",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "대구 중구 동덕로 35-1": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-23",
+    "query": "대구 중구 동덕로 35-1",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EB%8C%80%EA%B5%AC+%EC%A4%91%EA%B5%AC+%EB%8F%99%EB%8D%95%EB%A1%9C+35-1&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EC%A4%91%EA%B5%AC%20%EB%8F%99%EB%8D%95%EB%A1%9C%2035-1",
+    "addresses": [
+      {
+        "docid": "N33216817",
+        "addr": "대구 중구 동덕로 35-1",
+        "lat": 35.8582839990058,
+        "lon": 128.604604377271,
+        "is_alive": "Y",
+        "d1_name": "대구",
+        "d2_name": "중구",
+        "d3_roadname": "동덕로",
+        "main_bunji": "35",
+        "sub_bunji": "1"
+      }
+    ]
+  },
+  "대구 중구 달구벌대로440길 9-3": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-23",
+    "query": "대구 중구 달구벌대로440길 9-3",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EB%8C%80%EA%B5%AC+%EC%A4%91%EA%B5%AC+%EB%8B%AC%EA%B5%AC%EB%B2%8C%EB%8C%80%EB%A1%9C440%EA%B8%B8+9-3&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EB%8C%80%EA%B5%AC%20%EC%A4%91%EA%B5%AC%20%EB%8B%AC%EA%B5%AC%EB%B2%8C%EB%8C%80%EB%A1%9C440%EA%B8%B8%209-3",
+    "addresses": [
+      {
+        "docid": "N33216851",
+        "addr": "대구 중구 달구벌대로440길 9-3",
+        "lat": 35.8623769627078,
+        "lon": 128.604181417814,
+        "is_alive": "Y",
+        "d1_name": "대구",
+        "d2_name": "중구",
+        "d3_roadname": "달구벌대로440길",
+        "main_bunji": "9",
+        "sub_bunji": "3"
+      }
+    ]
   }
 }
