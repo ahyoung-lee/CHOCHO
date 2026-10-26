@@ -146,16 +146,20 @@ await testAsync('registration sends only valid selected addresses and handles de
  assert(html.includes('placeholder="이 사이트에는 입력 내용을 저장하지 않아요."'));assert(html.includes('id="openRegistration"'));
  const fireLast=async(id,event)=>{const listeners=elements[id].listeners[event];return await listeners[listeners.length-1]({target:elements[id],preventDefault(){}});};
  await fireLast('openRegistration','click');assert(elements.registrationDialog.open);assert(elements.registrationSubmit.disabled);
+ assert(html.includes('이용가능서비스 (필수 선택)'));assert(elements.registrationClose.hidden);assert.equal(elements.registrationAddressDetail.value,'');
  fetchHandler=async()=>({ok:true,json:async()=>({features:[{geometry:{type:'Point',coordinates:[127.04,37.54]},properties:{name:'등록 주소 <img>',street:'테스트로',housenumber:'10',city:'서울',countrycode:'KR',type:'house'}}]})});
  elements.registrationAddress.value='테스트주소1';await fireLast('registrationAddressSearch','click');assert(!elements.registrationResults.hidden);assert(!elements.registrationResults.innerHTML.includes('<img>'));
  click('[data-registration-result]',{registrationResult:'0'});assert(elements.registrationSelected.textContent.includes('테스트로'));assert(!elements.registrationSubmit.disabled);
  const addressLookup=fetchHandler;let requests=[];fetchHandler=async(url,options)=>{requests.push({url,options});return {ok:true,json:async()=>({success:true})};};
  await fireLast('registrationForm','submit');assert.equal(requests.length,0);
  elements.registrationName.value='테스트 업체';elements.registrationConsent.checked=true;elements.registrationCategory.value='large-dog';elements.registrationMemo.value='실내에서는 이동가방 필수\n대형견은 테라스 이용 가능';
+ await fireLast('registrationForm','submit');assert.equal(requests.length,0);assert(elements.registrationStatus.textContent.includes('1개 이상'));
+ elements.registrationAddressDetail.value='2층 201호';
  elements.registrationCategory.value='pension';elements.registrationParking.checked=true;elements.registrationIndoor.checked=true;elements.registrationTerrace.checked=false;elements.registrationHoteling.checked=true;elements.registrationDaycare.checked=false;elements.registrationGrooming.checked=true;
  fetchHandler=async(url,options)=>{requests.push({url,options});return {ok:true,json:async()=>({success:false})};};
  await fireLast('registrationForm','submit');assert(elements.registrationStatus.textContent.includes('실패'));assert(!elements.registrationSubmit.disabled);assert.equal(elements.registrationName.value,'테스트 업체');
  assert.equal(requests[0].url,'https://formsubmit.co/ajax/ay_lee@naver.com');assert.equal(requests[0].options.method,'POST');const payload=JSON.parse(requests[0].options.body);assert.equal(payload['업체명'],'테스트 업체');assert.equal(payload['업종'],'동반 펜션');assert(payload['주소'].includes('테스트로'));assert.equal(payload['반려견 동반 확인'],'동의');
+ assert.equal(payload['상세주소'],'2층 201호');assert(payload['주소'].endsWith('2층 201호'));assert(!elements.registrationClose.hidden);
  assert.deepEqual(['주차가능','실내동반','테라스동반','호텔링','유치원','애견미용'].map(label=>payload[label]),['선택','선택','미선택','선택','미선택','선택']);
  assert.equal(payload['동반 조건 및 메모사항'],'실내에서는 이동가방 필수\n대형견은 테라스 이용 가능');assert.equal(elements.registrationMemo.value,'실내에서는 이동가방 필수\n대형견은 테라스 이용 가능');
  fetchHandler=async()=>{throw new Error('offline');};await fireLast('registrationForm','submit');assert(elements.registrationStatus.textContent.includes('실패'));assert(!elements.registrationSubmit.disabled);
@@ -166,8 +170,8 @@ await testAsync('registration sends only valid selected addresses and handles de
  elements.registrationAddress.value='다른주소';await fireLast('registrationAddress','input');assert.equal(elements.registrationSelected.textContent,'');assert(elements.registrationResults.hidden);
  let resolve;fetchHandler=()=>new Promise(r=>resolve=r);elements.registrationAddress.value='지연등록검색';const pending=fireLast('registrationAddressSearch','click');await fireLast('registrationAddress','input');resolve({ok:true,json:async()=>({features:[]})});await pending;assert(elements.registrationResults.hidden);
  const before=fullData.places.length;let writes=0;fetchHandler=async()=>{writes++;throw new Error('No registration writes allowed');};await fireLast('registrationForm','submit');assert.equal(writes,0);assert(elements.registrationSubmit.disabled);assert.equal(fullData.places.length,before);
- elements.registrationDialog.close();
- await fireLast('openRegistration','click');assert.equal(elements.registrationMemo.value,'');for(const suffix of ['Parking','Indoor','Terrace','Hoteling','Daycare','Grooming'])assert.equal(elements['registration'+suffix].checked,false);elements.registrationDialog.close();
+ assert(!elements.registrationClose.hidden);click('[data-close]',{close:'registrationDialog'});assert(!elements.registrationDialog.open);
+ await fireLast('openRegistration','click');assert.equal(elements.registrationAddressDetail.value,'');assert(elements.registrationClose.hidden);assert.equal(elements.registrationMemo.value,'');for(const suffix of ['Parking','Indoor','Terrace','Hoteling','Daycare','Grooming'])assert.equal(elements['registration'+suffix].checked,false);elements.registrationDialog.close();
 });
 await testAsync('current-location search and my-location refresh nearby ordering, category results and map pins',async()=>{
  currentApp.reset();const bar=fullData.places.find(p=>p.category==='bar'&&core.hasCoordinates(p));assert(bar);
