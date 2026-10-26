@@ -25,12 +25,19 @@ class WorkbookTests(unittest.TestCase):
         for (_, row), p in zip(rows, self.data["places"]):
             for field, column in columns.items():
                 self.assertIs(p[field], workbook.flag(row[column]))
-            self.assertEqual(p["phone"], row["업체연락처"])
+            self.assertEqual(p.get("contactNote") or p["phone"] or "", row["업체연락처"])
             self.assertEqual(p["registrationNote"], row.get("동반 조건 및 메모", ""))
 
     def test_import_is_repeatable_and_keeps_ids(self):
         again = workbook.import_rows(self.data, self.rows, self.path.name, self.data["checkedAt"])
         self.assertEqual(again, self.data)
+
+    def test_contact_instructions_are_preserved_without_becoming_phone_links(self):
+        rows = [(n, dict(r)) for n, r in self.rows]
+        rows[0][1]["업체연락처"] = "네이버예약"
+        place = workbook.import_rows(self.data, rows, self.path.name, self.data["checkedAt"])["places"][0]
+        self.assertIsNone(place["phone"])
+        self.assertEqual(place["contactNote"], "네이버예약")
 
     def test_unknowns_and_incomplete_rows_are_never_guessed(self):
         self.assertIsNone(workbook.flag(""))

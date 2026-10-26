@@ -1888,5 +1888,278 @@
         "sub_bunji": "3"
       }
     ]
+  },
+  "서울 마포구 잔다리로 20-12": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-26",
+    "query": "서울 마포구 잔다리로 20-12",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EB%A7%88%ED%8F%AC%EA%B5%AC+%EC%9E%94%EB%8B%A4%EB%A6%AC%EB%A1%9C+20-12&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EC%9E%94%EB%8B%A4%EB%A6%AC%EB%A1%9C%2020-12",
+    "addresses": [
+      {
+        "docid": "N32620589",
+        "addr": "서울 마포구 잔다리로 20-12",
+        "lat": 37.5514417912612,
+        "lon": 126.920913150714,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "마포구",
+        "d3_roadname": "잔다리로",
+        "main_bunji": "20",
+        "sub_bunji": "12"
+      }
+    ]
+  },
+  "서울 마포구 와우산로 76": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-26",
+    "query": "서울 마포구 와우산로 76",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EB%A7%88%ED%8F%AC%EA%B5%AC+%EC%99%80%EC%9A%B0%EC%82%B0%EB%A1%9C+76&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EC%99%80%EC%9A%B0%EC%82%B0%EB%A1%9C%2076",
+    "addresses": [
+      {
+        "docid": "N31232607",
+        "addr": "서울 마포구 와우산로 76",
+        "lat": 37.5511294333883,
+        "lon": 126.923539742754,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "마포구",
+        "d3_roadname": "와우산로",
+        "main_bunji": "76",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 서대문구 연희로27길 99": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-26",
+    "query": "서울 서대문구 연희로27길 99",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EC%84%9C%EB%8C%80%EB%AC%B8%EA%B5%AC+%EC%97%B0%ED%9D%AC%EB%A1%9C27%EA%B8%B8+99&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%84%9C%EB%8C%80%EB%AC%B8%EA%B5%AC%20%EC%97%B0%ED%9D%AC%EB%A1%9C27%EA%B8%B8%2099",
+    "addresses": [
+      {
+        "docid": "N31772917",
+        "addr": "서울 서대문구 연희로27길 99",
+        "lat": 37.5703248619568,
+        "lon": 126.932183115369,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "서대문구",
+        "d3_roadname": "연희로27길",
+        "main_bunji": "99",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 마포구 동교로29길 42": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-26",
+    "query": "서울 마포구 동교로29길 42",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EB%A7%88%ED%8F%AC%EA%B5%AC+%EB%8F%99%EA%B5%90%EB%A1%9C29%EA%B8%B8+42&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EB%8F%99%EA%B5%90%EB%A1%9C29%EA%B8%B8%2042",
+    "addresses": [
+      {
+        "docid": "N290235035",
+        "addr": "서울 마포구 동교로29길 42",
+        "lat": 37.5624095708286,
+        "lon": 126.922866317056,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "마포구",
+        "d3_roadname": "동교로29길",
+        "main_bunji": "42",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 마포구 광성로 41-3": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-26",
+    "query": "서울 마포구 광성로 41-3",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EB%A7%88%ED%8F%AC%EA%B5%AC+%EA%B4%91%EC%84%B1%EB%A1%9C+41-3&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EA%B4%91%EC%84%B1%EB%A1%9C%2041-3",
+    "addresses": [
+      {
+        "docid": "N357756810",
+        "addr": "서울 마포구 광성로 41-3",
+        "lat": 37.5500412050395,
+        "lon": 126.93746560134,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "마포구",
+        "d3_roadname": "광성로",
+        "main_bunji": "41",
+        "sub_bunji": "3"
+      }
+    ]
+  },
+  "서울 마포구 잔다리로 73": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-26",
+    "query": "서울 마포구 잔다리로 73",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EB%A7%88%ED%8F%AC%EA%B5%AC+%EC%9E%94%EB%8B%A4%EB%A6%AC%EB%A1%9C+73&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EC%9E%94%EB%8B%A4%EB%A6%AC%EB%A1%9C%2073",
+    "addresses": [
+      {
+        "docid": "N32525624",
+        "addr": "서울 마포구 잔다리로 73",
+        "lat": 37.5540239979576,
+        "lon": 126.916389686203,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "마포구",
+        "d3_roadname": "잔다리로",
+        "main_bunji": "73",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 마포구 서강로9길 24": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-26",
+    "query": "서울 마포구 서강로9길 24",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EB%A7%88%ED%8F%AC%EA%B5%AC+%EC%84%9C%EA%B0%95%EB%A1%9C9%EA%B8%B8+24&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EC%84%9C%EA%B0%95%EB%A1%9C9%EA%B8%B8%2024",
+    "addresses": [
+      {
+        "docid": "N31984824",
+        "addr": "서울 마포구 서강로9길 24",
+        "lat": 37.5535048237525,
+        "lon": 126.932243401584,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "마포구",
+        "d3_roadname": "서강로9길",
+        "main_bunji": "24",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 서대문구 연희맛로 17-14": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-26",
+    "query": "서울 서대문구 연희맛로 17-14",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EC%84%9C%EB%8C%80%EB%AC%B8%EA%B5%AC+%EC%97%B0%ED%9D%AC%EB%A7%9B%EB%A1%9C+17-14&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%84%9C%EB%8C%80%EB%AC%B8%EA%B5%AC%20%EC%97%B0%ED%9D%AC%EB%A7%9B%EB%A1%9C%2017-14",
+    "addresses": [
+      {
+        "docid": "N33451578",
+        "addr": "서울 서대문구 연희맛로 17-14",
+        "lat": 37.5672253086557,
+        "lon": 126.929050756929,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "서대문구",
+        "d3_roadname": "연희맛로",
+        "main_bunji": "17",
+        "sub_bunji": "14"
+      }
+    ]
+  },
+  "서울 마포구 토정로 130": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-26",
+    "query": "서울 마포구 토정로 130",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EB%A7%88%ED%8F%AC%EA%B5%AC+%ED%86%A0%EC%A0%95%EB%A1%9C+130&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%ED%86%A0%EC%A0%95%EB%A1%9C%20130",
+    "addresses": [
+      {
+        "docid": "N32573190",
+        "addr": "서울 마포구 토정로 130",
+        "lat": 37.545061923597,
+        "lon": 126.925504925015,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "마포구",
+        "d3_roadname": "토정로",
+        "main_bunji": "130",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 종로구 사직로9길 22": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-26",
+    "query": "서울 종로구 사직로9길 22",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EC%A2%85%EB%A1%9C%EA%B5%AC+%EC%82%AC%EC%A7%81%EB%A1%9C9%EA%B8%B8+22&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EC%A2%85%EB%A1%9C%EA%B5%AC%20%EC%82%AC%EC%A7%81%EB%A1%9C9%EA%B8%B8%2022",
+    "addresses": [
+      {
+        "docid": "N31372440",
+        "addr": "서울 종로구 사직로9길 22",
+        "lat": 37.5774727868463,
+        "lon": 126.967882018316,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "종로구",
+        "d3_roadname": "사직로9길",
+        "main_bunji": "22",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 마포구 동교로38길 33-6": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-26",
+    "query": "서울 마포구 동교로38길 33-6",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EB%A7%88%ED%8F%AC%EA%B5%AC+%EB%8F%99%EA%B5%90%EB%A1%9C38%EA%B8%B8+33-6&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EB%8F%99%EA%B5%90%EB%A1%9C38%EA%B8%B8%2033-6",
+    "addresses": [
+      {
+        "docid": "N33000557",
+        "addr": "서울 마포구 동교로38길 33-6",
+        "lat": 37.5614233159097,
+        "lon": 126.925923936972,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "마포구",
+        "d3_roadname": "동교로38길",
+        "main_bunji": "33",
+        "sub_bunji": "6"
+      }
+    ]
+  },
+  "서울 마포구 망원로3길 7": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-26",
+    "query": "서울 마포구 망원로3길 7",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EB%A7%88%ED%8F%AC%EA%B5%AC+%EB%A7%9D%EC%9B%90%EB%A1%9C3%EA%B8%B8+7&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EB%A7%9D%EC%9B%90%EB%A1%9C3%EA%B8%B8%207",
+    "addresses": [
+      {
+        "docid": "N31467650",
+        "addr": "서울 마포구 망원로3길 7",
+        "lat": 37.5570826237963,
+        "lon": 126.901452156843,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "마포구",
+        "d3_roadname": "망원로3길",
+        "main_bunji": "7",
+        "sub_bunji": "0"
+      }
+    ]
+  },
+  "서울 마포구 성미산로 190-13": {
+    "provider": "Kakao Map public address search",
+    "checkedAt": "2026-10-26",
+    "query": "서울 마포구 성미산로 190-13",
+    "url": "https://search.map.kakao.com/mapsearch/map.daum?q=%EC%84%9C%EC%9A%B8+%EB%A7%88%ED%8F%AC%EA%B5%AC+%EC%84%B1%EB%AF%B8%EC%82%B0%EB%A1%9C+190-13&msFlag=A&sort=0",
+    "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EC%84%B1%EB%AF%B8%EC%82%B0%EB%A1%9C%20190-13",
+    "addresses": [
+      {
+        "docid": "N29539570",
+        "addr": "서울 마포구 성미산로 190-13",
+        "lat": 37.5624284773539,
+        "lon": 126.926083323348,
+        "is_alive": "Y",
+        "d1_name": "서울",
+        "d2_name": "마포구",
+        "d3_roadname": "성미산로",
+        "main_bunji": "190",
+        "sub_bunji": "13"
+      }
+    ]
   }
 }

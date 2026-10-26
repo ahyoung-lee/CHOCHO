@@ -41,3 +41,5 @@
 @media(prefers-reduced-motion:reduce){.registration-free{animation:none}}
 
 .category-tabs button{font-size:16px;font-weight:750}.category-tabs span{font-size:15px;font-weight:700}
+
+.card-actions{justify-content:flex-start;gap:4px;flex-wrap:wrap}.card-navigation{display:flex;align-items:center;gap:6px;margin-left:auto}.card-actions .nav-link{color:#03a94d;white-space:nowrap}.card-actions .nav-link img{display:block;object-fit:contain;flex-shrink:0}

@@ -100,7 +100,8 @@ def import_rows(previous, rows, filename, today):
         categories = [key for key, column in category_columns.items() if flag(row.get(column, row.get(column.replace(" ", ""), ""))) is True]
         if not categories:
             raise ValueError(f"{row_number}행: {name}의 카테고리를 1개 이상 선택하세요.")
-        phone = row.get("업체연락처", "").strip() or None
+        contact = row.get("업체연락처", "").strip()
+        phone = contact if re.fullmatch(r"[0-9-]{8,20}", contact) else None
         same_name = [p for p in previous["places"] if normalize_name(p["name"]) == normalize_name(name)]
         same_phone = [p for p in previous["places"] if phone and p.get("phone") == phone and road_key(p["address"]) == road_key(address)]
         old = same_name[0] if len(same_name) == 1 else same_phone[0] if len(same_phone) == 1 else None
@@ -113,6 +114,10 @@ def import_rows(previous, rows, filename, today):
         p.update(number=len(places)+1, name=name, address=address, phone=phone, region=region, area=area,
                  category=categories[0], categories=categories, playground="playground" in categories,
                  status="listed", level="owner", registration={"file": filename, "row": row_number, "updatedAt": today})
+        if contact and not phone:
+            p["contactNote"] = contact
+        else:
+            p.pop("contactNote", None)
         for field, column in condition_columns.items():
             p[field] = flag(row.get(column, ""))
         p["largeDogPlayground"] = flag(row.get("대형견 카페", row.get("대형견카페", ""))) is True and p["playground"]
