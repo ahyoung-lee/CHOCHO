@@ -211,7 +211,7 @@ let registrationCandidates=[],registrationVersion=0,registrationController,regis
 const registrationCategories={'companion':'동반 카페','playground':'운동장 카페','large-dog':'대형견 카페','restaurant':'동반 음식점','bar':'동반 술집','pension':'동반 펜션'};
 const registrationServices={registrationParking:'주차가능',registrationIndoor:'실내동반',registrationTerrace:'테라스동반',registrationHoteling:'호텔링',registrationDaycare:'유치원',registrationGrooming:'애견미용'};
 function clearRegistrationAddress(){registrationVersion++;registrationController?.abort();registrationCandidates=[];registrationAddress=null;registrationSent=false;$('registrationSubmit').disabled=true;$('registrationResults').hidden=true;$('registrationResults').innerHTML='';$('registrationSelected').textContent='';}
-$('openRegistration').addEventListener('click',()=>{if(registrationSending)return;clearRegistrationAddress();$('registrationName').value='';$('registrationCategory').value='companion';$('registrationAddress').value='';$('registrationMemo').value='';$('registrationHoney').value='';$('registrationConsent').checked=false;Object.keys(registrationServices).forEach(id=>$(id).checked=false);$('registrationStatus').textContent='업체명과 업종을 입력하고 검색 결과에서 건물 주소를 선택해 주세요.';showDialog('registrationDialog');});
+$('openRegistration').addEventListener('click',()=>{if(registrationSending)return;clearRegistrationAddress();$('registrationName').value='';$('registrationCategory').value='companion';$('registrationAddress').value='';$('registrationAddressDetail').value='';$('registrationClose').hidden=true;$('registrationMemo').value='';$('registrationHoney').value='';$('registrationConsent').checked=false;Object.keys(registrationServices).forEach(id=>$(id).checked=false);$('registrationStatus').textContent='업체명과 업종을 입력하고 검색 결과에서 건물 주소를 선택해 주세요.';showDialog('registrationDialog');});
 $('registrationAddress').addEventListener('input',clearRegistrationAddress);
 async function searchRegistrationAddress(){
  clearRegistrationAddress();const query=$('registrationAddress').value.trim(),version=registrationVersion;
@@ -231,14 +231,17 @@ $('registrationForm').addEventListener('submit',async e=>{
  const memo=$('registrationMemo').value.trim();
  if(memo.length>2000){$('registrationStatus').textContent='동반 조건 및 메모사항은 2,000자 이내로 입력해 주세요.';return;}
  if(!name||name.length>100||!category||!address||!$('registrationConsent').checked){$('registrationStatus').textContent='업체명·업종·선택한 건물 주소와 전송 동의를 확인해 주세요.';return;}
+ if(!Object.keys(registrationServices).some(id=>$(id).checked)){$('registrationStatus').textContent='이용가능서비스를 1개 이상 선택해 주세요.';$('registrationParking').focus();return;}
+ const addressDetail=$('registrationAddressDetail').value.trim();
+ if(addressDetail.length>200){$('registrationStatus').textContent='상세주소는 200자 이내로 입력해 주세요.';return;}
  registrationSending=true;$('registrationSubmit').disabled=true;$('registrationSubmit').textContent='전송 중…';$('registrationStatus').textContent='등록 요청을 전송하고 있어요.';
  const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),15000);
  try{
-  const response=await root.fetch('https://formsubmit.co/ajax/ay_lee@naver.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},signal:controller.signal,body:JSON.stringify({_subject:'[CHOCHO] 업체 등록 요청',_template:'table',_captcha:'false',_honey:'','업체명':name,'업종':category,'주소':address.address,'검색 장소명':address.name,'위도':address.lat,'경도':address.lng,'동반 조건 및 메모사항':memo,'반려견 동반 확인':'동의',...Object.fromEntries(Object.entries(registrationServices).map(([id,label])=>[label,$(id).checked?'선택':'미선택']))})});
+  const response=await root.fetch('https://formsubmit.co/ajax/ay_lee@naver.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},signal:controller.signal,body:JSON.stringify({_subject:'[CHOCHO] 업체 등록 요청',_template:'table',_captcha:'false',_honey:'','업체명':name,'업종':category,'주소':[address.address,addressDetail].filter(Boolean).join(' '),'상세주소':addressDetail,'검색 장소명':address.name,'위도':address.lat,'경도':address.lng,'동반 조건 및 메모사항':memo,'반려견 동반 확인':'동의',...Object.fromEntries(Object.entries(registrationServices).map(([id,label])=>[label,$(id).checked?'선택':'미선택']))})});
   const result=await response.json();if(!response.ok||!(result.success===true||result.success==='true'))throw new Error('Registration rejected');
   registrationSent=true;$('registrationStatus').textContent='등록 요청이 접수 서비스에 전달됐어요. 운영자가 확인한 뒤 반영합니다. 최초 이용 시 운영자의 수신 메일 인증이 필요해요.';
  }catch(_){$('registrationStatus').textContent='전송 결과를 확인하지 못했어요(연결 또는 접수 실패). 잠시 후 다시 시도해 주세요.';}
- finally{clearTimeout(timeout);registrationSending=false;$('registrationSubmit').disabled=registrationSent||!registrationAddress;$('registrationSubmit').textContent='등록 요청';}
+ finally{clearTimeout(timeout);registrationSending=false;$('registrationSubmit').disabled=registrationSent||!registrationAddress;$('registrationSubmit').textContent='등록 요청';$('registrationClose').hidden=false;}
 });
 $('reset').addEventListener('click',reset);
 ['guideButton','noticeGuide','bottomGuide'].forEach(id=>$(id).addEventListener('click',()=>showDialog('guideDialog')));
