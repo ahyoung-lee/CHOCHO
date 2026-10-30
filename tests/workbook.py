@@ -3,6 +3,8 @@ import importlib.util
 import json
 from pathlib import Path
 import unittest
+import xml.etree.ElementTree as ET
+import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 spec = importlib.util.spec_from_file_location("workbook", ROOT / "scripts/import-workbook.py")
@@ -16,6 +18,38 @@ class WorkbookTests(unittest.TestCase):
         cls.path = ROOT / "업체정보/업체정보_간편입력.xlsx"
         cls.rows = workbook.read_rows(cls.path)
         cls.data = json.loads((ROOT / "data/venues.json").read_text(encoding="utf-8"))
+
+    def test_excel_table_column_names_match_visible_headers(self):
+        with zipfile.ZipFile(self.path) as archive:
+            strings = ["".join(x.itertext()) for x in ET.fromstring(archive.read("xl/sharedStrings.xml"))]
+            sheet = ET.fromstring(archive.read("xl/worksheets/sheet1.xml"))
+            header = sheet.find("m:sheetData/m:row", workbook.NS)
+            names = [strings[int(cell.find("m:v", workbook.NS).text)] for cell in header]
+            table = ET.fromstring(archive.read("xl/tables/table1.xml"))
+            columns = table.find("m:tableColumns", workbook.NS)
+            self.assertEqual([column.get("name") for column in columns], names)
+
+    def test_workbook_does_not_force_excel_repair_mode(self):
+        with zipfile.ZipFile(self.path) as archive:
+            self.assertIsNone(archive.testzip())
+            book = ET.fromstring(archive.read("xl/workbook.xml"))
+            recovery = book.find("m:fileRecoveryPr", workbook.NS)
+            self.assertTrue(recovery is None or recovery.get("repairLoad") not in ("1", "true"))
+
+    def test_unlocated_venue_address_cells_are_yellow(self):
+        with zipfile.ZipFile(self.path) as archive:
+            styles = ET.fromstring(archive.read("xl/styles.xml"))
+            fills = styles.find("m:fills", workbook.NS)
+            xfs = styles.find("m:cellXfs", workbook.NS)
+            sheet = ET.fromstring(archive.read("xl/worksheets/sheet1.xml"))
+            cells = {cell.get("r"): cell for cell in sheet.findall(".//m:c", workbook.NS)}
+            missing = [p for p in self.data["places"] if p["lat"] is None or p["lng"] is None]
+            for place in missing:
+                address = cells["B" + str(place["registration"]["row"])]
+                fill = fills[int(xfs[int(address.get("s", "0"))].get("fillId", "0"))]
+                pattern = fill.find("m:patternFill", workbook.NS)
+                self.assertEqual(pattern.get("patternType"), "solid", place["name"])
+                self.assertEqual(pattern.find("m:fgColor", workbook.NS).get("rgb"), "FFFFFF00", place["name"])
 
     def test_saved_rows_are_the_entire_published_list(self):
         self.assertEqual(list(self.rows[0][1])[3:9], ["동반 카페", "운동장 카페", "대형견 카페", "동반 음식점", "동반 술집", "동반 펜션"])

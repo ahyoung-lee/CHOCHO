@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-26",
+  "checkedAt": "2026-10-30",
   "origins": {
     "hagye": {
       "name": "하계역",
@@ -21,7 +21,7 @@
     "complete": false,
     "source": "업체정보_간편입력.xlsx",
     "mode": "manual-workbook",
-    "registeredCount": 103
+    "registeredCount": 127
   },
   "places": [
     {
@@ -124,7 +124,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 2,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "hoteling": false,
       "daycare": false,
@@ -260,7 +260,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 3,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "terrace": true,
       "hoteling": false,
@@ -297,7 +297,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 4,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -382,7 +382,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 5,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -468,7 +468,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 6,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -631,7 +631,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 7,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "terrace": true,
       "hoteling": false,
@@ -670,7 +670,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 8,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -756,7 +756,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 9,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -841,7 +841,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 10,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -927,7 +927,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 11,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -1012,7 +1012,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 12,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -1098,7 +1098,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 13,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -1184,7 +1184,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 14,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -1269,7 +1269,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 15,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -1353,7 +1353,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 16,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -1438,7 +1438,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 17,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -1524,7 +1524,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 18,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -1712,7 +1712,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 19,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "terrace": true,
       "hoteling": false,
@@ -1750,7 +1750,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 20,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -1943,7 +1943,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 21,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "terrace": true,
       "hoteling": false,
@@ -1980,7 +1980,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 22,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -2064,7 +2064,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 23,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -2150,7 +2150,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 24,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -2236,7 +2236,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 25,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -2320,7 +2320,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 26,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -2404,7 +2404,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 27,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": false,
       "indoor": true,
@@ -2489,7 +2489,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 28,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -2573,7 +2573,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 29,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -2657,7 +2657,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 30,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -2741,7 +2741,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 31,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": false,
       "indoor": true,
@@ -2826,7 +2826,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 32,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -2911,7 +2911,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 33,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -2995,7 +2995,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 34,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": false,
       "indoor": true,
@@ -3079,7 +3079,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 35,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -3164,7 +3164,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 36,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -3248,7 +3248,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 37,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -3332,7 +3332,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 38,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": false,
       "indoor": true,
@@ -3416,7 +3416,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 39,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": false,
       "indoor": true,
@@ -3500,7 +3500,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 40,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": false,
       "indoor": true,
@@ -3584,7 +3584,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 41,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -3668,7 +3668,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 42,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -3752,7 +3752,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 43,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -3836,7 +3836,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 44,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": false,
       "indoor": true,
@@ -3920,7 +3920,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 45,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -4004,7 +4004,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 46,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -4088,7 +4088,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 47,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -4172,7 +4172,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 48,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": false,
@@ -4256,7 +4256,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 49,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": false,
       "indoor": true,
@@ -4340,7 +4340,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 50,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -4424,7 +4424,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 51,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -4508,7 +4508,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 52,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": false,
       "indoor": true,
@@ -4592,7 +4592,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 53,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -4677,7 +4677,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 54,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -4761,7 +4761,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 55,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": false,
       "indoor": false,
@@ -4845,7 +4845,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 56,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -4930,7 +4930,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 57,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -5014,7 +5014,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 58,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -5098,7 +5098,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 59,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": false,
@@ -5182,7 +5182,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 60,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -5266,7 +5266,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 61,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": false,
       "indoor": false,
@@ -5350,7 +5350,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 62,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": false,
       "indoor": false,
@@ -5434,7 +5434,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 63,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -5518,7 +5518,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 64,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": false,
       "indoor": true,
@@ -5602,7 +5602,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 65,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -5686,7 +5686,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 66,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -5770,7 +5770,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 67,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -5854,7 +5854,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 68,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -5938,7 +5938,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 69,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -6022,7 +6022,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 70,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -6106,7 +6106,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 71,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": false,
       "indoor": true,
@@ -6190,7 +6190,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 72,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": false,
       "indoor": true,
@@ -6274,7 +6274,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 73,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -6358,7 +6358,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 74,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -6442,7 +6442,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 75,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -6526,7 +6526,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 76,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": false,
       "indoor": true,
@@ -6611,7 +6611,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 77,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -6695,7 +6695,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 78,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -6779,7 +6779,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 79,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": false,
@@ -6863,7 +6863,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 80,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": false,
@@ -6947,7 +6947,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 81,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -7031,7 +7031,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 82,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": false,
       "indoor": true,
@@ -7115,7 +7115,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 83,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -7199,7 +7199,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 84,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -7284,7 +7284,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 85,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -7369,7 +7369,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 86,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": false,
@@ -7453,7 +7453,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 87,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -7537,7 +7537,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 88,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -7621,7 +7621,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 89,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -7705,7 +7705,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 90,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": false,
       "indoor": true,
@@ -7789,7 +7789,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 91,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -7873,7 +7873,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 92,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": false,
       "indoor": true,
@@ -7957,7 +7957,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 93,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -8043,7 +8043,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 94,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -8127,7 +8127,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 95,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -8211,7 +8211,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 96,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -8295,7 +8295,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 97,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": false,
       "indoor": true,
@@ -8381,7 +8381,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 98,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -8465,7 +8465,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 99,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": false,
       "indoor": true,
@@ -8550,7 +8550,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 100,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -8634,7 +8634,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 101,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": true,
       "indoor": true,
@@ -8718,7 +8718,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 102,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": false,
       "indoor": true,
@@ -8802,7 +8802,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 103,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": false,
       "indoor": true,
@@ -8886,7 +8886,7 @@
       "registration": {
         "file": "업체정보_간편입력.xlsx",
         "row": 104,
-        "updatedAt": "2026-10-26"
+        "updatedAt": "2026-10-30"
       },
       "parking": false,
       "indoor": true,
@@ -8951,6 +8951,1692 @@
         "precision": "street-address",
         "sourceUrl": "https://map.kakao.com/?q=%EC%84%9C%EC%9A%B8%20%EB%A7%88%ED%8F%AC%EA%B5%AC%20%EC%84%B1%EB%AF%B8%EC%82%B0%EB%A1%9C%20190-13"
       }
+    },
+    {
+      "id": "manual-87afde3afcf1",
+      "number": 104,
+      "name": "커피엣마켓 독립문영천시장",
+      "address": "서울 서대문구 통일로 173-2 1층",
+      "phone": "0507-1417-3628",
+      "region": "서대문구",
+      "area": "서대문구",
+      "category": "companion",
+      "categories": [
+        "companion"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 105,
+        "updatedAt": "2026-10-30"
+      },
+      "parking": false,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 불가",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 105행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "동반 카페",
+      "lat": null,
+      "lng": null,
+      "position": "좌표 미확인",
+      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-30",
+      "sources": [
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EC%84%9C%EB%8C%80%EB%AC%B8%EA%B5%AC%20%ED%86%B5%EC%9D%BC%EB%A1%9C%20173-2%201%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ]
+    },
+    {
+      "id": "manual-e15698644cf8",
+      "number": 105,
+      "name": "카페 수달",
+      "address": "서울 종로구 율곡로 49-14",
+      "phone": "0507-1459-1047",
+      "region": "종로구",
+      "area": "종로구",
+      "category": "companion",
+      "categories": [
+        "companion"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 106,
+        "updatedAt": "2026-10-30"
+      },
+      "parking": false,
+      "indoor": true,
+      "terrace": false,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 불가",
+      "petArea": "실내 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 106행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "동반 카페",
+      "lat": null,
+      "lng": null,
+      "position": "좌표 미확인",
+      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-30",
+      "sources": [
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EC%A2%85%EB%A1%9C%EA%B5%AC%20%EC%9C%A8%EA%B3%A1%EB%A1%9C%2049-14",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ]
+    },
+    {
+      "id": "manual-eb049f87dff9",
+      "number": 106,
+      "name": "미드메 서촌",
+      "address": "서울 종로구 자하문로 36 1층",
+      "phone": "0507-1352-5906",
+      "region": "종로구",
+      "area": "종로구",
+      "category": "companion",
+      "categories": [
+        "companion"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 107,
+        "updatedAt": "2026-10-30"
+      },
+      "parking": false,
+      "indoor": false,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "테라스만 가능",
+      "dogRule": "테라스만 가능",
+      "parkingText": "사용자 등록: 주차 불가",
+      "petArea": "테라스 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 107행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "테라스만 가능",
+      "lat": null,
+      "lng": null,
+      "position": "좌표 미확인",
+      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-30",
+      "sources": [
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EC%A2%85%EB%A1%9C%EA%B5%AC%20%EC%9E%90%ED%95%98%EB%AC%B8%EB%A1%9C%2036%201%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ]
+    },
+    {
+      "id": "manual-fdf261e710e3",
+      "number": 107,
+      "name": "블루아워 jazz club",
+      "address": "서울 종로구 삼일대로15길 6 지하 1층",
+      "phone": "0507-1328-6996",
+      "region": "종로구",
+      "area": "종로구",
+      "category": "companion",
+      "categories": [
+        "companion",
+        "restaurant"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 108,
+        "updatedAt": "2026-10-30"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": false,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "리드줄, 케이지 필수",
+      "dogRule": "리드줄, 케이지 필수",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 108행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "리드줄, 케이지 필수",
+      "lat": null,
+      "lng": null,
+      "position": "좌표 미확인",
+      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-30",
+      "sources": [
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EC%A2%85%EB%A1%9C%EA%B5%AC%20%EC%82%BC%EC%9D%BC%EB%8C%80%EB%A1%9C15%EA%B8%B8%206%20%EC%A7%80%ED%95%98%201%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ]
+    },
+    {
+      "id": "manual-e70d23630f9e",
+      "number": 108,
+      "name": "사생활",
+      "address": "서울 관악구 신사로14길 19 지하1층",
+      "phone": "0507-1363-7759",
+      "region": "관악구",
+      "area": "관악구",
+      "category": "companion",
+      "categories": [
+        "companion",
+        "restaurant"
+      ],
+      "playground": false,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 109,
+        "updatedAt": "2026-10-30"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": false,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "리드줄, 케이지, 유모차 필수",
+      "dogRule": "리드줄, 케이지, 유모차 필수",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반",
+      "yard": "사용자 등록: 운동장 미선택",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 109행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "리드줄, 케이지, 유모차 필수",
+      "lat": null,
+      "lng": null,
+      "position": "좌표 미확인",
+      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-30",
+      "sources": [
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EA%B4%80%EC%95%85%EA%B5%AC%20%EC%8B%A0%EC%82%AC%EB%A1%9C14%EA%B8%B8%2019%20%EC%A7%80%ED%95%981%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ]
+    },
+    {
+      "id": "manual-9ed0f0e77b2b",
+      "number": 109,
+      "name": "혼자두면장판뜯어서차린개카페",
+      "address": "서울 관악구 남부순환로 1665 3층",
+      "phone": "0507-1317-5549",
+      "region": "관악구",
+      "area": "관악구",
+      "category": "playground",
+      "categories": [
+        "playground",
+        "companion"
+      ],
+      "playground": true,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 110,
+        "updatedAt": "2026-10-30"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": true,
+      "daycare": true,
+      "grooming": true,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 있음",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 110행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "운동장 카페 · 동반 카페 · 호텔링 · 유치원 · 애견미용",
+      "lat": null,
+      "lng": null,
+      "position": "좌표 미확인",
+      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-30",
+      "sources": [
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EA%B4%80%EC%95%85%EA%B5%AC%20%EB%82%A8%EB%B6%80%EC%88%9C%ED%99%98%EB%A1%9C%201665%203%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ]
+    },
+    {
+      "id": "manual-20841b6498d4",
+      "number": 110,
+      "name": "털로덮인친구들 펫파크 목동점",
+      "address": "서울 양천구 목동동로 309 행복한백화점 9층",
+      "phone": "0507-1425-3023",
+      "region": "양천구",
+      "area": "양천구",
+      "category": "playground",
+      "categories": [
+        "playground",
+        "companion"
+      ],
+      "playground": true,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 111,
+        "updatedAt": "2026-10-30"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 있음",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 111행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "운동장 카페 · 동반 카페",
+      "lat": null,
+      "lng": null,
+      "position": "좌표 미확인",
+      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-30",
+      "sources": [
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EC%96%91%EC%B2%9C%EA%B5%AC%20%EB%AA%A9%EB%8F%99%EB%8F%99%EB%A1%9C%20309%20%ED%96%89%EB%B3%B5%ED%95%9C%EB%B0%B1%ED%99%94%EC%A0%90%209%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ]
+    },
+    {
+      "id": "manual-39e99b0cc41b",
+      "number": 111,
+      "name": "헬로우마루네 구로점",
+      "address": "서울 구로구 서해안로 2295 4층 2호",
+      "phone": "0507-1492-3407",
+      "region": "구로구",
+      "area": "구로구",
+      "category": "playground",
+      "categories": [
+        "playground",
+        "companion"
+      ],
+      "playground": true,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 112,
+        "updatedAt": "2026-10-30"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": true,
+      "daycare": true,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 있음",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 112행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "운동장 카페 · 동반 카페 · 호텔링 · 유치원",
+      "lat": null,
+      "lng": null,
+      "position": "좌표 미확인",
+      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-30",
+      "sources": [
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EA%B5%AC%EB%A1%9C%EA%B5%AC%20%EC%84%9C%ED%95%B4%EC%95%88%EB%A1%9C%202295%204%EC%B8%B5%202%ED%98%B8",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ]
+    },
+    {
+      "id": "manual-cb3b4ea64bd1",
+      "number": 112,
+      "name": "기억할개",
+      "address": "서울 서초구 반포대로12길 14 5층",
+      "phone": "0507-1329-9166",
+      "region": "서초구",
+      "area": "서초구",
+      "category": "playground",
+      "categories": [
+        "playground",
+        "companion"
+      ],
+      "playground": true,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 113,
+        "updatedAt": "2026-10-30"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": true,
+      "largeDogPlaygroundEvidence": "사용자 직접 등록 엑셀 113행: 운동장 카페·대형견 카페 선택",
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "프라이빗 운동장 대여",
+      "dogRule": "프라이빗 운동장 대여",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 있음",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 113행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "프라이빗 운동장 대여",
+      "lat": null,
+      "lng": null,
+      "position": "좌표 미확인",
+      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-30",
+      "sources": [
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EC%84%9C%EC%B4%88%EA%B5%AC%20%EB%B0%98%ED%8F%AC%EB%8C%80%EB%A1%9C12%EA%B8%B8%2014%205%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ]
+    },
+    {
+      "id": "manual-f868d32c97b6",
+      "number": 113,
+      "name": "도리앤도리스",
+      "address": "서울 광진구 아차산로 200 커먼그라운드 마켓홀 3층",
+      "phone": "0507-1442-0986",
+      "region": "광진구",
+      "area": "광진구",
+      "category": "playground",
+      "categories": [
+        "playground",
+        "companion"
+      ],
+      "playground": true,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 114,
+        "updatedAt": "2026-10-30"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 있음",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 114행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "운동장 카페 · 동반 카페",
+      "lat": null,
+      "lng": null,
+      "position": "좌표 미확인",
+      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-30",
+      "sources": [
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EC%84%9C%EC%9A%B8%20%EA%B4%91%EC%A7%84%EA%B5%AC%20%EC%95%84%EC%B0%A8%EC%82%B0%EB%A1%9C%20200%20%EC%BB%A4%EB%A8%BC%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C%20%EB%A7%88%EC%BC%93%ED%99%80%203%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ]
+    },
+    {
+      "id": "manual-54b5f338ef96",
+      "number": 114,
+      "name": "펫츠힐",
+      "address": "경기 고양시 일산동구 견달산로 178",
+      "phone": "0507-1426-0246",
+      "region": "고양시",
+      "area": "고양시",
+      "category": "playground",
+      "categories": [
+        "playground",
+        "companion"
+      ],
+      "playground": true,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 115,
+        "updatedAt": "2026-10-30"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": true,
+      "largeDogPlaygroundEvidence": "사용자 직접 등록 엑셀 115행: 운동장 카페·대형견 카페 선택",
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "수영장, 운동장 예약제",
+      "dogRule": "수영장, 운동장 예약제",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 있음",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 115행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "수영장, 운동장 예약제",
+      "lat": null,
+      "lng": null,
+      "position": "좌표 미확인",
+      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-30",
+      "sources": [
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EA%B3%A0%EC%96%91%EC%8B%9C%20%EC%9D%BC%EC%82%B0%EB%8F%99%EA%B5%AC%20%EA%B2%AC%EB%8B%AC%EC%82%B0%EB%A1%9C%20178",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ]
+    },
+    {
+      "id": "manual-2434d4351ae1",
+      "number": 115,
+      "name": "라드독",
+      "address": "경기 성남시 중원구 마지로 130-5 2층",
+      "phone": "0507-1358-1989",
+      "region": "성남시",
+      "area": "성남시",
+      "category": "playground",
+      "categories": [
+        "playground",
+        "companion"
+      ],
+      "playground": true,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 116,
+        "updatedAt": "2026-10-30"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 있음",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 116행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "운동장 카페 · 동반 카페",
+      "lat": null,
+      "lng": null,
+      "position": "좌표 미확인",
+      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-30",
+      "sources": [
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EC%84%B1%EB%82%A8%EC%8B%9C%20%EC%A4%91%EC%9B%90%EA%B5%AC%20%EB%A7%88%EC%A7%80%EB%A1%9C%20130-5%202%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ]
+    },
+    {
+      "id": "manual-cf341dcb8cdf",
+      "number": 116,
+      "name": "체리마당",
+      "address": "경기 성남시 분당구 석운로120번길 8",
+      "phone": "0507-1385-8735",
+      "region": "성남시",
+      "area": "성남시",
+      "category": "playground",
+      "categories": [
+        "playground",
+        "companion",
+        "restaurant"
+      ],
+      "playground": true,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 117,
+        "updatedAt": "2026-10-30"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": true,
+      "largeDogPlaygroundEvidence": "사용자 직접 등록 엑셀 117행: 운동장 카페·대형견 카페 선택",
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "수영장, 운동장 예약제",
+      "dogRule": "수영장, 운동장 예약제",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 있음",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 117행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "수영장, 운동장 예약제",
+      "lat": null,
+      "lng": null,
+      "position": "좌표 미확인",
+      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-30",
+      "sources": [
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EC%84%B1%EB%82%A8%EC%8B%9C%20%EB%B6%84%EB%8B%B9%EA%B5%AC%20%EC%84%9D%EC%9A%B4%EB%A1%9C120%EB%B2%88%EA%B8%B8%208",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ]
+    },
+    {
+      "id": "manual-512dfb9c16f0",
+      "number": 117,
+      "name": "제이그라운드",
+      "address": "경기 의왕시 옥박골동길 10-23",
+      "phone": "0507-1406-0988",
+      "region": "의왕시",
+      "area": "의왕시",
+      "category": "playground",
+      "categories": [
+        "playground",
+        "companion"
+      ],
+      "playground": true,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 118,
+        "updatedAt": "2026-10-30"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": true,
+      "largeDogPlaygroundEvidence": "사용자 직접 등록 엑셀 118행: 운동장 카페·대형견 카페 선택",
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "운동장 대관, 예약제",
+      "dogRule": "운동장 대관, 예약제",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 있음",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 118행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "운동장 대관, 예약제",
+      "lat": null,
+      "lng": null,
+      "position": "좌표 미확인",
+      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-30",
+      "sources": [
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EC%9D%98%EC%99%95%EC%8B%9C%20%EC%98%A5%EB%B0%95%EA%B3%A8%EB%8F%99%EA%B8%B8%2010-23",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ]
+    },
+    {
+      "id": "manual-d164d78b9625",
+      "number": 118,
+      "name": "도그캠프 공항점",
+      "address": "경기 김포시 고촌읍 신기신동로44번길 75",
+      "phone": "0507-1326-4555",
+      "region": "김포시",
+      "area": "고촌읍",
+      "category": "playground",
+      "categories": [
+        "playground",
+        "companion"
+      ],
+      "playground": true,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 119,
+        "updatedAt": "2026-10-30"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 있음",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 119행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "운동장 카페 · 동반 카페",
+      "lat": null,
+      "lng": null,
+      "position": "좌표 미확인",
+      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-30",
+      "sources": [
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EA%B9%80%ED%8F%AC%EC%8B%9C%20%EA%B3%A0%EC%B4%8C%EC%9D%8D%20%EC%8B%A0%EA%B8%B0%EC%8B%A0%EB%8F%99%EB%A1%9C44%EB%B2%88%EA%B8%B8%2075",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ]
+    },
+    {
+      "id": "manual-803a5ba125cb",
+      "number": 119,
+      "name": "호두네아지트",
+      "address": "경기 시흥시 다지골길 33-1",
+      "phone": "0507-1390-8560",
+      "region": "시흥시",
+      "area": "시흥시",
+      "category": "playground",
+      "categories": [
+        "playground",
+        "companion",
+        "restaurant"
+      ],
+      "playground": true,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 120,
+        "updatedAt": "2026-10-30"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "예약제",
+      "dogRule": "예약제",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 있음",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 120행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "예약제",
+      "lat": null,
+      "lng": null,
+      "position": "좌표 미확인",
+      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-30",
+      "sources": [
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EC%8B%9C%ED%9D%A5%EC%8B%9C%20%EB%8B%A4%EC%A7%80%EA%B3%A8%EA%B8%B8%2033-1",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ]
+    },
+    {
+      "id": "manual-535d85bfed84",
+      "number": 120,
+      "name": "레인바우 애견카페",
+      "address": "경기 시흥시 신현로 127 1층",
+      "phone": "010-7566-3101",
+      "region": "시흥시",
+      "area": "시흥시",
+      "category": "playground",
+      "categories": [
+        "playground",
+        "companion",
+        "restaurant"
+      ],
+      "playground": true,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 121,
+        "updatedAt": "2026-10-30"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "14세미만 어린이 출입금지",
+      "dogRule": "14세미만 어린이 출입금지",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 있음",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 121행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "14세미만 어린이 출입금지",
+      "lat": null,
+      "lng": null,
+      "position": "좌표 미확인",
+      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-30",
+      "sources": [
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EC%8B%9C%ED%9D%A5%EC%8B%9C%20%EC%8B%A0%ED%98%84%EB%A1%9C%20127%201%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ]
+    },
+    {
+      "id": "manual-8ff7a92cd0e8",
+      "number": 121,
+      "name": "카페댕스",
+      "address": "경기 용인시 수지구 성복2로301번길 5",
+      "phone": "0507-1403-3336",
+      "region": "용인시",
+      "area": "용인시",
+      "category": "playground",
+      "categories": [
+        "playground",
+        "companion"
+      ],
+      "playground": true,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 122,
+        "updatedAt": "2026-10-30"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 있음",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 122행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "운동장 카페 · 동반 카페",
+      "lat": null,
+      "lng": null,
+      "position": "좌표 미확인",
+      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-30",
+      "sources": [
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EC%9A%A9%EC%9D%B8%EC%8B%9C%20%EC%88%98%EC%A7%80%EA%B5%AC%20%EC%84%B1%EB%B3%B52%EB%A1%9C301%EB%B2%88%EA%B8%B8%205",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ]
+    },
+    {
+      "id": "manual-fbaef02e5bba",
+      "number": 122,
+      "name": "피터펫츠",
+      "address": "경기 고양시 덕양구 대주로 358-78 피터펫츠 1층",
+      "phone": "0507-1317-6061",
+      "region": "고양시",
+      "area": "고양시",
+      "category": "playground",
+      "categories": [
+        "playground",
+        "companion"
+      ],
+      "playground": true,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 123,
+        "updatedAt": "2026-10-30"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": true,
+      "largeDogPlaygroundEvidence": "사용자 직접 등록 엑셀 123행: 운동장 카페·대형견 카페 선택",
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "셀프 목욕 가능",
+      "dogRule": "셀프 목욕 가능",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 있음",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 123행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "셀프 목욕 가능",
+      "lat": null,
+      "lng": null,
+      "position": "좌표 미확인",
+      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-30",
+      "sources": [
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EA%B3%A0%EC%96%91%EC%8B%9C%20%EB%8D%95%EC%96%91%EA%B5%AC%20%EB%8C%80%EC%A3%BC%EB%A1%9C%20358-78%20%ED%94%BC%ED%84%B0%ED%8E%AB%EC%B8%A0%201%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ]
+    },
+    {
+      "id": "manual-ff2f381778b8",
+      "number": 123,
+      "name": "푼타하우스",
+      "address": "경기 하남시 서하남로451번길 13-66 2층",
+      "phone": "0507-1377-0409",
+      "region": "하남시",
+      "area": "하남시",
+      "category": "playground",
+      "categories": [
+        "playground",
+        "companion"
+      ],
+      "playground": true,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 124,
+        "updatedAt": "2026-10-30"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 있음",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 124행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "운동장 카페 · 동반 카페",
+      "lat": null,
+      "lng": null,
+      "position": "좌표 미확인",
+      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-30",
+      "sources": [
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%ED%95%98%EB%82%A8%EC%8B%9C%20%EC%84%9C%ED%95%98%EB%82%A8%EB%A1%9C451%EB%B2%88%EA%B8%B8%2013-66%202%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ]
+    },
+    {
+      "id": "manual-416250bd2c20",
+      "number": 124,
+      "name": "비숲",
+      "address": "경기 군포시 둔대로 28",
+      "phone": "0507-1406-2191",
+      "region": "군포시",
+      "area": "군포시",
+      "category": "playground",
+      "categories": [
+        "playground",
+        "companion",
+        "restaurant"
+      ],
+      "playground": true,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 125,
+        "updatedAt": "2026-10-30"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 있음",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 125행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "운동장 카페 · 동반 카페 · 동반 음식점",
+      "lat": null,
+      "lng": null,
+      "position": "좌표 미확인",
+      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-30",
+      "sources": [
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EA%B5%B0%ED%8F%AC%EC%8B%9C%20%EB%91%94%EB%8C%80%EB%A1%9C%2028",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ]
+    },
+    {
+      "id": "manual-741a1c6347bc",
+      "number": 125,
+      "name": "멍쓰런",
+      "address": "경기 안산시 상록구 가루개로 165-5",
+      "phone": "010-9717-7645",
+      "region": "안산시",
+      "area": "안산시",
+      "category": "playground",
+      "categories": [
+        "playground",
+        "companion"
+      ],
+      "playground": true,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 126,
+        "updatedAt": "2026-10-30"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "14세이상 어린이 출입가능",
+      "dogRule": "14세이상 어린이 출입가능",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 있음",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 126행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "14세이상 어린이 출입가능",
+      "lat": null,
+      "lng": null,
+      "position": "좌표 미확인",
+      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-30",
+      "sources": [
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EC%95%88%EC%82%B0%EC%8B%9C%20%EC%83%81%EB%A1%9D%EA%B5%AC%20%EA%B0%80%EB%A3%A8%EA%B0%9C%EB%A1%9C%20165-5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ]
+    },
+    {
+      "id": "manual-58a9263b7867",
+      "number": 126,
+      "name": "오늘뭐하개",
+      "address": "경기 고양시 덕양구 삼송로136번길 24-3 1층",
+      "phone": "0507-1319-2945",
+      "region": "고양시",
+      "area": "고양시",
+      "category": "playground",
+      "categories": [
+        "playground",
+        "companion"
+      ],
+      "playground": true,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 127,
+        "updatedAt": "2026-10-30"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": true,
+      "daycare": true,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "",
+      "dogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 있음",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 127행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "운동장 카페 · 동반 카페 · 호텔링 · 유치원",
+      "lat": null,
+      "lng": null,
+      "position": "좌표 미확인",
+      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-30",
+      "sources": [
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EA%B3%A0%EC%96%91%EC%8B%9C%20%EB%8D%95%EC%96%91%EA%B5%AC%20%EC%82%BC%EC%86%A1%EB%A1%9C136%EB%B2%88%EA%B8%B8%2024-3%201%EC%B8%B5",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ]
+    },
+    {
+      "id": "manual-a6f43af3dfd5",
+      "number": 127,
+      "name": "별똥구리",
+      "address": "경기 용인시 수지구 동천로 535",
+      "phone": "0507-1436-2410",
+      "region": "용인시",
+      "area": "용인시",
+      "category": "playground",
+      "categories": [
+        "playground",
+        "companion"
+      ],
+      "playground": true,
+      "status": "listed",
+      "level": "owner",
+      "registration": {
+        "file": "업체정보_간편입력.xlsx",
+        "row": 128,
+        "updatedAt": "2026-10-30"
+      },
+      "parking": true,
+      "indoor": true,
+      "terrace": true,
+      "hoteling": false,
+      "daycare": false,
+      "grooming": false,
+      "largeDogPlayground": false,
+      "referenceDogRule": "체중·견종·출입 조건은 방문 전 문의",
+      "registrationNote": "18개월 이하 아기만 출입 가능",
+      "dogRule": "18개월 이하 아기만 출입 가능",
+      "parkingText": "사용자 등록: 주차 가능",
+      "petArea": "실내 동반 · 테라스 동반",
+      "yard": "사용자 등록: 운동장 있음",
+      "evidence": "사용자가 업체정보_간편입력.xlsx 128행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다.",
+      "feature": "18개월 이하 아기만 출입 가능",
+      "lat": null,
+      "lng": null,
+      "position": "좌표 미확인",
+      "positionNote": "직접 등록한 주소입니다. 좌표 확인 전에는 지도 핀을 표시하지 않습니다. 네이버 지도에서 주소를 확인하세요.",
+      "times": {
+        "hagye": null,
+        "nowon": null,
+        "gongneung": null
+      },
+      "surface": "바닥 재질 미확인",
+      "outdoor": null,
+      "weightLimit": null,
+      "exclusive": false,
+      "kids": "어린이 입장 조건 문의",
+      "hours": "영업시간 미등록 · 방문 전 문의",
+      "hoursNote": "엑셀에 영업시간이 입력되지 않았습니다.",
+      "schedule": null,
+      "hoursConflict": false,
+      "fee": "이용요금 미등록 · 문의",
+      "feeNote": "최신 요금과 추가요금은 업체에 문의하세요.",
+      "checkedAt": "2026-10-30",
+      "sources": [
+        {
+          "name": "직접 등록 주소 · 네이버 지도 검색",
+          "url": "https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EC%9A%A9%EC%9D%B8%EC%8B%9C%20%EC%88%98%EC%A7%80%EA%B5%AC%20%EB%8F%99%EC%B2%9C%EB%A1%9C%20535",
+          "type": "사용자 직접 등록 주소 검색"
+        }
+      ],
+      "checks": [
+        "오늘 영업 여부와 입장 조건",
+        "실제 출입구·주차 위치",
+        "최신 요금·서비스 예약 가능 여부"
+      ]
     }
   ]
 }

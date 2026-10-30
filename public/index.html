@@ -22,6 +22,7 @@
 <form id="registrationForm">
 <input id="registrationHoney" type="text" name="_honey" hidden tabindex="-1" autocomplete="off">
 <label class="registration-field" for="registrationName">업체명<input id="registrationName" name="name" required maxlength="100" placeholder="업체명을 입력해 주세요"></label>
+<label class="registration-field" for="registrationContact">연락처 (선택)<input id="registrationContact" name="contact" type="tel" autocomplete="tel" maxlength="50" placeholder="예: 02-123-4567 또는 010-1234-5678"></label>
 <label class="registration-field" for="registrationCategory">업종<select id="registrationCategory" required><option value="companion">동반 카페</option><option value="playground">운동장 카페</option><option value="large-dog">대형견 카페</option><option value="restaurant">동반 음식점</option><option value="bar">동반 술집</option><option value="pension">동반 펜션</option></select></label>
 <label class="registration-field" for="registrationAddress">주소 검색</label><div class="registration-address-row"><input id="registrationAddress" type="search" maxlength="160" placeholder="도로명 주소 또는 업체명"><button id="registrationAddressSearch" type="button" class="outline-button">검색</button></div>
 <p class="registration-note">검색어는 주소 검색 서비스로 전송됩니다. 건물 위치가 확인되는 결과를 선택해 주세요.</p>
