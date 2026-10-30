@@ -52,6 +52,8 @@ if(!root.document||!root.CAFE_DATA)return;
 const data=root.CAFE_DATA,doc=root.document,$=id=>doc.getElementById(id),state=defaultState();
 const byId=id=>data.places.find(p=>p.id===id);
 try{const saved=JSON.parse(root.localStorage.getItem('chocho-favorites-v1')||'[]');if(Array.isArray(saved))state.favorites=saved.filter(id=>byId(id));}catch(_){}
+const LIST_PAGE_SIZE=10;
+let listLimit=LIST_PAGE_SIZE,listCriteria='';
 let visible=[],toastTimer,opener=new Map();
 function toast(message){$('toast').textContent=message;$('toast').classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').classList.remove('visible'),2500);}
 function showDialog(id){const d=$(id);opener.set(d,doc.activeElement);if(!d.open)d.showModal();}
@@ -77,9 +79,15 @@ function addressRegion(p){
 function resultNumber(p){return visible.findIndex(place=>place.id===p.id)+1;}
 function card(p){const selected=p.id===state.selected,fav=state.favorites.includes(p.id),comparison=state.compare.includes(p.id);return `<article class="place-card ${selected?'selected':''}" id="card-${p.id}" aria-labelledby="name-${p.id}"><div class="card-top"><span class="card-number">${resultNumber(p)}</span><div class="card-title"><button class="card-name" id="name-${p.id}" data-select="${p.id}" aria-label="${esc(p.name)} 지도에서 선택" aria-pressed="${selected}">${esc(p.name)}</button><p class="card-area">${esc(addressRegion(p))}</p></div><button class="favorite-button" data-fav="${p.id}" aria-label="${esc(p.name)} 저장" aria-pressed="${fav}">${fav?'♥':'♡'}</button></div>${p.registration&&!p.registrationNote?.trim()?'':`<p class="card-subtitle">${memoText(p,p.feature)}</p>`}<div class="card-badges">${p.registration?'':`<span class="badge">${evidenceBadge(p)}</span>`}<span class="badge outline category-badge">${categoryLabel(p)}</span><span class="badge outline">${playgroundLabel(p)}</span>${p.position.includes('추정')?'<span class="badge amber">위치 추정</span>':''}</div><div class="card-facts"><div class="fact fact-phone"><span class="fact-icon" aria-hidden="true">☎</span><div><small>연락처</small><strong>${phoneLink(p)}</strong></div></div><div class="fact fact-parking"><span class="fact-icon">P</span><div><strong>${parkingLabel(p)}</strong><small>빈자리·요금은 재확인</small></div></div>${weightFact(p)}</div><div class="card-actions"><button class="detail-button" data-detail="${p.id}">정보·출처 ↗</button><button type="button" class="detail-button review-button" disabled title="리뷰 작성 기능 준비 중">리뷰 작성</button><div class="card-navigation"><a class="nav-link" href="${mapURL(p)}" target="_blank" rel="noopener noreferrer"><img src="assets/navermap.svg" alt="" width="18" height="24">네이버 지도 ↗</a><button class="compare-button" data-compare="${p.id}" aria-pressed="${comparison}">${comparison?'✓ 비교 선택':'+ 비교'}</button></div></div></article>`;}
 function render(){
+ const {selected,compare,favorites,...criteria}=state;
+ const key=JSON.stringify([criteria,data.origins[state.origin],state.favorite?favorites:[]]);
+ if(key!==listCriteria){listLimit=LIST_PAGE_SIZE;listCriteria=key;}
  visible=filterPlaces(data,state);if(!visible.some(p=>p.id===state.selected))state.selected=visible[0]?.id||null;
  const emptyHint=['current','custom'].includes(state.origin)?`${esc(data.origins[state.origin].name)} 주변 10km 이내에 조건에 맞는 장소가 없어요.<br>주소 좌표가 확인된 장소만 표시합니다. 추정 위치는 제외합니다. 다른 출발지나 조건으로 검색해 보세요.`:['packing','harness'].includes(state.category)?'이 동반 방식이 확인된 카페가 없거나 다른 필터에서 제외됐어요.<br>방식 미확인 카페는 전체 카페에서 확인해 주세요.':'선택한 업종에서 지역·검색어·조건에 맞는 장소가 없어요.<br>다른 검색어나 조건으로 검색해 보세요.';
- $('results').innerHTML=visible.length?visible.map(card).join(''):`<div class="empty"><strong>이 조건의 장소가 없어요.</strong><p>${emptyHint}</p><button class="outline-button" data-reset>필터 초기화 ↺</button></div>`;
+ $('results').innerHTML=visible.length?visible.slice(0,listLimit).map(card).join(''):`<div class="empty"><strong>이 조건의 장소가 없어요.</strong><p>${emptyHint}</p><button class="outline-button" data-reset>필터 초기화 ↺</button></div>`;
+ const remaining=Math.max(0,visible.length-listLimit);
+ $('loadMore').hidden=remaining===0;
+ $('loadMore').textContent=`업체 ${Math.min(LIST_PAGE_SIZE,remaining)}곳 더 보기 · ${remaining}곳 남음`;
  $('resultCount').textContent=visible.length;
  const eligible=filterPlaces(data,{...state,category:'all'});
  doc.querySelectorAll('[data-category]').forEach(el=>el.setAttribute('aria-pressed',String(el.dataset.category===state.category)));
@@ -94,7 +102,7 @@ function render(){
  renderSelection();tileMap.render();
 }
 function renderSelection(){const p=byId(state.selected);$('mapSelection').innerHTML=p?`<div class="selection-top"><div><strong>${esc(p.name)}</strong><p>${esc(p.address)}</p></div><span class="badge ${p.position.includes('추정')?'amber':''}">${esc(p.position)}</span></div><div class="selection-facts"><span>${p.playground===true?esc(p.surface):categoryLabel(p)}</span><span>·</span><span>${parkingLabel(p)}</span></div><div class="selection-actions"><button data-detail="${p.id}">운영 정보·확인사항 보기 ↗</button>${phoneLink(p,'전화 확인 ↗')}</div>`:'<p>필터를 바꾸면 지도에 장소가 표시됩니다.</p>';}
-function selectPlace(id,focusMap=false){if(!visible.some(p=>p.id===id))return;state.selected=id;render();if(focusMap){tileMap.focus(byId(id));if(root.matchMedia?.('(max-width:760px)').matches)switchView(true);}}
+function selectPlace(id,focusMap=false){if(!visible.some(p=>p.id===id))return;state.selected=id;listLimit=Math.max(listLimit,Math.ceil((visible.findIndex(p=>p.id===id)+1)/LIST_PAGE_SIZE)*LIST_PAGE_SIZE);render();if(focusMap){tileMap.focus(byId(id));if(root.matchMedia?.('(max-width:760px)').matches)switchView(true);}}
 function detail(id){const p=byId(id);if(!p)return;
  $('detailContent').innerHTML=`<div class="detail-head"><p class="eyebrow">PLACE${resultNumber(p)?' '+resultNumber(p):''} · ${esc(p.area)}</p><h2 id="detailTitle">${esc(p.name)}</h2><p>${esc(p.address)}</p><div class="card-badges"><span class="badge">${evidenceBadge(p)}</span><span class="badge outline">${categoryLabel(p)}</span><span class="badge outline">${playgroundLabel(p)}</span></div></div><div class="detail-grid"><div class="detail-fact"><small>장소 유형 / 동반 구역</small><p>${categoryLabel(p)} · ${playgroundLabel(p)}</p><p class="sub">${esc(p.yard)} / ${esc(p.petArea)}</p></div><div class="detail-fact"><small>영업시간 · 등록 정보</small><p>${esc(p.hours)}</p><p class="sub">${esc(p.hoursNote)}</p></div><div class="detail-fact"><small>주차</small><p>${esc(p.parkingText)}</p><p class="sub">공간 유무 확인 · 주차 대수/빈자리 미확인</p></div><div class="detail-fact"><small>반려견 / 어린이 입장</small><p>${memoText(p,p.dogRule)}</p><p class="sub">${esc(p.kids)}</p></div><div class="detail-fact"><small>이용요금 · 재확인 필요</small><p>${esc(p.fee)}</p><p class="sub">${esc(p.feeNote)}</p></div></div><section class="detail-section"><h3>${p.registration?'직접 등록 근거':'온라인 운영 근거'}</h3><p>${esc(p.evidence)}</p></section><section class="detail-section"><h3>지도 위치 · ${esc(p.position)}</h3><p>${esc(p.positionNote)}</p></section><section class="detail-section warn-section"><h3>출발 전 꼭 재확인</h3><ul>${p.checks.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></section><section class="detail-section"><h3>확인한 출처와 업체 안내</h3><div class="source-list">${p.sources.map(s=>`<a class="source-item" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer"><span>${esc(s.name)}<small>${esc(s.type)}</small></span><span>↗</span></a>`).join('')}</div></section><div class="detail-actions"><a href="${mapURL(p)}" target="_blank" rel="noopener noreferrer">네이버 지도에서 길찾기 ↗</a>${phoneLink(p,p.phone?'전화 '+p.phone:undefined)}<button class="compare-button" data-compare="${p.id}" aria-pressed="${state.compare.includes(p.id)}">${state.compare.includes(p.id)?'✓ 비교 선택':'+ 비교에 추가'}</button></div><p class="check-date">${p.registration?'등록 정보 반영 '+p.registration.updatedAt:'정보 확인 '+(p.checkedAt||data.checkedAt)} · 전화/현장 미확인 · 이후 자동 갱신 없음</p>`;
  showDialog('detailDialog');
@@ -103,7 +111,7 @@ function compare(){if(state.compare.length<2){toast('비교할 장소를 2곳 �
  const rows=[['장소 유형',p=>`${categoryLabel(p)}<small>${playgroundLabel(p)}</small>`],['동반 구역',p=>esc(p.petArea)],['주소',p=>esc(p.address)],['운동장',p=>esc(p.yard)],['영업시간',p=>`${esc(p.hours)}<small>${esc(p.hoursNote)}</small>`],['주차',p=>`${esc(p.parkingText)}<small>빈자리·요금은 현장 확인</small>`],['반려견 입장',p=>memoText(p,p.dogRule)],['어린이 입장',p=>esc(p.kids)],['이용요금',p=>`${esc(p.fee)}<small>${esc(p.feeNote)}</small>`],['위치 정확도',p=>`${esc(p.position)}<small>${esc(p.positionNote)}</small>`],['운영 근거',p=>esc(p.evidence)],['재확인 항목',p=>`<ul>${p.checks.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`],['지도·문의',p=>`<a href="${mapURL(p)}" target="_blank" rel="noopener noreferrer">네이버 지도 ↗</a><br>${phoneLink(p)}`]];
  $('compareContent').innerHTML=`<div class="table-scroll" tabindex="0" aria-label="장소 비교표. 모바일에서 좌우로 스크롤하세요."><table><thead><tr><th scope="col">비교 항목</th>${ps.map(p=>`<th scope="col">${esc(p.name)}</th>`).join('')}</tr></thead><tbody>${rows.map(([name,fn])=>`<tr><th scope="row">${name}</th>${ps.map(p=>`<td>${fn(p)}</td>`).join('')}</tr>`).join('')}</tbody></table></div><p class="compare-note">모바일에서는 표를 좌우로 밀어 비교할 수 있어요. 요금·운영시간·입장 조건은 방문 전 재확인하세요.</p>`;showDialog('compareDialog');
 }
-function reset(){const favorites=state.favorites,comparison=state.compare,origin=state.origin;locationVersion++;locationPending=false;clearOriginSearch();$('origin').value=origin==='current'?'':data.origins[origin].name;$('locationStatus').textContent=`조건을 초기화했어요. 출발지는 ${data.origins[origin].name}입니다.`;Object.assign(state,defaultState(),{favorites,compare:comparison,origin});$('search').value='';render();if(origin==='current')tileMap.fit();else if(origin==='custom')tileMap.fit();else tileMap.showNationwide();}
+function reset(){listCriteria='';const favorites=state.favorites,comparison=state.compare,origin=state.origin;locationVersion++;locationPending=false;clearOriginSearch();$('origin').value=origin==='current'?'':data.origins[origin].name;$('locationStatus').textContent=`조건을 초기화했어요. 출발지는 ${data.origins[origin].name}입니다.`;Object.assign(state,defaultState(),{favorites,compare:comparison,origin});$('search').value='';render();if(origin==='current')tileMap.fit();else if(origin==='custom')tileMap.fit();else tileMap.showNationwide();}
 class NaverMap{
  constructor(){this.center={lat:35.75,lng:128.25};this.zoom=6;this.isNationwide=true;this.bridge=null;this.setup();}
  size(){const r=$('map').getBoundingClientRect();return {w:r.width||600,h:r.height||500};}
@@ -148,6 +156,7 @@ let originCandidates=[],originSearchController;
 const lookupOrigin=root.ORIGIN_SEARCH.createLookup(root.fetch?.bind(root));
 function clearOriginSearch(){originSearchController?.abort();originCandidates=[];$('originResults').innerHTML='';$('originResults').hidden=true;}
 function applyOrigin(key,point){
+ listCriteria='';
  locationVersion++;locationPending=false;clearOriginSearch();
  if(point)data.origins[key]=point;
  state.origin=key;state.time=0;state.strict=false;state.sort='near';state.query='';$('search').value='';$('origin').value=data.origins[key].name;
@@ -186,7 +195,7 @@ function requestLocation(clearQuery=true){
   const {latitude:lat,longitude:lng}=position.coords;
   if(!Number.isFinite(lat)||!Number.isFinite(lng)||Math.abs(lat)>90||Math.abs(lng)>180){fail();return;}
   data.origins.current={name:'현재 위치',lat:Math.max(-85.051128,Math.min(85.051128,lat)),lng};
-  state.origin='current';state.time=0;state.strict=false;state.sort='near';if(clearQuery){state.query='';$('search').value='';}$('origin').value='';
+  listCriteria='';state.origin='current';state.time=0;state.strict=false;state.sort='near';if(clearQuery){state.query='';$('search').value='';}$('origin').value='';
   $('locationStatus').textContent='';
   render();tileMap.fit();
  },error=>{if(version!==locationVersion)return;state.origin=previous;fail(error);},{enableHighAccuracy:true,timeout:12000,maximumAge:0});
@@ -194,6 +203,7 @@ function requestLocation(clearQuery=true){
 $('origin').addEventListener('input',()=>{locationVersion++;locationPending=false;clearOriginSearch();$('locationStatus').textContent='입력한 출발지를 적용하려면 검색해 주세요.';});
 $('origin').addEventListener('change',()=>{const query=$('origin').value.trim();if(['현재 위치','현재위치','current',...Object.keys(data.origins),...Object.values(data.origins).filter(p=>p.name!=='현재 위치').map(p=>p.name)].includes(query))submitOrigin();});
 $('origin').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();submitOrigin();}else if(e.key==='Escape')clearOriginSearch();});
+$('loadMore').addEventListener('click',()=>{listLimit+=LIST_PAGE_SIZE;render();});
 $('originSearch').addEventListener('click',submitOrigin);
 $('useCurrent').addEventListener('click',()=>requestLocation());
 $('mapUseCurrent').addEventListener('click',()=>requestLocation());

@@ -198,7 +198,7 @@ test('supplemented bar coordinates match official street addresses and retain pr
 });
 test('venue search button and Enter search while list, map and details use result-order numbers',()=>{
  currentApp.reset();const originalNumbers=fullData.places.map(p=>p.number);
- const assertNumbers=()=>{const visible=currentApp.getFiltered(),numbers=[...elements.results.innerHTML.matchAll(/class="card-number">(\d+)<\/span>/g)].map(m=>Number(m[1]));assert.deepEqual(numbers,visible.map((_,i)=>i+1));for(const p of visible.filter(core.hasCoordinates)){const match=elements.markerLayer.innerHTML.match(new RegExp('data-marker="'+p.id+'"[\\s\\S]*?<b>(\\d+)</b>'));if(match)assert.equal(Number(match[1]),visible.findIndex(x=>x.id===p.id)+1);}};
+ const assertNumbers=()=>{const visible=currentApp.getFiltered(),numbers=[...elements.results.innerHTML.matchAll(/class="card-number">(\d+)<\/span>/g)].map(m=>Number(m[1]));assert.deepEqual(numbers,visible.slice(0,10).map((_,i)=>i+1));for(const p of visible.filter(core.hasCoordinates)){const match=elements.markerLayer.innerHTML.match(new RegExp('data-marker="'+p.id+'"[\\s\\S]*?<b>(\\d+)</b>'));if(match)assert.equal(Number(match[1]),visible.findIndex(x=>x.id===p.id)+1);}};
  assertNumbers();const first=currentApp.getFiltered()[0];currentApp.detail(first.id);assert(elements.detailContent.innerHTML.includes('PLACE 1 ·'));
  elements.search.value='미열';elements.venueSearch.fire('click');assert(currentApp.getFiltered().length>0);assert(currentApp.getFiltered().every(p=>p.name.includes('미열')));assertNumbers();
  elements.search.value='송리단';elements.search.fire('keydown',{key:'Enter'});assert(currentApp.getFiltered().some(p=>p.name==='송리단양조장'));assertNumbers();
@@ -234,6 +234,24 @@ test('published workbook venues render, combine services, overlap categories and
  for(const key of ['hoteling','daycare','grooming','favorite'])assert.equal(registered.state[key],false);
  const unknown=published.places.find(p=>p.lat===null)||published.places[0],coords={lat:unknown.lat,lng:unknown.lng};try{unknown.lat=null;unknown.lng=null;registered.state.query=unknown.name;registered.render();assert(registered.getFiltered().some(p=>p.id===unknown.id));assert(!elements.markerLayer.innerHTML.includes('data-marker="'+unknown.id+'"'));}finally{Object.assign(unknown,coords);}
 });
+test('venue list reveals ten at a time, resets on criteria changes and keeps map selection available',()=>{
+ const registered=window.PAW_APP;registered.reset();
+ const ids=()=>[...elements.results.innerHTML.matchAll(/id="card-([^"]+)"/g)].map(m=>m[1]);
+ const all=Array.from(registered.getFiltered(),p=>p.id);assert(all.length>20);
+ assert.deepEqual(ids(),all.slice(0,10));assert(!elements.loadMore.hidden);
+ assert.equal(elements.resultCount.textContent,all.length);
+ elements.loadMore.fire('click');assert.deepEqual(ids(),all.slice(0,20));
+ registered.toggleCompare(all[0]);assert.equal(ids().length,20);
+ registered.reset();assert.equal(ids().length,10);
+ registered.selectPlace(all[20]);assert(ids().includes(all[20]));assert.equal(ids().length,30);
+ registered.state.query='없는업체명';registered.render();assert.equal(ids().length,0);assert(elements.loadMore.hidden);
+ registered.state.query='';registered.render();assert.equal(ids().length,10);
+ while(!elements.loadMore.hidden)elements.loadMore.fire('click');
+ assert.deepEqual(ids(),all);assert(elements.loadMore.hidden);
+ registered.state.category='pension';registered.render();assert.equal(ids().length,Math.min(10,registered.getFiltered().length));
+ registered.reset();
+});
+
 test('pension category filters registered venues and preserves the total count',()=>{
  const registered=window.PAW_APP,published=require('../data/venues.json');registered.reset();click('[data-category]',{category:'pension'});
  assert.deepEqual(Array.from(registered.getFiltered(),place=>place.id).sort(),published.places.filter(place=>place.categories.includes('pension')).map(place=>place.id).sort());
