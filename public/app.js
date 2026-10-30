@@ -103,7 +103,7 @@ function compare(){if(state.compare.length<2){toast('비교할 장소를 2곳 �
  const rows=[['장소 유형',p=>`${categoryLabel(p)}<small>${playgroundLabel(p)}</small>`],['동반 구역',p=>esc(p.petArea)],['주소',p=>esc(p.address)],['운동장',p=>esc(p.yard)],['영업시간',p=>`${esc(p.hours)}<small>${esc(p.hoursNote)}</small>`],['주차',p=>`${esc(p.parkingText)}<small>빈자리·요금은 현장 확인</small>`],['반려견 입장',p=>memoText(p,p.dogRule)],['어린이 입장',p=>esc(p.kids)],['이용요금',p=>`${esc(p.fee)}<small>${esc(p.feeNote)}</small>`],['위치 정확도',p=>`${esc(p.position)}<small>${esc(p.positionNote)}</small>`],['운영 근거',p=>esc(p.evidence)],['재확인 항목',p=>`<ul>${p.checks.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`],['지도·문의',p=>`<a href="${mapURL(p)}" target="_blank" rel="noopener noreferrer">네이버 지도 ↗</a><br>${phoneLink(p)}`]];
  $('compareContent').innerHTML=`<div class="table-scroll" tabindex="0" aria-label="장소 비교표. 모바일에서 좌우로 스크롤하세요."><table><thead><tr><th scope="col">비교 항목</th>${ps.map(p=>`<th scope="col">${esc(p.name)}</th>`).join('')}</tr></thead><tbody>${rows.map(([name,fn])=>`<tr><th scope="row">${name}</th>${ps.map(p=>`<td>${fn(p)}</td>`).join('')}</tr>`).join('')}</tbody></table></div><p class="compare-note">모바일에서는 표를 좌우로 밀어 비교할 수 있어요. 요금·운영시간·입장 조건은 방문 전 재확인하세요.</p>`;showDialog('compareDialog');
 }
-function reset(){const favorites=state.favorites,comparison=state.compare,origin=state.origin;locationVersion++;locationPending=false;clearOriginSearch();$('origin').value=data.origins[origin].name;$('locationStatus').textContent=`조건을 초기화했어요. 출발지는 ${data.origins[origin].name}입니다.`;Object.assign(state,defaultState(),{favorites,compare:comparison,origin});$('search').value='';render();if(origin==='current')tileMap.fit();else if(origin==='custom')tileMap.fit();else tileMap.showNationwide();}
+function reset(){const favorites=state.favorites,comparison=state.compare,origin=state.origin;locationVersion++;locationPending=false;clearOriginSearch();$('origin').value=origin==='current'?'':data.origins[origin].name;$('locationStatus').textContent=`조건을 초기화했어요. 출발지는 ${data.origins[origin].name}입니다.`;Object.assign(state,defaultState(),{favorites,compare:comparison,origin});$('search').value='';render();if(origin==='current')tileMap.fit();else if(origin==='custom')tileMap.fit();else tileMap.showNationwide();}
 class NaverMap{
  constructor(){this.center={lat:35.75,lng:128.25};this.zoom=6;this.isNationwide=true;this.bridge=null;this.setup();}
  size(){const r=$('map').getBoundingClientRect();return {w:r.width||600,h:r.height||500};}
@@ -151,7 +151,7 @@ function applyOrigin(key,point){
  locationVersion++;locationPending=false;clearOriginSearch();
  if(point)data.origins[key]=point;
  state.origin=key;state.time=0;state.strict=false;state.sort='near';state.query='';$('search').value='';$('origin').value=data.origins[key].name;
- $('locationStatus').textContent=key==='custom'?`${point.name}을 출발지로 적용했어요.${point.approximate?' 도로·지역의 참고 위치입니다.':''} 주변 업체를 가까운 순으로 표시합니다.`:'선택한 출발지를 적용했어요.';
+ $('locationStatus').textContent='';
  render();tileMap.fit();
 }
 function chooseOrigin(index){const point=originCandidates[index];if(point)applyOrigin('custom',point);}
@@ -177,7 +177,7 @@ function requestLocation(clearQuery=true){
  if(locationPending)return;
  clearOriginSearch();
  const previous=state.origin,version=++locationVersion;
- const fail=error=>{locationPending=false;$('origin').value=data.origins[state.origin].name;const reason=error?.code===1?'위치 접근이 차단되어 있어요. 브라우저 사이트 설정에서 위치를 허용해 주세요.':error?.code===3?'위치 확인 시간이 초과됐어요. 출발지에서 현재 위치를 다시 선택해 주세요.':'현재 위치를 확인할 수 없어요. 기존 출발지를 사용합니다.';$('locationStatus').textContent=reason;};
+ const fail=error=>{locationPending=false;$('origin').value=state.origin==='current'?'':data.origins[state.origin].name;const reason=error?.code===1?'위치 접근이 차단되어 있어요. 브라우저 사이트 설정에서 위치를 허용해 주세요.':error?.code===3?'위치 확인 시간이 초과됐어요. 출발지에서 현재 위치를 다시 선택해 주세요.':'현재 위치를 확인할 수 없어요. 기존 출발지를 사용합니다.';$('locationStatus').textContent=reason;};
  if(root.isSecureContext===false){fail();$('locationStatus').textContent='현재 위치는 HTTPS 연결 또는 localhost에서 사용할 수 있어요.';return;}
  if(!root.navigator?.geolocation){fail();return;}
  locationPending=true;$('origin').value='현재 위치';$('locationStatus').textContent='현재 위치를 확인하고 있어요. 위치 접근을 허용해 주세요.';
@@ -186,7 +186,7 @@ function requestLocation(clearQuery=true){
   const {latitude:lat,longitude:lng}=position.coords;
   if(!Number.isFinite(lat)||!Number.isFinite(lng)||Math.abs(lat)>90||Math.abs(lng)>180){fail();return;}
   data.origins.current={name:'현재 위치',lat:Math.max(-85.051128,Math.min(85.051128,lat)),lng};
-  state.origin='current';state.time=0;state.strict=false;state.sort='near';if(clearQuery){state.query='';$('search').value='';}$('origin').value='현재 위치';
+  state.origin='current';state.time=0;state.strict=false;state.sort='near';if(clearQuery){state.query='';$('search').value='';}$('origin').value='';
   $('locationStatus').textContent='';
   render();tileMap.fit();
  },error=>{if(version!==locationVersion)return;state.origin=previous;fail(error);},{enableHighAccuracy:true,timeout:12000,maximumAge:0});

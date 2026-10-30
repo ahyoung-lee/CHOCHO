@@ -17,7 +17,7 @@
 
 #timeField[hidden],#locationStatus:empty{display:none}
 
-.filters .search-field{flex:1 1 180px;min-width:0}.search-field input{min-width:0}.register-button{flex:0 0 auto;margin-left:10px;min-height:45px;padding:0 16px;background:var(--brand);color:#fff;border:1px solid var(--brand);border-radius:8px;font-size:14px;white-space:nowrap}.registration-dialog{width:min(520px,calc(100% - 32px));max-height:90vh;overflow:auto;padding:30px;border:1px solid var(--line);border-radius:14px}.registration-dialog h2{padding-right:30px;font-size:22px}.registration-intro,.registration-note{font-size:14px;color:var(--muted);margin:10px 0 16px}.registration-field{display:flex;flex-direction:column;gap:6px;margin:14px 0 6px;font-size:14px}.registration-field input,.registration-field select,.registration-address-row input{width:100%;min-width:0;min-height:44px;padding:9px 11px;border:1px solid var(--line);border-radius:7px;background:#fff}.registration-address-row{display:flex;gap:8px}.registration-address-row input{flex:1}.registration-address-row button{flex-shrink:0}.registration-consent{display:flex;gap:8px;align-items:flex-start;font-size:14px;margin:18px 0}.registration-consent input{accent-color:var(--brand);margin-top:4px}.registration-selected{font-size:14px;color:var(--brand);margin-top:12px}.registration-dialog #registrationStatus{font-size:14px;margin:12px 0}.registration-dialog .primary-button{width:100%;min-height:44px}.registration-dialog button:disabled{opacity:.5}
+.filters .search-field{flex:1 1 180px;min-width:0}.search-field input{min-width:0}.register-button{flex:0 0 auto;margin-left:10px;min-height:45px;padding:0 16px;background:#000;color:#fff;border:1px solid #000;border-radius:8px;font-size:14px;white-space:nowrap}.registration-dialog{width:min(520px,calc(100% - 32px));max-height:90vh;overflow:auto;padding:30px;border:1px solid var(--line);border-radius:14px}.registration-dialog h2{padding-right:30px;font-size:22px}.registration-intro,.registration-note{font-size:14px;color:var(--muted);margin:10px 0 16px}.registration-field{display:flex;flex-direction:column;gap:6px;margin:14px 0 6px;font-size:14px}.registration-field input,.registration-field select,.registration-address-row input{width:100%;min-width:0;min-height:44px;padding:9px 11px;border:1px solid var(--line);border-radius:7px;background:#fff}.registration-address-row{display:flex;gap:8px}.registration-address-row input{flex:1}.registration-address-row button{flex-shrink:0}.registration-consent{display:flex;gap:8px;align-items:flex-start;font-size:14px;margin:18px 0}.registration-consent input{accent-color:var(--brand);margin-top:4px}.registration-selected{font-size:14px;color:var(--brand);margin-top:12px}.registration-dialog #registrationStatus{font-size:14px;margin:12px 0}.registration-dialog .primary-button{width:100%;min-height:44px}.registration-dialog button:disabled{opacity:.5}
 @media(max-width:760px){.filters .search-field{width:auto;flex:1 1 0;min-width:0}.register-button{margin-left:8px;padding:0 13px}.registration-dialog{padding:24px 20px}}
 
 .venue-search-button{flex:0 0 auto;margin-left:8px;min-height:45px;padding:0 14px;border:1px solid var(--line);border-radius:8px;background:#fff;font-size:14px;white-space:nowrap}
@@ -43,3 +43,21 @@
 .category-tabs button{font-size:16px;font-weight:750}.category-tabs span{font-size:15px;font-weight:700}
 
 .card-actions{justify-content:flex-start;gap:4px;flex-wrap:wrap}.card-navigation{display:flex;align-items:center;gap:6px;margin-left:auto}.card-actions .nav-link{color:#03a94d;white-space:nowrap}.card-actions .nav-link img{display:block;object-fit:contain;flex-shrink:0}
+
+/* Keep typed addresses and search results within their layout columns. */
+.origin-entry,.origin-results,.origin-results button,.list-panel,.note-copy{min-width:0}
+.origin-entry input{flex:1 1 0;width:0}
+.origin-results button,.results-heading p,.empty p,#locationStatus,.registration-selected,.selection-top strong,.map-hint{overflow-wrap:anywhere}
+.results-heading{height:auto;min-height:49px}.results-heading>div{min-width:0}
+.sort-label{flex-shrink:0}
+.bottom-note .note-copy{flex:1}
+@media(max-width:760px){
+ .origin-entry input,.search-field input,.registration-field input,.registration-field select,.registration-field textarea,.registration-address-row input{font-size:16px}
+ .bottom-note{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;padding:24px 20px}
+ .bottom-note .note-art{display:none}
+ .bottom-note h2{font-size:20px;line-height:1.55;letter-spacing:-.6px;word-break:keep-all}
+ .bottom-note h2 span{display:block}
+ .bottom-note p{margin-top:12px;line-height:1.8;word-break:keep-all;overflow-wrap:anywhere}
+ .bottom-note p br{display:none}
+ .bottom-note .outline-button{width:100%;min-height:44px;margin:0;text-align:center;background:#fff}
+}
