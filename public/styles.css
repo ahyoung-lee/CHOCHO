@@ -61,3 +61,6 @@
  .bottom-note p br{display:none}
  .bottom-note .outline-button{width:100%;min-height:44px;margin:0;text-align:center;background:#fff}
 }
+
+.load-more{display:block;width:100%;min-height:48px;margin:16px 0 0;padding:12px 16px;border:1px solid var(--line);border-radius:8px;background:#fff;font-size:14px;font-weight:650;color:var(--ink)}
+.load-more:hover{background:var(--cream);border-color:#cbb596}
