@@ -9,4 +9,13 @@ for(const origin of ['current','custom']){
  assert.deepEqual(core.filterPlaces(data,{...state,query:'제일'}).map(p=>p.id),['first']);
  assert.equal(core.filterPlaces({...data,origins:{[origin]:{lat:35,lng:129}}},state).length,0);
 }
-console.log('PASS GPS and searched origins share a 10km confirmed-coordinate radius and nearest-first ordering');
+for(const origin of ['current','custom']){
+ const remote={...data.places[0],id:'remote',name:'멀리 있는 등록업체',lat:35.1,lng:129.1};
+ const unlocated={...remote,id:'unlocated',name:'좌표 없는 등록업체',lat:null,lng:null};
+ const namedData={...data,places:[...data.places,remote,unlocated]};
+ const state={...core.defaultState(),origin,query:'멀리 있는 등록업체'};
+ assert.deepEqual(core.filterPlaces(namedData,state).map(p=>p.id),['remote'],'registered name search ignores distance');
+ state.query='좌표 없는 등록업체';assert.deepEqual(core.filterPlaces(namedData,state).map(p=>p.id),['unlocated'],'unlocated named venue remains in list');
+ state.query='';assert(!core.filterPlaces(namedData,state).some(p=>p.id==='remote'),'clearing query restores nearby radius');
+}
+console.log('PASS GPS and searched origins share a 10km radius while registered-name searches work nationwide');

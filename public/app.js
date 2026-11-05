@@ -7,19 +7,20 @@ function matchesCategory(p,category){return category==='all'||(category==='large
 function hasCoordinates(p){return !!p&&Number.isFinite(p.lat)&&Number.isFinite(p.lng);}
 function hasConfirmedCoordinates(p){return hasCoordinates(p)&&['주소 좌표 확인','도로명 주소 좌표 확인'].includes(p.position);}
 function distanceKm(a,b){const rad=Math.PI/180,dlat=(b.lat-a.lat)*rad,dlng=(b.lng-a.lng)*rad,h=Math.sin(dlat/2)**2+Math.cos(a.lat*rad)*Math.cos(b.lat*rad)*Math.sin(dlng/2)**2;return 6371*2*Math.asin(Math.sqrt(Math.min(1,h)));}
+function isVenueNameSearch(data,query){const q=query.trim().toLocaleLowerCase('ko');return !!q&&data.places.some(p=>!['closed','unverified'].includes(p.status)&&p.name.toLocaleLowerCase('ko').includes(q));}
 function filterPlaces(data,state){
- const q=state.query.trim().toLocaleLowerCase('ko');
+ const q=state.query.trim().toLocaleLowerCase('ko'),nameSearch=isVenueNameSearch(data,state.query);
  return data.places.filter(p=>{
   if(p.status==='closed'||p.status==='unverified')return false;
   if(!matchesCategory(p,state.category))return false;
-  if(['current','custom'].includes(state.origin)&&(!hasConfirmedCoordinates(p)||!hasCoordinates(data.origins[state.origin])||distanceKm(data.origins[state.origin],p)>NEARBY_RADIUS_KM))return false;
+  if(!nameSearch&&['current','custom'].includes(state.origin)&&(!hasConfirmedCoordinates(p)||!hasCoordinates(data.origins[state.origin])||distanceKm(data.origins[state.origin],p)>NEARBY_RADIUS_KM))return false;
   if(state.region==='seoul'&&!/^서울/.test(p.address))return false;
   if(!['all','seoul'].includes(state.region)&&p.region!==state.region)return false;
   if(state.terrace&&p.terrace!==true)return false;
   for(const service of ['hoteling','daycare','grooming'])if(state[service]&&p[service]!==true)return false;
   const range=p.times?.[state.origin];
   if(!['current','custom'].includes(state.origin)&&state.time>0&&(!range||(state.strict?range[1]:range[0])>state.time))return false;
-  if(q&&!`${p.name} ${p.area} ${p.region} ${p.address}`.toLocaleLowerCase('ko').includes(q))return false;
+  if(q&&!(nameSearch?p.name:`${p.name} ${p.area} ${p.region} ${p.address}`).toLocaleLowerCase('ko').includes(q))return false;
   if(state.natural&&p.surface!=='천연잔디')return false;
   if(state.artificial&&p.surface!=='인조잔디')return false;
   if(state.parking&&!p.parking)return false;
@@ -92,7 +93,7 @@ function render(){
  const eligible=filterPlaces(data,{...state,category:'all'});
  doc.querySelectorAll('[data-category]').forEach(el=>el.setAttribute('aria-pressed',String(el.dataset.category===state.category)));
  doc.querySelectorAll('[data-category-count]').forEach(el=>el.textContent=el.dataset.categoryCount==='all'?data.places.length:eligible.filter(p=>matchesCategory(p,el.dataset.categoryCount)).length);
- $('resultSummary').textContent=state.origin==='current'?'현재 위치 주변 10km · 가까운 순':`${data.origins[state.origin].name} 출발 · ${state.origin==='custom'?'주변 10km · ':''}가까운 순`;
+ $('resultSummary').textContent=isVenueNameSearch(data,state.query)?'등록 업체명 검색 · 전국':state.origin==='current'?'현재 위치 주변 10km · 가까운 순':`${data.origins[state.origin].name} 출발 · ${state.origin==='custom'?'주변 10km · ':''}가까운 순`;
  const mapped=visible.filter(hasCoordinates).length;
  $('mapCount').textContent=`지도 ${mapped}곳 · 목록 ${visible.length}곳`;
  $('locationCoverage').textContent=mapped<visible.length?`주소만 확인된 ${visible.length-mapped}곳은 목록과 네이버 지도 링크로 확인할 수 있어요. 좌표를 확인하기 전에는 지도 핀과 거리를 표시하지 않습니다.`:'';
@@ -130,8 +131,9 @@ class NaverMap{
  setZoom(z){this.isNationwide=false;this.zoom=Math.min(16,Math.max(5,z));this.render();}
  focus(p){if(!hasCoordinates(p)){toast('지도 좌표가 미확인된 장소예요. 네이버 지도에서 주소를 확인해 주세요.');return;}this.isNationwide=false;this.center={lat:p.lat,lng:p.lng};this.zoom=Math.max(14,this.zoom);this.render();}
  fit(){
-  const origin=data.origins[state.origin],points=[...visible,origin].filter(hasCoordinates);
-  if(['current','custom'].includes(state.origin)){
+  const origin=data.origins[state.origin],nameSearch=isVenueNameSearch(data,state.query),points=(nameSearch?visible:[...visible,origin]).filter(hasCoordinates);
+  if(!points.length)return;
+  if(!nameSearch&&['current','custom'].includes(state.origin)){
    const dy=Math.max(.012,...points.map(p=>Math.abs(p.lat-origin.lat))),dx=Math.max(.015,...points.map(p=>Math.abs(p.lng-origin.lng)));
    this.fitBounds(origin.lat-dy,origin.lat+dy,origin.lng-dx,origin.lng+dx);this.center={lat:origin.lat,lng:origin.lng};this.render();return;
   }
@@ -140,7 +142,7 @@ class NaverMap{
  showNationwide(){this.fitBounds(32.7,38.8,124.5,132);this.isNationwide=true;$('mapTitle').textContent='대한민국 한눈에 보기';}
  fitBounds(minLat,maxLat,minLng,maxLng){this.isNationwide=false;this.center={lat:(minLat+maxLat)/2,lng:(minLng+maxLng)/2};const {w,h}=this.size();this.zoom=5;for(let z=5;z<=14;z++){const a=project(minLat,minLng,z),b=project(maxLat,maxLng,z);if(Math.abs(a.x-b.x)<=Math.max(100,w-150)&&Math.abs(a.y-b.y)<=Math.max(150,h-140))this.zoom=z;}this.render();}
  render(){const {w,h}=this.size(),c=project(this.center.lat,this.center.lng,this.zoom),left=c.x-w/2,top=c.y-h/2;$('map').classList.toggle('national-overview',this.zoom<12);
-  $('mapTitle').textContent=this.isNationwide?'대한민국 한눈에 보기':['current','custom'].includes(state.origin)?data.origins[state.origin].name+' 기준 지도':'업체 지도';
+  $('mapTitle').textContent=this.isNationwide?'대한민국 한눈에 보기':isVenueNameSearch(data,state.query)?'검색한 업체 지도':['current','custom'].includes(state.origin)?data.origins[state.origin].name+' 기준 지도':'업체 지도';
   this.bridge?.setView(this.center,this.zoom);
   const pos=p=>{const native=this.bridge?.project(p);if(native)return native;const a=project(p.lat,p.lng,this.zoom);return {x:a.x-left,y:a.y-top};};
   const mapped=visible.filter(hasCoordinates);
@@ -207,7 +209,7 @@ $('loadMore').addEventListener('click',()=>{listLimit+=LIST_PAGE_SIZE;render();}
 $('originSearch').addEventListener('click',submitOrigin);
 $('useCurrent').addEventListener('click',()=>requestLocation());
 $('mapUseCurrent').addEventListener('click',()=>requestLocation());
-$('search').addEventListener('input',()=>{locationVersion++;locationPending=false;clearOriginSearch();state.query=$('search').value;render();});
+$('search').addEventListener('input',()=>{locationVersion++;locationPending=false;clearOriginSearch();state.query=$('search').value;render();tileMap.fit();});
 async function submitVenueSearch(){
  locationVersion++;locationPending=false;clearOriginSearch();
  const query=$('search').value.trim();
@@ -217,6 +219,15 @@ async function submitVenueSearch(){
 }
 $('venueSearch').addEventListener('click',submitVenueSearch);
 $('search').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();submitVenueSearch();}});
+// Registration and deletion use the same delivery and timeout policy.
+async function sendOperatorRequest(fields){
+ const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),5000);
+ try{
+  const response=await root.fetch('https://formsubmit.co/ajax/ay_lee@naver.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},signal:controller.signal,body:JSON.stringify({_template:'table',_captcha:'false',_honey:'',...fields})});
+  const result=await response.json();
+  if(!response.ok||!(result.success===true||result.success==='true'))throw new Error(/activat|confirm.*email/i.test(result.message||'')?'activation-required':'Mail request rejected');
+ }finally{clearTimeout(timeout);}
+}
 let registrationCandidates=[],registrationVersion=0,registrationController,registrationAddress=null,registrationSending=false,registrationSent=false;
 const registrationCategories={'companion':'동반 카페','playground':'운동장 카페','large-dog':'대형견 카페','restaurant':'동반 음식점','bar':'동반 술집','pension':'동반 펜션'};
 const registrationServices={registrationParking:'주차가능',registrationIndoor:'실내동반',registrationTerrace:'테라스동반',registrationHoteling:'호텔링',registrationDaycare:'유치원',registrationGrooming:'애견미용'};
@@ -247,13 +258,11 @@ $('registrationForm').addEventListener('submit',async e=>{
  const addressDetail=$('registrationAddressDetail').value.trim();
  if(addressDetail.length>200){$('registrationStatus').textContent='상세주소는 200자 이내로 입력해 주세요.';return;}
  registrationSending=true;$('registrationSubmit').disabled=true;$('registrationSubmit').textContent='전송 중…';$('registrationStatus').textContent='등록 요청을 전송하고 있어요.';
- const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),15000);
  try{
-  const response=await root.fetch('https://formsubmit.co/ajax/ay_lee@naver.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},signal:controller.signal,body:JSON.stringify({_subject:'[CHOCHO] 업체 등록 요청',_template:'table',_captcha:'false',_honey:'','업체명':name,'연락처':contact,'업종':category,'주소':[address.address,addressDetail].filter(Boolean).join(' '),'상세주소':addressDetail,'검색 장소명':address.name,'위도':address.lat,'경도':address.lng,'동반 조건 및 메모사항':memo,'반려견 동반 확인':'동의',...Object.fromEntries(Object.entries(registrationServices).map(([id,label])=>[label,$(id).checked?'선택':'미선택']))})});
-  const result=await response.json();if(!response.ok||!(result.success===true||result.success==='true'))throw new Error('Registration rejected');
+  await sendOperatorRequest({_subject:'[CHOCHO] 업체 등록 요청','업체명':name,'연락처':contact,'업종':category,'주소':[address.address,addressDetail].filter(Boolean).join(' '),'상세주소':addressDetail,'검색 장소명':address.name,'위도':address.lat,'경도':address.lng,'동반 조건 및 메모사항':memo,'반려견 동반 확인':'동의',...Object.fromEntries(Object.entries(registrationServices).map(([id,label])=>[label,$(id).checked?'선택':'미선택']))});
   registrationSent=true;$('registrationStatus').textContent='등록 요청이 접수 서비스에 전달됐어요. 운영자가 확인한 뒤 반영합니다. 최초 이용 시 운영자의 수신 메일 인증이 필요해요.';
  }catch(_){$('registrationStatus').textContent='전송 결과를 확인하지 못했어요(연결 또는 접수 실패). 잠시 후 다시 시도해 주세요.';}
- finally{clearTimeout(timeout);registrationSending=false;$('registrationSubmit').disabled=registrationSent||!registrationAddress;$('registrationSubmit').textContent='등록 요청';$('registrationClose').hidden=false;}
+ finally{registrationSending=false;$('registrationSubmit').disabled=registrationSent||!registrationAddress;$('registrationSubmit').textContent='등록 요청';$('registrationClose').hidden=false;}
 });
 let deletionVenue=null,deletionSending=false,deletionSent=false;
 const deletionReasons=['운영 중단','반려견 동반 금지','폐업','기타'];
@@ -277,13 +286,11 @@ $('deletionForm').addEventListener('submit',async e=>{
  $('deletionMailFallback').href='mailto:ay_lee@naver.com?subject='+encodeURIComponent('[CHOCHO] 업체 삭제 요청')+'&body='+encodeURIComponent(mailBody);
  $('deletionMailFallback').hidden=true;$('deletionMailHint').hidden=true;
  deletionSending=true;$('deletionSubmit').disabled=true;$('deletionSubmit').textContent='전송 중…';$('deletionStatus').textContent='삭제 요청을 전송하고 있어요.';
- const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),15000);
  try{
-  const response=await root.fetch('https://formsubmit.co/ajax/ay_lee@naver.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},signal:controller.signal,body:JSON.stringify({_subject:'[CHOCHO] 업체 삭제 요청',_template:'table',_captcha:'false',_honey:'','업체명':p.name,'주소':p.address,'전화번호':p.phone||'미확인','연락처 메모':p.contactNote||'','삭제 요청 이유':reason==='기타'?'기타: '+other:reason})});
-  const result=await response.json();if(!response.ok||!(result.success===true||result.success==='true'))throw new Error(/activat|confirm.*email/i.test(result.message||'')?'activation-required':'Deletion request rejected');
+  await sendOperatorRequest({_subject:'[CHOCHO] 업체 삭제 요청','업체명':p.name,'주소':p.address,'전화번호':p.phone||'미확인','연락처 메모':p.contactNote||'','삭제 요청 이유':reason==='기타'?'기타: '+other:reason});
   deletionSent=true;$('deletionStatus').textContent='삭제 요청이 접수 서비스에 전달됐어요. 운영자가 확인한 뒤 반영합니다.';
  }catch(error){$('deletionStatus').textContent=error.message==='activation-required'?'메일 수신 인증이 필요해 접수에 실패했어요. 운영자는 FormSubmit 인증 메일을 확인해 주세요. 아래 메일 앱으로도 요청을 보낼 수 있어요.':'메일 접수 서비스 연결 또는 접수에 실패했어요. 잠시 후 다시 시도하거나 아래 메일 앱으로 보내 주세요.';$('deletionMailFallback').hidden=false;$('deletionMailHint').hidden=false;}
- finally{clearTimeout(timeout);deletionSending=false;$('deletionSubmit').disabled=deletionSent;$('deletionSubmit').textContent='확인';}
+ finally{deletionSending=false;$('deletionSubmit').disabled=deletionSent;$('deletionSubmit').textContent='확인';}
 });
 $('reset').addEventListener('click',reset);
 ['guideButton','noticeGuide','bottomGuide'].forEach(id=>$(id).addEventListener('click',()=>showDialog('guideDialog')));

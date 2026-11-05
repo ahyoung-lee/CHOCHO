@@ -321,6 +321,21 @@ test('venue cards show city and district, callable contact and parking without l
  try{place.phone=null;place.parking=false;registered.render();cards=elements.results.innerHTML;assert(cards.includes('전화번호 미확인'));assert(!cards.includes('tel:null'));assert(cards.includes('주차 불가능'));}
  finally{place.phone=phone;place.parking=parking;registered.reset();}
 });
+await testAsync('registered name search ignores GPS and custom-origin radius and fits matching map pins',async()=>{
+ const registered=window.PAW_APP,source=window.CAFE_DATA;
+ const remote=source.places.find(p=>core.hasCoordinates(p)&&p.lat<36);assert(remote);
+ for(const origin of ['current','custom']){
+  source.origins[origin]={name:'테스트 출발지',lat:37.6,lng:127};registered.state.origin=origin;registered.reset();
+  elements.search.value=remote.name;await registered.submitVenueSearch();
+  assert(registered.getFiltered().some(p=>p.id===remote.id));
+  assert(elements.markerLayer.innerHTML.includes('data-marker="'+remote.id+'"'));
+  assert(elements.resultSummary.textContent.includes('전국'));
+  const {w,h}=registered.map.size(),center=core.project(registered.map.center.lat,registered.map.center.lng,registered.map.zoom),point=core.project(remote.lat,remote.lng,registered.map.zoom);
+  assert(Math.abs(point.x-center.x)<w/2&&Math.abs(point.y-center.y)<h/2);
+  elements.search.value='';elements.search.fire('input');assert(registered.getFiltered().every(p=>core.distanceKm(source.origins[origin],p)<=10));
+ }
+ registered.state.origin='hagye';registered.reset();
+});
 await testAsync('landmark search shows only nearest registered venues and centers the surrounding map',async()=>{
  const registered=window.PAW_APP,source=window.CAFE_DATA,point={name:'구리시 공설묘지',lat:37.6276431,lng:127.1338692};
  registered.state.origin='hagye';registered.reset();
