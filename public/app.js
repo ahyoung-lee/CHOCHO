@@ -220,12 +220,14 @@ async function submitVenueSearch(){
 $('venueSearch').addEventListener('click',submitVenueSearch);
 $('search').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();submitVenueSearch();}});
 // Registration and deletion use the same delivery and timeout policy.
+const WEB3FORMS_ACCESS_KEY='36aaaca5-2fba-4c39-8a99-281d1433883d';
 async function sendOperatorRequest(fields){
  const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),5000);
  try{
-  const response=await root.fetch('https://formsubmit.co/ajax/ay_lee@naver.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},signal:controller.signal,body:JSON.stringify({_template:'table',_captcha:'false',_honey:'',...fields})});
+  const {_subject:subject,...details}=fields;
+  const response=await root.fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},signal:controller.signal,body:JSON.stringify({access_key:WEB3FORMS_ACCESS_KEY,subject,from_name:'CHOCHO',botcheck:false,...details})});
   const result=await response.json();
-  if(!response.ok||!(result.success===true||result.success==='true'))throw new Error(/activat|confirm.*email/i.test(result.message||'')?'activation-required':'Mail request rejected');
+  if(!response.ok||result.success!==true)throw new Error('Mail request rejected');
  }finally{clearTimeout(timeout);}
 }
 let registrationCandidates=[],registrationVersion=0,registrationController,registrationAddress=null,registrationSending=false,registrationSent=false;
@@ -260,7 +262,7 @@ $('registrationForm').addEventListener('submit',async e=>{
  registrationSending=true;$('registrationSubmit').disabled=true;$('registrationSubmit').textContent='전송 중…';$('registrationStatus').textContent='등록 요청을 전송하고 있어요.';
  try{
   await sendOperatorRequest({_subject:'[CHOCHO] 업체 등록 요청','업체명':name,'연락처':contact,'업종':category,'주소':[address.address,addressDetail].filter(Boolean).join(' '),'상세주소':addressDetail,'검색 장소명':address.name,'위도':address.lat,'경도':address.lng,'동반 조건 및 메모사항':memo,'반려견 동반 확인':'동의',...Object.fromEntries(Object.entries(registrationServices).map(([id,label])=>[label,$(id).checked?'선택':'미선택']))});
-  registrationSent=true;$('registrationStatus').textContent='등록 요청이 접수 서비스에 전달됐어요. 운영자가 확인한 뒤 반영합니다. 최초 이용 시 운영자의 수신 메일 인증이 필요해요.';
+  registrationSent=true;$('registrationStatus').textContent='등록 요청이 메일 발송 서비스에 전달됐어요. 운영자가 확인한 뒤 반영합니다.';
  }catch(_){$('registrationStatus').textContent='전송 결과를 확인하지 못했어요(연결 또는 접수 실패). 잠시 후 다시 시도해 주세요.';}
  finally{registrationSending=false;$('registrationSubmit').disabled=registrationSent||!registrationAddress;$('registrationSubmit').textContent='등록 요청';$('registrationClose').hidden=false;}
 });
@@ -289,7 +291,7 @@ $('deletionForm').addEventListener('submit',async e=>{
  try{
   await sendOperatorRequest({_subject:'[CHOCHO] 업체 삭제 요청','업체명':p.name,'주소':p.address,'전화번호':p.phone||'미확인','연락처 메모':p.contactNote||'','삭제 요청 이유':reason==='기타'?'기타: '+other:reason});
   deletionSent=true;$('deletionStatus').textContent='삭제 요청이 접수 서비스에 전달됐어요. 운영자가 확인한 뒤 반영합니다.';
- }catch(error){$('deletionStatus').textContent=error.message==='activation-required'?'메일 수신 인증이 필요해 접수에 실패했어요. 운영자는 FormSubmit 인증 메일을 확인해 주세요. 아래 메일 앱으로도 요청을 보낼 수 있어요.':'메일 접수 서비스 연결 또는 접수에 실패했어요. 잠시 후 다시 시도하거나 아래 메일 앱으로 보내 주세요.';$('deletionMailFallback').hidden=false;$('deletionMailHint').hidden=false;}
+ }catch(_){$('deletionStatus').textContent='메일 접수 서비스 연결 또는 접수에 실패했어요. 잠시 후 다시 시도하거나 아래 메일 앱으로 보내 주세요.';$('deletionMailFallback').hidden=false;$('deletionMailHint').hidden=false;}
  finally{deletionSending=false;$('deletionSubmit').disabled=deletionSent;$('deletionSubmit').textContent='확인';}
 });
 $('reset').addEventListener('click',reset);
