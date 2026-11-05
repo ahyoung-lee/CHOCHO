@@ -70,3 +70,4 @@
 .deletion-request-button{flex-shrink:0;max-width:66px;min-height:38px;padding:4px 0;font-size:11px;line-height:1.5;color:var(--muted);text-decoration:underline;text-underline-offset:3px;word-break:keep-all}
 .deletion-venue{margin:14px 0;padding:10px 12px;background:var(--cream);border-radius:7px;font-size:13px;overflow-wrap:anywhere}
 #deletionStatus{margin:12px 0;font-size:14px;overflow-wrap:anywhere}
+.deletion-mail-fallback{display:block;margin:12px 0;text-align:center;min-height:44px}

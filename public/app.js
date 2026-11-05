@@ -260,23 +260,29 @@ const deletionReasons=['운영 중단','반려견 동반 금지','폐업','기�
 function openDeletion(id){
  if(deletionSending)return;
  const p=byId(id);if(!p)return;
- deletionVenue=p;deletionSent=false;$('deletionReason').value='';$('deletionOther').value='';$('deletionOther').required=false;$('deletionOtherField').hidden=true;$('deletionHoney').value='';$('deletionSubmit').disabled=false;$('deletionSubmit').textContent='확인';$('deletionStatus').textContent='';
+ deletionVenue=p;deletionSent=false;$('deletionReason').value='';$('deletionOther').value='';$('deletionOther').required=false;$('deletionOtherField').hidden=true;$('deletionHoney').value='';$('deletionSubmit').disabled=false;$('deletionSubmit').textContent='확인';$('deletionStatus').textContent='';$('deletionMailFallback').hidden=true;$('deletionMailFallback').href='';$('deletionMailHint').hidden=true;
  $('deletionVenue').textContent=[p.name,p.address,p.phone||p.contactNote||'전화번호 미확인'].join(' · ');
  showDialog('deletionDialog');
 }
-$('deletionReason').addEventListener('change',()=>{const other=$('deletionReason').value==='기타';$('deletionOtherField').hidden=!other;$('deletionOther').required=other;});
+function hideDeletionMailFallback(){$('deletionMailFallback').hidden=true;$('deletionMailHint').hidden=true;}
+$('deletionReason').addEventListener('change',()=>{const other=$('deletionReason').value==='기타';$('deletionOtherField').hidden=!other;$('deletionOther').required=other;hideDeletionMailFallback();});
+$('deletionOther').addEventListener('input',hideDeletionMailFallback);
 $('deletionForm').addEventListener('submit',async e=>{
  e.preventDefault();if(deletionSending||deletionSent||!deletionVenue||$('deletionHoney').value)return;
  const p=deletionVenue,reason=$('deletionReason').value,other=$('deletionOther').value.trim();
  if(!deletionReasons.includes(reason)){$('deletionStatus').textContent='삭제 요청 이유를 선택해 주세요.';return;}
  if(reason==='기타'&&(!other||other.length>2000)){$('deletionStatus').textContent='기타 이유를 1~2,000자 이내로 입력해 주세요.';$('deletionOther').focus();return;}
+ const reasonText=reason==='기타'?'기타: '+other:reason;
+ const mailBody=['업체명: '+p.name,'주소: '+p.address,'전화번호: '+(p.phone||'미확인'),...(p.contactNote?['연락처 메모: '+p.contactNote]:[]),'삭제 요청 이유: '+reasonText].join('\r\n');
+ $('deletionMailFallback').href='mailto:ay_lee@naver.com?subject='+encodeURIComponent('[CHOCHO] 업체 삭제 요청')+'&body='+encodeURIComponent(mailBody);
+ $('deletionMailFallback').hidden=true;$('deletionMailHint').hidden=true;
  deletionSending=true;$('deletionSubmit').disabled=true;$('deletionSubmit').textContent='전송 중…';$('deletionStatus').textContent='삭제 요청을 전송하고 있어요.';
  const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),15000);
  try{
   const response=await root.fetch('https://formsubmit.co/ajax/ay_lee@naver.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},signal:controller.signal,body:JSON.stringify({_subject:'[CHOCHO] 업체 삭제 요청',_template:'table',_captcha:'false',_honey:'','업체명':p.name,'주소':p.address,'전화번호':p.phone||'미확인','연락처 메모':p.contactNote||'','삭제 요청 이유':reason==='기타'?'기타: '+other:reason})});
-  const result=await response.json();if(!response.ok||!(result.success===true||result.success==='true'))throw new Error('Deletion request rejected');
+  const result=await response.json();if(!response.ok||!(result.success===true||result.success==='true'))throw new Error(/activat|confirm.*email/i.test(result.message||'')?'activation-required':'Deletion request rejected');
   deletionSent=true;$('deletionStatus').textContent='삭제 요청이 접수 서비스에 전달됐어요. 운영자가 확인한 뒤 반영합니다.';
- }catch(_){$('deletionStatus').textContent='전송 결과를 확인하지 못했어요(연결 또는 접수 실패). 잠시 후 다시 시도해 주세요.';}
+ }catch(error){$('deletionStatus').textContent=error.message==='activation-required'?'메일 수신 인증이 필요해 접수에 실패했어요. 운영자는 FormSubmit 인증 메일을 확인해 주세요. 아래 메일 앱으로도 요청을 보낼 수 있어요.':'메일 접수 서비스 연결 또는 접수에 실패했어요. 잠시 후 다시 시도하거나 아래 메일 앱으로 보내 주세요.';$('deletionMailFallback').hidden=false;$('deletionMailHint').hidden=false;}
  finally{clearTimeout(timeout);deletionSending=false;$('deletionSubmit').disabled=deletionSent;$('deletionSubmit').textContent='확인';}
 });
 $('reset').addEventListener('click',reset);
