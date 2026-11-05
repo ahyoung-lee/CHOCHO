@@ -184,7 +184,17 @@ await testAsync('deletion requests validate reasons and email the selected venue
  elements.deletionReason.value='기타';await fire('deletionReason','change');assert(!elements.deletionOtherField.hidden);assert(elements.deletionOther.required);
  elements.deletionOther.value='  ';await fire('deletionForm','submit');assert.equal(requests.length,0,'other requires detail');
  elements.deletionOther.value='확인한 사유';elements.deletionHoney.value='bot';await fire('deletionForm','submit');assert.equal(requests.length,0);elements.deletionHoney.value='';
+ assert(html.includes('사실 확인 검토 후 반영 됩니다.'));
+ assert(elements.deletionMailFallback.hidden);
  fetchHandler=async()=>{throw Error('offline');};await fire('deletionForm','submit');assert(elements.deletionStatus.textContent.includes('실패'));assert(!elements.deletionSubmit.disabled);
+ assert(!elements.deletionMailFallback.hidden);
+ const fallback=new URL(elements.deletionMailFallback.href);
+ assert.equal(fallback.protocol,'mailto:');assert.equal(fallback.pathname,'ay_lee@naver.com');
+ const fallbackBody=fallback.searchParams.get('body');
+ for(const value of [venue.name,venue.address,venue.phone,'기타: 확인한 사유'])assert(fallbackBody.includes(value));
+ await fire('deletionOther','input');assert(elements.deletionMailFallback.hidden,'editing details hides stale mail content');
+ await fire('deletionForm','submit');assert(!elements.deletionMailFallback.hidden);
+ await fire('deletionReason','change');assert(elements.deletionMailFallback.hidden,'changing reason hides stale mail content');
  let finish;fetchHandler=(url,options)=>{requests.push({url,payload:JSON.parse(options.body)});return new Promise(resolve=>finish=resolve);};
  const pending=fire('deletionForm','submit');assert(elements.deletionSubmit.disabled);await fire('deletionForm','submit');assert.equal(requests.length,1);
  currentApp.selectPlace(other.id);click('[data-delete-request]',{deleteRequest:other.id});
@@ -192,13 +202,15 @@ await testAsync('deletion requests validate reasons and email the selected venue
  assert.equal(requests[0].url,'https://formsubmit.co/ajax/ay_lee@naver.com');
  const payload=requests[0].payload;
  assert.equal(payload['업체명'],venue.name);assert.equal(payload['주소'],venue.address);assert.equal(payload['전화번호'],venue.phone);assert.equal(payload['삭제 요청 이유'],'기타: 확인한 사유');
- assert(payload._subject.includes('삭제 요청'));assert(elements.deletionStatus.textContent.includes('전달'));assert(elements.deletionSubmit.disabled);await fire('deletionForm','submit');assert.equal(requests.length,1);
+ assert(payload._subject.includes('삭제 요청'));assert(elements.deletionStatus.textContent.includes('전달'));assert(elements.deletionSubmit.disabled);assert(elements.deletionMailFallback.hidden);await fire('deletionForm','submit');assert.equal(requests.length,1);
  elements.deletionDialog.close();click('[data-delete-request]',{deleteRequest:other.id});assert.equal(elements.deletionReason.value,'');assert.equal(elements.deletionOther.value,'');assert(elements.deletionOtherField.hidden);
  elements.deletionReason.value='폐업';await fire('deletionReason','change');assert(!elements.deletionOther.required);
  fetchHandler=async(url,options)=>{requests.push({url,payload:JSON.parse(options.body)});return {ok:false,json:async()=>({success:true})};};
  await fire('deletionForm','submit');assert(elements.deletionStatus.textContent.includes('실패'));assert(!elements.deletionSubmit.disabled);
  assert.equal(requests.at(-1).payload['전화번호'],'미확인');assert.equal(requests.at(-1).payload['삭제 요청 이유'],'폐업');
  fetchHandler=async()=>({ok:true,json:async()=>({success:false})});await fire('deletionForm','submit');assert(elements.deletionStatus.textContent.includes('실패'));
+ fetchHandler=async()=>({ok:false,status:522,json:async()=>({title:'Error 522: Connection timed out'})});await fire('deletionForm','submit');assert(!elements.deletionMailFallback.hidden);assert(!elements.deletionSubmit.disabled);assert(elements.deletionStatus.textContent.includes('실패'));
+ fetchHandler=async()=>({ok:true,json:async()=>({success:false,message:'Please activate your form'})});await fire('deletionForm','submit');assert(elements.deletionStatus.textContent.includes('인증'));assert(!elements.deletionMailFallback.hidden);
  for(const reason of ['운영 중단','반려견 동반 금지','폐업']){
   elements.deletionDialog.close();click('[data-delete-request]',{deleteRequest:venue.id});elements.deletionReason.value=reason;
   fetchHandler=async(url,options)=>{assert.equal(JSON.parse(options.body)['삭제 요청 이유'],reason);return {ok:true,json:async()=>({success:true})};};
