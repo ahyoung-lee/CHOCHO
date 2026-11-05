@@ -16,6 +16,19 @@
 <section class="bottom-note"><div class="note-art" aria-hidden="true">↟</div><div class="note-copy"><h2><span>커피는 보호자에게,</span> <span>운동장은 댕댕이에게.</span></h2><p>같은 장소도 날씨와 운영 상황에 따라 이용 조건이 달라집니다.<br> 카드의 출처와 전화 버튼으로 한 번 더 확인하고 출발하세요.</p></div><button class="outline-button" id="bottomGuide">정보 확인 방법 ↗</button></section>
 </main><footer><span>CHOCHO · 반려견과 함께하는 카페 검색</span><span>직접 등록 정보 · 자동 갱신 없음</span></footer>
 <div class="compare-tray" id="compareTray" hidden><div><strong id="compareCount"></strong><span id="compareNames"></span></div><div class="tray-actions"><button id="clearCompare" class="text-button">비우기</button><button id="openCompare" class="primary-button">한눈에 비교 ↗</button></div></div>
+<dialog id="deletionDialog" class="registration-dialog deletion-dialog" aria-labelledby="deletionTitle">
+<button type="button" class="dialog-close" data-close="deletionDialog" aria-label="삭제 요청 닫기">×</button>
+<h2 id="deletionTitle">삭제 요청 이유</h2>
+<p id="deletionVenue" class="deletion-venue"></p>
+<p class="registration-intro">업체명·주소·전화번호와 선택한 이유가 FormSubmit을 통해 운영자 메일로 전달됩니다. 검토 후 반영합니다.</p>
+<form id="deletionForm">
+<input id="deletionHoney" type="text" name="_honey" hidden tabindex="-1" autocomplete="off">
+<label class="registration-field" for="deletionReason">요청 이유<select id="deletionReason" required><option value="">선택해 주세요</option><option value="운영 중단">운영 중단</option><option value="반려견 동반 금지">반려견 동반 금지</option><option value="폐업">폐업</option><option value="기타">기타</option></select></label>
+<label id="deletionOtherField" class="registration-field" for="deletionOther" hidden>기타 이유<textarea id="deletionOther" rows="4" maxlength="2000" placeholder="삭제를 요청하는 이유를 입력해 주세요"></textarea></label>
+<p id="deletionStatus" role="status" aria-live="polite"></p>
+<button type="submit" class="primary-button" id="deletionSubmit">확인</button>
+<button type="button" class="outline-button registration-close" data-close="deletionDialog">닫기</button>
+</form></dialog>
 <dialog id="registrationDialog" class="registration-dialog" aria-labelledby="registrationTitle">
 <button type="button" class="dialog-close" data-close="registrationDialog" aria-label="업체 등록 닫기">×</button>
 <h2 id="registrationTitle">업체 등록</h2><p class="registration-intro">등록 요청은 운영자 메일로 전달됩니다. 검토 후 목록에 반영하며, 요청만으로 바로 공개되지는 않습니다.</p>

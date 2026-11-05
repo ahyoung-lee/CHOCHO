@@ -173,6 +173,39 @@ await testAsync('registration sends only valid selected addresses and handles de
  assert(!elements.registrationClose.hidden);click('[data-close]',{close:'registrationDialog'});assert(!elements.registrationDialog.open);
  await fireLast('openRegistration','click');assert.equal(elements.registrationAddressDetail.value,'');assert.equal(elements.registrationContact.value,'');assert(elements.registrationClose.hidden);assert.equal(elements.registrationMemo.value,'');for(const suffix of ['Parking','Indoor','Terrace','Hoteling','Daycare','Grooming'])assert.equal(elements['registration'+suffix].checked,false);elements.registrationDialog.close();
 });
+await testAsync('deletion requests validate reasons and email the selected venue with safe retries',async()=>{
+ const fire=async(id,event)=>{const listeners=elements[id].listeners[event];return await listeners.at(-1)({target:elements[id],preventDefault(){}});};
+ const venue=fullData.places.find(p=>p.phone),other=fullData.places.find(p=>!p.phone);
+ currentApp.reset();
+ click('[data-delete-request]',{deleteRequest:venue.id});assert(elements.deletionDialog.open);
+ assert(elements.deletionVenue.textContent.includes(venue.name));assert(elements.deletionVenue.textContent.includes(venue.address));
+ const requests=[];fetchHandler=async(url,options)=>{requests.push({url,payload:JSON.parse(options.body)});return {ok:true,json:async()=>({success:true})};};
+ await fire('deletionForm','submit');assert.equal(requests.length,0,'a reason is required');
+ elements.deletionReason.value='기타';await fire('deletionReason','change');assert(!elements.deletionOtherField.hidden);assert(elements.deletionOther.required);
+ elements.deletionOther.value='  ';await fire('deletionForm','submit');assert.equal(requests.length,0,'other requires detail');
+ elements.deletionOther.value='확인한 사유';elements.deletionHoney.value='bot';await fire('deletionForm','submit');assert.equal(requests.length,0);elements.deletionHoney.value='';
+ fetchHandler=async()=>{throw Error('offline');};await fire('deletionForm','submit');assert(elements.deletionStatus.textContent.includes('실패'));assert(!elements.deletionSubmit.disabled);
+ let finish;fetchHandler=(url,options)=>{requests.push({url,payload:JSON.parse(options.body)});return new Promise(resolve=>finish=resolve);};
+ const pending=fire('deletionForm','submit');assert(elements.deletionSubmit.disabled);await fire('deletionForm','submit');assert.equal(requests.length,1);
+ currentApp.selectPlace(other.id);click('[data-delete-request]',{deleteRequest:other.id});
+ finish({ok:true,json:async()=>({success:'true'})});await pending;
+ assert.equal(requests[0].url,'https://formsubmit.co/ajax/ay_lee@naver.com');
+ const payload=requests[0].payload;
+ assert.equal(payload['업체명'],venue.name);assert.equal(payload['주소'],venue.address);assert.equal(payload['전화번호'],venue.phone);assert.equal(payload['삭제 요청 이유'],'기타: 확인한 사유');
+ assert(payload._subject.includes('삭제 요청'));assert(elements.deletionStatus.textContent.includes('전달'));assert(elements.deletionSubmit.disabled);await fire('deletionForm','submit');assert.equal(requests.length,1);
+ elements.deletionDialog.close();click('[data-delete-request]',{deleteRequest:other.id});assert.equal(elements.deletionReason.value,'');assert.equal(elements.deletionOther.value,'');assert(elements.deletionOtherField.hidden);
+ elements.deletionReason.value='폐업';await fire('deletionReason','change');assert(!elements.deletionOther.required);
+ fetchHandler=async(url,options)=>{requests.push({url,payload:JSON.parse(options.body)});return {ok:false,json:async()=>({success:true})};};
+ await fire('deletionForm','submit');assert(elements.deletionStatus.textContent.includes('실패'));assert(!elements.deletionSubmit.disabled);
+ assert.equal(requests.at(-1).payload['전화번호'],'미확인');assert.equal(requests.at(-1).payload['삭제 요청 이유'],'폐업');
+ fetchHandler=async()=>({ok:true,json:async()=>({success:false})});await fire('deletionForm','submit');assert(elements.deletionStatus.textContent.includes('실패'));
+ for(const reason of ['운영 중단','반려견 동반 금지','폐업']){
+  elements.deletionDialog.close();click('[data-delete-request]',{deleteRequest:venue.id});elements.deletionReason.value=reason;
+  fetchHandler=async(url,options)=>{assert.equal(JSON.parse(options.body)['삭제 요청 이유'],reason);return {ok:true,json:async()=>({success:true})};};
+  await fire('deletionForm','submit');assert(elements.deletionSubmit.disabled);
+ }
+ elements.deletionDialog.close();currentApp.reset();
+});
 await testAsync('current-location search and my-location refresh nearby ordering, category results and map pins',async()=>{
  currentApp.reset();const bar=fullData.places.find(p=>p.category==='bar'&&core.hasCoordinates(p));assert(bar);
  elements.origin.value='현재위치';await currentApp.submitOrigin();assert.equal(elements.origin.value,'현재 위치');
