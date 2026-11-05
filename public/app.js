@@ -77,7 +77,7 @@ function addressRegion(p){
  return region.join(' ');
 }
 function resultNumber(p){return visible.findIndex(place=>place.id===p.id)+1;}
-function card(p){const selected=p.id===state.selected,fav=state.favorites.includes(p.id),comparison=state.compare.includes(p.id);return `<article class="place-card ${selected?'selected':''}" id="card-${p.id}" aria-labelledby="name-${p.id}"><div class="card-top"><span class="card-number">${resultNumber(p)}</span><div class="card-title"><button class="card-name" id="name-${p.id}" data-select="${p.id}" aria-label="${esc(p.name)} 지도에서 선택" aria-pressed="${selected}">${esc(p.name)}</button><p class="card-area">${esc(addressRegion(p))}</p></div><button class="favorite-button" data-fav="${p.id}" aria-label="${esc(p.name)} 저장" aria-pressed="${fav}">${fav?'♥':'♡'}</button></div>${p.registration&&!p.registrationNote?.trim()?'':`<p class="card-subtitle">${memoText(p,p.feature)}</p>`}<div class="card-badges">${p.registration?'':`<span class="badge">${evidenceBadge(p)}</span>`}<span class="badge outline category-badge">${categoryLabel(p)}</span><span class="badge outline">${playgroundLabel(p)}</span>${p.position.includes('추정')?'<span class="badge amber">위치 추정</span>':''}</div><div class="card-facts"><div class="fact fact-phone"><span class="fact-icon" aria-hidden="true">☎</span><div><small>연락처</small><strong>${phoneLink(p)}</strong></div></div><div class="fact fact-parking"><span class="fact-icon">P</span><div><strong>${parkingLabel(p)}</strong><small>빈자리·요금은 재확인</small></div></div>${weightFact(p)}</div><div class="card-actions"><button type="button" class="detail-button review-button" disabled title="리뷰 작성 기능 준비 중">리뷰 작성</button><div class="card-navigation"><a class="nav-link" href="${mapURL(p)}" target="_blank" rel="noopener noreferrer"><img src="assets/navermap.svg" alt="" width="18" height="24">네이버 지도 ↗</a><button class="compare-button" data-compare="${p.id}" aria-pressed="${comparison}">${comparison?'✓ 비교 선택':'+ 비교'}</button></div></div></article>`;}
+function card(p){const selected=p.id===state.selected,fav=state.favorites.includes(p.id),comparison=state.compare.includes(p.id);return `<article class="place-card ${selected?'selected':''}" id="card-${p.id}" aria-labelledby="name-${p.id}"><div class="card-top"><span class="card-number">${resultNumber(p)}</span><div class="card-title"><button class="card-name" id="name-${p.id}" data-select="${p.id}" aria-label="${esc(p.name)} 지도에서 선택" aria-pressed="${selected}">${esc(p.name)}</button><p class="card-area">${esc(addressRegion(p))}</p></div><button type="button" class="deletion-request-button" data-delete-request="${p.id}" aria-label="${esc(p.name)} 업체 삭제 요청">업체 삭제 요청</button><button class="favorite-button" data-fav="${p.id}" aria-label="${esc(p.name)} 저장" aria-pressed="${fav}">${fav?'♥':'♡'}</button></div>${p.registration&&!p.registrationNote?.trim()?'':`<p class="card-subtitle">${memoText(p,p.feature)}</p>`}<div class="card-badges">${p.registration?'':`<span class="badge">${evidenceBadge(p)}</span>`}<span class="badge outline category-badge">${categoryLabel(p)}</span><span class="badge outline">${playgroundLabel(p)}</span>${p.position.includes('추정')?'<span class="badge amber">위치 추정</span>':''}</div><div class="card-facts"><div class="fact fact-phone"><span class="fact-icon" aria-hidden="true">☎</span><div><small>연락처</small><strong>${phoneLink(p)}</strong></div></div><div class="fact fact-parking"><span class="fact-icon">P</span><div><strong>${parkingLabel(p)}</strong><small>빈자리·요금은 재확인</small></div></div>${weightFact(p)}</div><div class="card-actions"><button type="button" class="detail-button review-button" disabled title="리뷰 작성 기능 준비 중">리뷰 작성</button><div class="card-navigation"><a class="nav-link" href="${mapURL(p)}" target="_blank" rel="noopener noreferrer"><img src="assets/navermap.svg" alt="" width="18" height="24">네이버 지도 ↗</a><button class="compare-button" data-compare="${p.id}" aria-pressed="${comparison}">${comparison?'✓ 비교 선택':'+ 비교'}</button></div></div></article>`;}
 function render(){
  const {selected,compare,favorites,...criteria}=state;
  const key=JSON.stringify([criteria,data.origins[state.origin],state.favorite?favorites:[]]);
@@ -255,6 +255,30 @@ $('registrationForm').addEventListener('submit',async e=>{
  }catch(_){$('registrationStatus').textContent='전송 결과를 확인하지 못했어요(연결 또는 접수 실패). 잠시 후 다시 시도해 주세요.';}
  finally{clearTimeout(timeout);registrationSending=false;$('registrationSubmit').disabled=registrationSent||!registrationAddress;$('registrationSubmit').textContent='등록 요청';$('registrationClose').hidden=false;}
 });
+let deletionVenue=null,deletionSending=false,deletionSent=false;
+const deletionReasons=['운영 중단','반려견 동반 금지','폐업','기타'];
+function openDeletion(id){
+ if(deletionSending)return;
+ const p=byId(id);if(!p)return;
+ deletionVenue=p;deletionSent=false;$('deletionReason').value='';$('deletionOther').value='';$('deletionOther').required=false;$('deletionOtherField').hidden=true;$('deletionHoney').value='';$('deletionSubmit').disabled=false;$('deletionSubmit').textContent='확인';$('deletionStatus').textContent='';
+ $('deletionVenue').textContent=[p.name,p.address,p.phone||p.contactNote||'전화번호 미확인'].join(' · ');
+ showDialog('deletionDialog');
+}
+$('deletionReason').addEventListener('change',()=>{const other=$('deletionReason').value==='기타';$('deletionOtherField').hidden=!other;$('deletionOther').required=other;});
+$('deletionForm').addEventListener('submit',async e=>{
+ e.preventDefault();if(deletionSending||deletionSent||!deletionVenue||$('deletionHoney').value)return;
+ const p=deletionVenue,reason=$('deletionReason').value,other=$('deletionOther').value.trim();
+ if(!deletionReasons.includes(reason)){$('deletionStatus').textContent='삭제 요청 이유를 선택해 주세요.';return;}
+ if(reason==='기타'&&(!other||other.length>2000)){$('deletionStatus').textContent='기타 이유를 1~2,000자 이내로 입력해 주세요.';$('deletionOther').focus();return;}
+ deletionSending=true;$('deletionSubmit').disabled=true;$('deletionSubmit').textContent='전송 중…';$('deletionStatus').textContent='삭제 요청을 전송하고 있어요.';
+ const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),15000);
+ try{
+  const response=await root.fetch('https://formsubmit.co/ajax/ay_lee@naver.com',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},signal:controller.signal,body:JSON.stringify({_subject:'[CHOCHO] 업체 삭제 요청',_template:'table',_captcha:'false',_honey:'','업체명':p.name,'주소':p.address,'전화번호':p.phone||'미확인','연락처 메모':p.contactNote||'','삭제 요청 이유':reason==='기타'?'기타: '+other:reason})});
+  const result=await response.json();if(!response.ok||!(result.success===true||result.success==='true'))throw new Error('Deletion request rejected');
+  deletionSent=true;$('deletionStatus').textContent='삭제 요청이 접수 서비스에 전달됐어요. 운영자가 확인한 뒤 반영합니다.';
+ }catch(_){$('deletionStatus').textContent='전송 결과를 확인하지 못했어요(연결 또는 접수 실패). 잠시 후 다시 시도해 주세요.';}
+ finally{clearTimeout(timeout);deletionSending=false;$('deletionSubmit').disabled=deletionSent;$('deletionSubmit').textContent='확인';}
+});
 $('reset').addEventListener('click',reset);
 ['guideButton','noticeGuide','bottomGuide'].forEach(id=>$(id).addEventListener('click',()=>showDialog('guideDialog')));
 $('clearCompare').addEventListener('click',()=>{state.compare=[];render();});$('openCompare').addEventListener('click',compare);
@@ -266,6 +290,7 @@ doc.addEventListener('click',e=>{let t;if((t=e.target.closest('[data-category]')
  else if((t=e.target.closest('[data-registration-result]'))){const p=registrationCandidates[Number(t.dataset.registrationResult)];if(p&&!p.approximate&&!registrationSending&&!registrationSent){registrationAddress=p;registrationSent=false;$('registrationSubmit').disabled=false;$('registrationSelected').textContent=p.name+' · '+p.address;$('registrationStatus').textContent='내용과 전송 동의를 확인하고 등록 요청을 눌러 주세요.';}}
  else if((t=e.target.closest('[data-origin-result]')))chooseOrigin(Number(t.dataset.originResult));
  else if((t=e.target.closest('[data-toggle]'))){const k=t.dataset.toggle;state[k]=!state[k];if(k==='natural'&&state[k])state.artificial=false;if(k==='artificial'&&state[k])state.natural=false;render();tileMap.fit();}
+ else if((t=e.target.closest('[data-delete-request]')))openDeletion(t.dataset.deleteRequest);
  else if((t=e.target.closest('[data-detail]')))detail(t.dataset.detail);
  else if((t=e.target.closest('[data-marker]')))selectPlace(t.dataset.marker);
  else if((t=e.target.closest('[data-select]')))selectPlace(t.dataset.select,true);
@@ -274,7 +299,7 @@ doc.addEventListener('click',e=>{let t;if((t=e.target.closest('[data-category]')
  else if((t=e.target.closest('[data-close]')))$(t.dataset.close).close();
  else if(e.target.closest('[data-reset]'))reset();
 });
-['detailDialog','compareDialog','guideDialog','registrationDialog'].forEach(id=>{const d=$(id);d.addEventListener('close',()=>{const el=opener.get(d);if(el&&doc.contains(el))el.focus();});d.addEventListener('click',e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close();}});});
+['detailDialog','compareDialog','guideDialog','registrationDialog','deletionDialog'].forEach(id=>{const d=$(id);d.addEventListener('close',()=>{const el=opener.get(d);if(el&&doc.contains(el))el.focus();});d.addEventListener('click',e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close();}});});
 render();tileMap.showNationwide();tileMap.start();requestLocation(false);
 root.PAW_APP={state,getFiltered:()=>visible,selectPlace,toggleCompare:id=>{const r=toggleCompare(state,id);render();return r;},render,compare,detail,reset,map:tileMap,switchView,submitOrigin,chooseOrigin,submitVenueSearch};
 })(typeof window!=='undefined'?window:globalThis);
