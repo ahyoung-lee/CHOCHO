@@ -318,7 +318,7 @@ test('venue cards show city and district, callable contact and parking without l
  elements.search.value='리블링코코';elements.search.fire('input');
  assert(elements.results.innerHTML.includes('<p class="card-area">경기도 남양주시</p>'));
  const place=registered.getFiltered()[0],phone=place.phone,parking=place.parking;
- try{place.phone=null;place.parking=false;registered.render();cards=elements.results.innerHTML;assert(cards.includes('전화번호 미확인'));assert(!cards.includes('tel:null'));assert(cards.includes('주차 불가능'));}
+ try{place.phone=null;place.parking=false;registered.render();cards=elements.results.innerHTML;assert(cards.includes('전화번호 미확인'));assert(!cards.includes('tel:null'));assert(cards.includes('주차 불가능'));assert(cards.includes('공영·유료 주차장 이용'));assert(!cards.includes('빈자리·요금은 재확인'));}
  finally{place.phone=phone;place.parking=parking;registered.reset();}
 });
 await testAsync('registered name search ignores GPS and custom-origin radius and fits matching map pins',async()=>{
@@ -399,6 +399,21 @@ test('mobile keeps only ten cards while all matching map markers remain selectab
   assert(elements.markerLayer.innerHTML.includes('data-marker="'+all[20]+'"'));
   elements.loadMore.fire('click');assert.equal(count(),10);
  }finally{window.matchMedia=previous;registered.reset();}
+});
+test('comparison shows only requested fields and exact workbook companion notes',()=>{
+ const registered=window.PAW_APP,places=window.CAFE_DATA.places,a=places.find(p=>p.playground===true&&p.parking===true),b=places.find(p=>p.playground===false&&p.parking===false&&!p.registrationNote);
+ assert(a&&b);const saved=[...registered.state.compare],memo=a.registrationNote;
+ try{
+  a.registrationNote='이동가방 필수\n대형견은 테라스 <문의>';
+  registered.state.compare=[a.id,b.id];registered.compare();
+  const markup=elements.compareContent.innerHTML;
+  const rows=[...markup.matchAll(/<tr><th scope="row">([^<]+)<\/th>([\s\S]*?)<\/tr>/g)];
+  assert.deepEqual(rows.map(m=>m[1]),['장소 유형','동반 구역','주소','운동장','주차','동반 조건','지도·문의']);
+  const cells=name=>[...rows.find(m=>m[1]===name)[2].matchAll(/<td>([\s\S]*?)<\/td>/g)].map(m=>m[1]);
+  assert.deepEqual(cells('운동장'),['있음','없음']);
+  assert.deepEqual(cells('주차'),['주차가능','주차불가']);
+  assert.deepEqual(cells('동반 조건'),['이동가방 필수\n대형견은 테라스 &lt;문의&gt;','']);
+ }finally{a.registrationNote=memo;registered.state.compare=saved;registered.reset();}
 });
 console.log(`\n${checks} verification scenarios passed.`);
 })().catch(error=>{console.error(error);process.exitCode=1;});

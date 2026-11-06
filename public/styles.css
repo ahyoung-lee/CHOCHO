@@ -81,3 +81,13 @@
 @keyframes marker-bounce{0%,100%{transform:translateY(0) scale(1.16)}45%{transform:translateY(-14px) scale(1.16)}70%{transform:translateY(-3px) scale(1.16)}}
 @keyframes fallback-marker-bounce{0%,100%{transform:translateY(0) rotate(-45deg)}45%{transform:translateY(-14px) rotate(-45deg)}70%{transform:translateY(-3px) rotate(-45deg)}}
 @media(prefers-reduced-motion:reduce){.native-marker.bouncing svg,.marker.bouncing .pin{animation:none}}
+
+/* Reveal each page region once, leaving the logo header still. */
+.reveal-section{opacity:0;translate:0 24px;transition:opacity .6s ease,translate .6s cubic-bezier(.2,.7,.2,1)}
+.reveal-section.is-revealed,.reveal-section:focus-within{opacity:1;translate:0 0}
+.back-to-top{position:fixed;right:24px;bottom:calc(24px + env(safe-area-inset-bottom,0px));z-index:35;display:grid;place-items:center;width:48px;height:48px;border:1px solid #fff;border-radius:50%;background:var(--brand);color:#fff;box-shadow:0 4px 18px #3e2a1733}
+.back-to-top:hover{background:#513008}
+body.has-tray .back-to-top{bottom:calc(112px + env(safe-area-inset-bottom,0px))}
+.compare-dialog tbody td{white-space:pre-wrap;overflow-wrap:anywhere}
+@media(max-width:760px){.back-to-top{right:16px}}
+@media(prefers-reduced-motion:reduce){.reveal-section{opacity:1;translate:none;transition:none}}
