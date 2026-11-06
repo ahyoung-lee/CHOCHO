@@ -103,3 +103,10 @@ body.has-tray .back-to-top{bottom:calc(112px + env(safe-area-inset-bottom,0px))}
  .top-actions{flex-shrink:0;gap:0}
  .private-badge{font-size:9px;line-height:1.4;white-space:nowrap;padding:0}
 }
+
+.category-tabs .category-icon{display:inline-block;margin:0 5px 0 0;font-size:18px;line-height:1;opacity:1;vertical-align:-1px}
+.category-tabs .category-soon{display:inline-flex;align-items:center;margin-left:6px;padding:2px 6px;border:1px solid #e0d3bd;border-radius:5px;background:#f3ebdd;color:#795d35;font-size:11px;line-height:1.4;font-weight:700;opacity:1;vertical-align:1px;white-space:nowrap}
+.category-tabs button[aria-pressed=true] .category-soon{background:#fff3d9;color:#69400b;border-color:#e8d1a6}
+@media(max-width:760px){.category-tabs .category-icon{font-size:16px;margin-right:4px}.category-tabs .category-soon{margin-left:4px;padding:2px 4px}}
+
+@media(max-width:360px){.category-tabs button{font-size:14px}.category-tabs span[data-category-count]{font-size:13px}}
