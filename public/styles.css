@@ -110,3 +110,5 @@ body.has-tray .back-to-top{bottom:calc(112px + env(safe-area-inset-bottom,0px))}
 @media(max-width:760px){.category-tabs .category-icon{font-size:16px;margin-right:4px}.category-tabs .category-soon{margin-left:4px;padding:2px 4px}}
 
 @media(max-width:360px){.category-tabs button{font-size:14px}.category-tabs span[data-category-count]{font-size:13px}}
+
+.intro h1 .title-soft{color:#b08a67}
