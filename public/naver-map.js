@@ -41,13 +41,13 @@ function create(host,{element,key,onChange,onReady,onError}){
    try{map.setOptions({center:coords(center),zoom});}finally{updating=false;}
   },
   project(point){if(!map)return null;const p=map.getProjection().fromCoordToOffset(coords(point));return {x:p.x,y:p.y};},
-  syncMarkers(places,origin,selected,onSelect){
+  syncMarkers(places,origin,selected,onSelect,bouncingId=null){
    if(!map)return false;
    const n=host.naver.maps,ids=new Set(places.map(p=>p.id));selectMarker=onSelect;
    for(const [id,entry]of markers)if(!ids.has(id)){entry.marker.setMap(null);markers.delete(id);}
    for(const p of places){
     const active=p.id===selected,zIndex=active?100000:100+p.number;
-    const content=`<button type="button" class="native-marker${active?' selected':''}" data-marker="${escape(p.id)}" aria-label="${escape(p.name)}" aria-pressed="${active}"><svg width="44" height="54" viewBox="0 0 44 54" aria-hidden="true"><path d="M22 50C18 44 4 32 4 22a18 18 0 1 1 36 0c0 10-14 22-18 28Z" fill="${active?'#a6122d':'#d92d3a'}" stroke="${active?'#ffe1a3':'white'}" stroke-width="3"/><text x="22" y="27" text-anchor="middle" fill="white" font-size="15" font-weight="700">${p.number}</text></svg><span class="native-marker-label">${escape(p.name)}</span></button>`;
+    const content=`<button type="button" class="native-marker${active?' selected':''}${p.id===bouncingId?' bouncing':''}" data-marker="${escape(p.id)}" aria-label="${escape(p.name)}" aria-pressed="${active}"><svg width="44" height="54" viewBox="0 0 44 54" aria-hidden="true"><path d="M22 50C18 44 4 32 4 22a18 18 0 1 1 36 0c0 10-14 22-18 28Z" fill="${active?'#a6122d':'#d92d3a'}" stroke="${active?'#ffe1a3':'white'}" stroke-width="3"/><text x="22" y="27" text-anchor="middle" fill="white" font-size="15" font-weight="700">${p.number}</text></svg><span class="native-marker-label">${escape(p.name)}</span></button>`;
     const icon={content,size:new n.Size(44,54),anchor:new n.Point(22,50)};
     let entry=markers.get(p.id);
     if(!entry){
