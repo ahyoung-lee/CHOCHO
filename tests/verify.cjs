@@ -43,7 +43,7 @@ test('DOM card-map selection stays synchronized',()=>{click('[data-marker]',{mar
 test('DOM save persists and saved filter works',()=>{click('[data-fav]',{fav:'coco'});assert(storage.get('chocho-favorites-v1').includes('coco'));click('[data-toggle]',{toggle:'favorite'});assert.equal(app.getFiltered().length,1);assert.equal(app.getFiltered()[0].id,'coco');app.reset();});
 test('DOM compare opens table with 3 selected places and preserves across filters',()=>{for(const id of ['nimung','coco','mongle'])click('[data-compare]',{compare:id});assert(!elements.compareTray.hidden);assert(!elements.openCompare.disabled);assert.equal(app.toggleCompare('urban'),'limit');elements.openCompare.fire('click');assert(elements.compareDialog.open);assert(elements.compareContent.innerHTML.includes('<table>'));assert(elements.compareContent.innerHTML.includes('몽글브라운'));elements.search.value='니멍';elements.search.fire('input');assert.equal(app.state.compare.length,3);});
 test('DOM detail modal contains provenance, caveats and telephone',()=>{app.detail('urban');assert(elements.detailDialog.open);assert(elements.detailContent.innerHTML.includes('tel:050714681261'));assert(elements.detailContent.innerHTML.includes('주변 위치 추정'));assert(elements.detailContent.innerHTML.includes('출발 전 꼭 재확인'));assert(elements.detailContent.innerHTML.includes('당근'));});
-test('DOM mobile view switch and map zoom limits',()=>{app.switchView(true);assert(explorer.classList.contains('mobile-map'));assert.equal(elements.mapView.attributes['aria-pressed'],'true');app.switchView(false);assert(!explorer.classList.contains('mobile-map'));app.map.setZoom(99);assert.equal(app.map.zoom,16);assert(elements.zoomIn.disabled);app.map.setZoom(0);assert.equal(app.map.zoom,5);assert(elements.zoomOut.disabled);});
+test('map stays visible without mobile view buttons and respects zoom limits',()=>{assert(!html.includes('id="listView"'));assert(!html.includes('id="mapView"'));assert(html.indexOf('id="mapPanel"')<html.indexOf('id="listPanel"'));app.map.setZoom(99);assert.equal(app.map.zoom,16);assert(elements.zoomIn.disabled);app.map.setZoom(0);assert.equal(app.map.zoom,5);assert(elements.zoomOut.disabled);});
 test('HTML ships local dependencies, responsive layout and privacy index controls',()=>{assert(html.includes('width=device-width'));assert(html.includes('noindex,nofollow'));for(const asset of ['styles.css','data.js','origin-search.js','naver-map.js','app.js','icon.svg'])assert(fs.existsSync(__dirname+'/../public/'+asset));const css=fs.readFileSync(__dirname+'/../public/styles.css','utf8');assert(css.includes('@media(max-width:760px)'));assert(css.includes('min-height:44px'));assert(html.includes('naver-map.js'));assert(!html.includes('© OpenStreetMap contributors'));});
 
 
@@ -243,7 +243,7 @@ test('supplemented bar coordinates match official street addresses and retain pr
 });
 test('venue search button and Enter search while list, map and details use result-order numbers',()=>{
  currentApp.reset();const originalNumbers=fullData.places.map(p=>p.number);
- const assertNumbers=()=>{const visible=currentApp.getFiltered(),numbers=[...elements.results.innerHTML.matchAll(/class="card-number">(\d+)<\/span>/g)].map(m=>Number(m[1]));assert.deepEqual(numbers,visible.slice(0,10).map((_,i)=>i+1));for(const p of visible.filter(core.hasCoordinates)){const match=elements.markerLayer.innerHTML.match(new RegExp('data-marker="'+p.id+'"[\\s\\S]*?<b>(\\d+)</b>'));if(match)assert.equal(Number(match[1]),visible.findIndex(x=>x.id===p.id)+1);}};
+ const assertNumbers=()=>{const visible=currentApp.getFiltered(),numbers=[...elements.results.innerHTML.matchAll(/class="card-number"[^>]*>(\d+)<\/button>/g)].map(m=>Number(m[1]));assert.deepEqual(numbers,visible.slice(0,10).map((_,i)=>i+1));for(const p of visible.filter(core.hasCoordinates)){const match=elements.markerLayer.innerHTML.match(new RegExp('data-marker="'+p.id+'"[\\s\\S]*?<b>(\\d+)</b>'));if(match)assert.equal(Number(match[1]),visible.findIndex(x=>x.id===p.id)+1);}};
  assertNumbers();const first=currentApp.getFiltered()[0];currentApp.detail(first.id);assert(elements.detailContent.innerHTML.includes('PLACE 1 ·'));
  elements.search.value='미열';elements.venueSearch.fire('click');assert(currentApp.getFiltered().length>0);assert(currentApp.getFiltered().every(p=>p.name.includes('미열')));assertNumbers();
  elements.search.value='송리단';elements.search.fire('keydown',{key:'Enter'});assert(currentApp.getFiltered().some(p=>p.name==='송리단양조장'));assertNumbers();
@@ -385,6 +385,20 @@ test('native marker keyboard selection avoids SDK pointer handlers and legend is
   assert(prevented&&stopped);assert.equal(registered.state.selected,id);
  }
  assert(!html.includes('class="map-legend"'));
+});
+test('mobile keeps only ten cards while all matching map markers remain selectable',()=>{
+ const registered=window.PAW_APP,previous=window.matchMedia;
+ window.matchMedia=()=>({matches:true});
+ try{
+  registered.reset();
+  const all=Array.from(registered.getFiltered(),p=>p.id);
+  assert(all.length>20);
+  const count=()=>[...elements.results.innerHTML.matchAll(/id="card-([^"]+)"/g)].length;
+  assert.equal(count(),10);assert(elements.loadMore.hidden,'mobile has no load-more control');
+  registered.selectPlace(all[20]);assert.equal(registered.state.selected,all[20]);assert.equal(count(),10,'selecting a map marker must not expand the mobile list');
+  assert(elements.markerLayer.innerHTML.includes('data-marker="'+all[20]+'"'));
+  elements.loadMore.fire('click');assert.equal(count(),10);
+ }finally{window.matchMedia=previous;registered.reset();}
 });
 console.log(`\n${checks} verification scenarios passed.`);
 })().catch(error=>{console.error(error);process.exitCode=1;});
