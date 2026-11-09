@@ -58,7 +58,11 @@ class WorkbookTests(unittest.TestCase):
         columns = {"hoteling": "호텔링", "daycare": "유치원", "grooming": "애견미용", "parking": "주차가능", "indoor": "실내 동반", "terrace": "테라스 동반"}
         for (_, row), p in zip(rows, self.data["places"]):
             for field, column in columns.items():
-                self.assertIs(p[field], workbook.flag(row[column]))
+                if field == "parking" and row[column] in workbook.PARKING_NOTES:
+                    self.assertIs(p[field], True)
+                    self.assertEqual(p["parkingNote"], row[column])
+                else:
+                    self.assertIs(p[field], workbook.flag(row[column]))
             self.assertEqual(p.get("contactNote") or p["phone"] or "", row["업체연락처"])
             self.assertEqual(p["registrationNote"], row.get("동반 조건 및 메모", ""))
 
@@ -72,6 +76,18 @@ class WorkbookTests(unittest.TestCase):
         place = workbook.import_rows(self.data, rows, self.path.name, self.data["checkedAt"])["places"][0]
         self.assertIsNone(place["phone"])
         self.assertEqual(place["contactNote"], "네이버예약")
+
+    def test_workbook_parking_options_are_preserved(self):
+        for label in ("발렛", "공영주차장"):
+            rows = [(n, dict(r)) for n, r in self.rows]
+            rows[0][1]["주차가능"] = label
+            place = workbook.import_rows(self.data, rows, self.path.name, self.data["checkedAt"])["places"][0]
+            self.assertIs(place["parking"], True)
+            self.assertEqual(place["parkingNote"], label)
+            self.assertEqual(place["parkingText"], label)
+            rows[0][1]["주차가능"] = "가능"
+            restored = workbook.import_rows({"places": [place], "origins": self.data["origins"]}, rows, self.path.name, self.data["checkedAt"])["places"][0]
+            self.assertNotIn("parkingNote", restored)
 
     def test_unknowns_and_incomplete_rows_are_never_guessed(self):
         self.assertIsNone(workbook.flag(""))

@@ -312,6 +312,17 @@ test('venue cards show city and district, callable contact and parking without l
  assert(cards.includes('<p class="card-area">서울시 강남구</p>'));
  assert(cards.includes('href="tel:050714031704"'));
  assert(cards.includes('주차 가능'));
+ assert(cards.includes('주차요금 및 자리 유선 문의'));
+ assert(!cards.includes('빈자리·요금은 재확인'));
+ const parkingPlace=registered.getFiltered()[0];
+ try{
+  for(const label of ['발렛','공영주차장']){
+   parkingPlace.parkingNote=label;
+   registered.render();
+   assert(elements.results.innerHTML.includes(`<strong>${label}</strong>`));
+   assert(!elements.results.innerHTML.includes('주차요금 및 자리 유선 문의'));
+  }
+ }finally{delete parkingPlace.parkingNote;}
  assert(!cards.includes('card-subtitle'));assert(cards.includes('category-badge'));
  assert(cards.includes('fact fact-parking'));
  assert(!cards.includes('잔디'));assert(!cards.includes('hour-line'));assert(!cards.includes('영업시간'));assert(!cards.includes('직접 등록 정보'));assert(!cards.includes('체중 기준 문의'));

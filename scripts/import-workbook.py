@@ -22,6 +22,7 @@ REGION_ALIASES = {
     "충청남도": "충남", "전라북도": "전북", "전북특별자치도": "전북", "전라남도": "전남",
     "경상북도": "경북", "경상남도": "경남", "제주도": "제주", "제주특별자치도": "제주",
 }
+PARKING_NOTES = {"발렛", "공영주차장"}
 
 
 def read_rows(path):
@@ -87,7 +88,7 @@ def normalize_name(name):
 def import_rows(previous, rows, filename, today):
     places, seen = [], set()
     category_columns = {"playground": "운동장 카페", "companion": "동반 카페", "restaurant": "동반 음식점", "bar": "동반 술집", "pension": "동반 펜션"}
-    condition_columns = {"parking": "주차가능", "indoor": "실내 동반", "terrace": "테라스 동반", "hoteling": "호텔링", "daycare": "유치원", "grooming": "애견미용"}
+    condition_columns = {"indoor": "실내 동반", "terrace": "테라스 동반", "hoteling": "호텔링", "daycare": "유치원", "grooming": "애견미용"}
     for row_number, row in rows:
         # The formula-only region column does not make a venue row populated.
         if not any(value for key, value in row.items() if key != "지역"):
@@ -131,7 +132,13 @@ def import_rows(previous, rows, filename, today):
         p["referenceDogRule"] = reference_rule or "체중·견종·출입 조건은 방문 전 문의"
         p["registrationNote"] = row.get("동반 조건 및 메모", "")
         p["dogRule"] = p["registrationNote"] or reference_rule or "체중·견종·출입 조건은 방문 전 문의"
-        p["parkingText"] = "사용자 등록: " + {True: "주차 가능", False: "주차 불가", None: "주차 미확인"}[p["parking"]]
+        parking = row.get("주차가능", "")
+        if parking in PARKING_NOTES:
+            p.update(parking=True, parkingNote=parking, parkingText=parking)
+        else:
+            p.pop("parkingNote", None)
+            p["parking"] = flag(parking)
+            p["parkingText"] = "사용자 등록: " + {True: "주차 가능", False: "주차 불가", None: "주차 미확인"}[p["parking"]]
         p["petArea"] = " · ".join(label for field, label in [("indoor", "실내 동반"), ("terrace", "테라스 동반")] if p[field] is True) or "동반 구역 미확인"
         p["yard"] = "사용자 등록: 운동장 있음" if p["playground"] else "사용자 등록: 운동장 미선택"
         p["evidence"] = f"사용자가 {filename} {row_number}행에 직접 입력한 업체·동반 조건입니다. 사이트에서 전화·현장 확인하지 않았습니다."
