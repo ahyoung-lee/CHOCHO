@@ -7,8 +7,8 @@ const file='data/registered-kakao-address-cache.json';
 const cache=fs.existsSync(file)?JSON.parse(fs.readFileSync(file,'utf8')):{};
 const data=JSON.parse(fs.readFileSync('data/venues.json','utf8'));
 for(const place of data.places){
- const query=matcher.streetAddress(place.address);
- if(!query)throw Error('Missing road address: '+place.address);
+ const query=matcher.addressQuery(place.address);
+ if(!query){console.warn('Unsupported address: '+place.address);continue;}
  if(cache[query])continue;
  const url='https://search.map.kakao.com/mapsearch/map.daum?'+new URLSearchParams({q:query,msFlag:'A',sort:'0'});
  const response=await fetch(url,{headers:{Referer:'https://map.kakao.com/','User-Agent':'Mozilla/5.0'},signal:AbortSignal.timeout(20000)});

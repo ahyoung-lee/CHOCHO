@@ -95,6 +95,7 @@ class WorkbookTests(unittest.TestCase):
 
     def test_location_keys_keep_districts_provinces_and_townships(self):
         self.assertEqual(workbook.road_key("서울 강남구 영동대로 725 6층"), workbook.road_key("서울특별시 강남구 영동대로 725"))
+        self.assertIsNotNone(workbook.road_key("부산 기장군 기장읍 청강리 293-1"))
         for a, b in [
             ("서울특별시 강남구 중앙로 10", "서울특별시 강동구 중앙로 10"),
             ("경기 고성군 중앙로 10", "강원 고성군 중앙로 10"),

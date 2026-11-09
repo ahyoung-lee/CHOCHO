@@ -70,6 +70,8 @@ def road_key(address):
     # Floors and business labels may change without moving the street address.
     match = re.search(r"([^\s]+(?:로|길))\s+(\d+(?:-\d+)?)", address)
     if not match:
+        match = re.search(r"([^\s]+[동리가])\s+((?:산\s*)?\d+(?:-\d+)?)(?=\s|$)", address)
+    if not match:
         return None
     administrative = address[:match.start()].split()
     if not administrative:
