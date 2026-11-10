@@ -53,10 +53,14 @@ class WorkbookTests(unittest.TestCase):
 
     def test_saved_rows_are_the_entire_published_list(self):
         self.assertEqual(list(self.rows[0][1])[3:9], ["동반 카페", "운동장 카페", "대형견 카페", "동반 음식점", "동반 술집", "동반 펜션"])
-        rows = [(n, r) for n, r in self.rows if r.get("상호명")]
-        self.assertEqual([(r["상호명"].strip(), r["주소"].strip()) for _, r in rows], [(p["name"], p["address"]) for p in self.data["places"]])
+        rows = {}
+        for _, row in self.rows:
+            if row.get("상호명"):
+                rows.setdefault(tuple(row.items()), row)
+        rows = list(rows.values())
+        self.assertEqual([(r["상호명"].strip(), r["주소"].strip()) for r in rows], [(p["name"], p["address"]) for p in self.data["places"]])
         columns = {"hoteling": "호텔링", "daycare": "유치원", "grooming": "애견미용", "parking": "주차가능", "indoor": "실내 동반", "terrace": "테라스 동반"}
-        for (_, row), p in zip(rows, self.data["places"]):
+        for row, p in zip(rows, self.data["places"]):
             for field, column in columns.items():
                 if field == "parking" and row[column] in workbook.PARKING_NOTES:
                     self.assertIs(p[field], True)
@@ -78,7 +82,7 @@ class WorkbookTests(unittest.TestCase):
         self.assertEqual(place["contactNote"], "네이버예약")
 
     def test_workbook_parking_options_are_preserved(self):
-        for label in ("발렛", "공영주차장"):
+        for label in ("발렛", "발렛가능", "공영주차장", "유료주차장 이용"):
             rows = [(n, dict(r)) for n, r in self.rows]
             rows[0][1]["주차가능"] = label
             place = workbook.import_rows(self.data, rows, self.path.name, self.data["checkedAt"])["places"][0]

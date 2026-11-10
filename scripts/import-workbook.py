@@ -22,7 +22,7 @@ REGION_ALIASES = {
     "충청남도": "충남", "전라북도": "전북", "전북특별자치도": "전북", "전라남도": "전남",
     "경상북도": "경북", "경상남도": "경남", "제주도": "제주", "제주특별자치도": "제주",
 }
-PARKING_NOTES = {"발렛", "공영주차장"}
+PARKING_NOTES = {"발렛", "발렛가능", "공영주차장", "유료주차장 이용"}
 
 
 def read_rows(path):
@@ -86,7 +86,7 @@ def normalize_name(name):
 
 
 def import_rows(previous, rows, filename, today):
-    places, seen = [], set()
+    places, seen = [], {}
     category_columns = {"playground": "운동장 카페", "companion": "동반 카페", "restaurant": "동반 음식점", "bar": "동반 술집", "pension": "동반 펜션"}
     condition_columns = {"indoor": "실내 동반", "terrace": "테라스 동반", "hoteling": "호텔링", "daycare": "유치원", "grooming": "애견미용"}
     for row_number, row in rows:
@@ -98,8 +98,10 @@ def import_rows(previous, rows, filename, today):
             raise ValueError(f"{row_number}행: 상호명과 주소를 모두 입력하세요.")
         key = (normalize_name(name), address)
         if key in seen:
+            if row == seen[key]:
+                continue
             raise ValueError(f"{row_number}행: 중복 업체 {name}")
-        seen.add(key)
+        seen[key] = row
         categories = [key for key, column in category_columns.items() if flag(row.get(column, row.get(column.replace(" ", ""), ""))) is True]
         if not categories:
             raise ValueError(f"{row_number}행: {name}의 카테고리를 1개 이상 선택하세요.")
