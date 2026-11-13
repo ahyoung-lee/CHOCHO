@@ -1,7 +1,7 @@
 const assert=require('node:assert/strict'),fs=require('node:fs');
 const core=require('../public/app.js'),{validate}=require('../scripts/validate-data.cjs');
-const base={...require('../data/venues.json').places[0],category:'playground',playground:true,categories:['playground','companion','restaurant']};
-const data={origins:require('../data/venues.json').origins,places:[
+const base={...require('../public/data.js').places[0],category:'playground',playground:true,categories:['playground','companion','restaurant']};
+const data={origins:require('../public/data.js').origins,places:[
  {...base,id:'both',hoteling:true,daycare:true,grooming:false},
  {...base,id:'hotel',hoteling:true,daycare:false,grooming:true},
  {...base,id:'unknown',hoteling:null,daycare:null,grooming:null},

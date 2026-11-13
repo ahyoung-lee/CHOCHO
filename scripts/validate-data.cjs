@@ -1,4 +1,3 @@
-const fs=require('node:fs'),path=require('node:path');
 function validate(data){
  const errors=[],seen=new Set();
  if(!data||!Array.isArray(data.places)||!data.origins)throw new Error('places 배열과 origins 객체가 필요합니다.');
@@ -30,4 +29,4 @@ function validate(data){
  if(errors.length)throw new Error(errors.join('\n'));return data;
 }
 module.exports={validate};
-if(require.main===module){validate(JSON.parse(fs.readFileSync(path.join(__dirname,'../data/venues.json'),'utf8')));console.log('카페 데이터 검증 통과');}
+if(require.main===module){validate(require('./source-data.cjs').loadSourceData());console.log('카페 데이터 검증 통과');}

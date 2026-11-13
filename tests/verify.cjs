@@ -137,7 +137,7 @@ test('large-dog cafes require confirmed playground access and respect weight lim
  currentApp.state.query='모꼬지';currentApp.state.region='남양주';currentApp.render();assert.equal(currentApp.getFiltered()[0].id,'large-dog-mokkoji');
  assert(elements.results.innerHTML.includes('대형견 운동장'));
  const orderedCategories=['companion','playground','large-dog','restaurant','bar','pension'];assert.deepEqual([...html.matchAll(/data-category="([^"]+)"/g)].map(match=>match[1]),['all',...orderedCategories]);
- const sourceData=JSON.parse(fs.readFileSync(__dirname+'/../data/venues.json','utf8'));
+ const sourceData=require('../public/data.js');
  require('../scripts/validate-data.cjs').validate(sourceData);
  assert.throws(()=>require('../scripts/validate-data.cjs').validate({...sourceData,places:[{...matches[0],largeDogPlaygroundEvidence:''}]}));
  currentApp.reset();
@@ -236,10 +236,16 @@ await testAsync('current-location search and my-location refresh nearby ordering
  elements.origin.value='하계역';await currentApp.submitOrigin();assert.equal(currentApp.state.origin,'hagye');assert(!elements.time);assert.equal(currentApp.state.time,0);
  currentApp.reset();
 });
-test('supplemented bar coordinates match official street addresses and retain provenance',()=>{
- const cache=JSON.parse(fs.readFileSync(__dirname+'/../data/seoul-coordinate-cache.json','utf8')),{selectAddressMatch}=require('../scripts/apply-seoul-coordinates.cjs');
+test('supplemented bar coordinates retain provenance and address matcher rejects wrong buildings',()=>{
+ const {selectAddressMatch}=require('../scripts/apply-seoul-coordinates.cjs');
  const bars=fullData.places.filter(p=>p.category==='bar'),mapped=bars.filter(core.hasCoordinates);assert.equal(mapped.length,4);assert.equal(bars.filter(p=>!core.hasCoordinates(p)).length,6);
- for(const p of mapped){const address=p.address.replace(/\(.*/,'').trim(),match=selectAddressMatch(p,cache[address].results);assert(match);assert.equal(p.lat,match.lat);assert.equal(p.lng,match.lng);assert(p.sources.some(s=>s.url.startsWith('https://www.openstreetmap.org/')));}
+ for(const p of mapped)assert(p.sources.some(s=>s.url.startsWith('https://www.openstreetmap.org/')));
+ const place={address:'서울특별시 강남구 테스트로 10',area:'테스트동'};
+ const candidate={lat:'37.5',lon:'127.0',osm_type:'node',osm_id:1,address:{borough:'강남구',road:'테스트로',house_number:'10',city:'서울특별시',quarter:'테스트동'}};
+ assert.deepEqual(selectAddressMatch(place,[candidate]),{lat:37.5,lng:127,osmType:'node',osmId:1});
+ assert.equal(selectAddressMatch({...place,address:'서울특별시 강남구 테스트로 11'},[candidate]),null);
+ assert.equal(selectAddressMatch(place,[{...candidate,address:{...candidate.address,borough:'송파구'}}]),null);
+ assert.equal(selectAddressMatch(place,[candidate,{...candidate,lat:'37.51'}]),null);
 });
 test('venue search button and Enter search while list, map and details use result-order numbers',()=>{
  currentApp.reset();const originalNumbers=fullData.places.map(p=>p.number);
@@ -251,8 +257,8 @@ test('venue search button and Enter search while list, map and details use resul
  currentApp.reset();assertNumbers();assert.deepEqual(fullData.places.map(p=>p.number),originalNumbers);
 });
 test('published workbook venues render, combine services, overlap categories and keep saved places usable',()=>{
- const published=require('../public/data.js'),source=JSON.parse(fs.readFileSync(__dirname+'/../data/venues.json','utf8'));
- assert.deepEqual(published,source);require('../scripts/validate-data.cjs').validate(published);
+ const published=require('../public/data.js'),source=require('../scripts/source-data.cjs').loadSourceData();
+ assert.deepEqual(published,require('../scripts/publication.cjs').publicData(source));require('../scripts/validate-data.cjs').validate(published);
  assert.equal(published.coverage.mode,'manual-workbook');assert(published.places.every(p=>p.registration&&p.categories));
  window.CAFE_DATA=published;vm.runInContext(fs.readFileSync(__dirname+'/../public/app.js','utf8'),vm.createContext({window,document:doc,AbortController,setTimeout:()=>1,clearTimeout(){},console}));
  const registered=window.PAW_APP;
@@ -298,7 +304,7 @@ test('venue list reveals ten at a time, resets on criteria changes and keeps map
 });
 
 test('pension category filters registered venues and preserves the total count',()=>{
- const registered=window.PAW_APP,published=require('../data/venues.json');registered.reset();click('[data-category]',{category:'pension'});
+ const registered=window.PAW_APP,published=require('../public/data.js');registered.reset();click('[data-category]',{category:'pension'});
  assert.deepEqual(Array.from(registered.getFiltered(),place=>place.id).sort(),published.places.filter(place=>place.categories.includes('pension')).map(place=>place.id).sort());
  assert.equal(categoryCounts.find(element=>element.dataset.categoryCount==='all').textContent,published.places.length);
  const base=published.places[0],sample={...published,places:[{...base,id:'pension-only',category:'pension',categories:['pension'],playground:false,largeDogPlayground:false},{...base,id:'cafe-only',category:'companion',categories:['companion'],playground:false,largeDogPlayground:false}]};

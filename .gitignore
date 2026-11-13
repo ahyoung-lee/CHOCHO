@@ -10,3 +10,11 @@ Thumbs.db
 *.tar.gz
 *.zip
 __pycache__/
+# Local source workbooks must not be published to the public repository.
+*.xlsx
+*.xls
+*.xlsm
+*.xlsb
+~$*
+# Workbook imports and investigation snapshots are local-only, not website assets.
+/data/

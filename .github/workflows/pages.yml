@@ -22,10 +22,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: npm test
-      - run: python3 tests/workbook.py
-      - run: python3 tests/coordinate-import.py
+      # Full datasets/workbooks stay local; CI builds from public/data.js only.
       - run: npm run build
+      - run: npm test
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
